@@ -125,7 +125,9 @@
     <sprite>sprites\spr_debug_box</sprite>
     <sprite>sprites\sprite100</sprite>
     <sprite>sprites\sprite104</sprite>
+    <sprite>sprites\sprite106</sprite>
     <sprite>sprites\sprite105</sprite>
+    <sprite>sprites\spr_mobile_debug</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -272,7 +274,6 @@
       <object>objects\obj_bullet_fx</object>
       <object>objects\object17</object>
       <object>objects\object35</object>
-      <object>objects\ai_parent_BACKUP</object>
       <object>objects\object36</object>
       <object>objects\obj_player_stats</object>
     </objects>
@@ -299,6 +300,7 @@
     <objects name="temp/debug">
       <object>objects\obj_debug_reset_game</object>
     </objects>
+    <object>objects\obj_mobile_debug</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

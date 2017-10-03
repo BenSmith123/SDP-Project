@@ -682,8 +682,8 @@
     <constants number="4">
       <constant name="IS_WINDOWS">false</constant>
       <constant name="IS_MOBILE">true</constant>
-      <constant name="WIDTH">display_get_width()</constant>
-      <constant name="HEIGHT">display_get_height()</constant>
+      <constant name="WIDTH">960</constant>
+      <constant name="HEIGHT">640</constant>
     </constants>
   </ConfigConstants>
 </Config>

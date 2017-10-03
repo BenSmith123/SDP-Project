@@ -55,3 +55,4 @@ for(i = 1; i < n; i++)
 
 file_text_close(file)
 
+return 0
