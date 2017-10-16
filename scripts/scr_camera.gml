@@ -38,16 +38,18 @@ else if instance_exists(obj_player_2)
 
 target = obj_player
 
-// ROOM END X
-if not(view_xview[0] <= 0 and target.x<WIDTH/1.5) and not(view_xview[0]+WIDTH >= room_width and target.x > room_width-(WIDTH/2)) 
-{view_xview[0] += ((x-(view_wview[0]/2)) - view_xview[0]) * 0.03}
-
-// ROOM END Y
-if not(view_yview[0] <= 0 and target.y<HEIGHT/1.5) and not(view_yview[0]+HEIGHT >= room_height and target.y > room_height-(HEIGHT/2))
-{view_yview[0] += ((y-(view_hview[0]/2)) - view_yview[0]) * 0.03}
-
-if view_yview[0] < 0 {view_yview[0] = 0} // stops line at top of the screen. idk y needed
-
+if global.camera_enabled = true
+{
+    // ROOM END X
+    if not(view_xview[0] <= 0 and target.x<WIDTH/1.5) and not(view_xview[0]+WIDTH >= room_width and target.x > room_width-(WIDTH/2)) 
+    {view_xview[0] += ((x-(view_wview[0]/2)) - view_xview[0]) * 0.03}
+    
+    // ROOM END Y
+    if not(view_yview[0] <= 0 and target.y<HEIGHT/1.5) and not(view_yview[0]+HEIGHT >= room_height and target.y > room_height-(HEIGHT/2))
+    {view_yview[0] += ((y-(view_hview[0]/2)) - view_yview[0]) * 0.03}
+    
+    if view_yview[0] < 0 {view_yview[0] = 0} // stops line at top of the screen. idk y needed
+}
 
 
 /*

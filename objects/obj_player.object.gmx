@@ -69,6 +69,7 @@ can_be_hit = true // when the player can be hit again after taking damage
 health_colour = 1 // colour of the healthbar, 1 = green
 start_speed = global.walk_speed
 second_jump = false // see if its the players second jump
+name_width = round(string_width("Ben7")/2-10) // divide by 2 to get the middle, -10 for extra space on each side
 
 head_x = 0 // the x position for the head (to match all player sprites)
 
@@ -459,23 +460,14 @@ else
             <string>
 scr_text_1()
 
-draw_sprite_stretched(spr_name_label,0,x-string_width(global.name)/2-10,y+34,string_width(global.name)+20,20) // name label
+//draw_sprite_stretched(spr_name_label,0,round(x-string_width(global.name)/2-10),y+34,string_width(global.name)+20,18) // name label
+draw_sprite_stretched(spr_name_label,0,x-name_width,y+34,string_width(global.name)+20,18) // name label
+
 
 draw_text(x,y+44,global.name) // player name
 
-
-
-
 //yoo = instance_nearest(x,instance_furthest(x,y,obj_block),obj_block)
 //draw_sprite(spr_block_test,0,yoo.x,yoo.y)
-
-
-
-
-
-
-
-
 
 
 x = round(x)
@@ -484,38 +476,37 @@ y = round(y)
 above_block = instance_nearest(x,y-150,obj_block)
 
 // debug
-if distance_to_object(above_block) &lt; 100 {
-draw_sprite(spr_test,0,above_block.x,above_block.y)}
+if distance_to_object(above_block) &lt; 100 {draw_sprite(spr_test,0,above_block.x,above_block.y)}
 
 
-        // draw the target arrow for melee attacks
-        enemy = instance_nearest(x,y,ai_parent)
-        
-        if instance_exists(enemy)
+// draw the target arrow for melee attacks
+enemy = instance_nearest(x,y,ai_parent)
+
+if instance_exists(enemy)
+{
+    // MELEE ATTACKS
+    if image_xscale = -1
+    {
+        if enemy.x &lt;= x
         {
-            // MELEE ATTACKS
-            if image_xscale = -1
+            if enemy.x &gt; x-120 // range for hitting
             {
-                if enemy.x &lt;= x
-                {
-                    if enemy.x &gt; x-120 // range for hitting
-                    {
-                        draw_sprite(spr_test,0,enemy.x,enemy.y-30)
-                    }
-                }
-            }
-            
-            if image_xscale = 1
-            {
-                if enemy.x &gt; x
-                {
-                    if enemy.x &lt; x+120 // range for hitting
-                    {
-                        draw_sprite(spr_test,0,enemy.x,enemy.y-30)
-                    }
-                }
+                draw_sprite(spr_test,0,enemy.x,enemy.y-30)
             }
         }
+    }
+    
+    if image_xscale = 1
+    {
+        if enemy.x &gt; x
+        {
+            if enemy.x &lt; x+120 // range for hitting
+            {
+                draw_sprite(spr_test,0,enemy.x,enemy.y-30)
+            }
+        }
+    }
+}
 
 
 //if place_meeting(x,y+1,obj_block) {vspeed = 0} // ? fixes sprite issue 

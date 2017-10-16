@@ -4,6 +4,7 @@
     <Config>Configs\Default</Config>
     <Config>Configs\Mobile</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\sound0</sound>
@@ -128,6 +129,8 @@
     <sprite>sprites\sprite106</sprite>
     <sprite>sprites\sprite105</sprite>
     <sprite>sprites\spr_mobile_debug</sprite>
+    <sprite>sprites\sprite107</sprite>
+    <sprite>sprites\sprite108</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -137,9 +140,7 @@
     <background>background\bg_block</background>
     <background>background\background2</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path0</path>
-  </paths>
+  <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\GUIDE.gml</script>
     <script>scripts\scr_particle_system.gml</script>
@@ -301,6 +302,8 @@
       <object>objects\obj_debug_reset_game</object>
     </objects>
     <object>objects\obj_mobile_debug</object>
+    <object>objects\obj_mobile_debug2</object>
+    <object>objects\obj_mobile_debug3</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

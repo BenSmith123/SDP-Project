@@ -15,6 +15,7 @@ view_yview[0] = 0
 view_wview[0] = WIDTH
 view_hview[0] = HEIGHT
 
+
 if IS_WINDOWS
 {
     window_set_fullscreen(true)

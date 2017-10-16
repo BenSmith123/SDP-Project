@@ -329,8 +329,8 @@ y = round(y)
 
 // NAME TAG
 // position based on the mask index (cause all AI different size)
-draw_sprite_stretched(spr_name_label,0,x-string_width(name)/2-10,y+tag_y+44,string_width(name)+20,20) // name label
-draw_text(x,y+tag_y+54,name)
+draw_sprite_stretched(spr_name_label,0,round(x-string_width(name)/2-8),y+tag_y+44,string_width(name)+16,18) // name label
+draw_text(x,y+tag_y+52,name)
 
 
 

@@ -95,10 +95,12 @@ menu.text_sprite = spr_pause_quit // quit
           <argument>
             <kind>1</kind>
             <string>
+x = round(x)
+y = round(y)
 
 draw_self()
 
-draw_sprite_stretched(spr_name_label,0,x-string_width(name)/2-10,y+34,string_width(name)+20,20) // name label
+draw_sprite_stretched(spr_name_label,0,x-round(string_width(name)/2-10),y+34,string_width(name)+20,20) // name label
 
 draw_text(x,y+44,name) // player name
 

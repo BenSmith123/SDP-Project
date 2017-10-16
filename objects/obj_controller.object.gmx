@@ -237,25 +237,26 @@ global.error = ""
 global.show_debug = false
 global.overall_view = false // show the entire room
 
-/*
+
 global.system = "" // incase there is no OS type? windows or mobile
 global.system_os = "" // winodws, iOS, android
 
 // set either windows or mobile and set the operating system type
 if os_type = os_windows {global.system = "Windows"}
-if os_type = os_android {global.system = "Mobile"; global.system_os = "Android"}
-if os_type = os_ios {global.system = "Mobile"; global.system_os = "iOS"}*/
+if os_type = os_android {global.system = "Mobile"; global.device = "Android"}
+if os_type = os_ios {global.system = "Mobile"; global.device = "iOS"}
 
 
 // in-game variables
-
+global.camera_enabled = true // side scrolling camera for player
 global.player_start_x = 0 // set where the player first spawns in the room
 global.player_start_y = 0
 
 randomize() // randomize gamemakers seed
 
 display_set_gui_size(WIDTH,HEIGHT)
-surface_resize(application_surface,WIDTH,HEIGHT)
+surface_resize(application_surface, display_get_gui_width(), display_get_gui_height()); 
+//surface_resize(application_surface,WIDTH,HEIGHT)
 
 // SETTINGS
 global.joystick_enabled = true
