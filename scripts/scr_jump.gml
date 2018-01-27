@@ -9,13 +9,14 @@ if move_jump = true
         vspeed = -jump
         second_jump = false // set it so i can double jump
     }
-    else if second_jump = false // if not on ground and hasnt already second jumped
+    else if skill_double_jump = true // if player has double jump skill
     {
-        if global.class = "Ninja" // if can double jump
+        if can_second_jump = true // if not on ground and hasnt already second jumped
         {
             instance_create(x,y,obj_fx_double_jump)
             vspeed = -jump
             second_jump = true
+            can_second_jump = false
         }
     }
 }

@@ -77,7 +77,7 @@ if not instance_exists(obj_player) and not instance_exists(obj_player_2)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_block">
+    <event eventtype="4" ename="obj_block_main">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -135,7 +135,8 @@ if fade_in = true
     if image_alpha &lt;= 0 {instance_destroy()}
 }
 
-draw_sprite_stretched_ext(spr_black,0,0,0,WIDTH,HEIGHT,c_black,image_alpha)
+draw_sprite_stretched_ext(spr_black,0,-200,200,WIDTH,HEIGHT,c_black,image_alpha)
+
 
 
 </string>

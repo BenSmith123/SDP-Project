@@ -53,7 +53,7 @@ jump = 0
 heal_time = 5 // seconds
 heal_amount = 80
 
-scr_ai_initialize()
+scr_ai_initialise()
 
 </string>
           </argument>

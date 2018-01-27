@@ -81,7 +81,6 @@
       <sprite>sprites\spr_pause_button_bg</sprite>
       <sprite>sprites\spr_hit_effect</sprite>
       <sprite>sprites\spr_arrow_next_level</sprite>
-      <sprite>sprites\spr_heart</sprite>
       <sprite>sprites\spr_message_bg</sprite>
     </sprites>
     <sprite>sprites\spr_marker_2</sprite>
@@ -95,27 +94,21 @@
       <sprite>sprites\spr_coin_bronze</sprite>
     </sprites>
     <sprite>sprites\spr_seeker</sprite>
-    <sprite>sprites\sprite12</sprite>
     <sprite>sprites\sprite43</sprite>
-    <sprite>sprites\sprite82</sprite>
     <sprite>sprites\spr_test</sprite>
-    <sprite>sprites\spr_marker</sprite>
     <sprite>sprites\sprite28</sprite>
     <sprites name="effects">
       <sprite>sprites\spr_levelup_text</sprite>
       <sprite>sprites\spr_levelup_fx</sprite>
     </sprites>
     <sprite>sprites\sprite33</sprite>
-    <sprite>sprites\sdgdsfghfds</sprite>
     <sprite>sprites\spr_npc</sprite>
     <sprite>sprites\spr_npc_shop</sprite>
-    <sprite>sprites\sprite8</sprite>
     <sprite>sprites\sprite45</sprite>
     <sprite>sprites\spr_bullet_3</sprite>
     <sprite>sprites\spr_boost</sprite>
     <sprite>sprites\spr_spark</sprite>
     <sprite>sprites\sprite83</sprite>
-    <sprite>sprites\sprite71</sprite>
     <sprite>sprites\sprdfdf</sprite>
     <sprite>sprites\sprite70</sprite>
     <sprite>sprites\sprite79</sprite>
@@ -123,14 +116,15 @@
     <sprite>sprites\spr_coin_fx</sprite>
     <sprite>sprites\sprite67</sprite>
     <sprite>sprites\sprite87</sprite>
-    <sprite>sprites\spr_debug_box</sprite>
+    <sprites name="test/debug">
+      <sprite>sprites\spr_debug_control</sprite>
+      <sprite>sprites\spr_debug_button</sprite>
+      <sprite>sprites\spr_mobile_debug</sprite>
+      <sprite>sprites\spr_debug_box</sprite>
+    </sprites>
     <sprite>sprites\sprite100</sprite>
     <sprite>sprites\sprite104</sprite>
-    <sprite>sprites\sprite106</sprite>
-    <sprite>sprites\sprite105</sprite>
-    <sprite>sprites\spr_mobile_debug</sprite>
-    <sprite>sprites\sprite107</sprite>
-    <sprite>sprites\sprite108</sprite>
+    <sprite>sprites\icon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -151,11 +145,11 @@
       <script>scripts\scr_gravity.gml</script>
       <script>scripts\room_start_messages.gml</script>
       <script>scripts\display_banner_message.gml</script>
-      <script>scripts\is_on_screen.gml</script>
       <script>scripts\scr_pause_game.gml</script>
       <script>scripts\scr_load_game.gml</script>
       <script>scripts\scr_save_game.gml</script>
       <script>scripts\scr_reset_game.gml</script>
+      <script>scripts\scr_set_aspect_ratio.gml</script>
       <script>scripts\set_resolution.gml</script>
     </scripts>
     <scripts name="text">
@@ -174,12 +168,11 @@
       <script>scripts\scr_attack_player.gml</script>
       <script>scripts\scr_damage.gml</script>
       <script>scripts\scr_teleport.gml</script>
-      <script>scripts\script57.gml</script>
     </scripts>
     <scripts name="AI">
       <script>scripts\AI_GUIDE.gml</script>
       <script>scripts\scr_ai_debug.gml</script>
-      <script>scripts\scr_ai_initialize.gml</script>
+      <script>scripts\scr_ai_initialise.gml</script>
       <script>scripts\scr_ai_attack.gml</script>
       <script>scripts\scr_ai_movement.gml</script>
       <script>scripts\scr_ai_block_jump.gml</script>
@@ -194,7 +187,6 @@
       <script>scripts\scr_ai_detect_platform_width.gml</script>
       <script>scripts\scr_ai_spread.gml</script>
     </scripts>
-    <script>scripts\scr_ai_damage.gml</script>
     <scripts name="Interface">
       <script>scripts\scr_click_button.gml</script>
       <script>scripts\scr_button_hover.gml</script>
@@ -202,10 +194,13 @@
       <script>scripts\scr_arrow_key_create.gml</script>
       <script>scripts\scr_mouse_hover.gml</script>
     </scripts>
+    <script>scripts\scr_ai_damage.gml</script>
     <script>scripts\scr_calcuelate_damage.gml</script>
     <script>scripts\set_classes.gml</script>
     <script>scripts\scr_hit_effect.gml</script>
     <script>scripts\scr_initialize.gml</script>
+    <script>scripts\initialise_skills.gml</script>
+    <script>scripts\is_on_screen.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_arial_12</font>
@@ -225,8 +220,8 @@
     <object>objects\obj_player_2</object>
     <object>objects\obj_player_dead</object>
     <object>objects\obj_block_temp</object>
+    <object>objects\obj_block_main</object>
     <object>objects\obj_block</object>
-    <object>objects\obj_block_blank</object>
     <object>objects\ai_parent</object>
     <object>objects\obj_ai_1</object>
     <object>objects\obj_ai_2</object>
@@ -278,7 +273,6 @@
       <object>objects\object36</object>
       <object>objects\obj_player_stats</object>
     </objects>
-    <object>objects\object52</object>
     <objects name="buttons">
       <object>objects\obj_button_back</object>
       <object>objects\obj_button_explore</object>
@@ -286,6 +280,7 @@
       <object>objects\obj_button_character</object>
       <object>objects\obj_button_guide</object>
       <object>objects\obj_button_settings</object>
+      <object>objects\obj_button_control_panel</object>
     </objects>
     <object>objects\obj_damage_test</object>
     <object>objects\object53</object>
@@ -295,22 +290,26 @@
     <object>objects\obj_seeker</object>
     <object>objects\obj_class_button</object>
     <object>objects\obj_npc_shop</object>
-    <object>objects\obj_reset_game</object>
     <object>objects\parent_npc</object>
     <object>objects\obj_npc</object>
     <objects name="temp/debug">
-      <object>objects\obj_debug_reset_game</object>
+      <object>objects\obj_debug_text</object>
+      <object>objects\parent_test_button</object>
+      <object>objects\obj_t_toggle_user</object>
+      <object>objects\obj_t_toggle_debug</object>
+      <object>objects\obj_t_reset_game</object>
+      <object>objects\obj_t_level_up</object>
+      <object>objects\obj_mobile_debug</object>
     </objects>
-    <object>objects\obj_mobile_debug</object>
-    <object>objects\obj_mobile_debug2</object>
-    <object>objects\obj_mobile_debug3</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\room1</room>
+    <room>rooms\room14</room>
     <room>rooms\room13</room>
     <room>rooms\room11</room>
     <room>rooms\room10</room>
+    <room>rooms\room_control_panel</room>
     <room>rooms\room_pvp</room>
     <room>rooms\room_arena</room>
     <room>rooms\room7</room>

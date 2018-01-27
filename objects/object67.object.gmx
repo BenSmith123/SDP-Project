@@ -47,7 +47,7 @@
     heal_time = 4 // (seconds)
     heal_amount = 0 
     
-    scr_ai_initialize() // call the script to initialise all the common variables of the AI 
+    scr_ai_initialise() // call the script to initialise all the common variables of the AI 
     
 
 </string>
@@ -308,7 +308,7 @@ can_shoot = true
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_block">
+    <event eventtype="4" ename="obj_block_main">
       <action>
         <libid>1</libid>
         <id>603</id>

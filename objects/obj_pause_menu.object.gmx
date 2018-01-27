@@ -112,6 +112,8 @@ if text_sprite = spr_pause_quit // quit to main menu
           <argument>
             <kind>1</kind>
             <string>
+draw_sprite_stretched_ext(spr_black,0,-200,200,WIDTH,HEIGHT,c_black,image_alpha)
+
 draw_sprite(sprite_index,image_index,x,y) // pause button background
 
 draw_sprite(text_sprite,image_index,x,y) // the wording of the button

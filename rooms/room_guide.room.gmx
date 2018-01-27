@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="obj_button_back" x="704" y="224" name="inst_37E3D17E" locked="0" code="" scaleX="1.15160000324249" scaleY="0.992308020591736" colour="4294967295" rotation="0"/>
-    <instance objName="object52" x="480" y="336" name="inst_5A0BF0B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

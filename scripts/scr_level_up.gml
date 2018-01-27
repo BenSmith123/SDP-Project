@@ -5,28 +5,42 @@ if global.experience >= global.max_exp // if player has leveled up
     global.experience = global.experience - global.max_exp // handles exp overflow
 
     // level limit    
-    if global.level = HIGHEST_LEVEL {
+    if global.level == HIGHEST_LEVEL {
         display_banner_message("You have reached the highest level")
         exit
     }
     
     global.level += 1 // level up!
     
-    // update the stats
-    global.max_hp += 7
+    // update state! - based on the previous increment of stats
+    global.max_exp += global.lvl_incr_max_exp
     
-    global.attack += 2
-    global.defence += 2
-    global.accuracy += 0.5
-    global.jump += 0.1
-    global.walk_speed += 0.1
+    global.max_hp += global.lvl_incr_max_hp
+    global.attack += global.lvl_incr_attack
+    global.defence += global.lvl_incr_defence
+    global.accuracy += global.lvl_incr_accuracy
+    global.jump += global.lvl_incr_jump
+    global.walk_speed += global.lvl_incr_walk_speed
     
-    if global.level > 10 {global.attack += 2}
+    // each level up, increase the level up-increase stats 
+    global.lvl_incr_max_exp += round(2.5)
     
-    // player effects and heal
+    global.lvl_incr_max_hp += 1
+    global.lvl_incr_attack += 0.5
+    global.lvl_incr_defence += 0.5
+    global.lvl_incr_accuracy += 0.01
+    global.lvl_incr_jump += 0.005
+    global.lvl_incr_walk_speed += 0.005
+    
+    
+    //if global.level > 10 {global.attack += 2}
+    
+    // update the current player object stats
     if instance_exists(obj_player)
     {
-        instance_create(obj_player.x,obj_player.y-40,obj_levelup_fx)
+        instance_create(obj_player.x,obj_player.y-40,obj_levelup_fx) // levelup effects
+        
+        obj_player.max_hp = global.max_hp
         obj_player.hp = obj_player.max_hp // give the player full health
         
         // update the players attributes
@@ -57,23 +71,10 @@ if global.experience >= global.max_exp // if player has leveled up
     
     if global.level = 10
     {
+        if instance_exists(obj_player)
         instance_create(x,y,obj_pick_class)
         instance_deactivate_object(obj_hud)
     }    
-
-    
-    
-    if global.level < 10 
-    {global.max_exp += 5 exit}
-    
-    if global.level < 20
-    {global.max_exp += 10 exit}
-    
-    if global.level < 30
-    {global.max_exp += 15 exit}
-    //{global.max_exp += round(global.max_exp*0.05)}
-
-    
     
 }
 

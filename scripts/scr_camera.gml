@@ -1,4 +1,4 @@
-
+/*
 if global.overall_view = true // debug (show whole room)
 {
     view_xview[0] = 0
@@ -13,7 +13,7 @@ if global.overall_view = true // debug (show whole room)
     view_yport[0] = 0
     
     exit
-}
+}*/
 
 
 /***

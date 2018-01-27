@@ -36,7 +36,8 @@ can_turn = true
 stay = false // done move (while fighting, etc)
 hurt = false // ? unused atm
 show_hp = false // only show hp when provoked
-tag_y = round(sprite_get_height(mask_index)/2) // get the mask height so it can draw the tags below (name, hp)
+tag_y = sprite_get_height(mask_index)/2 +20 // + sprite_get_height(mask_index)/4
+//tag_y = round((sprite_get_height(mask_index)/2) + sprite_get_height(mask_index)/3) // get the mask height so it can draw the tags below (name, hp)
 attacking = false // for sprite managing
 health_colour = 1 // colour of health bar, 1 = green
 soft_kill = false // when ai is not killed by the player, don't reward

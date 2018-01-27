@@ -88,7 +88,7 @@ scr_gravity()
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_block">
+    <event eventtype="4" ename="obj_block_main">
       <action>
         <libid>1</libid>
         <id>603</id>

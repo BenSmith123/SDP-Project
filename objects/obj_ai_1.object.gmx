@@ -53,7 +53,7 @@ heal_time = 0 // seconds
 heal_amount = 0 
 
 
-scr_ai_initialize()
+scr_ai_initialise()
 
 
 </string>

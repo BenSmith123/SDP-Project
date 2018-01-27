@@ -78,7 +78,7 @@ attacker_id = ""
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_block">
+    <event eventtype="4" ename="obj_block_main">
       <action>
         <libid>1</libid>
         <id>203</id>

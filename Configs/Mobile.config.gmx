@@ -286,8 +286,8 @@
     <option_ios_advertising_key></option_ios_advertising_key>
     <option_ios_advertising_type>iAds</option_ios_advertising_type>
     <option_ios_app_id>com.domain.sdpproject</option_ios_app_id>
-    <option_ios_build_version>0</option_ios_build_version>
-    <option_ios_certificate>iPhone Distribution: Ben Smith (8N7693WL5S)</option_ios_certificate>
+    <option_ios_build_version>8</option_ios_build_version>
+    <option_ios_certificate>iPhone Developer: Ben Smith (CKZY5KV7GS)</option_ios_certificate>
     <option_ios_device_type>3</option_ios_device_type>
     <option_ios_display_name>SDP Project</option_ios_display_name>
     <option_ios_facebook_app_display_name></option_ios_facebook_app_display_name>
@@ -326,15 +326,15 @@
     <option_ios_minor_version>0</option_ios_minor_version>
     <option_ios_orient_landscape>-1</option_ios_orient_landscape>
     <option_ios_orient_landscape_right>-1</option_ios_orient_landscape_right>
-    <option_ios_orient_portrait>-1</option_ios_orient_portrait>
-    <option_ios_orient_portrait_upside_down>-1</option_ios_orient_portrait_upside_down>
+    <option_ios_orient_portrait>0</option_ios_orient_portrait>
+    <option_ios_orient_portrait_upside_down>0</option_ios_orient_portrait_upside_down>
     <option_ios_provisioning>BenSmith - com.domain.electroball</option_ios_provisioning>
     <option_ios_push_enable>0</option_ios_push_enable>
     <option_ios_scale>-1</option_ios_scale>
     <option_ios_set_device_id></option_ios_set_device_id>
     <option_ios_splash_png>Configs\Mobile\ios\splash.png</option_ios_splash_png>
     <option_ios_splash_time>0</option_ios_splash_time>
-    <option_ios_team_id></option_ios_team_id>
+    <option_ios_team_id>Ben Smith</option_ios_team_id>
     <option_ios_texture_page>1024</option_ios_texture_page>
     <option_ios_use_test_ads>0</option_ios_use_test_ads>
     <option_lastchanged></option_lastchanged>
@@ -682,8 +682,8 @@
     <constants number="4">
       <constant name="IS_WINDOWS">false</constant>
       <constant name="IS_MOBILE">true</constant>
-      <constant name="WIDTH">960</constant>
-      <constant name="HEIGHT">640</constant>
+      <constant name="WIDTH">1366</constant>
+      <constant name="HEIGHT">768</constant>
     </constants>
   </ConfigConstants>
 </Config>

@@ -15,6 +15,6 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>64</width>
-  <height>2000</height>
+  <height>1000</height>
   <data>images\background1.png</data>
 </background>

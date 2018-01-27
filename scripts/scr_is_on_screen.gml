@@ -1,4 +1,4 @@
-///is_on_screen(returns true if the object is on screen)
+///scr_is_on_screen(returns true if the object is on screen)
 
 // do this in separate IF statements to save memory
 if x < view_xview[0]

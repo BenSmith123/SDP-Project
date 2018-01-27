@@ -26,6 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>/// debug game controls
+
+/*
+instance_activate_all();
+instance_deactivate_region(view_xview[0] - 64, view_yview - 64, view_wview[0] + 128, view_hview + 128, false, true); //deactiveate all outside view with a 64 border
+instance_activate_object(obj_hud); //reactivate
+*/
+
 if global.user = "GM"
 {
     //if global.system = "Windows"
@@ -86,9 +93,35 @@ if global.user = "GM"
 
 
 
+
 // instance_deactivate_region(view_xview[0],view_yview[0],WIDTH,HEIGHT,false,true)
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if IS_MOBILE
+{scr_save_game()}
 </string>
           </argument>
         </arguments>
@@ -111,7 +144,8 @@ if global.user = "GM"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// set resolution and debug info
+            <string>/// set debug info
+
 set_resolution()
 
 target = 0 // what player to target for the camera
@@ -227,15 +261,17 @@ scr_save_game()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// game start
+            <string>/// game start &amp; non-saved variables
 
 scr_particle_system()
-
 
 global.user = "GM"
 global.error = ""
 global.show_debug = false
 global.overall_view = false // show the entire room
+
+
+global.toggle_resolution_scale = false // debug for testing resolutions
 
 
 global.system = "" // incase there is no OS type? windows or mobile
@@ -254,8 +290,8 @@ global.player_start_y = 0
 
 randomize() // randomize gamemakers seed
 
-display_set_gui_size(WIDTH,HEIGHT)
-surface_resize(application_surface, display_get_gui_width(), display_get_gui_height()); 
+//display_set_gui_size(WIDTH,HEIGHT)
+//surface_resize(application_surface, display_get_gui_width(), display_get_gui_height()); 
 //surface_resize(application_surface,WIDTH,HEIGHT)
 
 // SETTINGS
@@ -301,14 +337,11 @@ global.joystick_enabled = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// saved global variables and then try load game
+            <string>/// call scr_initialise then call scr_load_game
 
-
-scr_initialize() // initialize all the saved global variables
+scr_initialize() // initialise all the saved global variables
 
 scr_load_game() // if no save game then these variables aren't overridden
-
-
 
 </string>
           </argument>

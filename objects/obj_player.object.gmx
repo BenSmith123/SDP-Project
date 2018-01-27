@@ -68,7 +68,7 @@ bullet = 0 // creating bullet object
 can_be_hit = true // when the player can be hit again after taking damage
 health_colour = 1 // colour of the healthbar, 1 = green
 start_speed = global.walk_speed
-second_jump = false // see if its the players second jump
+can_second_jump = false // not related to double jump skill - if not on ground and hasnt already second jumped
 name_width = round(string_width("Ben7")/2-10) // divide by 2 to get the middle, -10 for extra space on each side
 
 head_x = 0 // the x position for the head (to match all player sprites)
@@ -80,15 +80,10 @@ move_jump = false
 move_attack = false
 move_temp = false // debug
 
-// SKILLS
-
-
-
-
+initialise_skills() // set the skills based on player class
 
 instance_create(x,y,obj_hud)
 
-set_classes()
 
 
 
@@ -306,8 +301,6 @@ move_direction = ""
 
 target = obj_player
 
-
-
 scr_camera()
 
 scr_gravity()
@@ -325,7 +318,7 @@ if hp &lt;= 0
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_block">
+    <event eventtype="4" ename="obj_block_main">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -350,6 +343,7 @@ if other.solid = true
         move_contact_solid(270,2)
     } 
     vspeed = 0
+    can_second_jump = true
 }
 
 </string>
@@ -460,8 +454,8 @@ else
             <string>
 scr_text_1()
 
-//draw_sprite_stretched(spr_name_label,0,round(x-string_width(global.name)/2-10),y+34,string_width(global.name)+20,18) // name label
-draw_sprite_stretched(spr_name_label,0,x-name_width,y+34,string_width(global.name)+20,18) // name label
+draw_sprite_stretched(spr_name_label,0,round(x-string_width(global.name)/2-10),y+34,string_width(global.name)+20,18) // name label
+//draw_sprite_stretched(spr_name_label,0,x-name_width,y+34,string_width(global.name)+20,18) // name label
 
 
 draw_text(x,y+44,global.name) // player name
@@ -551,7 +545,6 @@ if attacking = true
     sprite_index = attack_sprite
     if image_index = 1 {scr_damage()}//attacking = false}
 }
-
 
 //platform = place_meeting(x,y+1,obj_block)
 //if place_meeting(x,y,platform)
