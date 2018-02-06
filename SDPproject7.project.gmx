@@ -5,7 +5,9 @@
     <Config>Configs\Mobile</Config>
   </Configs>
   <datafiles number="1" name="datafiles"/>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Basic Platformer Engine</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sound>sound\sound0</sound>
   </sounds>
@@ -36,11 +38,11 @@
       <sprite>sprites\spr_block_br</sprite>
       <sprite>sprites\spr_block_tr</sprite>
       <sprite>sprites\spr_block_test</sprite>
-      <sprite>sprites\sprite80</sprite>
-      <sprite>sprites\sprite84</sprite>
-      <sprite>sprites\sprite103</sprite>
       <sprite>sprites\spr_block</sprite>
-      <sprite>sprites\spr_block_ground</sprite>
+      <sprite>sprites\spr_block_dirt</sprite>
+      <sprite>sprites\spr_block_steel</sprite>
+      <sprite>sprites\spr_block_ground22</sprite>
+      <sprite>sprites\sprite103</sprite>
     </sprites>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\sprite66</sprite>
@@ -86,13 +88,6 @@
     <sprite>sprites\spr_marker_2</sprite>
     <sprite>sprites\spr_marker_1</sprite>
     <sprite>sprites\spr_head</sprite>
-    <sprites name="pickups">
-      <sprite>sprites\spr_heart_pickup</sprite>
-      <sprite>sprites\spr_speed_booster</sprite>
-      <sprite>sprites\spr_health_pickup</sprite>
-      <sprite>sprites\spr_coin</sprite>
-      <sprite>sprites\spr_coin_bronze</sprite>
-    </sprites>
     <sprite>sprites\spr_seeker</sprite>
     <sprite>sprites\sprite43</sprite>
     <sprite>sprites\spr_test</sprite>
@@ -125,13 +120,35 @@
     <sprite>sprites\sprite100</sprite>
     <sprite>sprites\sprite104</sprite>
     <sprite>sprites\icon</sprite>
+    <sprites name="pickups">
+      <sprite>sprites\spr_heart_pickup</sprite>
+      <sprite>sprites\spr_speed_booster</sprite>
+      <sprite>sprites\spr_health_pickup</sprite>
+      <sprite>sprites\spr_coin</sprite>
+      <sprite>sprites\spr_coin_bronze</sprite>
+    </sprites>
+    <sprite>sprites\spr_rock</sprite>
+    <sprite>sprites\spr_</sprite>
+    <sprite>sprites\sp_player</sprite>
+    <sprite>sprites\sp_solid</sprite>
+    <sprite>sprites\sp_platform_Hor</sprite>
+    <sprite>sprites\sp_key</sprite>
+    <sprite>sprites\sp_death</sprite>
+    <sprite>sprites\sp_enemy</sprite>
+    <sprite>sprites\sp_coin</sprite>
+    <sprite>sprites\sp_spike</sprite>
+    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\sp_enemy2</sprite>
+    <sprite>sprites\sp_bullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background3</background>
     <background>background\background1</background>
     <background>background\background4</background>
-    <background>background\bg_block</background>
+    <background>background\tile_block</background>
+    <background>background\tile_dirt</background>
+    <background>background\tile_steel</background>
     <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
@@ -201,6 +218,8 @@
     <script>scripts\scr_initialize.gml</script>
     <script>scripts\initialise_skills.gml</script>
     <script>scripts\is_on_screen.gml</script>
+    <script>scripts\items_script.gml</script>
+    <script>scripts\scr_init_room.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_arial_12</font>
@@ -300,7 +319,10 @@
       <object>objects\obj_t_reset_game</object>
       <object>objects\obj_t_level_up</object>
       <object>objects\obj_mobile_debug</object>
+      <object>objects\obj_temp_marker</object>
     </objects>
+    <object>objects\parent_item</object>
+    <object>objects\obj_item_rock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
@@ -318,6 +340,8 @@
     <room>rooms\room_settings</room>
     <room>rooms\room_guide</room>
     <room>rooms\room4</room>
+    <room>rooms\room2</room>
+    <room>rooms\room1_new</room>
   </rooms>
   <constants number="2">
     <constant name="HIGHEST_LEVEL">100</constant>

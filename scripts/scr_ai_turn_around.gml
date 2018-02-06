@@ -1,7 +1,6 @@
 
 if can_turn = true
 {
-    
     can_turn = false
     alarm[2] = 15
 
@@ -9,7 +8,5 @@ if can_turn = true
     {image_xscale = 1 exit}
     else
     {image_xscale = -1}
-
-
     
 }

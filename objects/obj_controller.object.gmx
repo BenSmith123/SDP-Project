@@ -8,6 +8,48 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// set the default sprite_index and tile_index
+// change the sprites based on the current level
+
+switch(room)
+{
+    case room11:
+        global.block_sprite = spr_block_steel
+        global.tile_sprite = tile_steel
+        break
+        
+    case room10:
+        global.block_sprite = spr_block_dirt
+        global.tile_sprite = tile_dirt
+        break
+        
+    default:
+        global.block_sprite = spr_block
+        global.tile_sprite = tile_block
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -267,7 +309,7 @@ scr_particle_system()
 
 global.user = "GM"
 global.error = ""
-global.show_debug = false
+global.show_debug = true
 global.overall_view = false // show the entire room
 
 

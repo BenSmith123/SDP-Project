@@ -13,6 +13,8 @@ platform_width = 24
 alarm[1] = 30
 
 
+block_infront = false // DEBUG, DELETE AFTER
+
 instance_create(x,y,obj_fx_teleport) // spawn fx
 
 

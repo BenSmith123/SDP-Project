@@ -1,7 +1,11 @@
 
-if place_meeting(x-10,y,obj_block) 
+    if place_meeting(x-1,y, obj_block)
+    {wall_stop = true}
+    
+    
+if place_meeting(x-10,y,obj_block)
 {
-
+    
      // loop to push the player up depending on the slope
      for(new_y = 0; new_y < 10; new_y++)
      {
@@ -17,6 +21,9 @@ if place_meeting(x-10,y,obj_block)
 }
 else
 {
+
+
+
     if attacking = false
     {
         state = "walkingL"
@@ -24,6 +31,8 @@ else
         if (hspeed >= -walk_speed)
         {hspeed -= 1}
     }
+    
+
     
 }
 

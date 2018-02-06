@@ -21,11 +21,12 @@
   <width>24</width>
   <height>24</height>
   <frames>
-    <frame index="0">images\spr_block_ground_0.png</frame>
-    <frame index="1">images\spr_block_ground_1.png</frame>
-    <frame index="2">images\spr_block_ground_2.png</frame>
-    <frame index="3">images\spr_block_ground_3.png</frame>
-    <frame index="4">images\spr_block_ground_4.png</frame>
-    <frame index="5">images\spr_block_ground_5.png</frame>
+    <frame index="0">images\spr_block_dirt_0.png</frame>
+    <frame index="1">images\spr_block_dirt_1.png</frame>
+    <frame index="2">images\spr_block_dirt_2.png</frame>
+    <frame index="3">images\spr_block_dirt_3.png</frame>
+    <frame index="4">images\spr_block_dirt_4.png</frame>
+    <frame index="5">images\spr_block_dirt_5.png</frame>
+    <frame index="6">images\spr_block_dirt_6.png</frame>
   </frames>
 </sprite>

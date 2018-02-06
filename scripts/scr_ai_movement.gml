@@ -16,19 +16,13 @@ if image_xscale = 1 // moving right
 {
     // MOVING LEFT AND RIGHT
     if stay = false
-       
-      {
-       //state = "Walking"    
-    
+    {
+       state = "Walking "+string(hspeed)    
         if image_xscale = -1
-        {
-            hspeed = -walkspeed
-        }
-        if image_xscale = 1
-        {
-            hspeed = walkspeed
-        }
+        {hspeed = -walkspeed}
         
+        if image_xscale = 1
+        {hspeed = walkspeed}
     }
     else
     {
@@ -47,7 +41,7 @@ if aggressive = true
 }
 
 
-scr_ai_block_jump()
+//scr_ai_block_jump()
 
 scr_ai_room_end()
 

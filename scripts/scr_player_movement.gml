@@ -7,6 +7,10 @@ else
 {walk_speed = start_speed/1.5}
 ***/
 
+if wall_stop = true and hspeed > 0
+{hspeed = 0}
+
+
 // WINDOWS AND VIRTUAL KEYS
 if keyboard_check(ord('A')) {move_left = true} // left
 if keyboard_check(ord('D')) {move_right = true} // right

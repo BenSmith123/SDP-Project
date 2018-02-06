@@ -5,9 +5,7 @@
 {
 
     if (distance_to_object(enemy) < 100)
-
-    {
-        
+    {    
         state = "Attack"
     
         stay = true

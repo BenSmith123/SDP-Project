@@ -1,3 +1,7 @@
+
+if block_infront == true
+{draw_text(x,y,"Block infront!")}
+
 if global.show_debug = true  // debug text
 {
 

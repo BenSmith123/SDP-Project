@@ -63,6 +63,7 @@ stance = "Spawn"
 image_speed = 0.1
 can_attack = true
 attacking = false
+wall_stop = false // stops getting stuck to walls
 move_direction = "" // for when key or arrow is pressed
 bullet = 0 // creating bullet object
 can_be_hit = true // when the player can be hit again after taking damage
