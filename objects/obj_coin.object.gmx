@@ -35,6 +35,32 @@ image_index = choose(0,1,2)
         </arguments>
       </action>
     </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// add coin, create fx
+
+global.coins += 1
+instance_create(x,y,obj_coin_fx)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
@@ -55,24 +81,6 @@ image_index = choose(0,1,2)
             <string>/// gravity
 
 scr_gravity()
-
-
-
-if place_meeting(x,y,obj_player)
-{
-if picked_up = false 
-{
-    global.coins += 1
-    
-    sprite_index = spr_coin_fx
-    
-    image_xscale = 0.2
-    image_yscale = 0.2
-
-    picked_up = true
-}
-}
-
 
 </string>
           </argument>
@@ -113,6 +121,30 @@ if other.solid = true
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// destroy self
+instance_destroy()
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -133,15 +165,6 @@ if other.solid = true
             <string>
 x = round(x)
 y = round(y)
-
-if picked_up = true
-{
-    image_alpha -= 0.05
-    image_xscale += 0.25
-    image_yscale += 0.25
-    
-    if image_alpha &lt;= 0 {instance_destroy()}
-}
 
 draw_self()
 </string>

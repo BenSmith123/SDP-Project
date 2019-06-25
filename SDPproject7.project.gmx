@@ -140,6 +140,7 @@
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\sp_enemy2</sprite>
     <sprite>sprites\sp_bullet</sprite>
+    <sprite>sprites\sprite114</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -256,6 +257,7 @@
     <object>objects\object63</object>
     <object>objects\obj_levelup_fx</object>
     <object>objects\obj_coin</object>
+    <object>objects\obj_coin_fx</object>
     <object>objects\obj_levelup_fx_spark</object>
     <object>objects\obj_life_pickup</object>
     <object>objects\obj_speed_boost</object>
