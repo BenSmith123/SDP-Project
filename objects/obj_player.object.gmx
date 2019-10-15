@@ -536,9 +536,9 @@ if (hspeed = 0 &amp;&amp; vspeed = 0) { if not place_free(x,y+1) {sprite_index =
 
 if (hspeed &lt; -1 || hspeed &gt; 1) {sprite_index = spr_player_walking}
 
-if not (vspeed = 0) &amp;&amp; (hspeed &lt; -1 || hspeed &gt; 1) {sprite_index = spr_player_jump_right}
+if not place_meeting(x,y+1,obj_block) &amp;&amp; (hspeed &lt; -1 || hspeed &gt; 1) {sprite_index = spr_player_jump_right}
 
-if not (vspeed = 0) &amp;&amp; (hspeed = 0) {sprite_index = spr_player_jump}
+if not place_meeting(x,y+1,obj_block) &amp;&amp; (hspeed = 0) {sprite_index = spr_player_jump}
 
 
 if attacking = true 
