@@ -15,9 +15,6 @@ if global.show_debug = true  // debug text
     
     if show_platform_variables = true
     {
-        draw_sprite(spr_marker,0,block.x,block.y)
-        draw_sprite(spr_marker,0,block2.x,block2.y)
-        
         draw_text(x,y-80,platform_width)
         
         draw_rectangle(x,y,x-leftx,y,false)

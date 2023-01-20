@@ -7,6 +7,7 @@
   <datafiles number="1" name="datafiles"/>
   <NewExtensions>
     <extension index="0">extensions\Basic Platformer Engine</extension>
+    <extension index="1">extensions\Extension6</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\sound0</sound>
@@ -89,7 +90,6 @@
     <sprite>sprites\spr_marker_1</sprite>
     <sprite>sprites\spr_head</sprite>
     <sprite>sprites\spr_seeker</sprite>
-    <sprite>sprites\sprite43</sprite>
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\sprite28</sprite>
     <sprites name="effects">
@@ -106,7 +106,6 @@
     <sprite>sprites\sprite83</sprite>
     <sprite>sprites\sprdfdf</sprite>
     <sprite>sprites\sprite70</sprite>
-    <sprite>sprites\sprite79</sprite>
     <sprite>sprites\sprite73</sprite>
     <sprite>sprites\spr_coin_fx</sprite>
     <sprite>sprites\sprite67</sprite>
@@ -137,10 +136,27 @@
     <sprite>sprites\sp_enemy</sprite>
     <sprite>sprites\sp_coin</sprite>
     <sprite>sprites\sp_spike</sprite>
-    <sprite>sprites\sprite8</sprite>
     <sprite>sprites\sp_enemy2</sprite>
     <sprite>sprites\sp_bullet</sprite>
     <sprite>sprites\sprite114</sprite>
+    <sprites name="Online">
+      <sprite>sprites\jump_right</sprite>
+      <sprite>sprites\fall_left</sprite>
+      <sprite>sprites\walk_left</sprite>
+      <sprite>sprites\walk_right</sprite>
+      <sprite>sprites\fall_right</sprite>
+      <sprite>sprites\jump_left</sprite>
+      <sprite>sprites\sPuff</sprite>
+      <sprite>sprites\sJump</sprite>
+      <sprite>sprites\sRight</sprite>
+      <sprite>sprites\sLeft</sprite>
+    </sprites>
+    <sprites name="Server">
+      <sprite>sprites\sCreateServer</sprite>
+      <sprite>sprites\sCreateServer_Highlight</sprite>
+      <sprite>sprites\sTextBox</sprite>
+    </sprites>
+    <sprite>sprites\spr_button_online</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -150,9 +166,14 @@
     <background>background\tile_block</background>
     <background>background\tile_dirt</background>
     <background>background\tile_steel</background>
+    <background>background\background22</background>
     <background>background\background2</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+    <path>paths\path1</path>
+    <path>paths\path2</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\GUIDE.gml</script>
     <script>scripts\scr_particle_system.gml</script>
@@ -221,6 +242,16 @@
     <script>scripts\is_on_screen.gml</script>
     <script>scripts\items_script.gml</script>
     <script>scripts\scr_init_room.gml</script>
+    <scripts name="Networking">
+      <script>scripts\CreateCollisionMap.gml</script>
+      <script>scripts\AddVKey.gml</script>
+      <script>scripts\ConnectDisconnectClient.gml</script>
+      <script>scripts\ServerRecievedData.gml</script>
+      <script>scripts\SendKey.gml</script>
+      <script>scripts\SendName.gml</script>
+      <script>scripts\SendKeepAlive.gml</script>
+      <script>scripts\GetCollision.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_arial_12</font>
@@ -230,6 +261,8 @@
     <font>fonts\font_level</font>
     <font>fonts\font3</font>
     <font>fonts\font_arial_8</font>
+    <font>fonts\font0</font>
+    <font>fonts\fName</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_controller</object>
@@ -255,14 +288,14 @@
     <object>objects\obj_heal_text</object>
     <object>objects\obj_fx_double_jump</object>
     <object>objects\object63</object>
-    <object>objects\obj_levelup_fx</object>
     <object>objects\obj_coin</object>
-    <object>objects\obj_coin_fx</object>
-    <object>objects\obj_levelup_fx_spark</object>
     <object>objects\obj_life_pickup</object>
     <object>objects\obj_speed_boost</object>
     <object>objects\obj_health_pickup</object>
     <objects name="effects">
+      <object>objects\obj_levelup_fx</object>
+      <object>objects\obj_levelup_fx_spark</object>
+      <object>objects\obj_coin_fx</object>
       <object>objects\obj_fx_spark</object>
       <object>objects\obj_fx_teleport</object>
       <object>objects\obj_fx_speed</object>
@@ -325,6 +358,23 @@
     </objects>
     <object>objects\parent_item</object>
     <object>objects\obj_item_rock</object>
+    <objects name="online example">
+      <object>objects\oPlayer</object>
+      <object>objects\obj_player_backup</object>
+      <object>objects\oBaddie</object>
+      <object>objects\oMenu</object>
+      <object>objects\oServer</object>
+      <object>objects\oPuff</object>
+      <object>objects\oClient</object>
+      <object>objects\oLeftButton</object>
+      <object>objects\oRightButton</object>
+      <object>objects\oJumpButton</object>
+      <objects name="menu">
+        <object>objects\oCreateServerButton</object>
+        <object>objects\oTextBox</object>
+      </objects>
+      <object>objects\obj_button_online</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
@@ -335,6 +385,11 @@
     <room>rooms\room10</room>
     <room>rooms\room_control_panel</room>
     <room>rooms\room_pvp</room>
+    <rooms name="networkingExample">
+      <room>rooms\Menu</room>
+      <room>rooms\room_online_play</room>
+      <room>rooms\Level1</room>
+    </rooms>
     <room>rooms\room_arena</room>
     <room>rooms\room7</room>
     <room>rooms\room_character</room>
@@ -343,11 +398,21 @@
     <room>rooms\room_guide</room>
     <room>rooms\room4</room>
     <room>rooms\room2</room>
+    <room>rooms\room_online_lobby</room>
     <room>rooms\room1_new</room>
+    <room>rooms\room21</room>
   </rooms>
-  <constants number="2">
+  <constants number="10">
     <constant name="HIGHEST_LEVEL">100</constant>
     <constant name="SCREEN_DISTANCE">1000</constant>
+    <constant name="NETWORK_LOGIN">0</constant>
+    <constant name="NETWORK_PLAY">1</constant>
+    <constant name="PING_CMD">2</constant>
+    <constant name="LEFT_KEY">0</constant>
+    <constant name="RIGHT_KEY">1</constant>
+    <constant name="JUMP_KEY">2</constant>
+    <constant name="KEY_CMD">0</constant>
+    <constant name="NAME_CMD">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

@@ -7,8 +7,11 @@ else
 {walk_speed = start_speed/1.5}
 ***/
 
-if wall_stop = true and hspeed > 0
-{hspeed = 0}
+if wall_stop = true and hspeed != 0
+{hspeed = 0
+wall_stop = false
+}
+
 
 
 // WINDOWS AND VIRTUAL KEYS

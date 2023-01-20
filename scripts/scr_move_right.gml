@@ -1,5 +1,10 @@
 
 
+    //if place_meeting(x+walk_speed,y, obj_block)
+    //{wall_stop = true}
+    
+    
+
 
 if place_meeting(x+10,y,obj_block) 
 {
@@ -9,8 +14,9 @@ if place_meeting(x+10,y,obj_block)
          // checks for place free above the slope
          if(place_free(x+walk_speed,y-new_y))
          {
+             state = "slopeR"
              image_xscale = 1
-             hspeed = walk_speed
+             hspeed = walk_speed / 1.5
              y -= new_y // move player up
              break
          }

@@ -13,7 +13,7 @@ else
 room_speed = 60 
 
 
-window_set_fullscreen(true)
+//window_set_fullscreen(true)
 window_set_size(view_wport[0], view_hport[0])
 
 
