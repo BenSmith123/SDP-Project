@@ -1,8 +1,8 @@
 // called in the first room of the games creation code
 // ^^ initialises the games room settings for scaling (16:9 ratio)
 
-var base_w = WIDTH;
-var base_h = HEIGHT;
+var base_w = display_get_width();
+var base_h = display_get_height();
 var aspect = base_w / base_h ; // get the GAME aspect ratio
 
 /***** ignore portrait

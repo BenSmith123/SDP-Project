@@ -17,7 +17,7 @@ if can_attack = true
     
     
 /////////////////// MELEE ATTACKS ///////////////////
-    if melee_attack = true
+    if melee_attack = true && enemy
     {
         // y position meeting
         if y > enemy.y-20{ if y < enemy.y+20 {

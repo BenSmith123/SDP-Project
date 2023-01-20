@@ -1,8 +1,8 @@
 
 if global.toggle_resolution_scale == false
 {
-    ww = WIDTH
-    hh = HEIGHT
+    ww = display_get_width() // WIDTH
+    hh = display_get_height() // HEIGHT
 }
 else
 {
@@ -14,7 +14,7 @@ room_speed = 60
 
 
 //window_set_fullscreen(true)
-window_set_size(view_wport[0], view_hport[0])
+//window_set_size(view_wport[0], view_hport[0])
 
 
 view_enabled = true

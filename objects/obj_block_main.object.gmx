@@ -55,7 +55,7 @@ if instance_exists(obj_player)
 {
     if can_jump_through = true // can be jumped through if theres no block above or below it
     {
-        if distance_to_object(obj_player) &lt; 120
+        if distance_to_object(obj_player) &lt; 300 // temp distance
         {
             //if not place_meeting(x-10,y,obj_block) or not place_meeting(x+10,y,obj_block)
             /*****
@@ -66,8 +66,8 @@ if instance_exists(obj_player)
             *****/
             //if place_meeting(x,y+50,obj_player){
             
-            //if obj_player.bbox_bottom &gt; bbox_top
-            if obj_player.y+24 &gt; y
+            if obj_player.bbox_bottom+1 &gt; bbox_top // &amp;&amp; obj_player.sprite_index != spr_player_walking
+            //if obj_player.y+24 &gt; y
             {solid = false exit}
             else
             {solid = true}

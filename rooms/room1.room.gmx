@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>4079166</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>scr_set_aspect_ratio()</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

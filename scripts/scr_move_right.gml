@@ -17,6 +17,7 @@ if place_meeting(x+10,y,obj_block)
              state = "slopeR"
              image_xscale = 1
              hspeed = walk_speed / 1.5
+             if place_free(x,y){ hspeed = walk_speed }
              y -= new_y // move player up
              break
          }

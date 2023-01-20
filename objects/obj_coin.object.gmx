@@ -30,6 +30,7 @@ picked_up = false
 image_speed = 0.1
 
 image_index = choose(0,1,2)
+
 </string>
           </argument>
         </arguments>
@@ -80,7 +81,11 @@ instance_create(x,y,obj_coin_fx)
             <kind>1</kind>
             <string>/// gravity
 
-scr_gravity()
+if (!place_meeting(x,y+1,obj_block_main))
+{gravity = 0.5}
+else
+{gravity = 0}
+vspeed = min(12,vspeed)
 
 </string>
           </argument>
@@ -165,6 +170,9 @@ instance_destroy()
             <string>
 x = round(x)
 y = round(y)
+
+image_xscale = 2
+image_yscale = 2
 
 draw_self()
 </string>
