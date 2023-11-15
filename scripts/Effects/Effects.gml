@@ -1,4 +1,4 @@
-function scr_hit_effect() {
+function effect_projectile_destroy() {
 
 	//instance_create(x-(other.x+x),y,obj_fx_spark)
 
