@@ -2,7 +2,7 @@
 
 scr_particle_system()
 
-game_set_speed(30, gamespeed_fps);
+game_set_speed(60, gamespeed_fps);
 
 
 global.user = "GM"
@@ -27,8 +27,7 @@ global.player_start_y = 0
 
 randomize() // randomize gamemakers seed
 
-display_set_gui_size(WIDTH,HEIGHT)
-surface_resize(application_surface,WIDTH,HEIGHT)
+
 
 // SETTINGS
 global.joystick_enabled = true

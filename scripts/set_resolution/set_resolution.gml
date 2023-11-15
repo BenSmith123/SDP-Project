@@ -1,7 +1,7 @@
-function set_resolution() {
+function set_resolution()
+{
+	
 
-
-	room_speed = 60 
 
 	view_enabled = true
 	__view_set( e__VW.Visible, 0, true )
@@ -21,7 +21,6 @@ function set_resolution() {
 	    window_set_size(__view_get( e__VW.WPort, 0 ), __view_get( e__VW.HPort, 0 ))
 	}
 
-
-
-
+	display_set_gui_size(WIDTH, HEIGHT)
+	surface_resize(application_surface, WIDTH, HEIGHT)
 }

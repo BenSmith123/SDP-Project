@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [
     {"name":"Player","order":93,"path":"folders/Objects/Player.yy",},
+    {"name":"Controllers","order":95,"path":"folders/Objects/Controllers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_player_mask","order":1,"path":"sprites/spr_player_mask/spr_player_mask.yy",},
@@ -197,7 +198,6 @@
     {"name":"font_level","order":9,"path":"fonts/font_level/font_level.yy",},
     {"name":"font3","order":11,"path":"fonts/font3/font3.yy",},
     {"name":"font_arial_8","order":13,"path":"fonts/font_arial_8/font_arial_8.yy",},
-    {"name":"obj_controller","order":1,"path":"objects/obj_controller/obj_controller.yy",},
     {"name":"obj_joystick","order":3,"path":"objects/obj_joystick/obj_joystick.yy",},
     {"name":"obj_hud","order":5,"path":"objects/obj_hud/obj_hud.yy",},
     {"name":"parent_player","order":7,"path":"objects/parent_player/parent_player.yy",},
