@@ -1,4 +1,4 @@
 
-scr_gravity()
+apply_gravity()
 
 

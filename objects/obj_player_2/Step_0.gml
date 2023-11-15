@@ -1,7 +1,7 @@
 
 move_direction = ""
 
-scr_gravity()
+apply_gravity()
 
 scr_player_2_movement()
 

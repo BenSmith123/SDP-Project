@@ -1,5 +1,5 @@
 
-scr_gravity()
+apply_gravity()
 
 scr_ai_movement()
 
