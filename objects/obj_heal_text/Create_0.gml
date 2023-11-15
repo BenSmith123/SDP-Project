@@ -1,5 +1,6 @@
 
 target = 0 // set by object that created this
+y2 = 0 // 
 
 image_alpha = 1
 
@@ -11,11 +12,6 @@ col2 = c_aqua
 col3 = c_blue
 col4 = c_blue
 //bottom right
-
-
-y2 = -(sprite_get_height(target.mask_index)/2)-60
-
-
 
 
 

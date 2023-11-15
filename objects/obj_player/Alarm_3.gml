@@ -2,8 +2,9 @@
 
 
 
-heal_text = instance_create(x,y,obj_heal_text)
+var heal_text = instance_create(x,y,obj_heal_text)
 heal_text.target = id
+heal_text.y2 = -(sprite_get_height(mask_index)/2)-60
 heal_text.heal_amount = heal_amount
 
 hp += heal_amount
