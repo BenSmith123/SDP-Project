@@ -2,9 +2,9 @@
 fade_out = false
 
 // move each message down the que
-for(i = 0; i < message_que; i++)
+for(var i = 0; i < message_que; i++)
 {
-    message[i] = message[i+1]
+    text[i] = text[i+1]
 }
 
 alarm[0] = 360 // reset the countdown for the next message

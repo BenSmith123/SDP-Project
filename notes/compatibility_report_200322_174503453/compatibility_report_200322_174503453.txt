@@ -36,9 +36,6 @@ Converted builtin - line 8: view_hport -> __view_get( e__VW.HPort, 0 )
 Converted builtin - line 13: view_wview -> __view_get( e__VW.WView, 0 )
 Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
 
-Converting GML script: ${project_dir}\scripts\display_banner_message\display_banner_message.gml
-Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
-
 Converting GML script: ${project_dir}\scripts\scr_pause_game\scr_pause_game.gml
 Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
 Converted builtin - line 8: view_yview[0] -> __view_get( e__VW.YView, 0 )
@@ -106,7 +103,8 @@ Converting GML script: ${project_dir}\objects\obj_controller\KeyPress_80.gml
 Converted description /// @description  pause game
 
 Converting GML script: ${project_dir}\objects\obj_controller\KeyPress_8.gml
-Converted description /// @description  pause game (android)/// @param android
+Converted description /// @description  pause game (android)
+/// @param android
 
 Converting GML script: ${project_dir}\objects\obj_hud\Create_0.gml
 Converted string - line 28: 'A' -> "A"
@@ -129,15 +127,6 @@ Converted string - line 4: "Tip \#" -> "Tip \\#"
 Converting GML script: ${project_dir}\objects\obj_pause_button\Draw_64.gml
 Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
 Converted builtin - line 3: view_yview[0] -> __view_get( e__VW.YView, 0 )
-
-Converting GML script: ${project_dir}\objects\obj_message_banner\Create_0.gml
-Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
-
-Converting GML script: ${project_dir}\objects\obj_message_banner\Alarm_1.gml
-Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
-
-Converting GML script: ${project_dir}\objects\obj_message_banner\Draw_64.gml
-Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
 
 Converting GML script: ${project_dir}\objects\obj_arrow_key_left\Step_0.gml
 Converted string - line 3: 'A' -> "A"

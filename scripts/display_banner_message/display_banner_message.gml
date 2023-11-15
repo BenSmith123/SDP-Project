@@ -8,8 +8,5 @@ function display_banner_message(argument0) {
 	}
 
 	obj_message_banner.message_que += 1
-	obj_message_banner.message[obj_message_banner.message_que] = argument0
-
-
-
+	obj_message_banner.text[obj_message_banner.message_que] = argument0
 }

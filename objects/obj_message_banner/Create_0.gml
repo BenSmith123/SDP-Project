@@ -1,5 +1,5 @@
 
-message[0] = ""
+text[0] = ""
 message_que = 0
 
 image_alpha = 0

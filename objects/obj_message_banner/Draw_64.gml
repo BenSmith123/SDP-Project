@@ -12,7 +12,7 @@ else
 draw_sprite_ext(sprite_index,0,WIDTH/2,0,3,1,0,c_white,image_alpha) // message_background
 
 scr_text_4()
-draw_text_color(WIDTH/2,50,string_hash_to_newline(message[1]),c_white,c_white,c_white,c_white,image_alpha) // display current message
+draw_text_color(WIDTH/2,50,string_hash_to_newline(text[1]),c_white,c_white,c_white,c_white,image_alpha) // display current message
 
 
 
