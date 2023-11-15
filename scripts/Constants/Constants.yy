@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "macros",
+  "name": "Constants",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
