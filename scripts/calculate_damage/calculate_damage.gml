@@ -2,8 +2,8 @@
 function calculate_damage(target) {
 
 	// text = created by object doing the damage
-	// damage = set by ai or passed to projectile 
-
+	// damage = set by ai or passed to projectile
+	
 	calculated_damage = round(damage-target.defence/2-irandom_range(0,target.defence/2)) // CALCULATE DAMAGE
 
 	if calculated_damage > 0 

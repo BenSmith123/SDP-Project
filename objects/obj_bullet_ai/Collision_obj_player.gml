@@ -1,5 +1,5 @@
 
-scr_ai_damage(other)
+deal_damage(other)
 
 instance_destroy()
 

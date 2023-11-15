@@ -40,8 +40,4 @@ function damage_mob() {
 	    text.damage = "Defend"
 	}
 
-
-
-
-
 }

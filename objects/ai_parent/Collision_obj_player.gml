@@ -1,6 +1,5 @@
 
-var damage = attack-irandom_range(0, accuracy) // calculate damage
+// DONT ADD VAR HERE - it will cause an error in the children ai
+damage = attack-irandom_range(0, accuracy) // calculate damage
 
-scr_ai_damage(other)
-
-
+deal_damage(other)

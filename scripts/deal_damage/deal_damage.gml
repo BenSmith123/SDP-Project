@@ -1,5 +1,5 @@
 /// @param {Id.Instance} TODO - description (player or ai or both?)
-function scr_ai_damage(argument0) {
+function deal_damage(argument0) {
 
 	target = argument0 // set argument0 to the target
 

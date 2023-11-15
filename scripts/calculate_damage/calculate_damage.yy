@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_calculate_damage",
+  "name": "calculate_damage",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
