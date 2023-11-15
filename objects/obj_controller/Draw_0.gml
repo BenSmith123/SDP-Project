@@ -1,2 +1,2 @@
 
-effect_projectile_destroy()
+draw_game_error_text()

@@ -1,4 +1,4 @@
-function scr_game_error_text() {
+function draw_game_error_text() {
 
 	// debug game controls
 
@@ -16,7 +16,6 @@ function scr_game_error_text() {
 
 	        draw_text(x+10,y+HEIGHT-240,string_hash_to_newline(""+string(display_get_width())))
         
-    
 	        //draw_text(x+10,y+HEIGHT-200,"deviceX:  " +string(device_mouse_x(0)) +string("#deviceY: " +string(device_mouse_y(0))))
     
 	        //draw_text(x+10,y+HEIGHT-160,)
@@ -33,9 +32,5 @@ function scr_game_error_text() {
         
 	    }
 	}
-
-
-
-
 
 }
