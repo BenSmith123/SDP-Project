@@ -1,0 +1,192 @@
+Converting GML script: ${project_dir}\scripts\scr_game_error_text\scr_game_error_text.gml
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 23: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 23: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\scripts\scr_camera\scr_camera.gml
+Converted builtin - line 42: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 42: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 43: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] = 0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 46: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 46: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 47: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 49: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_yview[0] = 0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 49: view_yview[0] = 0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 43: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 7: view_wview[0] = room_width -> __view_set( e__VW.WView, 0, room_width )
+Converted builtin - line 47: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 8: view_hview[0] = room_height -> __view_set( e__VW.HView, 0, room_height )
+Converted builtin - line 12: view_xport[0] = 0 -> __view_set( e__VW.XPort, 0, 0 )
+Converted builtin - line 13: view_yport[0] = 0 -> __view_set( e__VW.YPort, 0, 0 )
+Converted builtin - line 10: view_wport[0] = room_width -> __view_set( e__VW.WPort, 0, room_width )
+Converted builtin - line 11: view_hport[0] = room_height -> __view_set( e__VW.HPort, 0, room_height )
+Converted builtin - line 43: view_xview[0] += ((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.03 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.03) )
+Converted builtin - line 47: view_yview[0] += ((y-(__view_get( e__VW.HView, 0 )/2)) - __view_get( e__VW.YView, 0 )) * 0.03 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (((y-(__view_get( e__VW.HView, 0 )/2)) - __view_get( e__VW.YView, 0 )) * 0.03) )
+
+Converting GML script: ${project_dir}\scripts\scr_camera_2_player\scr_camera_2_player.gml
+Converted builtin - line 13: view_xview = (x1 + x2 - view_wview) / 2 -> __view_set( e__VW.XView, 0, (x1 + x2 - view_wview) / 2 )
+Converted builtin - line 17: view_yview = (y1 + y2 - view_hview) / 2 -> __view_set( e__VW.YView, 0, (y1 + y2 - view_hview) / 2 )
+Converted builtin - line 12: view_wview = vscale * vw -> __view_set( e__VW.WView, 0, vscale * vw )
+Converted builtin - line 16: view_hview = vscale * vh -> __view_set( e__VW.HView, 0, vscale * vh )
+Converted builtin - line 8: view_wport -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 8: view_hport -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 13: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: ${project_dir}\scripts\display_banner_message\display_banner_message.gml
+Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+
+Converting GML script: ${project_dir}\scripts\scr_pause_game\scr_pause_game.gml
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\scripts\set_resolution\set_resolution.gml
+Converted builtin - line 12: view_xview[0] = 0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 13: view_yview[0] = 0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 14: view_wview[0] = WIDTH -> __view_set( e__VW.WView, 0, WIDTH )
+Converted builtin - line 15: view_hview[0] = HEIGHT -> __view_set( e__VW.HView, 0, HEIGHT )
+Converted builtin - line 6: view_visible[0] = true -> __view_set( e__VW.Visible, 0, true )
+Converted builtin - line 8: view_xport[0] = 0 -> __view_set( e__VW.XPort, 0, 0 )
+Converted builtin - line 8: view_yport[0] = 0 -> __view_set( e__VW.YPort, 0, 0 )
+Converted builtin - line 20: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 9: view_wport[0] = WIDTH -> __view_set( e__VW.WPort, 0, WIDTH )
+Converted builtin - line 20: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 10: view_hport[0] = HEIGHT -> __view_set( e__VW.HPort, 0, HEIGHT )
+
+Converting GML script: ${project_dir}\scripts\scr_player_movement\scr_player_movement.gml
+Converted string - line 11: 'A' -> "A"
+Converted string - line 12: 'D' -> "D"
+Converted string - line 13: 'W' -> "W"
+Converted string - line 14: 'S' -> "S"
+Converted string - line 23: 'F' -> "F"
+
+Converting GML script: ${project_dir}\scripts\scr_player_2_movement\scr_player_2_movement.gml
+Converted string - line 15: 'F' -> "F"
+
+Converting GML script: ${project_dir}\scripts\scr_ai_debug\scr_ai_debug.gml
+Converted string - line 4: '1' -> "1"
+Converted string - line 5: '2' -> "2"
+Converted string - line 6: '3' -> "3"
+Converted string - line 7: '4' -> "4"
+
+Converting GML script: ${project_dir}\scripts\scr_initialize\scr_initialize.gml
+Converted description /// @description  saved global variables
+
+Font font_arial_12 has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_arial_12\font_arial_12.gms1.png
+Font font_arial_11_bold has been converted to font family Arial (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_arial_11_bold\font_arial_11_bold.gms1.png
+Font font6 has been converted to font family Arial (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font6\font6.gms1.png
+!!! Font font_damage uses a font (Snap ITC) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_damage\font_damage.gms1.png
+!!! Font font_level font family Arial Black is installed but couldn't match style - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_level\font_level.gms1.png
+!!! Font font3 uses a font (Snap ITC) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font3\font3.gms1.png
+Font font_arial_8 has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font_arial_8\font_arial_8.gms1.png
+Converting GML script: ${project_dir}\objects\obj_controller\Step_0.gml
+Converted description /// @description  debug game controls
+Converted string - line 9: 'Q' -> "Q"
+Converted string - line 28: 'G' -> "G"
+Converted string - line 30: 'V' -> "V"
+Converted string - line 47: 'L' -> "L"
+
+Converting GML script: ${project_dir}\objects\obj_controller\Other_3.gml
+Converted description /// @description  save the game
+
+Converting GML script: ${project_dir}\objects\obj_controller\Other_2.gml
+Converted description /// @description  game start
+
+Converting GML script: ${project_dir}\objects\obj_controller\KeyPress_80.gml
+Converted description /// @description  pause game
+
+Converting GML script: ${project_dir}\objects\obj_controller\KeyPress_8.gml
+Converted description /// @description  pause game (android)/// @param android
+
+Converting GML script: ${project_dir}\objects\obj_hud\Create_0.gml
+Converted string - line 28: 'A' -> "A"
+Converted string - line 35: 'D' -> "D"
+Converted string - line 42: 'W' -> "W"
+Converted string - line 49: 'S' -> "S"
+
+Converting GML script: ${project_dir}\objects\obj_player\Alarm_3.gml
+Converted description /// @description  heal the player
+
+Converting GML script: ${project_dir}\objects\obj_coin\Step_2.gml
+Converted description /// @description  gravity
+
+Converting GML script: ${project_dir}\objects\obj_tips\Draw_0.gml
+Converted string - line 4: "Tip \#" -> "Tip \\#"
+
+Converting GML script: ${project_dir}\objects\obj_guide\Draw_0.gml
+Converted string - line 4: "Tip \#" -> "Tip \\#"
+
+Converting GML script: ${project_dir}\objects\obj_pause_button\Draw_64.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\obj_message_banner\Create_0.gml
+Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+
+Converting GML script: ${project_dir}\objects\obj_message_banner\Alarm_1.gml
+Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+
+Converting GML script: ${project_dir}\objects\obj_message_banner\Draw_64.gml
+Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+
+Converting GML script: ${project_dir}\objects\obj_arrow_key_left\Step_0.gml
+Converted string - line 3: 'A' -> "A"
+
+Converting GML script: ${project_dir}\objects\obj_arrow_key_right\Step_0.gml
+Converted string - line 3: 'D' -> "D"
+
+Converting GML script: ${project_dir}\objects\obj_arrow_key_jump\Step_0.gml
+Converted string - line 3: 'W' -> "W"
+
+Converting GML script: ${project_dir}\objects\obj_arrow_key_attack\Step_0.gml
+Converted string - line 3: 'S' -> "S"
+
+Converting GML script: ${project_dir}\objects\ai_parent_BACKUP\Create_0.gml
+Converted string - line 3: 'Name' -> "Name"
+
+Converting GML script: ${project_dir}\objects\obj_pick_class\Alarm_0.gml
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\obj_pick_class\Draw_0.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\obj_npc_shop\Other_10.gml
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\obj_reset_game\Mouse_7.gml
+Converted description /// @description  reset game
+
+Missing audiogroup for sound: 'sound0' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'action/action_create_object.gml'
+Added compatibility script 'action/action_kill_object.gml'
+Added compatibility script 'action/action_set_relative.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'joystick/joystick_check_button.gml'
+Added compatibility script 'joystick/joystick_exists.gml'
+Added compatibility script 'joystick/joystick_xpos.gml'
+Added compatibility script 'joystick/__joystick_2_gamepad.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'joystick/__init_joystick.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script 'joystick/joystick_process_events.gml'
+Added compatibility script 'joystick/joystick_ypos.gml'
+Added compatibility script '__global_object_depths.gml'

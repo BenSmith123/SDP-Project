@@ -1,0 +1,4 @@
+
+can_attack = true
+
+
