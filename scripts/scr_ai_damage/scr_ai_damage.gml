@@ -1,5 +1,5 @@
+/// @param {Id.Instance} TODO - description (player or ai or both?)
 function scr_ai_damage(argument0) {
-	// PARAM: argument0 = object that ai is hitting
 
 	target = argument0 // set argument0 to the target
 
@@ -18,8 +18,7 @@ function scr_ai_damage(argument0) {
 	    text.col3 = c_red
 	    text.col4 = c_maroon
     
-	    do_damage = scr_calcuelate_damage(target)
-    
+	    do_damage = calculate_damage(target)
     
 	    if do_damage = true // if damage was done to the ai
 	    {
@@ -37,11 +36,6 @@ function scr_ai_damage(argument0) {
 	        target.vspeed = -1
         
 	        obj_hud.hit_alpha = 1
-        
 	    }
-    
 	}
-
-
-
 }

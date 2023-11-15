@@ -3,7 +3,7 @@
 
 enemy = other
 
-scr_damage()
+damage_mob()
 
 instance_destroy()
 

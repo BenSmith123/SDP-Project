@@ -1,4 +1,4 @@
-function scr_damage() {
+function damage_mob() {
 
 	// var enemy set by attacking script
 
@@ -9,7 +9,7 @@ function scr_damage() {
 	text.col3 = c_orange
 	text.col4 = c_orange
 
-	do_damage = scr_calcuelate_damage(enemy)
+	do_damage = calculate_damage(enemy)
 
 	if do_damage = true // knock back the enemy
 	{

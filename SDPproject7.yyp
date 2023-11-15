@@ -218,7 +218,7 @@
     {"id":{"name":"scr_button","path":"scripts/scr_button/scr_button.yy",},},
     {"id":{"name":"scr_arrow_key_create","path":"scripts/scr_arrow_key_create/scr_arrow_key_create.yy",},},
     {"id":{"name":"scr_mouse_hover","path":"scripts/scr_mouse_hover/scr_mouse_hover.yy",},},
-    {"id":{"name":"scr_calcuelate_damage","path":"scripts/scr_calcuelate_damage/scr_calcuelate_damage.yy",},},
+    {"id":{"name":"scr_calculate_damage","path":"scripts/scr_calculate_damage/scr_calculate_damage.yy",},},
     {"id":{"name":"set_classes","path":"scripts/set_classes/set_classes.yy",},},
     {"id":{"name":"Effects","path":"scripts/Effects/Effects.yy",},},
     {"id":{"name":"scr_initialize","path":"scripts/scr_initialize/scr_initialize.yy",},},

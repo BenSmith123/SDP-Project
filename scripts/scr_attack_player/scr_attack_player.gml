@@ -3,7 +3,7 @@ function scr_attack_player() {
 	if can_attack = true
 	{
 
-	    damage = attack-irandom_range(0,accuracy) // calcuelate damage
+	    damage = attack-irandom_range(0,accuracy) // calculate damage
    
 	    alarm[0] = 30 // can shoot again
 	    alarm[1] = 20 // for attacking sprite
@@ -29,7 +29,7 @@ function scr_attack_player() {
 	            {
 	                if enemy.x > x-120 // range for hitting
 	                {
-	                    alarm[9] = 15//scr_damage() // need to fix delay with attacking
+	                    alarm[9] = 15//damage_mob() // need to fix delay with attacking
 	                }
 	            }
 	        }
@@ -40,7 +40,7 @@ function scr_attack_player() {
 	            {
 	                if enemy.x < x+120
 	                {
-	                    alarm[9] = 15//scr_damage()
+	                    alarm[9] = 15//damage_mob()
 	                }
 	            }
 	        }

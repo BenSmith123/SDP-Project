@@ -1,2 +1,2 @@
-scr_damage()
+damage_mob()
 

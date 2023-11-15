@@ -1,6 +1,6 @@
 
 // create the dead body for AI
-dead_body = instance_create(x,y,obj_ai_dead)
+var dead_body = instance_create(x,y,obj_ai_dead)
 dead_body.sprite_index = sprite_dead
 dead_body.image_xscale = -image_xscale
 dead_body.hspeed = hspeed // knock back ai body on last hit
@@ -18,15 +18,14 @@ dead_body.friction = friction // knock back as far as the ai would have already 
     
     
     // create coins
-    coin_num = irandom_range(0,10)
+    var coin_num = irandom_range(0,10)
     repeat(coin_num)
     {
-        coin = instance_create(x,y,obj_coin)
+        var coin = instance_create(x,y,obj_coin)
         coin.hspeed = irandom_range(-3,3)
         coin.vspeed = irandom_range(-2,-4)
     }
 }
-//with (heal_text) instance_destroy()
 
 with obj_heal_text instance_destroy()
 

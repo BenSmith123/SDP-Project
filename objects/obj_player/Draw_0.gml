@@ -104,7 +104,7 @@ if not (vspeed = 0) && (hspeed = 0) {sprite_index = spr_player_jump}
 if attacking = true 
 {
     sprite_index = attack_sprite
-    if image_index = 1 {scr_damage()}//attacking = false}
+    if image_index = 1 { damage_mob() }//attacking = false}
 }
 
 
