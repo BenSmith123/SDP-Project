@@ -9,6 +9,14 @@ else if (vel_x > 0)
 }
 
 
+if attacking = true 
+{
+    sprite_index = attack_sprite
+    if image_index = 1 { damage_mob() }//attacking = false}
+}
+
+
+
 // This allows us to transition to some other sprite, depending on the currently assigned sprite, and some additional conditions.
 switch (sprite_index)
 {

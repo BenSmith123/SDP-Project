@@ -1,23 +1,12 @@
 function scr_player_movement() {
 
-	/***
-	half the speed of player when walking up a slope ??
-	if place_meeting(x,y+1,obj_block) 
-	{walk_speed = start_speed}
-	else
-	{walk_speed = start_speed/1.5}
-	***/
-
 	// WINDOWS AND VIRTUAL KEYS
-	if keyboard_check(ord("A")) {move_left = true} // left
-	if keyboard_check(ord("D")) {move_right = true} // right
-	if keyboard_check_pressed(ord("W")) {move_jump = true} // up
+	//if keyboard_check(ord("A")) {move_left = true} // left
+	//if keyboard_check(ord("D")) {move_right = true} // right
+	//if keyboard_check_pressed(ord("W")) {move_jump = true} // up
 	if keyboard_check_pressed(ord("S")) {move_attack = true} // attack
 
 	// ALTERNATE KEYS
-	if keyboard_check(vk_left) {move_left = true} // left
-	if keyboard_check(vk_right) {move_right = true} // right
-	if keyboard_check_pressed(vk_up) {move_jump = true} // up
 	if keyboard_check_pressed(vk_space) {move_attack = true}
 
 
@@ -42,8 +31,5 @@ function scr_player_movement() {
 	move_attack = false
 
 	move_temp = false // debug
-
-
-
 
 }

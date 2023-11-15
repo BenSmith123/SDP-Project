@@ -101,12 +101,6 @@ if not (vspeed = 0) && (hspeed < -1 || hspeed > 1) {sprite_index = spr_player_ju
 if not (vspeed = 0) && (hspeed = 0) {sprite_index = spr_player_jump}
 */
 
-if attacking = true 
-{
-    sprite_index = attack_sprite
-    if image_index = 1 { damage_mob() }//attacking = false}
-}
-
 
 //platform = place_meeting(x,y+1,obj_block)
 //if place_meeting(x,y,platform)
