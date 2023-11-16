@@ -1,8 +1,7 @@
-function AI_GUIDE() {
 
 	/***** AI GUIDE *****\
 
-	    gravity turned on (same as player)
+	- gravity turned on
 	- falling speed increases
 	- has max fall speed
 	- turns off when on ground
@@ -36,23 +35,3 @@ function AI_GUIDE() {
 	jump to dodge bullets
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* end AI_GUIDE */
-}

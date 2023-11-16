@@ -40,7 +40,7 @@ if stay = true {sprite_index = sprite_stand}
 
 if stay = false {sprite_index = sprite_walk}
 
-if place_free(x,y+1)
+if place_empty(x,y+vspeed, obj_block)
 {
     sprite_index = sprite_jump
     leftx = 0

@@ -5,26 +5,6 @@ draw_sprite_stretched(spr_name_label,0,x-string_width(string_hash_to_newline(glo
 
 draw_text(x,y+44,string_hash_to_newline(global.name)) // player name
 
-draw_text(x,y+80, "state:" + state) // test
-
-state = string(walk_speed)
-
-
-
-
-
-
-//yoo = instance_nearest(x,instance_furthest(x,y,obj_block),obj_block)
-//draw_sprite(spr_block_test,0,yoo.x,yoo.y)
-
-
-
-
-
-
-
-
-
 
 x = round(x)
 y = round(y)
@@ -62,10 +42,6 @@ draw_sprite(spr_test,0,above_block.x,above_block.y)}
                 }
             }
         }
-
-
-//if place_meeting(x,y+1,obj_block) {vspeed = 0} // ? fixes sprite issue 
-
 
 
         

@@ -64,8 +64,6 @@ switch (sprite_index)
 		{
 			// In that case we change its sprite to the idle sprite.
 			sprite_index = spr_player_stand;
-		
-			// We also reset the animation speed to 1, as it was set to 0 at the end of the fall animation.
 			image_speed = _image_speed;
 		}
 		break;
