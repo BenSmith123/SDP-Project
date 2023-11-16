@@ -8,11 +8,15 @@ else if (vel_x > 0)
 	image_xscale = 1;
 }
 
+if (!grounded) 
+{
+	sprite_index = spr_player_jump
+}
 
 if attacking = true 
 {
     sprite_index = attack_sprite
-    if image_index = 1 { damage_mob() }//attacking = false}
+    if image_index = 1 { damage_mob() } // attacking = false}
 }
 
 
@@ -20,9 +24,6 @@ if attacking = true
 // This allows us to transition to some other sprite, depending on the currently assigned sprite, and some additional conditions.
 switch (sprite_index)
 {
-	
-
-	
 	case spr_player_walking:
 		// Set the animation speed to 1, as it may have been set to 0 during the jump animation.
 		image_speed = _image_speed;
@@ -34,14 +35,6 @@ switch (sprite_index)
 			sprite_index = spr_player_stand;
 		}
 	
-		// This checks if the Y velocity of the player is greater than 1, meaning it is falling down.
-		// This would happen when the player walks off a ledge.
-		if (vel_y > 1)
-		{
-			// In that case we change its sprite to the fall one, and reset the frame to 0.
-			sprite_index = spr_player_jump;
-			image_index = 0;
-		}
 		break;
 
 /*
