@@ -1,2 +1,2 @@
-scr_reset_game()
 
+reset_game()

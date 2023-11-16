@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_reset_game",
+  "name": "load_game",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "General",
-    "path": "folders/Scripts/General.yy",
+    "name": "Game",
+    "path": "folders/Scripts/Game.yy",
   },
 }

@@ -40,9 +40,9 @@ if global.user = "GM"
         }
     
     
-    //if keyboard_check_pressed(ord('U')) {scr_save_game()}
-    //if keyboard_check_pressed(ord('I')) {scr_load_game()}
-    //if keyboard_check_pressed(ord('O')) {scr_reset_game()}
+    //if keyboard_check_pressed(ord('U')) {save_game()}
+    //if keyboard_check_pressed(ord('I')) {load_game()}
+    //if keyboard_check_pressed(ord('O')) {reset_game()}
     
     if keyboard_check_pressed(ord("L")) {obj_player.x = mouse_x; obj_player.y = mouse_y}
     

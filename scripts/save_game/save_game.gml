@@ -1,4 +1,4 @@
-function scr_save_game() {
+function save_game() {
 
 	////////// save the game (as temp ini) //////////
 	file = ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one

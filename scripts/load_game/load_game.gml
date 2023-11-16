@@ -1,4 +1,4 @@
-function scr_load_game() {
+function load_game() {
 
 	// loads the encoded file, decodes it, saves it as a new temporary file then 
 	// reads the decoded file to load a game then deletes the decoded file
@@ -69,15 +69,5 @@ function scr_load_game() {
 
 
 	}
-
-
-
-
-
-
-
-
-
-
 
 }

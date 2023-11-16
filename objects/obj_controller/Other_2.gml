@@ -39,9 +39,9 @@ global.joystick_enabled = true
 /// saved global variables and then try load game
 
 
-scr_initialize() // initialize all the saved global variables
+initialise_stored_globals() // initialise all the saved global variables
 
-scr_load_game() // if no save game then these variables aren't overridden
+load_game() // if no save game then these variables aren't overridden
 
 
 

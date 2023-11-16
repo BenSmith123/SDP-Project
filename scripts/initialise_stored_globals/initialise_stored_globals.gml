@@ -1,5 +1,5 @@
 /// @description  saved global variables
-function scr_initialize() {
+function initialise_stored_globals() {
 
 	// stats
 	global.current_kills = 0
@@ -25,8 +25,6 @@ function scr_initialize() {
 	global.heal_amount = 10 
 
 	global.coins = 0
-
-
 
 
 }
