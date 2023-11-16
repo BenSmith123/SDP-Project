@@ -3,17 +3,11 @@ function ai_draw_debug_info()
 	
 	if global.show_debug = false { exit }
 	
-	
-	draw_text(x+block_distance * image_xscale,y+jump_block_height, "x")
-	
-	
 	if keyboard_check_pressed(ord("1")) {show_detect_distance = !show_detect_distance}
 	if keyboard_check_pressed(ord("2")) {show_xy_meeting = !show_xy_meeting}
 	if keyboard_check_pressed(ord("3")) {show_main_variables = !show_main_variables}
 	if keyboard_check_pressed(ord("4")) {show_platform_variables = !show_platform_variables}
-    
-	//draw_sprite(spr_bullet,0,enemy.x,enemy.y)
-    
+
 	if show_platform_variables = true
 	{
 	    draw_sprite(spr_marker,0,block.x,block.y)
