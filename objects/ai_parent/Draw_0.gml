@@ -1,8 +1,4 @@
 
-
-block = instance_nearest(x-leftx,y+20,obj_block)
-block2 = instance_nearest(x+rightx,y+20,obj_block)
-
 ai_draw_debug_info()
 
 scr_text_1()
@@ -46,12 +42,8 @@ if place_empty(x,y+vspeed, obj_block)
     platform_width = 24
 }
 
-if attacking = true {sprite_index = sprite_attack}
+if attacking = true { sprite_index = sprite_attack }
 
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha) 
-
-
-
-
 
 

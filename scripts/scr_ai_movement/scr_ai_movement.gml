@@ -2,13 +2,11 @@ function scr_ai_movement() {
 
 	if image_xscale = -1 // moving left
 	{
-	    block_distance = -block_distance // how far away a block can be before walking into it or changing dir
 	    speeed = -walkspeed
 	}
 
 	if image_xscale = 1 // moving right
 	{
-	    block_distance = block_distance
 	    speeed = walkspeed
 	}
 
@@ -17,19 +15,10 @@ function scr_ai_movement() {
 	{
 	    // MOVING LEFT AND RIGHT
 	    if stay = false
-       
-	      {
-	       //state = "Walking"    
-    
-	        if image_xscale = -1
-	        {
-	            hspeed = -walkspeed
-	        }
-	        if image_xscale = 1
-	        {
-	            hspeed = walkspeed
-	        }
-        
+	    {
+		   state = "Walking"   
+		   // positive or negative walk speed depending on direction
+		   hspeed = walkspeed * image_xscale 
 	    }
 	    else
 	    {
