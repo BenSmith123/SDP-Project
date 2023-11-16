@@ -59,6 +59,7 @@ switch (sprite_index)
 
 	// Code under this case runs if the assigned sprite is 'spr_player_fall', meaning the player was falling downward.
 	case spr_player_jump:
+	case spr_player_jump_in_direction:
 		// This checks if the player is now on the ground
 		if (grounded)
 		{
@@ -66,6 +67,8 @@ switch (sprite_index)
 			sprite_index = spr_player_stand;
 			image_speed = _image_speed;
 		}
+		else if (vel_x != 0) sprite_index = spr_player_jump_in_direction
+		
 		break;
 
 	// 'default' code runs when none of the other cases are valid, meaning the currently assigned sprite is not covered by any

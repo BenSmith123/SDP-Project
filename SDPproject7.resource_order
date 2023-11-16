@@ -12,7 +12,7 @@
     {"name":"spr_player_stand","order":3,"path":"sprites/spr_player_stand/spr_player_stand.yy",},
     {"name":"spr_player_walking","order":5,"path":"sprites/spr_player_walking/spr_player_walking.yy",},
     {"name":"spr_player_jump","order":7,"path":"sprites/spr_player_jump/spr_player_jump.yy",},
-    {"name":"spr_player_jump_right","order":9,"path":"sprites/spr_player_jump_right/spr_player_jump_right.yy",},
+    {"name":"spr_player_jump_in_direction","order":9,"path":"sprites/spr_player_jump_in_direction/spr_player_jump_in_direction.yy",},
     {"name":"spr_player_dead","order":11,"path":"sprites/spr_player_dead/spr_player_dead.yy",},
     {"name":"spr_player_heal","order":13,"path":"sprites/spr_player_heal/spr_player_heal.yy",},
     {"name":"spr_player_attack","order":15,"path":"sprites/spr_player_attack/spr_player_attack.yy",},

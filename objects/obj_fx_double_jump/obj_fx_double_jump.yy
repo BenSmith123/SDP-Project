@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_jump_right",
-    "path": "sprites/spr_player_jump_right/spr_player_jump_right.yy",
+    "name": "spr_player_jump_in_direction",
+    "path": "sprites/spr_player_jump_in_direction/spr_player_jump_in_direction.yy",
   },
   "spriteMaskId": null,
   "visible": true,

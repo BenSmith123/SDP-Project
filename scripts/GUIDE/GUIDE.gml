@@ -3,12 +3,12 @@
 
 TO DO
 --------------------
-fix player jump sprite (should jump towards direction not just up when moving)
 put debug controls on screen
 fix camera view on large screens - lowest tiles should be at the bottom of screen
 also try simplify the scr_camera() script ^^
 what is object67? - delete it?
 fix ai movement - walks through slopes
+clean up /remove old scripts - get virtual joysticks fully working first
 
 menu links
 virtual keys
