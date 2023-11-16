@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_jump",
+  "name": "player_jump",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
