@@ -4,7 +4,7 @@
     * non-built in variables are set by the AI initialize code
     **********************************************************/
     
-    scr_ai_debug() // turn on the debug information
+    ai_draw_debug_info() // turn on the debug information
     scr_text_1() // set the text style that was pre-defined 
     
     // DRAW THE NAME TAG

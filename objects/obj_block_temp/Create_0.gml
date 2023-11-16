@@ -1,2 +1,3 @@
-can_jump_through = false;
-exit;
+
+// override parent create event
+image_speed = 0

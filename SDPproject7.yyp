@@ -196,7 +196,7 @@
     {"id":{"name":"scr_damage","path":"scripts/scr_damage/scr_damage.yy",},},
     {"id":{"name":"scr_teleport","path":"scripts/scr_teleport/scr_teleport.yy",},},
     {"id":{"name":"AI_GUIDE","path":"scripts/AI_GUIDE/AI_GUIDE.yy",},},
-    {"id":{"name":"scr_ai_debug","path":"scripts/scr_ai_debug/scr_ai_debug.yy",},},
+    {"id":{"name":"ai_draw_debug_info","path":"scripts/ai_draw_debug_info/ai_draw_debug_info.yy",},},
     {"id":{"name":"scr_ai_initialize","path":"scripts/scr_ai_initialize/scr_ai_initialize.yy",},},
     {"id":{"name":"scr_ai_attack","path":"scripts/scr_ai_attack/scr_ai_attack.yy",},},
     {"id":{"name":"scr_ai_movement","path":"scripts/scr_ai_movement/scr_ai_movement.yy",},},

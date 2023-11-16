@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_ai_debug",
+  "name": "ai_draw_debug_info",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

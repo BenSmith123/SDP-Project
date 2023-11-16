@@ -56,31 +56,9 @@ draw_sprite_stretched_ext(spr_ai_health_bar,health_colour,x-32,y+60,hp/max_hp*64
 if global.show_debug = true // debug text
 {
     draw_set_halign(fa_center)
-    draw_text(x,y-85,string_hash_to_newline("s " +string(state)))
-    draw_text(x,y-70,string_hash_to_newline("v: " +string(vspeed)))
-    draw_text(x,y-55,string_hash_to_newline("h: " +string(round(hspeed))))
+	var debug_text = "state" +string(state)
+    draw_text(x,y-85, string_hash_to_newline(debug_text))
 }
-
-
-
-//if keyboard_check_released(ord('A')) or keyboard_check_released(ord('D'))
-//{sprite_index=spr_player_stand exit}
-
-
-/*
-if (hspeed = 0 && vspeed = 0) { if not place_free(x,y+1) {sprite_index = spr_player_stand; state = "stand"}}
-
-if (hspeed < -1 || hspeed > 1) {sprite_index = spr_player_walking}
-
-if not (vspeed = 0) && (hspeed < -1 || hspeed > 1) {sprite_index = spr_player_jump_right}
-
-if not (vspeed = 0) && (hspeed = 0) {sprite_index = spr_player_jump}
-*/
-
-
-//platform = place_meeting(x,y+1,obj_block)
-//if place_meeting(x,y,platform)
-//{if platform.solid = true {vspeed = 0}}
 
 
 // body

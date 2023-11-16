@@ -3,7 +3,7 @@
 block = instance_nearest(x-leftx,y+20,obj_block)
 block2 = instance_nearest(x+rightx,y+20,obj_block)
 
-scr_ai_debug()
+ai_draw_debug_info()
 
 scr_text_1()
 
