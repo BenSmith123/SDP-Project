@@ -1,8 +1,8 @@
 function scr_player_movement() {
 
 	// WINDOWS AND VIRTUAL KEYS
-	//if keyboard_check(ord("A")) {move_left = true} // left
-	//if keyboard_check(ord("D")) {move_right = true} // right
+	if keyboard_check(ord("A")) { move_left = true }
+	if keyboard_check(ord("D")) { move_right = true }
 	//if keyboard_check_pressed(ord("W")) {move_jump = true} // up
 	if keyboard_check_pressed(ord("S")) {move_attack = true} // attack
 
@@ -15,9 +15,9 @@ function scr_player_movement() {
 
 
 	// call the scripts for whatever wariable active
-	// variables have to be used for the android virtual keys to work
-	if move_left = true {scr_move_left()}
-	if move_right = true {scr_move_right()}
+	// variables have to be used for the mobile virtual keys to work
+	if move_left = true { player_move_horizontally() }
+	if move_right = true { player_move_horizontally() }
 	if move_jump = true {scr_jump()}
 	if move_attack = true {scr_attack_player()}
 

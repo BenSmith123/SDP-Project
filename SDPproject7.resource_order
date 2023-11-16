@@ -111,6 +111,7 @@
     {"name":"sprite67","order":81,"path":"sprites/sprite67/sprite67.yy",},
     {"name":"sprite87","order":83,"path":"sprites/sprite87/sprite87.yy",},
     {"name":"spr_debug_box","order":85,"path":"sprites/spr_debug_box/spr_debug_box.yy",},
+    {"name":"player_move_horizontally","order":18,"path":"scripts/player_move_horizontally/player_move_horizontally.yy",},
     {"name":"sprite100","order":87,"path":"sprites/sprite100/sprite100.yy",},
     {"name":"sprite104","order":89,"path":"sprites/sprite104/sprite104.yy",},
     {"name":"background0","order":1,"path":"sprites/background0/background0.yy",},

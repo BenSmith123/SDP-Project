@@ -160,6 +160,7 @@
     {"id":{"name":"sprite67","path":"sprites/sprite67/sprite67.yy",},},
     {"id":{"name":"sprite87","path":"sprites/sprite87/sprite87.yy",},},
     {"id":{"name":"spr_debug_box","path":"sprites/spr_debug_box/spr_debug_box.yy",},},
+    {"id":{"name":"player_move_horizontally","path":"scripts/player_move_horizontally/player_move_horizontally.yy",},},
     {"id":{"name":"sprite100","path":"sprites/sprite100/sprite100.yy",},},
     {"id":{"name":"sprite104","path":"sprites/sprite104/sprite104.yy",},},
     {"id":{"name":"background0","path":"sprites/background0/background0.yy",},},
