@@ -6,6 +6,7 @@ TO DO
 
 - bug: player turns invisible when no mobs in level
 - fix ai movement - walks through slopes
+- check all place_free, place_meeting and place_empty references
 - what is object67? - delete it?
 - clean up unused vars from player - mainly movement
 - clean up /remove old scripts - get virtual joysticks fully working first
