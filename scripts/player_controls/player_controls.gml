@@ -1,4 +1,5 @@
-function scr_player_movement() {
+function player_controls() 
+{
 
 	// WINDOWS AND VIRTUAL KEYS
 	if keyboard_check(ord("A")) { move_left = true }

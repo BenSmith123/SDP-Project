@@ -85,9 +85,7 @@ repeat (_move_count)
 
 scr_camera()
 
-//scr_gravity()
-
-scr_player_movement()
+player_controls()
 
 if hp <= 0 
 {

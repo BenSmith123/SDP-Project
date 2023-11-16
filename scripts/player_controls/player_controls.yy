@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_player_movement",
+  "name": "player_controls",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

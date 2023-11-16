@@ -21,7 +21,7 @@ if hp > max_hp
 }
 else
 {
-    alarm[3] = heal_time *room_speed
+    alarm[3] = heal_time * room_speed
 }
 
 
