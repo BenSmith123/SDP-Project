@@ -3,9 +3,10 @@
 
 TO DO
 --------------------
-- what is object67? - delete it?
+
 - bug: player turns invisible when no mobs in level
 - fix ai movement - walks through slopes
+- what is object67? - delete it?
 - clean up unused vars from player - mainly movement
 - clean up /remove old scripts - get virtual joysticks fully working first
 

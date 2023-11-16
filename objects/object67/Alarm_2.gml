@@ -1,4 +1,0 @@
-
-can_turn = true
-
-
