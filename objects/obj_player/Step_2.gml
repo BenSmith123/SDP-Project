@@ -20,6 +20,9 @@ if attacking = true
 // This allows us to transition to some other sprite, depending on the currently assigned sprite, and some additional conditions.
 switch (sprite_index)
 {
+	
+
+	
 	case spr_player_walking:
 		// Set the animation speed to 1, as it may have been set to 0 during the jump animation.
 		image_speed = _image_speed;
