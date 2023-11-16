@@ -46,7 +46,7 @@ if global.user = "GM"
     
     if keyboard_check_pressed(ord("L")) {obj_player.x = mouse_x; obj_player.y = mouse_y}
     
-    if keyboard_check_pressed(vk_f1) {show_message(game_info)}
+    if keyboard_check_pressed(vk_f1) {show_message(get_game_controls_text())}
     
     if keyboard_check_pressed(vk_f11) {if room_exists(room_next(room)) room_goto_next()}
 

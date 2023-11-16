@@ -1,5 +1,5 @@
-function draw_game_error_text() {
-
+function draw_game_debug_info() 
+{
 	// debug game controls
 
 	x = __view_get( e__VW.XView, 0 )

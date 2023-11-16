@@ -1,2 +1,2 @@
 
-draw_game_error_text()
+draw_game_debug_info()
