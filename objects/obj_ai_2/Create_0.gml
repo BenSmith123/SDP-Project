@@ -26,6 +26,8 @@ jump = 0
 heal_time = 5 // seconds
 heal_amount = 80
 
+tag_y = 40 // y position to show the name and hp
+
 scr_ai_initialize()
 
 

@@ -11,10 +11,8 @@ x = round(x)
 y = round(y)
 
 // NAME TAG
-// position based on the mask index (cause all AI different size)
-draw_sprite_stretched(spr_name_label,0,x-string_width(string_hash_to_newline(name))/2-10,y+tag_y+44,string_width(string_hash_to_newline(name))+20,20) // name label
-draw_text(x,y+tag_y+54,string_hash_to_newline(name))
-
+draw_sprite_stretched(spr_name_label,0,x-string_width(name)/2-10,y+tag_y,string_width(name)+20,20) // name label
+draw_text(x,y+tag_y+9,name)
 
 
 // HEALTH BAR
