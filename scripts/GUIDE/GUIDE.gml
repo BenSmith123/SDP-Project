@@ -3,9 +3,6 @@
 
 TO DO
 --------------------
-- put debug controls on screen
-- fix camera view on large screens - lowest tiles should be at the bottom of screen
-- also try simplify the scr_camera() script ^^
 - what is object67? - delete it?
 - bug: player turns invisible when no mobs in level
 - fix ai movement - walks through slopes

@@ -1,4 +1,5 @@
-function scr_camera() {
+function player_camera() 
+{
 
 	if global.overall_view = true // debug (show whole room)
 	{
@@ -35,7 +36,10 @@ function scr_camera() {
 	    target = obj_player_2 // if only p2 exists
 	}
 	***/
-
+	
+	// prevent camera from going out of room when window isn't open
+	if (!window_has_focus()) exit
+	
 
 	target = obj_player
 
@@ -50,14 +54,10 @@ function scr_camera() {
 	if __view_get( e__VW.YView, 0 ) < 0 {__view_set( e__VW.YView, 0, 0 )} // stops line at top of the screen. idk y needed
 
 
-
 	/*
 	// looks better?
 	round(view_xview[0])
 	round(view_yview[0])
-    
-
-
-
-/* end scr_camera */
+	*/
+   
 }

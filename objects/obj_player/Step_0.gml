@@ -3,6 +3,16 @@ move_direction = ""
 
 target = obj_player
 
+player_camera()
+
+player_controls()
+
+if hp <= 0 
+{
+    instance_destroy()
+}
+
+
 
 // The section below handles pixel-perfect collision checking.
 // It does collision checking twice, first on the X axis, and then on the Y axis.
@@ -80,17 +90,3 @@ repeat (_move_count)
 		break;
 	}
 }
-
-
-
-scr_camera()
-
-player_controls()
-
-if hp <= 0 
-{
-    instance_destroy()
-}
-
-
-
