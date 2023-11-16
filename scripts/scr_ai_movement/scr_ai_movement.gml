@@ -13,7 +13,7 @@ function scr_ai_movement() {
 	}
 
 
-	//if (place_empty(x-8,y)) or (place_empty(x+8,y))
+	//if (place_empty(x-8,y, obj_block)) or (place_empty(x+8,y, obj_block))
 	{
 	    // MOVING LEFT AND RIGHT
 	    if stay = false

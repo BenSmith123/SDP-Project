@@ -6,7 +6,7 @@ if instance_exists(obj_coin)
     
     move_towards_point(coin.x,coin.y-20,3)
     
-    if place_meeting(x,y-30,20)
+    if place_meeting(x,y-30,20,self)
     {
         coin.picked_up = true
         global.coins += 1

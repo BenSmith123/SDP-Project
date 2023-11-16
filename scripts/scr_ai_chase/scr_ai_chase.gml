@@ -22,7 +22,7 @@ function scr_ai_chase() {
 	    }
 	    else
 	    {
-	        if not (place_free(x,y+1))
+	        if not (place_empty(x,y+1, obj_block))
 	        {
 	            vspeed = -jump
 	        }
