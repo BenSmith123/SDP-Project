@@ -31,14 +31,14 @@ function ai_draw_debug_info()
     
 	if show_main_variables = true
 	{
-	    draw_text(x,y-85,string_hash_to_newline("" +string(state)))
-	    draw_text(x,y-70,string_hash_to_newline("" +string(distance_to_object(enemy))))
-	    draw_text(x,y-55,string_hash_to_newline("aggressive: " +string(aggressive)))
-        
-	    //draw_text(x,y-55,"dis " +string(block_distance))
-        
-	    draw_text(x+block_distance,y,string_hash_to_newline("x"))
-	    draw_text(x,y+jump_block_height,string_hash_to_newline("x"))
+	    draw_text(x,y-100,"state " +string(state))
+	    draw_text(x,y-75,(
+		string_hash_to_newline(
+			"x: " +string(x) + 
+			"# y:" +string(y)
+		)))
+	    //draw_text(x,y-55,"aggressive: " +string(aggressive))
+
 	}
     
 	if show_detect_distance = true

@@ -1,6 +1,6 @@
 
 if (vspeed > 0) 
 {
-	speed = 0
-    move_contact_solid(270, 1)
+	vspeed = 0
+    move_contact_all(270, 1)
 }

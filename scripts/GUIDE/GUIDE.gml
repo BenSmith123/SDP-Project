@@ -4,8 +4,8 @@
 TO DO
 --------------------
 
+- fix player mob sprites - always jumping
 - bug: player turns invisible when no mobs in level
-- fix ai movement - walks through slopes
 
 refactor:
 - clean up unused vars from player - mainly movement

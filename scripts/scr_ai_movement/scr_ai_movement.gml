@@ -11,14 +11,32 @@ function scr_ai_movement() {
 	}
 
 
-	//if (place_empty(x-8,y, obj_block)) or (place_empty(x+8,y, obj_block))
+	if (place_meeting(x,y+1, obj_block)) // if on ground 
 	{
+		
 	    // MOVING LEFT AND RIGHT
 	    if stay = false
 	    {
-		   state = "Walking"   
-		   // positive or negative walk speed depending on direction
-		   hspeed = walkspeed * image_xscale 
+			state = "Walking"   
+		    // positive or negative walk speed depending on direction
+		    hspeed = walkspeed * image_xscale
+
+			if place_meeting(x+hspeed, y-1, obj_block)
+			{
+				
+				state = "Slope"
+				
+				// loop to push the player up depending on the slope
+				for(var new_y = 0; new_y < 10; new_y++)
+				{
+					// checks for place free above the slope (prevent walking up/through a wall)
+					if (place_empty(x+hspeed, y-new_y, obj_block))
+					{
+						y -= new_y;
+					    break
+					}
+				}   
+			}
 	    }
 	    else
 	    {
@@ -27,7 +45,6 @@ function scr_ai_movement() {
 	    }
 
 	}
-
 
 	//scr_ai_spread() // stop ai bunching together
 

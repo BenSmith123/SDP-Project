@@ -1,10 +1,10 @@
 
+x = round(x)
+y = round(y)
+
 ai_draw_debug_info()
 
 scr_text_1()
-
-x = round(x)
-y = round(y)
 
 // NAME TAG
 draw_sprite_stretched(spr_name_label,0,x-string_width(name)/2-10,y+tag_y,string_width(name)+20,20) // name label
