@@ -18,7 +18,7 @@ function player_controls()
 	if move_left = true { player_move_horizontally() }
 	if move_right = true { player_move_horizontally() }
 	if move_jump = true { player_jump() }
-	if move_attack = true {scr_attack_player()}
+	if move_attack = true { player_attack() }
 
 	if move_temp = true {scr_teleport()} // teleport skill
 

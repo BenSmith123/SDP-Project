@@ -21,7 +21,7 @@ function scr_player_2_movement() {
 	if move_left = true {scr_move_left()}
 	if move_right = true {scr_move_right()}
 	if move_jump = true {scr_jump()}
-	if move_attack = true {scr_attack_player()}
+	if move_attack = true {player_attack()}
 
 	if move_temp = true {scr_teleport()} // debug
 

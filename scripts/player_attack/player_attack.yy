@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_attack_player",
+  "name": "player_attack",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

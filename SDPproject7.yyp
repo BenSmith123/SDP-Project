@@ -189,7 +189,7 @@
     {"id":{"name":"scr_level_up","path":"scripts/scr_level_up/scr_level_up.yy",},},
     {"id":{"name":"player_controls","path":"scripts/player_controls/player_controls.yy",},},
     {"id":{"name":"scr_player_2_movement","path":"scripts/scr_player_2_movement/scr_player_2_movement.yy",},},
-    {"id":{"name":"scr_attack_player","path":"scripts/scr_attack_player/scr_attack_player.yy",},},
+    {"id":{"name":"player_attack","path":"scripts/player_attack/player_attack.yy",},},
     {"id":{"name":"scr_damage","path":"scripts/scr_damage/scr_damage.yy",},},
     {"id":{"name":"scr_teleport","path":"scripts/scr_teleport/scr_teleport.yy",},},
     {"id":{"name":"AI_GUIDE","path":"scripts/AI_GUIDE/AI_GUIDE.yy",},},

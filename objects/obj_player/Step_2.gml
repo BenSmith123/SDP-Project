@@ -70,7 +70,6 @@ switch (sprite_index)
 	// 'default' code runs when none of the other cases are valid, meaning the currently assigned sprite is not covered by any
 	// of the cases above.
 	default:
-		// For all other sprites we set the animation speed to 1.
-		image_speed = _image_speed;
+		// image_speed = _image_speed;
 		break;
 }
