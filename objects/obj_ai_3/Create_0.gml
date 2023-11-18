@@ -1,6 +1,6 @@
 
 // player stats
-name = "name" //  choose("Sam","Jacob","Georgia","Alex","Matt")
+name = "Claudia" //  choose("Sam","Jacob","Georgia","Alex","Matt")
 level = 1
 maxhp = 50
 attack = 25

@@ -223,6 +223,7 @@
     {"id":{"name":"set_classes","path":"scripts/set_classes/set_classes.yy",},},
     {"id":{"name":"Effects","path":"scripts/Effects/Effects.yy",},},
     {"id":{"name":"initialise_stored_globals","path":"scripts/initialise_stored_globals/initialise_stored_globals.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
     {"id":{"name":"action_create_object","path":"scripts/action_create_object/action_create_object.yy",},},
     {"id":{"name":"action_set_relative","path":"scripts/action_set_relative/action_set_relative.yy",},},
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},},

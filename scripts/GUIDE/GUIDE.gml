@@ -4,8 +4,9 @@
 TO DO
 --------------------
 
+- fix camera broken in room 2
+- fix view camera - lowest blocks should be at bottom of screen regardless of screen size or room height
 - fix player mob sprites - always jumping
-- bug: player turns invisible when no mobs in level
 
 refactor:
 - clean up unused vars from player - mainly movement
