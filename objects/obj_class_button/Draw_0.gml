@@ -2,7 +2,7 @@
 
 if class = "Hunter" {sprite_index_2 = spr_player_attack_3}
 if class = "Ninja" {sprite_index_2 = spr_class_ninja}
-if class = "Fighter" {sprite_index_2 = spr_player_attack_7}
+if class = "Fighter" {sprite_index_2 = spr_player_attack_777}
 if class = "Spellcaster"{sprite_index_2 = spr_player_attack_2}
 
 

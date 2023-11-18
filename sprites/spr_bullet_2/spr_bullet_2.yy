@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Projectiles",
+    "path": "folders/Sprites/Projectiles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -59,8 +59,8 @@
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "volume": 1.0,
-    "xorigin": 21,
-    "yorigin": 8,
+    "xorigin": 18,
+    "yorigin": 9,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

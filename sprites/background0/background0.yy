@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "background0",
-  "bbox_bottom": 63,
+  "bbox_bottom": 47,
   "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_right": 47,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "tilesets",
-    "path": "folders/Sprites/tilesets.yy",
+    "name": "Tiles",
+    "path": "folders/Sprites/Tiles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

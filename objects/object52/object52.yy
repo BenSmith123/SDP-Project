@@ -25,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sprite82",
-    "path": "sprites/sprite82/sprite82.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
