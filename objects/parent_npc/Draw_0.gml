@@ -1,6 +1,8 @@
 
 draw_self()
 
+draw_nametag(name, 50)
+
 if (!instance_exists(obj_player)) { exit }
 
 var y_position_meeting = y > obj_player.y-20 && y < obj_player.y+20

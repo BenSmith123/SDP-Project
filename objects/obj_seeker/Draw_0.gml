@@ -1,4 +1,6 @@
 
+x = round(x)
+y = round(y)
 
 draw_self()
 
@@ -10,7 +12,5 @@ draw_set_color(c_silver)
 
 draw_text(x,y+34,string_hash_to_newline(name)) // player name
 
-x = round(x)
-y = round(y)
 
 
