@@ -15,7 +15,7 @@ function scr_ai_movement() {
 	{
 		
 	    // MOVING LEFT AND RIGHT
-	    if stay = false
+	    if stay == false
 	    {
 			state = "Walking"   
 		    // positive or negative walk speed depending on direction
@@ -23,7 +23,6 @@ function scr_ai_movement() {
 
 			if place_meeting(x+hspeed, y-1, obj_block)
 			{
-				
 				state = "Slope"
 				
 				// loop to push the player up depending on the slope

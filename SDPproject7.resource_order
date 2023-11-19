@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [
     {"name":"Controllers","order":95,"path":"folders/Objects/Controllers.yy",},
+    {"name":"NPCs","order":97,"path":"folders/Objects/NPCs.yy",},
     {"name":"Player","order":93,"path":"folders/Objects/Player.yy",},
     {"name":"compatibility","order":1,"path":"folders/Scripts/compatibility.yy",},
     {"name":"Game","order":18,"path":"folders/Scripts/Game.yy",},
@@ -14,7 +15,6 @@
     {"name":"pickups","order":5,"path":"folders/Sprites/pickups.yy",},
     {"name":"Projectiles","order":48,"path":"folders/Sprites/Projectiles.yy",},
     {"name":"Tiles","order":47,"path":"folders/Sprites/Tiles.yy",},
-    {"name":"NPCs","order":97,"path":"folders/Objects/NPCs.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_player_mask","order":1,"path":"sprites/spr_player_mask/spr_player_mask.yy",},
@@ -207,7 +207,6 @@
     {"name":"obj_ai_1","order":23,"path":"objects/obj_ai_1/obj_ai_1.yy",},
     {"name":"obj_ai_2","order":25,"path":"objects/obj_ai_2/obj_ai_2.yy",},
     {"name":"obj_ai_3","order":27,"path":"objects/obj_ai_3/obj_ai_3.yy",},
-    {"name":"object55","order":29,"path":"objects/object55/object55.yy",},
     {"name":"obj_ai_dead","order":33,"path":"objects/obj_ai_dead/obj_ai_dead.yy",},
     {"name":"obj_bullet_ai","order":35,"path":"objects/obj_bullet_ai/obj_bullet_ai.yy",},
     {"name":"obj_bullet_player","order":37,"path":"objects/obj_bullet_player/obj_bullet_player.yy",},

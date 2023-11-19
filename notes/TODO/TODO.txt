@@ -4,8 +4,13 @@
 TO DO
 --------------------
 
-- fix view camera - lowest blocks should be at bottom of screen regardless of screen size or room height
-- fix player mob sprites - always jumping
+- add event log: player gained +5exp, picked up item "item_name"
+- fix coin pickup fx
+- add inventory system + items?
+- add better collision & bullet sprites & effects
+- pause screen instead of blank background
+- fix cam? - lowest blocks should be at bottom of screen regardless of screen size or room height
+
 
 refactor:
 - clean up unused vars from player - mainly movement

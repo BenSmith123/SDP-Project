@@ -9,7 +9,7 @@ accuracy = 70
 
 aggressive = true
 
-block_distance = 0 // (set in script) distance for checking how far away blocks are
+block_distance = 0 // distance for checking how far away blocks are
 jump_block_height = -0 // how high a block can be for ai to try jump
 drop_distance = 150 // how far below a player is before 
 detect_distance = 700 // how far can an ai spot a player

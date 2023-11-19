@@ -12,7 +12,7 @@ draw_text(x,y+tag_y+9,name)
 
 
 // HEALTH BAR
-if show_hp = true
+if show_hp == true
 {
     scr_text_4()
     //draw_sprite(spr_ai_health_bar,1,x-20,y+tag_y+36) // back
@@ -24,26 +24,4 @@ if show_hp = true
 }
 
 
-
-
-// SPRITES
-
-
-
-if stay = true {sprite_index = sprite_stand}
-
-if stay = false {sprite_index = sprite_walk}
-
-if place_empty(x,y+vspeed, obj_block)
-{
-    sprite_index = sprite_jump
-    leftx = 0
-    rightx = 0
-    platform_width = 24
-}
-
-if attacking = true { sprite_index = sprite_attack }
-
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha) 
-
-
