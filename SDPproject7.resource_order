@@ -12,8 +12,8 @@
     {"name":"effects","order":3,"path":"folders/Sprites/effects.yy",},
     {"name":"HUD","order":4,"path":"folders/Sprites/HUD.yy",},
     {"name":"pickups","order":5,"path":"folders/Sprites/pickups.yy",},
-    {"name":"Tiles","order":47,"path":"folders/Sprites/Tiles.yy",},
     {"name":"Projectiles","order":48,"path":"folders/Sprites/Projectiles.yy",},
+    {"name":"Tiles","order":47,"path":"folders/Sprites/Tiles.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_player_mask","order":1,"path":"sprites/spr_player_mask/spr_player_mask.yy",},

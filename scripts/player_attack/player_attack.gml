@@ -14,9 +14,6 @@ function player_attack()
 	image_index = 0 // restart the animation
 	image_speed = 0.15
     
-	enemy = instance_nearest(x,y,ai_parent)
-    
-    
 	if melee_attack == true
 	{
 		// MELEE ATTACKS
@@ -30,57 +27,46 @@ function player_attack()
 
 }
 
-// TODO - fix crash when no AI on screen
-// TODO - should still animate etc. when no mobs around
+
 function player_attack_melee() 
 {
-	// y position meeting
-	if y > enemy.y-20
-	{ 
-		if y < enemy.y+20 
-		{
-    
-			if image_xscale = -1 // facing left
-			{
-			    if enemy.x <= x // enemy is on left
-			    {
-			        if enemy.x > x-120 // range for hitting
-			        {
-			            alarm[9] = 15
-			        }
-			    }
-			}
-        
-			if image_xscale = 1
-			{
-			    if enemy.x > x
-			    {
-			        if enemy.x < x+120
-			        {
-			            alarm[9] = 15
-			        }
-			    }
-			}
-		}
+	enemy = instance_nearest(x,y,ai_parent)
+	if (enemy == noone) { exit }
+	
+	var attack_range = image_xscale * 120
+	
+	var y_position_meeting = y > enemy.y-20 && y < enemy.y+20
+	if (y_position_meeting == false) { exit }
+	
+	var facing_left = image_xscale == -1
+	
+	// enemy is to the left of the player (+14 incase the enemy is basically ontop of player)
+	var is_enemy_infront = facing_left
+		? enemy.x <= x+14
+		: enemy.x > x-14
+	
+	var is_enemy_in_range = facing_left
+		? enemy.x > x + attack_range
+		: enemy.x < x + attack_range
+		
+	if (is_enemy_infront && is_enemy_in_range)
+	{
+		// do damage!
+		alarm[9] = 15
 	}
+	
 }
 
 
 function player_attack_projectile() 
 {
-	if image_xscale = -1 
-	{
-		bullet = instance_create(x-20,y,obj_bullet_player)
-		bullet.hspeed = -14
-		bullet.image_xscale = -1
-	}
-    
-	if image_xscale = 1 
-	{
-		bullet = instance_create(x+20,y,obj_bullet_player)
-		bullet.hspeed = 14
-		bullet.image_xscale = 1
-	}
+	var x_pos = x + (image_xscale * 20)
+	var bullet_speed = image_xscale * 14
+	
+	bullet = instance_create(x_pos,y,obj_bullet_player)
+
+	bullet.hspeed = bullet_speed
+	bullet.image_xscale = image_xscale
     
 	bullet.damage = damage
 	bullet.sprite_index = sprite_projectile

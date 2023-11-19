@@ -18,7 +18,7 @@ function set_classes() {
 
 	if global.class = "Fighter" 
 	{
-	    attack_sprite = spr_player_attack_777
+	    attack_sprite = spr_player_attack_4
 	    melee_attack = true
 	}
 
