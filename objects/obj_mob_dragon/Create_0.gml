@@ -13,6 +13,7 @@ jump_block_height = 0 // how high a block can be for ai to try jump
 drop_distance = 0 // how far below a player is before 
 detect_distance = 1000 // how far can an ai spot a player
 health_run_percent = 0 // percent that health has to be before running away
+can_be_knockedback = false // don't apply physics when hit
 
 sprite_stand = spr_mob_dragon_stand
 sprite_walk = spr_mob_dragon_walk

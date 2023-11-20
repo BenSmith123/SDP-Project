@@ -12,11 +12,9 @@ function scr_ai_initialize() {
 
 	friction = 0.1
 	image_speed = 0.1
-
-	// IN-GAME
-	hp = maxhp
-	enemy = obj_player // nearest enemy
-
+	
+	// DEFAULTS (could be overridden by different mobs)
+	can_be_knockedback = true
 
 	// IN-GAME
 	hp = maxhp

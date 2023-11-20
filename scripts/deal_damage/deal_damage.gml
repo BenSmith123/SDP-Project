@@ -24,14 +24,14 @@ function deal_damage(target) {
 	    // update the colour of the target health bar
 	    if target.hp <= target.max_hp*0.6 {target.health_colour = 2}
 	    if target.hp <= target.max_hp*0.2 {target.health_colour = 3}
+		
+		obj_hud.hit_alpha = 1 // TODO - why is this set when hitting a mob?
     
-		target.hspeed = x < target.x
-			? 3
-			: -3
-        
+		if (target.can_be_knockedback == false) { exit }
+		
+		// knockback physics
+		target.hspeed = x < target.x ? 3 : -3 // TODO - configurable depending on mob type?
 	    target.vspeed = -1
-        
-	    obj_hud.hit_alpha = 1
 	}
 	
 }
