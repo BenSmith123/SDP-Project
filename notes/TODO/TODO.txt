@@ -3,14 +3,14 @@
 TO DO
 --------------------
 
-- fix ai sinking into ground
 - fix drone commander floating through blocks
 - mob item drops! - script ran when mob killed
 - room start script for setting all layers
 - hud display for low health - similar to current hit
 - backgrounds & scenery! with depth
 - refactor mob parent initialise/create event? - fix order
-- projectile range & drop
+- projectile range & drop?
+- gain extra exp when hitting a mob mid air? or player is in air - show on event log
 - seeker to go pick up coins
 - improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 - ^^ cleanup unused vars & debug text

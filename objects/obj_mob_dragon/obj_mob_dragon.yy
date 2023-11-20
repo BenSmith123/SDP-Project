@@ -35,8 +35,8 @@
     "path": "sprites/spr_mob_dragon_stand/spr_mob_dragon_stand.yy",
   },
   "spriteMaskId": {
-    "name": "spr_player_stand",
-    "path": "sprites/spr_player_stand/spr_player_stand.yy",
+    "name": "spr_mob_dragon_stand",
+    "path": "sprites/spr_mob_dragon_stand/spr_mob_dragon_stand.yy",
   },
   "visible": true,
 }
