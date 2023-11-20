@@ -12,10 +12,11 @@ dead_body.friction = friction // knock back as far as the ai would have already 
 //if soft_kill = true // if not killed by player (no reward)
 {
     global.current_kills += 1
-    global.experience += 15
+    global.experience += experience
+	
+	log_player_message($"+{experience} experience")
     
     scr_level_up() // check for level up
-    
     
     // create coins
     var coin_num = irandom_range(0,10)
@@ -28,7 +29,3 @@ dead_body.friction = friction // knock back as far as the ai would have already 
 }
 
 with obj_heal_text instance_destroy()
-
-
-
-
