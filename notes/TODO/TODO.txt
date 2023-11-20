@@ -5,12 +5,18 @@ TO DO
 --------------------
 
 - add event log: player gained +5exp, picked up item "item_name"
+- mob item drops!
+- hud display for low health - similar to current hit
+- projectile range & drop
 - fix coin pickup fx
+- seeker to go pick up coins
+- improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
+- ^^ cleanup unused vars & debug text
 - add inventory system + items?
+- shop: buy/sell items (seeker)
 - add better collision & bullet sprites & effects
 - pause screen instead of blank background
 - fix cam? - lowest blocks should be at bottom of screen regardless of screen size or room height
-
 
 refactor:
 - clean up unused vars from player - mainly movement

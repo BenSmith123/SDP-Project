@@ -23,7 +23,7 @@ if !place_empty(x+hspeed,y, obj_block) { hspeed = 0 }
 
 if (vspeed > 0 && !place_empty(x,y+1, obj_block))
 {
-    move_contact_all(270,2)
+    move_contact_all(270,1)
 	vspeed = 0
 } 
 
