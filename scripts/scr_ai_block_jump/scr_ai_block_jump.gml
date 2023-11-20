@@ -1,6 +1,6 @@
 function scr_ai_block_jump() {
 
-	if (place_meeting(x,y+1, obj_block)) // if on ground 
+	if is_on_ground == true
 	{
 		
 		var block_dist_x = block_distance * image_xscale
@@ -19,12 +19,11 @@ function scr_ai_block_jump() {
 				{
 					state = "Jump block"
 					vspeed = -jump
-					hspeed = speeed
+					hspeed =speed_in_direction
 				}
 	        }
 	        else // if cant jump over block, turn around
-	        {				
-	            state = "Turn around"
+	        {
 	            scr_ai_turn_around()
 	        }
 	    }

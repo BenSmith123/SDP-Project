@@ -3,6 +3,8 @@
 TO DO
 --------------------
 
+- fix ai sinking into ground
+- fix drone commander floating through blocks
 - mob item drops!
 - room start script for setting all layers
 - hud display for low health - similar to current hit

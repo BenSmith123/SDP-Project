@@ -1,5 +1,7 @@
-/// @param {Id.Instance}
-function calculate_damage(target) {
+/// @param target {Id.Instance}
+/// @return {Boolean} returns true if damage was done
+function calculate_damage(target)
+{
 
 	// text = created by object doing the damage
 	// damage = set by ai or passed to projectile

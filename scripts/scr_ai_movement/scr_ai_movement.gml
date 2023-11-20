@@ -1,17 +1,9 @@
 function scr_ai_movement() {
 
-	if image_xscale = -1 // moving left
-	{
-	    speeed = -walkspeed
-	}
-
-	if image_xscale = 1 // moving right
-	{
-	    speeed = walkspeed
-	}
-
-
-	if (place_meeting(x,y+1, obj_block)) // if on ground 
+	speed_in_direction = image_xscale * walkspeed
+	is_on_ground = place_meeting(x,y+1, obj_block)
+	
+	if is_on_ground == true
 	{
 		
 	    // MOVING LEFT AND RIGHT
@@ -19,13 +11,13 @@ function scr_ai_movement() {
 	    {
 			state = "Walking"   
 		    // positive or negative walk speed depending on direction
-		    hspeed = walkspeed * image_xscale
+		    hspeed = speed_in_direction
 
 			if place_meeting(x+hspeed, y-1, obj_block)
 			{
 				state = "Slope"
 				
-				// loop to push the player up depending on the slope
+				// loop to push the mob up depending on the slope
 				for(var new_y = 0; new_y < 10; new_y++)
 				{
 					// checks for place free above the slope (prevent walking up/through a wall)
@@ -39,6 +31,7 @@ function scr_ai_movement() {
 	    }
 	    else
 	    {
+			// debug
 	        state = "Stay"
 	        //hspeed = 0
 	    }
@@ -47,7 +40,7 @@ function scr_ai_movement() {
 
 	//scr_ai_spread() // stop ai bunching together
 
-	if aggressive = true
+	if aggressive == true
 	{
 	    scr_ai_chase()
 	}
@@ -61,7 +54,7 @@ function scr_ai_movement() {
 	{scr_ai_run() exit}
 
 
-	// scr_ai_jump_down() // teleport skill 
+	//scr_ai_jump_down() // teleport skill 
 
 	scr_ai_confront()
 

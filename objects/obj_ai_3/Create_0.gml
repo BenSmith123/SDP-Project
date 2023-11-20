@@ -1,5 +1,4 @@
 
-// player stats
 name = "Player236" // choose("Sam","Jacob","Georgia","Alex","Matt")
 level = 1
 maxhp = 50
