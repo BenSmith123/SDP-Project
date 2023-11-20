@@ -1,13 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ai_dead",
+  "name": "obj_mob_dragon",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -15,7 +11,10 @@
     "name": "Mobs & AI",
     "path": "folders/Objects/Mobs & AI.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "ai_parent",
+    "path": "objects/ai_parent/ai_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -32,9 +31,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_dead",
-    "path": "sprites/spr_player_dead/spr_player_dead.yy",
+    "name": "spr_mob_dragon_stand",
+    "path": "sprites/spr_mob_dragon_stand/spr_mob_dragon_stand.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_player_stand",
+    "path": "sprites/spr_player_stand/spr_player_stand.yy",
+  },
   "visible": true,
 }

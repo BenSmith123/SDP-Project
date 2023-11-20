@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "SDPproject7",
-    "path": "SDPproject7.yyp",
+    "name": "effects",
+    "path": "folders/Sprites/effects.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
