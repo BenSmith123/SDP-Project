@@ -1,8 +1,5 @@
-/// @description  gravity
 
-apply_gravity()
-
-
+// TODO - replace this code & just create an effect instead?
 if place_meeting(x,y,obj_player)
 {
 	if picked_up = false 
@@ -17,6 +14,22 @@ if place_meeting(x,y,obj_player)
 	    picked_up = true
 	}
 }
+
+if (speed == 0) { exit }
+
+apply_gravity()
+
+if !place_empty(x+hspeed,y, obj_block) { hspeed = 0 }
+
+if (vspeed > 0 && !place_empty(x,y+1, obj_block))
+{
+    move_contact_all(270,2)
+	vspeed = 0
+} 
+
+
+
+
 
 
 

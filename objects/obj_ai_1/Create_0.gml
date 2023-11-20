@@ -20,7 +20,7 @@ sprite_jump = spr_drone
 sprite_dead = spr_drone_dead
 sprite_attack = spr_drone_walking
 
-walkspeed = 4
+walkspeed = 0
 jump = 0
 heal_time = 0 // seconds
 heal_amount = 0 
