@@ -32,4 +32,6 @@ tag_y = 60 // y position to show the name and hp
 
 scr_ai_initialize()
 
+// override default
+can_be_knockedback = false
 

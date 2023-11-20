@@ -16,7 +16,7 @@ if (!grounded)
 if attacking = true 
 {
     sprite_index = attack_sprite
-    if image_index = 1 { damage_mob() } // attacking = false}
+    if image_index = 1 { deal_damage_to_mob(enemy) } // attacking = false}
 }
 
 

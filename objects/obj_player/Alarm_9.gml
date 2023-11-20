@@ -1,4 +1,4 @@
-/// @description damage_mob()
+/// @description deal_damage_to_mob()
 
-damage_mob()
+deal_damage_to_mob(enemy)
 

@@ -1,7 +1,8 @@
-function scr_ai_initialize() {
-
+function scr_ai_initialize() 
+{
 	// initialize all common varibles for each ai
 	// (called in create event of each AI)
+	
 	
 	
 	x_meet = sprite_get_height(sprite_index)/2 // distance for the x and enemy x for alignment (player above or below)
@@ -43,8 +44,6 @@ function scr_ai_initialize() {
 	show_xy_meeting = false
 	show_main_variables = false
 	show_platform_variables = false
-
-
 
 
 }

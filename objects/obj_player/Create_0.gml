@@ -43,7 +43,6 @@ can_be_hit = true // when the player can be hit again after taking damage
 health_colour = 1 // colour of the healthbar, 1 = green
 start_speed = global.walk_speed
 second_jump = false // see if its the players second jump
-can_be_knockedback = true // allow physics knockback when hit
 
 head_x = 0 // the x position for the head (to match all player sprites)
 

@@ -1,9 +1,5 @@
 
-
-
-enemy = other
-
-damage_mob()
+deal_damage_to_mob(other)
 
 instance_destroy()
 
