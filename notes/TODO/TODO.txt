@@ -4,11 +4,11 @@
 TO DO
 --------------------
 
-- add event log: player gained +5exp, picked up item "item_name"
 - mob item drops!
+- room start script for setting all layers
 - hud display for low health - similar to current hit
+- backgrounds & scenery! with depth
 - projectile range & drop
-- fix coin pickup fx
 - seeker to go pick up coins
 - improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 - ^^ cleanup unused vars & debug text

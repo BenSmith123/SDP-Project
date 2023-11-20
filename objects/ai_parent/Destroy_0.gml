@@ -16,7 +16,7 @@ dead_body.friction = friction // knock back as far as the ai would have already 
 	
 	log_player_message($"+{experience} experience")
 	
-	instance_create(dead_body.x, dead_body.y, obj_item_drone_piece)
+	
     
     scr_level_up() // check for level up
     

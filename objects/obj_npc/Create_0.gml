@@ -1,5 +1,5 @@
 
 event_inherited();
 
-name = "test NPC"
+name = "Claudia"
 text = "Press E to talk to me"

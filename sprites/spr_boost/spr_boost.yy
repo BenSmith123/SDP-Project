@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_boost",
-  "bbox_bottom": 39,
+  "bbox_bottom": 30,
   "bbox_left": 0,
-  "bbox_right": 30,
+  "bbox_right": 39,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -21,7 +21,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 40,
+  "height": 31,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4483b84d-ee81-41b0-a9d1-fd481a8561f6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -78,5 +78,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 31,
+  "width": 40,
 }
