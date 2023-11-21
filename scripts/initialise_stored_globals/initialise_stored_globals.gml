@@ -12,7 +12,6 @@ function initialise_stored_globals() {
 	global.experience = 0
 	global.max_exp = 10
 
-	global.player_lives = 3
 	global.max_hp = 10
 
 	global.attack = 2

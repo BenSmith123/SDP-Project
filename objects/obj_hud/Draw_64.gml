@@ -37,19 +37,3 @@ draw_text(WIDTH-20,64,string(global.current_kills)+ " kills")
 draw_sprite(spr_coin_hud,0,80,120)
 
 draw_text(90,120,global.coins)
-
-
-
-
-
-// TODO - remove
-if global.player_lives > 0 {draw_sprite(spr_heart,0,100,90)} // first life
-if global.player_lives > 1 {draw_sprite(spr_heart,0,130,90)} // second
-if global.player_lives > 2 {draw_sprite(spr_heart,0,160,90)} // third
-if global.player_lives > 3 {draw_sprite(spr_heart,0,190,90)}
-if global.player_lives > 4 {draw_sprite(spr_heart,0,220,90)}
-if global.player_lives > 5 {draw_sprite(spr_heart,0,250,90)}
-
-
-
-

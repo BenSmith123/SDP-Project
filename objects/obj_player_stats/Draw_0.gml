@@ -10,7 +10,6 @@ draw_sprite(spr_player_stand,image_index,200,400)
 draw_text(400,300,string_hash_to_newline(global.name +@"
 Level "+string(global.level) +@"
 Experience: "+string(global.experience) +string("/")+string(global.max_exp) +@"
-Lives: "+string(global.player_lives)+@"
 
 HP: " +string(global.max_hp) +@"
 Attack: "+string(global.attack) +@"

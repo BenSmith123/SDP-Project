@@ -1,6 +1,5 @@
 
-global.player_lives -= 1
-// take away exp too
+// TODO - take away exp too
 
 var dead_body = instance_create(x,y,obj_player_dead)
 dead_body.friction = friction
