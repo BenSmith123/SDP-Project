@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "set_classes",
+  "name": "initialise_particle_system",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Player",
-    "path": "folders/Scripts/Player.yy",
+    "name": "General",
+    "path": "folders/Scripts/General.yy",
   },
 }

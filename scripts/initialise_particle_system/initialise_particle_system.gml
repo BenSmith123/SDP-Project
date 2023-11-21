@@ -1,7 +1,7 @@
-function scr_particle_system() {
+function initialise_particle_system() 
+{
 
 	// CREATE FX: part_particles_create(global.p_general,x,y,global.meteor_fx,1)
-
 
 
 	global.fx = part_system_create()
@@ -34,11 +34,6 @@ function scr_particle_system() {
 	//part_type_gravity(temp,0.4,270)
 	part_type_blend(temp,false)
 
-
-
-
-
-
 	//part_particles_create( mysystem, 50, 50, mypart, 30 );()
 
 	//part_particles_create( global.particle, 50, 50, boost_fx, 30 )
@@ -61,12 +56,6 @@ function scr_particle_system() {
 
 
 
-
-
-
-
-
-
 	// jet booster
 	global.boost_fx = part_type_create()
 	part_type_shape(global.boost_fx,spr_bullet_2,0,0,1)
@@ -79,7 +68,5 @@ function scr_particle_system() {
 	part_type_orientation(global.boost_fx,0,0,0,0,1)
 	part_type_blend(global.boost_fx,true)
 
-
-
-/* end scr_particle_system */
+*/
 }

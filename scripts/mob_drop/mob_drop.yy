@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_particle_system",
+  "name": "mob_drop",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

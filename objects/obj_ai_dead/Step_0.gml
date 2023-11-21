@@ -1,4 +1,2 @@
 
 apply_gravity()
-
-

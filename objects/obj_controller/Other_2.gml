@@ -1,6 +1,6 @@
 /// @description  game start
 
-scr_particle_system()
+initialise_particle_system()
 
 game_set_speed(60, gamespeed_fps);
 

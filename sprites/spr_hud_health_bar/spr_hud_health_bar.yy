@@ -15,7 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00161962-67b3-4821-ae87-39fb82456ee4",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"902ba6a6-be9e-4bb5-a43a-dd4b10ff9216",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9b8fff3-24a7-46de-8066-14f51925dc03",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11b973ff-c134-4ad8-81fb-be1c18c75a5d",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -58,7 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"00161962-67b3-4821-ae87-39fb82456ee4","path":"sprites/spr_hud_health_bar/spr_hud_health_bar.yy",},},},"Disabled":false,"id":"11340fd9-dbe3-42e9-8ab9-3c94e3deea23","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"902ba6a6-be9e-4bb5-a43a-dd4b10ff9216","path":"sprites/spr_hud_health_bar/spr_hud_health_bar.yy",},},},"Disabled":false,"id":"ac090667-6ee1-4faf-8b35-45a1156de3b5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c9b8fff3-24a7-46de-8066-14f51925dc03","path":"sprites/spr_hud_health_bar/spr_hud_health_bar.yy",},},},"Disabled":false,"id":"ab2e4353-90f8-4b20-9f26-d1ae89d62a3b","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"11b973ff-c134-4ad8-81fb-be1c18c75a5d","path":"sprites/spr_hud_health_bar/spr_hud_health_bar.yy",},},},"Disabled":false,"id":"86570e3f-cc69-48fd-9162-59ed72307dd1","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

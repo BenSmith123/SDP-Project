@@ -16,18 +16,9 @@ dead_body.friction = friction // knock back as far as the ai would have already 
 	
 	log_player_message($"+{experience} experience")
 	
-	
+	mob_drop()
     
     scr_level_up() // check for level up
-    
-    // create coins
-    var coin_num = irandom_range(0,10)
-    repeat(coin_num)
-    {
-        var coin = instance_create(x,y,obj_coin)
-        coin.hspeed = irandom_range(-3,3)
-        coin.vspeed = irandom_range(-2,-4)
-    }
 }
 
-with obj_heal_text instance_destroy()
+with obj_heal_text instance_destroy() // TODO - doesn't this destroy any mob text?
