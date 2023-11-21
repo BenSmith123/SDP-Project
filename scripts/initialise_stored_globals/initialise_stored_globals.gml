@@ -7,7 +7,7 @@ function initialise_stored_globals() {
 
 	// player attributes
 	global.class = "Beginner"
-	global.name = "ben7" // spritey
+	global.name = "ben7"
 	global.level = 1
 	global.experience = 0
 	global.max_exp = 10

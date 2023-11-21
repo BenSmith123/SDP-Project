@@ -30,9 +30,13 @@ function deal_damage_to_mob(mob) {
 		mob.vspeed = -2
 	}
 	
-	// update the colour of the target health bar
-	if mob.hp <= mob.maxhp*0.6 {mob.health_colour = 2}
-	if mob.hp <= mob.maxhp*0.2 {mob.health_colour = 3}
+	// kill mob if health is too low
+	if mob.hp <= 0 
+	{ 
+		with (mob) instance_destroy()
+		exit
+	} 
 	
-	if mob.hp <= 0 { with (mob) instance_destroy() } // kill enemy if too weak
+	// update the colour of the health bar
+	mob.healthbar_colour = get_healthbar_colour(mob.hp, mob.maxhp)
 }

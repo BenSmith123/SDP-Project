@@ -30,13 +30,13 @@ function scr_ai_initialize()
 	stay = false // done move (while fighting, etc)
 	hurt = false // ? unused atm
 	show_hp = false // only show hp when provoked
+	healthbar_colour = HealthColour.Green
 	is_on_ground = false
 	
 	//tag_y = round((sprite_get_height(sprite_index)/2)) // get the mask height so it can draw the tags below (name, hp)
 	// ^ tag_y doesn't really work like this since some sprites have added space to give the floating effect
 	
 	attacking = false // for sprite managing
-	health_colour = 1 // colour of health bar, 1 = green
 	soft_kill = false // when ai is not killed by the player, don't reward
 	speed_in_direction = 0 // hspeed or negative hspeed (depending on direction)
 

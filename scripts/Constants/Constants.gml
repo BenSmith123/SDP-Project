@@ -9,6 +9,15 @@
 #macro TERMINAL_VELOCITY 12
 
 
+enum PlayerClass
+{
+	Beginner,
+	Hunter,
+	Fighter,
+	Ninja,
+	Spellcaster
+}
+
 enum HealthColour
 {
 	Green,
