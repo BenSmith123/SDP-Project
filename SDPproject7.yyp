@@ -146,7 +146,7 @@
     {"id":{"name":"sprite43","path":"sprites/sprite43/sprite43.yy",},},
     {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},},
     {"id":{"name":"spr_marker","path":"sprites/spr_marker/spr_marker.yy",},},
-    {"id":{"name":"sprite28","path":"sprites/sprite28/sprite28.yy",},},
+    {"id":{"name":"spr_mob_drone_commander","path":"sprites/spr_mob_drone_commander/spr_mob_drone_commander.yy",},},
     {"id":{"name":"TODO","path":"notes/TODO/TODO.yy",},},
     {"id":{"name":"spr_levelup_text","path":"sprites/spr_levelup_text/spr_levelup_text.yy",},},
     {"id":{"name":"spr_levelup_fx","path":"sprites/spr_levelup_fx/spr_levelup_fx.yy",},},

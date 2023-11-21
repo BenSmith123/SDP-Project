@@ -3,7 +3,6 @@
 TO DO
 --------------------
 
-- fix drone commander floating through blocks
 - mob item drops! - script ran when mob killed
 - room start script for setting all layers
 - hud display for low health - similar to current hit

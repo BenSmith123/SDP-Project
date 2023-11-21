@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprite28",
-    "path": "sprites/sprite28/sprite28.yy",
+    "name": "spr_mob_drone_commander",
+    "path": "sprites/spr_mob_drone_commander/spr_mob_drone_commander.yy",
   },
   "spriteMaskId": null,
   "visible": true,

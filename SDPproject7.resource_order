@@ -101,7 +101,7 @@
     {"name":"sprite43","order":20,"path":"sprites/sprite43/sprite43.yy",},
     {"name":"spr_test","order":22,"path":"sprites/spr_test/spr_test.yy",},
     {"name":"spr_marker","order":23,"path":"sprites/spr_marker/spr_marker.yy",},
-    {"name":"sprite28","order":24,"path":"sprites/sprite28/sprite28.yy",},
+    {"name":"spr_mob_drone_commander","order":24,"path":"sprites/spr_mob_drone_commander/spr_mob_drone_commander.yy",},
     {"name":"TODO","order":4,"path":"notes/TODO/TODO.yy",},
     {"name":"spr_levelup_fx","order":1,"path":"sprites/spr_levelup_fx/spr_levelup_fx.yy",},
     {"name":"sprite33","order":25,"path":"sprites/sprite33/sprite33.yy",},
