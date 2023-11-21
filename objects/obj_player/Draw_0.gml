@@ -19,7 +19,7 @@ if distance_to_object(above_block) < 100
 
 
 // draw the healthbar
-draw_sprite_stretched_ext(spr_ai_health_bar,health_colour,x-32,y+60,hp/max_hp*64,1,c_white,1)
+//draw_sprite_stretched_ext(spr_ai_health_bar,health_colour,x-32,y+60,hp/max_hp*64,1,c_white,1)
 // 16 = half sprite width (for centering), 32 = healthbar width, 1 = healthbar height
 
 // head

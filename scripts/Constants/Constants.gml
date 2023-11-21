@@ -7,3 +7,11 @@
 #macro SCREEN_DISTANCE 1000
 
 #macro TERMINAL_VELOCITY 12
+
+
+enum HealthColour
+{
+	Green,
+	Orange,
+	Red
+}

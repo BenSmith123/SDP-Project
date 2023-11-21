@@ -4,7 +4,10 @@ TO DO
 --------------------
 
 - mob item drops! - script ran when mob killed
-- room start script for setting all layers
+- finalise how blocks/tiles system work
+	- jump through blocks everywhere?
+	- can AI use them too?
+	- room start script for setting all layers
 - hud display for low health - similar to current hit
 - backgrounds & scenery! with depth
 - refactor mob parent initialise/create event? - fix order
@@ -14,7 +17,7 @@ TO DO
 - improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 - ^^ cleanup unused vars & debug text
 - add inventory system + items?
-- shop: buy/sell items (seeker)
+- shop: buy/sell items (seeker, sell drone pieces)
 - add better collision & bullet sprites & effects
 - pause screen instead of blank background
 - fix cam? - lowest blocks should be at bottom of screen regardless of screen size or room height

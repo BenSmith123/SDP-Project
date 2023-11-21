@@ -304,6 +304,7 @@
     {"id":{"name":"obj_marker","path":"objects/obj_marker/obj_marker.yy",},},
     {"id":{"name":"obj_bullet_fx","path":"objects/obj_bullet_fx/obj_bullet_fx.yy",},},
     {"id":{"name":"object17","path":"objects/object17/object17.yy",},},
+    {"id":{"name":"get_healthbar_colour","path":"scripts/get_healthbar_colour/get_healthbar_colour.yy",},},
     {"id":{"name":"object35","path":"objects/object35/object35.yy",},},
     {"id":{"name":"object36","path":"objects/object36/object36.yy",},},
     {"id":{"name":"obj_player_stats","path":"objects/obj_player_stats/obj_player_stats.yy",},},

@@ -40,7 +40,6 @@ attacking = false
 move_direction = "" // for when key or arrow is pressed
 bullet = 0 // creating bullet object
 can_be_hit = true // when the player can be hit again after taking damage
-health_colour = 1 // colour of the healthbar, 1 = green
 start_speed = global.walk_speed
 second_jump = false // see if its the players second jump
 

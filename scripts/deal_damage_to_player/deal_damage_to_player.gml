@@ -21,12 +21,6 @@ function deal_damage_to_player(player) {
     
 	if damage_was_done == true
 	{
-	    // update the colour of the player health bar colour
-	    if player.hp <= player.max_hp*0.6 {player.health_colour = 2}
-	    if player.hp <= player.max_hp*0.2 {player.health_colour = 3}
-		
-		obj_hud.hit_alpha = 1
-		
 		// knockback physics
 		player.hspeed = x < player.x ? 3 : -3 // TODO - configurable depending on mob type?
 	    player.vspeed = -1

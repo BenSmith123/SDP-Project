@@ -246,6 +246,7 @@
     {"name":"obj_marker","order":3,"path":"objects/obj_marker/obj_marker.yy",},
     {"name":"obj_bullet_fx","order":5,"path":"objects/obj_bullet_fx/obj_bullet_fx.yy",},
     {"name":"object17","order":7,"path":"objects/object17/object17.yy",},
+    {"name":"get_healthbar_colour","order":19,"path":"scripts/get_healthbar_colour/get_healthbar_colour.yy",},
     {"name":"object35","order":9,"path":"objects/object35/object35.yy",},
     {"name":"object36","order":13,"path":"objects/object36/object36.yy",},
     {"name":"obj_player_stats","order":15,"path":"objects/obj_player_stats/obj_player_stats.yy",},
