@@ -1,6 +1,6 @@
 /// @description Returns the depth of the specified object.
-/// @param {Number} obj The index of the object to check
-/// @return {Number} depth of the object
+/// @param {Real} obj The index of the object to check
+/// @return {Real} depth of the object
 function object_get_depth(argument0) {
 
 	var objID = argument0;

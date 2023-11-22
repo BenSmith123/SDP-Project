@@ -3,7 +3,7 @@
 TO DO
 --------------------
 
-- mob item drops! - script ran when mob killed
+- AI scripts still need more work - attacks with abilities don't always work
 - finalise how blocks/tiles system work
 	- jump through blocks everywhere?
 	- can AI use them too?

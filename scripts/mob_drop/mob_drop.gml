@@ -1,5 +1,3 @@
-
-
 ///@description Drop items/coins. Called when mob is killed
 function mob_drop()
 {
@@ -10,7 +8,6 @@ function mob_drop()
 		case obj_ai_1: 
 			mob_drop_item(obj_item_drone_piece)
 		break
-
 
 	default: break;
 	}
