@@ -1,2 +1,2 @@
 
-effect_projectile_destroy()
+effect_projectile_destroy(ProjectileDestroyEffect.DroneLaser)

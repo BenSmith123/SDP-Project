@@ -3,11 +3,8 @@ function scr_ai_jump_down() {
 	if (y > enemy.y - drop_distance and y < enemy.y-100)
 	{
 
-	    if (scr_ai_meet_verticle_x() = true)
+	    if scr_ai_meet_x()
 	    {
-
-    
-    
 	        state = "Jump down"
     
 	        if y < room_height-120 // dont drop off the entire map

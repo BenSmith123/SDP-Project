@@ -9,13 +9,13 @@ function scr_ai_movement() {
 	    // MOVING LEFT AND RIGHT
 	    if stay == false
 	    {
-			state = "Walking"   
+			// state = "Walking"
 		    // positive or negative walk speed depending on direction
 		    hspeed = speed_in_direction
 
 			if place_meeting(x+hspeed, y-1, obj_block)
 			{
-				state = "Slope"
+				//state = "Slope"
 				
 				// loop to push the mob up depending on the slope
 				for(var new_y = 0; new_y < 10; new_y++)
@@ -39,26 +39,23 @@ function scr_ai_movement() {
 	}
 
 	//scr_ai_spread() // stop ai bunching together
-
-	if aggressive == true
-	{
-	    scr_ai_chase()
-	}
-
-
+	
 	scr_ai_block_jump()
 
 	scr_ai_room_end()
+	
+	// stop all scripts below if player doesn't exist - prevent crashes & avoid additional checks
+	if !instance_exists(enemy) { exit }
+	
+	is_left_of_enemy = x < enemy.x
+	facing_left = image_xscale == -1
+	
+	if (hp < maxhp/100*health_run_percent) { scr_ai_run(); exit }
 
-	if (hp < maxhp/100*health_run_percent)
-	{scr_ai_run() exit}
-
-
-	//scr_ai_jump_down() // teleport skill 
-
-	scr_ai_confront()
-
-
-
+	if aggressive || has_been_attacked
+	{
+	    scr_ai_chase()
+		scr_ai_confront()
+	}
 
 }

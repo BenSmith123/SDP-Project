@@ -1,29 +1,22 @@
-function scr_ai_confront() {
+function scr_ai_confront()
+{
+	if scr_ai_meet_y() == false { exit } 
+	
+	// if enemy is on same platform
 
-
-	// GET THIS WORKING
-	//if scr_ai_meet_horizontal_y() = true // if enemy is on same playform
+	if (distance_to_object(enemy) < attack_distance)
 	{
-
-	    if (distance_to_object(enemy) < 100)
-
-	    {
-        
-	        state = "Attack"
+	    state = "Attack"
     
-	        stay = true
-	        if x > enemy.x {image_xscale = -1} else {image_xscale = 1} // face enemy
-	        scr_ai_attack()
-	    }
-	    else
-	    { // GET RID OF ELSE STATEMENT??
-	        stay = false
-	    }
-    
-
+	    stay = true
+	    if x > enemy.x { image_xscale = -1 } else { image_xscale = 1 } // face enemy
+			
+		if attack_ability { scr_ai_attack() }
 	}
-
-
-
+	else
+	{
+		// can't see enemy, keep moving
+	    stay = false
+	}
 
 }

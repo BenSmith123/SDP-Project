@@ -6,7 +6,7 @@ attack = 5
 defence = 0
 accuracy = 5
 
-aggressive = false // move/attack an enemy when enemy is unprovoked
+aggressive = false // move/attack an enemy when unprovoked
 
 block_distance = 0 // distance for checking how far away blocks are (before jumping)
 jump_block_height = 0 // how high a block can be for ai to try jump

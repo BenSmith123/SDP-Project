@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_ai_meet_horizontal_y",
+  "name": "scr_ai_directions",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

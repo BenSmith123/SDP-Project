@@ -24,7 +24,7 @@ function scr_ai_block_jump() {
 	        }
 	        else // if cant jump over block, turn around
 	        {
-	            scr_ai_turn_around()
+	            ai_turn_around()
 	        }
 	    }
 	}

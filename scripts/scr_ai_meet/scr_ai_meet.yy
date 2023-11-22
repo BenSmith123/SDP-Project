@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_ai_turn_around",
+  "name": "scr_ai_meet",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

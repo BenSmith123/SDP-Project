@@ -9,6 +9,8 @@ function deal_damage_to_mob(mob) {
 	text.col3 = c_orange
 	text.col4 = c_orange
 
+	mob.has_been_attacked = true
+
 	damage_was_done = calculate_damage(mob)
 	
 	if (!damage_was_done)

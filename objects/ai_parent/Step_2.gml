@@ -10,7 +10,7 @@ if attacking == true
 
 if place_empty(x, y+1, obj_block)
 {
-	state = "jumping"
+	// state = "jumping"
     sprite_index = sprite_jump
 	exit
 }

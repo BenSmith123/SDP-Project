@@ -1,6 +1,7 @@
-function scr_ai_attack() {
-
-	if can_shoot = true
+function scr_ai_attack() 
+{
+	
+	if can_shoot == true
 	{
     
 	    alarm[0] = 90
@@ -26,8 +27,5 @@ function scr_ai_attack() {
 	}
 
 	can_shoot = false
-
-
-
 
 }

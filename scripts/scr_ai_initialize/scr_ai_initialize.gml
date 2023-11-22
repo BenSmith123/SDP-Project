@@ -3,8 +3,6 @@ function scr_ai_initialize()
 	// initialize all common varibles for each ai
 	// (called in create event of each AI)
 	
-	
-	
 	x_meet = sprite_get_height(sprite_index)/2 // distance for the x and enemy x for alignment (player above or below)
 	y_meet = sprite_get_width(sprite_index)/2 // (player on same platform)
 	// ^^^ divided by two because -height to +height is double the players size
@@ -16,6 +14,8 @@ function scr_ai_initialize()
 	
 	// DEFAULTS (could be overridden by different mobs)
 	can_be_knockedback = true
+	attack_ability = false // projectiles, skills etc.
+	attack_distance = 0 // distance before attacking player
 
 	// IN-GAME
 	hp = maxhp
@@ -32,6 +32,9 @@ function scr_ai_initialize()
 	show_hp = false // only show hp when provoked
 	healthbar_colour = HealthColour.Green
 	is_on_ground = false
+	has_been_attacked = false
+	is_left_of_enemy = false
+	facing_left = false
 	
 	//tag_y = round((sprite_get_height(sprite_index)/2)) // get the mask height so it can draw the tags below (name, hp)
 	// ^ tag_y doesn't really work like this since some sprites have added space to give the floating effect
