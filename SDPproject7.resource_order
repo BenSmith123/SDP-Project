@@ -19,6 +19,7 @@
     {"name":"pickups","order":5,"path":"folders/Sprites/pickups.yy",},
     {"name":"Projectiles","order":48,"path":"folders/Sprites/Projectiles.yy",},
     {"name":"Tiles","order":47,"path":"folders/Sprites/Tiles.yy",},
+    {"name":"WIP","order":51,"path":"folders/Sprites/WIP.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_player_mask","order":1,"path":"sprites/spr_player_mask/spr_player_mask.yy",},
@@ -69,6 +70,7 @@
     {"name":"spr_coin_hud","order":7,"path":"sprites/spr_coin_hud/spr_coin_hud.yy",},
     {"name":"spr_black","order":9,"path":"sprites/spr_black/spr_black.yy",},
     {"name":"spr_name_label","order":11,"path":"sprites/spr_name_label/spr_name_label.yy",},
+    {"name":"Sprite113","order":2,"path":"sprites/Sprite113/Sprite113.yy",},
     {"name":"spr_ai_level","order":13,"path":"sprites/spr_ai_level/spr_ai_level.yy",},
     {"name":"spr_hud_health_bar","order":15,"path":"sprites/spr_hud_health_bar/spr_hud_health_bar.yy",},
     {"name":"spr_hud_experience","order":17,"path":"sprites/spr_hud_experience/spr_hud_experience.yy",},
@@ -180,6 +182,7 @@
     {"name":"initialise_stored_globals","order":3,"path":"scripts/initialise_stored_globals/initialise_stored_globals.yy",},
     {"name":"action_create_object","order":1,"path":"scripts/action_create_object/action_create_object.yy",},
     {"name":"action_set_relative","order":5,"path":"scripts/action_set_relative/action_set_relative.yy",},
+    {"name":"spr_fx_spark_blue","order":1,"path":"sprites/spr_fx_spark_blue/spr_fx_spark_blue.yy",},
     {"name":"instance_create","order":1,"path":"scripts/instance_create/instance_create.yy",},
     {"name":"joystick_check_button","order":1,"path":"scripts/joystick_check_button/joystick_check_button.yy",},
     {"name":"joystick_exists","order":3,"path":"scripts/joystick_exists/joystick_exists.yy",},
