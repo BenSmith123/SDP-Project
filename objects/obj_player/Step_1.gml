@@ -3,7 +3,7 @@
 // We're doing this in the Begin Step event, so the events that run later (Step and End Step) know whether the player is on ground
 // or not.
 // The result of the function (true or false) is stored in the  'grounded' variable, which was initialised in the Create event.
-grounded = check_collision(0, 1);
+grounded = check_collision(0, 1) || place_meeting(x+vel_x, y+vel_y, obj_block_slope_parent)
 
 // In this part we are applying friction to the player's velocity, so it eventually comes to a stop when there is no input.
 // The 'round' function rounds the X velocity to the nearest integer. Then it checks if that integer is NOT 0. This means there is an

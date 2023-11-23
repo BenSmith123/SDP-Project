@@ -6,12 +6,12 @@ function check_collision(_move_x, _move_y)
 
 	// This checks for an object collision at the new position, where the instance is going to move
 	// We get the new position by adding _move_x and _move_y to the instance's X and Y values
-	// TODO - bring this back if needed once room block tiles/objects have been re-worked
-	//if (place_meeting(x + _move_x, y + _move_y, obj_block))
-	//{
-	//	// If there was an object collision, return true, and end the function
-	//	return true;
-	//}
+	// NOTE - prevent player from falling through slopes - this also stops player from jumping up through blocks
+	if place_meeting(x + _move_x, y + _move_y, obj_block_slope_parent)
+	{
+		// If there was an object collision, return true, and end the function
+		return true;
+	}
 	
 	
 	// check for blocks that can be jumped through

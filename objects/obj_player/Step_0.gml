@@ -37,8 +37,8 @@ repeat (_move_count)
 		// In that case, move_once is added to the X coordinate of the character.
 		x += _move_once
 		
-		// check for slope
-		if place_meeting(x+_move_once, y, obj_block_slope_parent)
+		//// check for slope
+		if place_meeting(x+_move_once, y+vel_y, obj_block_slope_parent)
 		{
 			// loop to push the player up depending on the slope
 			for(var new_y = 0; new_y < 10; new_y++)
@@ -53,9 +53,13 @@ repeat (_move_count)
 					break
 				}
 			}
-			//break
 		}
 		
+		// moving down slope
+		if (!place_meeting(x+_move_once, y+vel_y, obj_block_slope_parent) && place_meeting(x+_move_once, y+vel_y+10, obj_block_slope_parent))
+		{
+			y += abs(_move_once);
+		}
 	}
 	else
 	{
