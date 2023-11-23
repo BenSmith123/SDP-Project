@@ -6,59 +6,66 @@ sprite_index = sprite84
 if room = room11 {sprite_index = spr_block}
 if room = room10 {sprite_index = sprite80}
 
-can_jump_through = true // can be jumped through if theres no block above or below it
-// if place_meeting(x,y+1,obj_block) {can_jump_through = true}
-// if place_meeting(x,y-1,obj_block) {can_jump_through = true}
-change = false
+var change = false
+
+var block_above = place_meeting(x,y-1,obj_block)
+var block_below = place_meeting(x,y+1,obj_block)
+var block_left = place_meeting(x-1,y,obj_block)
+var block_right = place_meeting(x+1,y,obj_block)
+
 
 // change to scenery block if block sits pointlessly
-if place_meeting(x,y-1,obj_block) // above
-if place_meeting(x-1,y,obj_block) // left
-if place_meeting(x+1,y,obj_block) // right
+if block_above
+if block_left
+if block_right
 {{{change = true}}}
-
 
 image_index = 1
 
-// needed?
-if not place_meeting(x+1,y,obj_block) {image_index = 3} // not right block
 
-if not place_meeting(x-1,y,obj_block) and not place_meeting(x+1,y,obj_block) // not on left or right
+if not block_left and not block_right // not on left or right
 {image_index = 1} 
 
-if place_meeting(x,y-1,obj_block) {image_index = 0} // above block
-
-
+if block_above {image_index = 0}
 
 // not left and not below
-if not place_meeting(x-1,y,obj_block) and not place_meeting(x,y+1,obj_block)
+if not block_left and not block_below
 {image_index = 5} 
 
 // not right not below
-if not place_meeting(x+1,y,obj_block) and not place_meeting(x,y+1,obj_block)
+if not block_right and not block_below
 {image_index = 2}
 
-// not right not above
-if not place_meeting(x-1,y,obj_block) and not place_meeting(x,y-1,obj_block)
-{
-    mask_index = spr_block_br
-    image_index = 4
-}
-
-// not right not above
-if not place_meeting(x+1,y,obj_block) and not place_meeting(x,y-1,obj_block)
-{
-	mask_index = spr_block_bl
-	image_index = 3
-}
-
-if change = true
+if change == true
 {
     block = instance_create(x,y,obj_block_blank)
     block.sprite_index = sprite_index
     block.image_index = image_index
     instance_destroy()
 }
+
+//if collision_line(x,y,x,room_height+300,obj_block,false,true) == noone { exit }
+
+// not right not above
+if not block_left and not block_above
+{
+	instance_create(x,y,obj_block_temp)
+	//a.mask_index = spr_block_br
+	image_index = 4
+	instance_destroy()
+	exit // don't remove - strange that this is needed?
+}
+
+// not right not above
+if not block_right and not block_above
+{
+	var a = instance_create(x,y,obj_block_temp)
+	a.image_xscale = -1
+	//a.mask_index = spr_block_bl
+	image_index = 3
+	instance_destroy()
+}
+
 
 
 

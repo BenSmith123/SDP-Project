@@ -22,6 +22,8 @@ if hp <= 0
 var _move_count = abs(vel_x);
 var _move_once = sign(vel_x);
 
+var is_walking_up_slope = false
+
 // This runs a loop, which runs 'move_count' times. All code in this block is repeated that many amount of times.
 repeat (_move_count)
 {
@@ -33,28 +35,30 @@ repeat (_move_count)
 	if (!_collision_found)
 	{
 		// In that case, move_once is added to the X coordinate of the character.
-		x += _move_once;
-	}
-	else
-	{
+		x += _move_once
 		
-		if place_meeting(x+_move_once, y, obj_block)
+		// check for slope
+		if place_meeting(x+_move_once, y, obj_block_temp)
 		{
 			// loop to push the player up depending on the slope
-			for(new_y = 0; new_y < 10; new_y++)
+			for(var new_y = 0; new_y < 10; new_y++)
 			{
-			    // checks for place free above the slope (prevent walking up/through a wall)
-			    if (place_empty(x+_move_once, y-new_y, obj_block))
-			    {
+				// checks for place free above the slope (prevent walking up/through a wall)
+				if (place_empty(x+_move_once, y-new_y, obj_block_temp))
+				{
 					// move player diagonally
-					x += _move_once * 2;
+					is_walking_up_slope = true
+					x += _move_once * 2
 					y -= new_y;
-			        break
-			    }
-			}    
+					break
+				}
+			}
 			break
 		}
 		
+	}
+	else
+	{
 		// In that case, we reset the X velocity to 0, so the character stops its movement on that axis.
 		vel_x = 0;
 	
@@ -76,9 +80,9 @@ repeat (_move_count)
 	var _collision_found = check_collision(0, _move_once);
 
 	// This checks if collision_found is false, meaning a collision was not found, and the player is free to move once on the Y axis.
-	if (!_collision_found)
+	if (!_collision_found && is_walking_up_slope == false)
 	{
-		// In that case, move_once is added to the Y coordinate of the character.
+		// apply gravity
 		y += _move_once;
 	}
 	else

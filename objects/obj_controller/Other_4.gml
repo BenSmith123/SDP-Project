@@ -1,8 +1,6 @@
 
 set_resolution()
 
-collision_tilemap = layer_tilemap_get_id("CollisionTiles");
-
 target = 0 // what player to target for the camera
 
 
