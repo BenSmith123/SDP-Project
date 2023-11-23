@@ -272,6 +272,7 @@
     {"name":"room3","order":19,"path":"rooms/room3/room3.yy",},
     {"name":"room_settings","order":21,"path":"rooms/room_settings/room_settings.yy",},
     {"name":"room_guide","order":23,"path":"rooms/room_guide/room_guide.yy",},
+    {"name":"basic_collision_and_gravity","order":10,"path":"scripts/basic_collision_and_gravity/basic_collision_and_gravity.yy",},
     {"name":"draw_nametag","order":16,"path":"scripts/draw_nametag/draw_nametag.yy",},
     {"name":"TileSet2","order":1,"path":"tilesets/TileSet2/TileSet2.yy",},
     {"name":"notes","order":1,"path":"notes/notes/notes.yy",},

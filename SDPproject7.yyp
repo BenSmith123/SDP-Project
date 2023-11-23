@@ -338,6 +338,7 @@
     {"id":{"name":"room3","path":"rooms/room3/room3.yy",},},
     {"id":{"name":"room_settings","path":"rooms/room_settings/room_settings.yy",},},
     {"id":{"name":"room_guide","path":"rooms/room_guide/room_guide.yy",},},
+    {"id":{"name":"basic_collision_and_gravity","path":"scripts/basic_collision_and_gravity/basic_collision_and_gravity.yy",},},
     {"id":{"name":"draw_nametag","path":"scripts/draw_nametag/draw_nametag.yy",},},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
     {"id":{"name":"notes","path":"notes/notes/notes.yy",},},
