@@ -11,6 +11,4 @@ col4 = c_orange
 image_xscale = 0
 image_yscale = 0
 
-
-
-
+x = round(x)
