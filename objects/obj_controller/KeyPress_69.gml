@@ -1,3 +1,3 @@
 
 // debug
-room_goto(room3)
+room_goto(room113)

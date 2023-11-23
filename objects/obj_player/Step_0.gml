@@ -48,12 +48,12 @@ repeat (_move_count)
 				{
 					// move player diagonally
 					is_walking_up_slope = true
-					x += _move_once * 2
+					//x += _move_once // * 2
 					y -= new_y;
 					break
 				}
 			}
-			break
+			//break
 		}
 		
 	}

@@ -3,6 +3,7 @@ image_speed = 0
 
 sprite_index = sprite84
 
+if room = room113 {exit}
 if room = room11 {sprite_index = spr_block}
 if room = room10 {sprite_index = sprite80}
 
