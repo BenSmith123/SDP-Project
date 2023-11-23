@@ -38,13 +38,13 @@ repeat (_move_count)
 		x += _move_once
 		
 		// check for slope
-		if place_meeting(x+_move_once, y, obj_block_temp)
+		if place_meeting(x+_move_once, y, obj_block_slope_parent)
 		{
 			// loop to push the player up depending on the slope
 			for(var new_y = 0; new_y < 10; new_y++)
 			{
 				// checks for place free above the slope (prevent walking up/through a wall)
-				if (place_empty(x+_move_once, y-new_y, obj_block_temp))
+				if (place_empty(x+_move_once, y-new_y, obj_block_slope_parent))
 				{
 					// move player diagonally
 					is_walking_up_slope = true

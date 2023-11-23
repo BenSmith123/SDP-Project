@@ -1,15 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_jump_through",
-  "eventList": [],
+  "name": "obj_block_slope_left",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_block_slope_parent",
+    "path": "objects/obj_block_slope_parent/obj_block_slope_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_test",
-    "path": "sprites/spr_block_test/spr_block_test.yy",
+    "name": "spr_block_bl",
+    "path": "sprites/spr_block_bl/spr_block_bl.yy",
   },
   "spriteMaskId": null,
   "visible": true,

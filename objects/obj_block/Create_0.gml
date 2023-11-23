@@ -49,9 +49,7 @@ if change == true
 // not right not above
 if not block_left and not block_above
 {
-	instance_create(x,y,obj_block_temp)
-	//a.mask_index = spr_block_br
-	image_index = 4
+	instance_create(x,y,obj_block_slope_right)
 	instance_destroy()
 	exit // don't remove - strange that this is needed?
 }
@@ -59,10 +57,7 @@ if not block_left and not block_above
 // not right not above
 if not block_right and not block_above
 {
-	var a = instance_create(x,y,obj_block_temp)
-	a.image_xscale = -1
-	//a.mask_index = spr_block_bl
-	image_index = 3
+	instance_create(x,y,obj_block_slope_left)
 	instance_destroy()
 }
 
