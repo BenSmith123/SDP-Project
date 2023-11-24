@@ -3,7 +3,7 @@
 
 if x > room_width
 {
-    room_goto_next()
+    move_to_next_map()
 }
 else
 {
