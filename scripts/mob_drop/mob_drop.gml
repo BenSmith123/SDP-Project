@@ -20,7 +20,7 @@ function mob_drop()
 /// @param obj_index {Instance.Id}
 function mob_drop_item(obj_index) 
 {
-	var item = instance_create(x, y, obj_index)
+	var item = instance_create_layer(x, y, "NPC",obj_index)
 	// randomise where the item is dropped
 	item.hspeed = irandom_range(-3,3)
     item.vspeed = irandom_range(-2,-4)
