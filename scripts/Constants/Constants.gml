@@ -8,6 +8,21 @@
 
 #macro TERMINAL_VELOCITY 12
 
+enum ObjectDepth
+{
+	Controller = -10100, // debug text
+	OverlayScreen = -10050, // pick class, player dead
+	HUD = -10000,
+	DamageText = -6000,
+	Effect = -5800,
+	Projectile = -5500,
+	Player = -5000,
+	Coin = -4600,
+	Item = -4500,
+	Mob = -4000,
+	Tiles = 1000
+}
+
 enum PlayerClass
 {
 	Beginner,

@@ -1,4 +1,6 @@
 
+depth = ObjectDepth.HUD
+
 lives_x = 30
 
 health_colour = 0

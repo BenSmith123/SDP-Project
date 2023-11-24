@@ -23,6 +23,7 @@ function scr_ai_initialize()
 
 	mask_index = sprite_stand // keep mask the same regardless of animation etc.
 	image_xscale = choose(-1,1) // which way to start walking
+	depth = ObjectDepth.Mob
 	attacker = "" // player that attacked
 	state = "Spawn.." // debug
 	can_shoot = true

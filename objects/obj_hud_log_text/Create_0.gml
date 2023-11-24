@@ -1,4 +1,6 @@
 
+depth = ObjectDepth.HUD
+
 y_start_pos = HEIGHT - 120
 
 text = "" // set by creation script

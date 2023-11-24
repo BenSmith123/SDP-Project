@@ -1,4 +1,6 @@
 
+depth = ObjectDepth.Tiles
+
 image_speed = 0
 
 sprite_index = sprite84

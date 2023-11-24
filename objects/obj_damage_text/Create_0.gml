@@ -1,4 +1,5 @@
 
+depth = ObjectDepth.DamageText
 image_alpha = 2
 
 // top left

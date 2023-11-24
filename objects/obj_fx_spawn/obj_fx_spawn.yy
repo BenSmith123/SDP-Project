@@ -12,7 +12,10 @@
     "name": "Effects",
     "path": "folders/Objects/Effects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "effects_parent",
+    "path": "objects/effects_parent/effects_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
