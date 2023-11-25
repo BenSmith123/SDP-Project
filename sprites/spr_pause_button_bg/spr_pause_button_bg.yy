@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c52e217-3ccb-4d57-afc7-17c61705b743",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"07f6a5cf-540f-4f26-97af-1a7714540a0c",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7aca525-3500-41e6-abff-b43d689e4ba9",},
   ],
   "gridX": 0,
@@ -55,11 +55,11 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1c52e217-3ccb-4d57-afc7-17c61705b743","path":"sprites/spr_pause_button_bg/spr_pause_button_bg.yy",},},},"Disabled":false,"id":"b333b073-0cdc-4866-83c5-eb980660477e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"07f6a5cf-540f-4f26-97af-1a7714540a0c","path":"sprites/spr_pause_button_bg/spr_pause_button_bg.yy",},},},"Disabled":false,"id":"cb77e89f-adba-40ea-9417-f386627117f2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d7aca525-3500-41e6-abff-b43d689e4ba9","path":"sprites/spr_pause_button_bg/spr_pause_button_bg.yy",},},},"Disabled":false,"id":"fa16cd2e-de91-4cc4-9b66-0d8c132c5a93","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 67,
     "yorigin": 78,

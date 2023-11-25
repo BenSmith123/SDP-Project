@@ -1,4 +1,2 @@
-
-scr_pause_game()
-
-
+///@description - event_user(0)
+event_user(0)

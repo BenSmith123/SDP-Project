@@ -230,6 +230,7 @@
     {"name":"obj_pause_menu","order":1,"path":"objects/obj_pause_menu/obj_pause_menu.yy",},
     {"name":"obj_message_banner","order":2,"path":"objects/obj_message_banner/obj_message_banner.yy",},
     {"name":"arrow_key_parent","order":3,"path":"objects/arrow_key_parent/arrow_key_parent.yy",},
+    {"name":"create_pause_menu","order":21,"path":"scripts/create_pause_menu/create_pause_menu.yy",},
     {"name":"obj_arrow_key_left","order":4,"path":"objects/obj_arrow_key_left/obj_arrow_key_left.yy",},
     {"name":"obj_arrow_key_right","order":5,"path":"objects/obj_arrow_key_right/obj_arrow_key_right.yy",},
     {"name":"obj_arrow_key_jump","order":6,"path":"objects/obj_arrow_key_jump/obj_arrow_key_jump.yy",},

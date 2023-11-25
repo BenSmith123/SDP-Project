@@ -1,7 +1,5 @@
 
-// script called when pause button has been pressed
-
-instance_deactivate_all(true) // deactivate all objects except self
+instance_deactivate_all(true) // deactivate all oects except self
 
 // set pause menu position
 x2 = __view_get( e__VW.XView, 0 )+WIDTH/2

@@ -289,6 +289,7 @@
     {"id":{"name":"obj_pause_menu","path":"objects/obj_pause_menu/obj_pause_menu.yy",},},
     {"id":{"name":"obj_message_banner","path":"objects/obj_message_banner/obj_message_banner.yy",},},
     {"id":{"name":"arrow_key_parent","path":"objects/arrow_key_parent/arrow_key_parent.yy",},},
+    {"id":{"name":"create_pause_menu","path":"scripts/create_pause_menu/create_pause_menu.yy",},},
     {"id":{"name":"obj_arrow_key_left","path":"objects/obj_arrow_key_left/obj_arrow_key_left.yy",},},
     {"id":{"name":"obj_arrow_key_right","path":"objects/obj_arrow_key_right/obj_arrow_key_right.yy",},},
     {"id":{"name":"obj_arrow_key_jump","path":"objects/obj_arrow_key_jump/obj_arrow_key_jump.yy",},},
