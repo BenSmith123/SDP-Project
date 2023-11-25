@@ -2,10 +2,14 @@
 
 TO DO
 --------------------
-
-- Fix positioning of HUD items
+- Game save
+	- Latest map
+	- player position?
+	- mob positions?
+- Text outline for HUD/damage text
+- ^ Better fonts?
+- Ladders / ropes!
 - Fix HUD healthbar
-- Delete unused fonts
 - AI scripts still need more work - attacks with abilities don't always work
 - ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 - finalise how blocks/tiles system work

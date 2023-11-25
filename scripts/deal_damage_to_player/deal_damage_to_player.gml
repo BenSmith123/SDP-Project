@@ -7,8 +7,6 @@ function deal_damage_to_player(player) {
 	player.can_be_hit = false
 	player.alarm[2] = 30 // can be hit again
     
-	part_particles_create(global.fx,x,y,global.boost_fx,20)
-    
 	text = instance_create(player.x,player.y-30,obj_damage_text)
     
 	// colour the text
