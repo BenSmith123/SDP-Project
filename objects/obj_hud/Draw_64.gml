@@ -1,11 +1,8 @@
 
-
 if low_health_alpha != 0
 {
     draw_sprite_stretched_ext(spr_hit_effect,0,0,0,WIDTH,HEIGHT,image_blend,low_health_alpha)
 }
-
-scr_text_1()
 
 draw_sprite(spr_hud,0,10,10)
 
@@ -16,21 +13,30 @@ draw_sprite_part(spr_hud_health_bar,health_colour,0,0,(obj_player.hp/obj_player.
 draw_sprite_part(spr_hud_experience,0,0,0,(global.experience/global.max_exp * 265),18,68,48) // 127 = sprite width
 
 
-
-
-
-
 scr_text_2()
-draw_text(42,42,global.level) // level
+draw_text(42,42,global.level)
 
-scr_text_4()
-draw_set_halign(fa_right)
-draw_text(324,30,string(obj_player.hp) +"/" +string(obj_player.max_hp))
-draw_text(236,30,global.name +"    [ "+global.class+" ]")
+scr_text_3()
 
-draw_text(230,56,string(global.experience) +"/" +string(global.max_exp)+"   ["+string(global.experience/global.max_exp*100)+"%]")
 
-draw_text(WIDTH-20,64,string(global.current_kills)+ " kills")
+// TODO - white/black colour outline text?
+//draw_set_color(c_black)
+
+
+// HEALTH TEXT
+draw_text(290,33,string(obj_player.hp) +"/" +string(obj_player.max_hp))
+
+// NAME & CLASS
+draw_text(88,33,global.name +"        ("+global.class+")")
+
+// EXP number
+draw_text(88,58,string(global.experience)+"/"+string(global.max_exp))
+
+// EXP percentage
+draw_text(270,58,string(global.experience/global.max_exp*100)+"%")
+
+
+// draw_text(WIDTH-20,64,string(global.current_kills)+ " kills")
 
 
 // coins

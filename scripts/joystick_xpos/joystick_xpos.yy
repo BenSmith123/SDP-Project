@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "joystick",
-    "path": "folders/Scripts/compatibility/joystick.yy",
+    "path": "folders/Scripts/Compatibility/joystick.yy",
   },
 }

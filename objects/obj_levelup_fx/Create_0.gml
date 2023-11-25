@@ -1,4 +1,6 @@
 
+event_inherited()
+
 image_alpha = 2
 
 // top left

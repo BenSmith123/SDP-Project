@@ -17,6 +17,7 @@ enum ObjectDepth
 	Effect = -5800,
 	Projectile = -5500,
 	Player = -5000,
+	LevelupEffect = -4900, // sparks behind player only
 	Coin = -4600,
 	Item = -4500,
 	Mob = -4000,

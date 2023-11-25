@@ -1,7 +1,7 @@
 
 draw_self()
 
-draw_nametag(name, 50)
+draw_nametag(name, 50, true)
 
 if (!instance_exists(obj_player)) { exit }
 

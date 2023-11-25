@@ -3,7 +3,9 @@
 TO DO
 --------------------
 
-- fix positioning of HUD items
+- Fix positioning of HUD items
+- Fix HUD healthbar
+- Delete unused fonts
 - AI scripts still need more work - attacks with abilities don't always work
 - ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 - finalise how blocks/tiles system work
