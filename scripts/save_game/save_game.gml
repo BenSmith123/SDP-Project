@@ -3,6 +3,9 @@ function save_game() {
 	////////// save the game (as temp ini) //////////
 	file = ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one
 
+	// store room
+	ini_write_string("GAME","current_map_name",global.current_map_name)
+
 	ini_write_real("STATS","current_kills",global.current_kills)
 	ini_write_real("STATS","kills",global.kills)
 

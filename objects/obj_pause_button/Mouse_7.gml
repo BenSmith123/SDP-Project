@@ -1,2 +1,1 @@
-///@description - event_user(0)
-event_user(0)
+if (!paused) event_user(0)

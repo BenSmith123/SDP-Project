@@ -5,6 +5,10 @@ depth = ObjectDepth.Player
 global.player_start_x = x
 global.player_start_y = y
 
+// store room for when game is next loaded
+global.current_map_name = room_get_name(room)
+
+
 if global.joystick_enabled = true {instance_create(x,y,obj_joystick)}
 
 

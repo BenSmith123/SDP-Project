@@ -11,5 +11,5 @@ if image_alpha <= 0
 
 scr_text_2()
 
-draw_text_color(target.x,target.y+y2,string_hash_to_newline("HEAL "+string(heal_amount)),col1,col2,col3,col4,image_alpha)
+draw_text_color(target.x,target.y+y2,"Heal "+string(heal_amount),col1,col2,col3,col4,image_alpha)
 

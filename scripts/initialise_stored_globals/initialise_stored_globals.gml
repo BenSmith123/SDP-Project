@@ -1,6 +1,10 @@
 /// @description  saved global variables
-function initialise_stored_globals() {
-
+function initialise_stored_globals()
+{
+	
+	// game
+	//global.current_player_map = room1
+	
 	// stats
 	global.current_kills = 0
 	global.kills = 0
@@ -24,6 +28,4 @@ function initialise_stored_globals() {
 	global.heal_amount = 10 
 
 	global.coins = 0
-
-
 }
