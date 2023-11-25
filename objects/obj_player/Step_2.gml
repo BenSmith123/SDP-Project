@@ -1,3 +1,8 @@
+
+// update the player position for next log in
+global.current_player_x = x
+global.current_player_y = y
+
 // flips the character's sprite depending on whether it's moving left or right.
 if (vel_x < 0)
 {

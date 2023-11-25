@@ -21,6 +21,7 @@ enum ObjectDepth
 	LevelupEffect = -4900, // sparks behind player only
 	Coin = -4600,
 	Item = -4500,
+	NPC = -4300,
 	Mob = -4000,
 	Tiles = 1000
 }

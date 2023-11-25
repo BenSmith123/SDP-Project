@@ -1,5 +1,6 @@
 
 image_speed = 0
+depth = ObjectDepth.NPC
 
 name = ""
 text = "Bla bla bla..."

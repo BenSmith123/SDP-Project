@@ -39,9 +39,11 @@ function load_game() {
 	    if file_exists(working_directory + "temp_2")
 	    {
 	        ini_open(working_directory + "temp_2")
-        
+			
 			global.current_map_name = ini_read_string("GAME", "current_map_name", "room1")
-		
+			global.current_player_x = ini_read_real("GAME", "current_player_x", -1)
+			global.current_player_y = ini_read_real("GAME", "current_player_y", -1)
+
 	        global.current_kills = ini_read_real("STATS","current_kills",true)
 	        global.show_time = ini_read_real("STATS","kills",true)
         

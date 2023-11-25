@@ -1,5 +1,5 @@
-function reset_game() {
-
+function reset_game() 
+{
 	//if file_exists("temp")
 	{
 	    file_delete("temp")
@@ -10,5 +10,4 @@ function reset_game() {
 		
 	    //game_restart()
 	}
-    
 }

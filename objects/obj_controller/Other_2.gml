@@ -22,10 +22,9 @@ if os_type = os_android {global.system = "Android"}
 
 // in-game variables
 
-global.player_start_x = 0 // set where the player first spawns in the room
+// set where the player first spawns in the room
+global.player_start_x = 0 
 global.player_start_y = 0
-
-
 
 
 // SETTINGS

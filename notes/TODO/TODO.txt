@@ -3,7 +3,6 @@
 TO DO
 --------------------
 - Game save
-	- Latest map
 	- player position?
 	- mob positions?
 - Text outline for HUD/damage text

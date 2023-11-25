@@ -3,7 +3,9 @@ function initialise_stored_globals()
 {
 	
 	// game
-	//global.current_player_map = room1
+	global.current_map_name = "room1"
+	global.current_player_x = -1
+	global.current_player_y = -1
 	
 	// stats
 	global.current_kills = 0
