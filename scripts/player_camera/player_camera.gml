@@ -40,24 +40,15 @@ function player_camera()
 	// prevent camera from going out of room when window isn't open
 	if (!window_has_focus()) exit
 	
-
-	target = obj_player
+	var target = obj_player
 
 	// ROOM END X
 	if not(__view_get( e__VW.XView, 0 ) <= 0 and target.x<WIDTH/1.5) and not(__view_get( e__VW.XView, 0 )+WIDTH >= room_width and target.x > room_width-(WIDTH/2)) 
-	{__view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.03) )}
+	{__view_set( e__VW.XView, 0, round(__view_get( e__VW.XView, 0 ) + (((x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.03) ))}
 
 	// ROOM END Y
 	if not(__view_get( e__VW.YView, 0 ) <= 0 and target.y<HEIGHT/1.5) and not(__view_get( e__VW.YView, 0 )+HEIGHT >= room_height and target.y > room_height-(HEIGHT/2))
-	{__view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (((y-(__view_get( e__VW.HView, 0 )/2)) - __view_get( e__VW.YView, 0 )) * 0.03) )}
+	{__view_set( e__VW.YView, 0, round(__view_get( e__VW.YView, 0 ) + (((y-(__view_get( e__VW.HView, 0 )/2)) - __view_get( e__VW.YView, 0 )) * 0.03) ))}
 
 	if __view_get( e__VW.YView, 0 ) < 0 {__view_set( e__VW.YView, 0, 0 )} // stops line at top of the screen. idk y needed
-
-
-	/*
-	// looks better?
-	round(view_xview[0])
-	round(view_yview[0])
-	*/
-   
 }

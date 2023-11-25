@@ -1,8 +1,6 @@
 
 move_direction = ""
 
-target = obj_player
-
 player_camera()
 
 player_controls()

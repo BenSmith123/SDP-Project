@@ -15,7 +15,7 @@ function deal_damage_to_mob(mob) {
 	
 	if (!damage_was_done)
 	{
-		text.damage = "Defend"
+		text.damage = "x" // "defend"
 		exit
 	}
 	

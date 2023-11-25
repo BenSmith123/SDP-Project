@@ -21,7 +21,7 @@ function calculate_damage(target)
 	}
 	else // if no damage was done
 	{
-	    text.damage = "Defend"
+	    text.damage = "x" // "defend"
 	    return false // the object was not damaged (no knockback etc)
 	}
 

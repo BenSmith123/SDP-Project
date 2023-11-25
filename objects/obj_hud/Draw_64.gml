@@ -18,7 +18,6 @@ draw_text(42,42,global.level)
 
 scr_text_3()
 
-
 // TODO - white/black colour outline text?
 //draw_set_color(c_black)
 
@@ -32,6 +31,7 @@ draw_text(88,33,global.name +"        ("+global.class+")")
 // EXP number
 draw_text(88,58,string(global.experience)+"/"+string(global.max_exp))
 
+draw_set_halign(fa_right)
 // EXP percentage
 draw_text(270,58,string(global.experience/global.max_exp*100)+"%")
 
