@@ -55,10 +55,10 @@ function inventory_add(itemIdToAdd, amount = 1)
 }
 
 
-function push_item_to_array(itemDetails, name, amount = 1)
+function push_item_to_array(itemDetails, amount = 1)
 {
 	array_push(global.inventory_array, [itemDetails.iid, amount])
-	log_player_message(get_item_log_message(name, amount))
+	log_player_message(get_item_log_message(itemDetails.name, amount))
 }
 
 

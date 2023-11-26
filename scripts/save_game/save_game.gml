@@ -3,6 +3,8 @@ function save_game()
 	////////// save the game (as temp ini) //////////
 	file = ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one
 
+	ini_write_string("INVENTORY","inventory_array",json_stringify(global.inventory_array))
+
 	ini_write_string("GAME","current_map_name",global.current_map_name)
 	ini_write_string("GAME","current_player_x",global.current_player_x)
 	ini_write_string("GAME","current_player_y",global.current_player_y)
