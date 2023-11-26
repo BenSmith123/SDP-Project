@@ -3,6 +3,7 @@
 TO DO
 --------------------
 - UI for inventory items
+- fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Bank - store coins
 - AI spawner?
@@ -27,6 +28,9 @@ refactor:
 - clean up /remove old scripts - get virtual joysticks fully working first
 - menu links
 - start healing only when standing still
+
+
+item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
 
 
 GOAL: Focus on fixing bugs & adding features, not just refactoring old code!

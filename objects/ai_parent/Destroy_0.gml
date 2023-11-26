@@ -8,17 +8,15 @@ dead_body.vspeed = vspeed
 dead_body.friction = friction // knock back as far as the ai would have already been knocked back
 
 
+// if not killed by player (no reward)
+if soft_kill == true { exit }
 
-//if soft_kill = true // if not killed by player (no reward)
-{
-    global.current_kills += 1
-    global.experience += experience
+global.current_kills += 1
+global.experience += experience
 	
-	log_player_message($"+{experience} experience")
+log_player_message($"+{experience} experience")
 	
-	mob_drop()
+mob_drop()
     
-    scr_level_up() // check for level up
-}
+scr_level_up() // check for level up
 
-with obj_heal_text instance_destroy() // TODO - doesn't this destroy any mob text?

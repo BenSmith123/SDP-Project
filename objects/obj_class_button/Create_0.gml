@@ -1,4 +1,5 @@
 
+depth = ObjectDepth.OverlayScreen
 image_speed = 0
 
 sprite_index_2 = 0

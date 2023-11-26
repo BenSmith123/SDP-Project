@@ -7,6 +7,7 @@ function mob_drop()
 	{
 		case obj_ai_1: 
 			mob_drop_item(obj_item_drone_piece)
+			mob_drop_item(obj_item_potion_blue, 5)
 		break
 
 	default: break;
@@ -18,8 +19,15 @@ function mob_drop()
 
 
 /// @param obj_index {Instance.Id}
-function mob_drop_item(obj_index) 
+function mob_drop_item(obj_index, chance = 1) 
 {
+	
+	if chance != 1
+	{
+		// if num chosen is 1, continue to spawn item
+		if irandom(chance) != 1 {exit}
+	}
+	
 	var item = instance_create(x, y,obj_index)
 	// randomise where the item is dropped
 	item.hspeed = irandom_range(-3,3)

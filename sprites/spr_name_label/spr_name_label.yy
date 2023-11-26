@@ -50,7 +50,7 @@
   "origin": 9,
   "parent": {
     "name": "HUD",
-    "path": "folders/Sprites/HUD.yy",
+    "path": "folders/Sprites/characters/HUD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

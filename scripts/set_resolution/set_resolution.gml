@@ -15,8 +15,8 @@ function set_resolution()
 
 	if global.system = "Windows"
 	{
-	    window_set_fullscreen(true)
-	    window_set_size(__view_get( e__VW.WPort, 0 ), __view_get( e__VW.HPort, 0 ))
+	    //window_set_fullscreen(true)
+	    //window_set_size(__view_get( e__VW.WPort, 0 ), __view_get( e__VW.HPort, 0 ))
 	}
 
 	display_set_gui_size(WIDTH, HEIGHT)
