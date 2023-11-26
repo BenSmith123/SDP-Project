@@ -2,6 +2,11 @@
 function initialise_stored_globals()
 {
 	
+	// inventory
+	global.inventory_array = array_create(10, noone) // TODO - 10
+	// array items: ["itemName", amount]
+	inventory_add(ItemId.DronePiece, 3)
+	
 	// game
 	global.current_map_name = "room1"
 	global.current_player_x = -1

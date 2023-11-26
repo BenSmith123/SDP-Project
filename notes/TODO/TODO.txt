@@ -2,27 +2,26 @@
 
 TO DO
 --------------------
-- Game save
-	- player position?
-	- mob positions?
+- add inventory system: 
+	- struct datatype for individual items, 1D array for storage (array of arrays)
+	- player item: id, amount
+- shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
+- Bank - store coins
+- AI spawner?
+- Game save - mob positions?
+- Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text
 - ^ Better fonts?
 - Ladders / ropes!
-- Fix HUD healthbar
+- Fix HUD healthbar sprite
 - AI scripts still need more work - attacks with abilities don't always work
 - ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
-- finalise how blocks/tiles system work
-	- can AI use them too?
-	- room start script for setting all layers
 - backgrounds & scenery! with depth
 - refactor mob parent initialise/create event? - fix order
 - projectile range & drop?
 - gain extra exp when hitting a mob mid air? or player is in air - show on event log
 - seeker to go pick up coins
-- add inventory system + items?
-- shop: buy/sell items (seeker, sell drone pieces)
 - add better collision & bullet sprites & effects
-- pause screen instead of blank background
 - fix cam? - lowest blocks should be at bottom of screen regardless of screen size or room height
 
 refactor:

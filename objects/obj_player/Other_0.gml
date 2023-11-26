@@ -1,5 +1,9 @@
 
-
+if (x < 0)
+{
+	// TODO - goto previous room
+	exit
+}
 
 if x > room_width
 {

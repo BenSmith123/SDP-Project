@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "move_to_next_map",
+  "name": "Script69",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
