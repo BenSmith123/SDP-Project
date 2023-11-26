@@ -1,7 +1,7 @@
 
 if place_meeting(x,y,obj_player)
 {
-	log_player_message($"Gained item '{name}'")
+	inventory_add(itemId)
 	instance_destroy()
 }
 

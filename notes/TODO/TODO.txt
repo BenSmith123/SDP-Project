@@ -2,9 +2,7 @@
 
 TO DO
 --------------------
-- add inventory system: 
-	- struct datatype for individual items, 1D array for storage (array of arrays)
-	- player item: id, amount
+- UI for inventory items
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Bank - store coins
 - AI spawner?

@@ -1,6 +1,6 @@
 
 // debug
-room_goto(room1)
+//room_goto(room1)
 
 //show_message(global.inventory_array)
-show_message(getItem())
+inventory_add(ItemId.DronePiece)

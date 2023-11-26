@@ -1,4 +1,4 @@
 
-name = "drone piece"
-
 event_inherited()
+
+itemId = ItemId.DronePiece

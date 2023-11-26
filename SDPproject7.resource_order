@@ -53,7 +53,7 @@
     {"name":"sprite84","order":13,"path":"sprites/sprite84/sprite84.yy",},
     {"name":"sprite103","order":15,"path":"sprites/sprite103/sprite103.yy",},
     {"name":"spr_block","order":17,"path":"sprites/spr_block/spr_block.yy",},
-    {"name":"Script69","order":21,"path":"scripts/Script69/Script69.yy",},
+    {"name":"Items","order":21,"path":"scripts/Items/Items.yy",},
     {"name":"spr_block_ground","order":19,"path":"sprites/spr_block_ground/spr_block_ground.yy",},
     {"name":"sprite66","order":8,"path":"sprites/sprite66/sprite66.yy",},
     {"name":"spr_fx_teleport","order":3,"path":"sprites/spr_fx_teleport/spr_fx_teleport.yy",},
