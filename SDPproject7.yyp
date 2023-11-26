@@ -308,6 +308,7 @@
     {"id":{"name":"scr_ai_directions","path":"scripts/scr_ai_directions/scr_ai_directions.yy",},},
     {"id":{"name":"move_to_next_map","path":"scripts/move_to_next_map/move_to_next_map.yy",},},
     {"id":{"name":"obj_button_explore","path":"objects/obj_button_explore/obj_button_explore.yy",},},
+    {"id":{"name":"obj_block_solid","path":"objects/obj_block_solid/obj_block_solid.yy",},},
     {"id":{"name":"obj_button_arena","path":"objects/obj_button_arena/obj_button_arena.yy",},},
     {"id":{"name":"room1","path":"rooms/room1/room1.yy",},},
     {"id":{"name":"obj_button_character","path":"objects/obj_button_character/obj_button_character.yy",},},

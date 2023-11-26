@@ -13,6 +13,12 @@ function check_collision(_move_x, _move_y)
 		return true;
 	}
 	
+	if place_meeting(x + _move_x, y + _move_y, obj_block_solid)
+	{
+		// If there was an object collision, return true, and end the function
+		return true;
+	}
+	
 	
 	// check for blocks that can be jumped through
 	if (vel_y >= 0)
@@ -20,6 +26,7 @@ function check_collision(_move_x, _move_y)
         var _platform = instance_place(x + _move_x, y + _move_y, obj_block)
         if (_platform != noone)
         {
+			// if player is above block
             if (bbox_bottom <= _platform.bbox_top)
             {
 				return true;

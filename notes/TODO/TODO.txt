@@ -2,6 +2,12 @@
 
 TO DO
 --------------------
+
+- MVP
+	- fix spawn position sometimes
+	- fix walk through walls
+	- AI better movement
+
 - UI for inventory items
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
@@ -20,6 +26,7 @@ TO DO
 - projectile range & drop?
 - gain extra exp when hitting a mob mid air? or player is in air - show on event log
 - seeker to go pick up coins
+- fix player HP not being saved
 - add better collision & bullet sprites & effects
 - fix cam? - lowest blocks should be at bottom of screen regardless of screen size or room height
 

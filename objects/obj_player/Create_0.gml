@@ -6,7 +6,7 @@ global.player_start_x = x
 global.player_start_y = y
 
 // use last known player position if continuing saved game
-if asset_get_index(global.current_map_name) == room
+if asset_get_index(global.current_map_name) == room && global.current_player_x != -1
 {
 	x = global.current_player_x
 	y = global.current_player_y
