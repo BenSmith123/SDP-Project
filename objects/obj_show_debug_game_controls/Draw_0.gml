@@ -6,5 +6,5 @@ draw_text(x,y, get_game_controls_text())
 
 if global.is_game_master
 {
-	draw_text(x+500,y, get_game_debug_controls_text())
+	draw_text(x+400,y, get_game_debug_controls_text())
 }

@@ -12,7 +12,20 @@ function player_set_start_position()
 		x = global.current_player_x
 		y = global.current_player_y
 		global.session_first_spawn = false
+		exit
 	}
 	
-	// TODO - spawn left or right
+	// player map spawn position!
+	
+	// use room position of obj_player if spawn points don't exist
+	if !instance_exists(obj_marker_player_spawn_left) { exit }
+	if !instance_exists(obj_marker_player_spawn_right) { exit }
+	
+	var spawn_obj = global.came_from_left_map
+		? obj_marker_player_spawn_right
+		: obj_marker_player_spawn_left
+		
+	x = spawn_obj.x
+	y = spawn_obj.y
+	
 }

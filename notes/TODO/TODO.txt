@@ -4,15 +4,10 @@ TO DO
 --------------------
 
 - MVP
-	- windows execuable options!
-	- transitions between rooms
-		- place markers on each side
 	- fix walk through walls - place walls where needed
-	- replace room blocks & remove block logic
 	- damage/speed etc. more balanced
 	- menu accessable via pause menu?
 	- fullscreen option? - default screensize for desktop
-	- change all debug controls
 
 - move health bars above AI
 - UI for inventory items
@@ -37,6 +32,8 @@ TO DO
 - fix player HP not being saved
 - add better collision & bullet sprites & effects
 - fix cam? - lowest blocks should be at bottom of screen regardless of screen size or room height
+- controls for when debug is disabled - escape is pause game, escape again to quit
+- windows execuable installer graphics!
 
 refactor:
 - clean up unused vars from player - mainly movement
