@@ -4,13 +4,17 @@ TO DO
 --------------------
 
 - MVP
+	- windows execuable options!
 	- transitions between rooms
 		- place markers on each side
-		- determine previous level
 	- fix walk through walls - place walls where needed
 	- replace room blocks & remove block logic
-	- AI better movement
+	- damage/speed etc. more balanced
+	- menu accessable via pause menu?
+	- fullscreen option? - default screensize for desktop
+	- change all debug controls
 
+- move health bars above AI
 - UI for inventory items
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
