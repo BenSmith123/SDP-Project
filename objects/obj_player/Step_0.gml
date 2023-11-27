@@ -34,30 +34,6 @@ repeat (_move_count)
 	{
 		// In that case, move_once is added to the X coordinate of the character.
 		x += _move_once
-		
-		//// check for slope
-		if place_meeting(x+_move_once, y+vel_y, obj_block_slope_parent)
-		{
-			// loop to push the player up depending on the slope
-			for(var new_y = 0; new_y < 10; new_y++)
-			{
-				// checks for place free above the slope (prevent walking up/through a wall)
-				if (place_empty(x+_move_once, y-new_y, obj_block_slope_parent))
-				{
-					// move player diagonally
-					is_walking_up_slope = true
-					//x += _move_once // * 2
-					y -= new_y;
-					break
-				}
-			}
-		}
-		
-		// moving down slope
-		if (!place_meeting(x+_move_once, y+vel_y, obj_block_slope_parent) && place_meeting(x+_move_once, y+vel_y+10, obj_block_slope_parent))
-		{
-			y += abs(_move_once);
-		}
 	}
 	else
 	{
@@ -65,7 +41,32 @@ repeat (_move_count)
 		vel_x = 0;
 	
 		// Then we break out of the Repeat loop, as no more collision checks are required.
-		break;
+		//break;
+	}
+	
+	// check for slope
+	if place_meeting(x+_move_once, y+vel_y, obj_block_slope_parent)
+	//if place_meeting(x+_move_once, y, obj_block_slope_parent)
+	{
+		// loop to push the player up depending on the slope
+		for(var new_y = 0; new_y < 10; new_y++)
+		{
+			// checks for place free above the slope (prevent walking up/through a wall)
+			if (place_empty(x+_move_once, y-new_y, obj_block_slope_parent))
+			{
+				// move player diagonally
+				is_walking_up_slope = true
+				//x += _move_once // * 2
+				y -= new_y;
+				break
+			}
+		}
+	}
+		
+	// moving down slope
+	if (!place_meeting(x+_move_once, y+vel_y, obj_block_slope_parent) && place_meeting(x+_move_once, y+vel_y+10, obj_block_slope_parent))
+	{
+		y += abs(_move_once);
 	}
 }
 

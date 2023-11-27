@@ -4,7 +4,7 @@ TO DO
 --------------------
 
 - MVP
-	- fix spawn position sometimes
+	- player getting stuck on slopes - when stopping on or knocked into
 	- fix walk through walls
 	- AI better movement
 

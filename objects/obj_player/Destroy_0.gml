@@ -2,6 +2,12 @@
 global.experience = 0
 global.coins = 0
 
+// reset map & player position
+// prevent bug - if player is killed and game closed, player will 
+// spawn where he died and most likely die again instantly 
+global.current_map_name = "room1"
+global.current_player_x = -1
+
 var dead_body = instance_create(x,y,obj_player_dead)
 dead_body.friction = friction
 dead_body.hspeed = hspeed
