@@ -39,11 +39,7 @@ function player_camera()
 	// prevent camera from going out of room when window isn't open
 	if (!window_has_focus()) exit
 	
-	// exit
-	
 	var temp = obj_player
-	
-	// exit
 
 	// ROOM END X
 	if not(__view_get( e__VW.XView, 0 ) <= 0 and temp.x<WIDTH/1.5) and not(__view_get( e__VW.XView, 0 )+WIDTH >= room_width and temp.x > room_width-(WIDTH/2)) 

@@ -1,16 +1,40 @@
+
 ///@description - go to the next room depending on what room you're on
-function move_to_next_map()
+function getPlayableMapsOrder()
 {
-	var next_room = -1
+	return 
+	[
+		// add maps here to be included in 
+		room_test,
+		room_village,
+		room11
+	]
+}
+
+function getCurrentMapIndex()
+{
+	var maps = getPlayableMapsOrder()
 	
-	switch (room) {
-	    case room1: next_room = room11; break
-		case room11: next_room = room10; break
-		case room10: next_room = room13; break
-		case room13: next_room = room3; break
-		case room13: next_room = room7; break
+	for (var i = 0; i < array_length(maps); ++i) {
+	    if (maps[i] == room) return i
 	}
 	
-	if (next_room == -1) { exit }
-	room_goto(next_room)
+	return -1
 }
+
+
+
+function move_to_map(previousMap = false) 
+{
+	var currentMapIndex = getCurrentMapIndex()
+	if (currentMapIndex == -1) { exit } // TODO - what if map doesn't exist?
+	
+	var nextMapIndex = previousMap 
+		? currentMapIndex-1
+		: currentMapIndex+1
+		
+	var maps = getPlayableMapsOrder()
+
+	room_goto(maps[nextMapIndex])
+}
+

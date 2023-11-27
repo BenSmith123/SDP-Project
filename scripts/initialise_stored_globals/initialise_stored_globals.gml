@@ -8,7 +8,7 @@ function initialise_stored_globals()
 	// array items: ["itemId", amount]
 	
 	// game
-	global.current_map_name = "room1"
+	global.current_map_name = "room_village"
 	global.current_player_x = -1
 	global.current_player_y = -1
 	

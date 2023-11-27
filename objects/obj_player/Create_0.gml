@@ -72,7 +72,7 @@ move_temp = false // debug
 // SKILLS
 
 
-collision_tilemap = layer_tilemap_get_id("Tiles_1")
+collision_tilemap = layer_tilemap_get_id("CollisionTiles")
 
 // This is the horizontal movement speed of the character.
 // It's in pixels per second.

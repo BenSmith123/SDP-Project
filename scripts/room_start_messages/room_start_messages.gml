@@ -1,7 +1,7 @@
 function room_start_messages() {
 
 
-	if room = room1 
+	if room = room_test 
 	{
 	    display_banner_message("Welcome, Press <S> or <SPACE> to attack")
 	    display_banner_message("Head right towards the next map >>")
@@ -18,7 +18,6 @@ function room_start_messages() {
 	    display_banner_message("WARNING: There are other players nearby")
 	}
 
-	//if room = room1 {display_banner_message("<Map 10>")}
 
 
 

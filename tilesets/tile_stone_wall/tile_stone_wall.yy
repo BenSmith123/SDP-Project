@@ -1,0 +1,48 @@
+{
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tile_stone_wall",
+  "autoTileSets": [],
+  "macroPageTiles": {
+    "SerialiseHeight": 0,
+    "SerialiseWidth": 0,
+    "TileSerialiseData": [],
+  },
+  "out_columns": 3,
+  "out_tilehborder": 0,
+  "out_tilevborder": 0,
+  "parent": {
+    "name": "Tile Sets",
+    "path": "folders/Tile Sets.yy",
+  },
+  "spriteId": {
+    "name": "spr_tile_stone",
+    "path": "sprites/spr_tile_stone/spr_tile_stone.yy",
+  },
+  "spriteNoExport": false,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "tile_count": 7,
+  "tileAnimation": {
+    "FrameData": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+    ],
+    "SerialiseFrameCount": 1,
+  },
+  "tileAnimationFrames": [],
+  "tileAnimationSpeed": 15.0,
+  "tileHeight": 60,
+  "tilehsep": 11,
+  "tilevsep": 0,
+  "tileWidth": 90,
+  "tilexoff": 0,
+  "tileyoff": 0,
+}

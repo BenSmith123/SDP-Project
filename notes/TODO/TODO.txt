@@ -7,7 +7,6 @@ TO DO
 	- transitions between rooms
 		- place markers on each side
 		- determine previous level
-		- set camera to not zoom toward player
 	- fix walk through walls - place walls where needed
 	- replace room blocks & remove block logic
 	- AI better movement

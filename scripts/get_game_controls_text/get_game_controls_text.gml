@@ -4,14 +4,12 @@ function get_game_controls_text()
 	------------------ CONTROLS ------------------
 	
 	P = pause
-	Back (ANDROID) = pause
 	Escape = close game
 	
-	F11 = go to next level
-	F12 = reboot game
+	F10 = previous map
+	F11 = next map
+	F12 = reset game (keep saved game)
 	<SHIFT> = reset game (delete saved progress)
-
-	
 
 	--- PLAYER ---
 	Left arrow (or A) = move left

@@ -48,7 +48,9 @@ if global.user = "GM"
     
     if keyboard_check_pressed(vk_f1) {show_message(get_game_controls_text())}
     
-    if keyboard_check_pressed(vk_f11) { move_to_next_map() }
+	if keyboard_check_pressed(vk_f10) { move_to_map(true) }
+	
+    if keyboard_check_pressed(vk_f11) { move_to_map() }
 
     if keyboard_check_pressed(vk_f12) {game_restart()}
     

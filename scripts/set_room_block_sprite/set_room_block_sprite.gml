@@ -1,21 +1,20 @@
 ///@description - set all block sprite_index's based on room
 function set_room_block_sprite()
 {
-	var spr = spr_block_test
+	var spr = 0
 
 	switch (room) {
-	    case room1:
-	        spr = sprite84
+	    case room_test:
+	        spr = spr_block_grey
 	        break;
 			
 		case room11:
-	        spr = spr_block
+	        spr = spr_block_metal
 	        break;
 			
-		case room11:
-	        spr = sprite80
-	        break;
 	}
+	
+	if spr == 0 { exit }
 	
 	// set every block instance vars
 	with (obj_block) 

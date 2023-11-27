@@ -1,17 +1,15 @@
 
+// player fell off map
+if y > room_height { instance_destroy(); exit }
+
 if (x < 0)
 {
-	// TODO - goto previous room
+	move_to_map(true)
 	exit
 }
 
 if x > room_width
 {
-    move_to_next_map()
+    move_to_map()
 }
-else
-{
-    instance_destroy()
-}
-
 
