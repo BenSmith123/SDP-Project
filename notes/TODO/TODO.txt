@@ -4,7 +4,10 @@ TO DO
 --------------------
 
 - MVP
-	- player getting stuck on slopes when knocked into
+	- transitions between rooms
+		- place markers on each side
+		- determine previous level
+		- set camera to not zoom toward player
 	- fix walk through walls - place walls where needed
 	- replace room blocks & remove block logic
 	- AI better movement
@@ -14,6 +17,7 @@ TO DO
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Bank - store coins
 - AI spawner?
+- fix player getting stuck on slopes when knocked into
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text

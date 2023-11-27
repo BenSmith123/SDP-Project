@@ -4,9 +4,11 @@ function scr_ai_run()
 	{
 	    state = "Run"
 	    stay = false
+		
+		if (reached_dead_end) { exit }
         
 		// NOTE - using the turn away scripts here will cause a loop, needs to be instant
-	    if x < enemy.x
+	    if is_left_of_enemy
 	    {
 	        image_xscale = -1
 	    }

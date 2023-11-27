@@ -2,14 +2,15 @@
 ///@description - turn around
 function ai_turn_around() 
 {	
-	//state = "Turn around"
-
 	if can_turn == true
 	{
+		state = "Turn around"
+
 	    can_turn = false
 	    alarm[2] = 60
 
 	    image_xscale = -image_xscale
+		state = string(image_xscale)
 	}
 }
 

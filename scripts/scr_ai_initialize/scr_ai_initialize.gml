@@ -36,6 +36,7 @@ function scr_ai_initialize()
 	has_been_attacked = false
 	is_left_of_enemy = false
 	facing_left = false
+	reached_dead_end = false // used to override the direction when running from player (avoids ai walking through walls when running away)
 	
 	//tag_y = round((sprite_get_height(sprite_index)/2)) // get the mask height so it can draw the tags below (name, hp)
 	// ^ tag_y doesn't really work like this since some sprites have added space to give the floating effect
