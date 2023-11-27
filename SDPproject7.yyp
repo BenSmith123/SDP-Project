@@ -210,6 +210,7 @@
     {"id":{"name":"deal_damage_to_mob","path":"scripts/deal_damage_to_mob/deal_damage_to_mob.yy",},},
     {"id":{"name":"scr_teleport","path":"scripts/scr_teleport/scr_teleport.yy",},},
     {"id":{"name":"AI_GUIDE","path":"scripts/AI_GUIDE/AI_GUIDE.yy",},},
+    {"id":{"name":"set_room_block_sprite","path":"scripts/set_room_block_sprite/set_room_block_sprite.yy",},},
     {"id":{"name":"ai_draw_debug_info","path":"scripts/ai_draw_debug_info/ai_draw_debug_info.yy",},},
     {"id":{"name":"scr_ai_initialize","path":"scripts/scr_ai_initialize/scr_ai_initialize.yy",},},
     {"id":{"name":"obj_hud_log_text","path":"objects/obj_hud_log_text/obj_hud_log_text.yy",},},

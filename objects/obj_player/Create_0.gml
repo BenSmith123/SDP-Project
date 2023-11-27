@@ -78,7 +78,7 @@ move_speed = 6
 
 // This is the friction value applied to the character's horizontal movement every frame.
 // This is applied in the Begin Step event. The friction is reduced when the character is in mid-air.
-friction_power = 0.5
+friction_power = 0.25
 
 // This is the jumping speed of the character.
 jump_speed = 14

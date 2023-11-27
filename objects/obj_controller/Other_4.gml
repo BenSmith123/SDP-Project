@@ -3,6 +3,8 @@ depth = ObjectDepth.Controller
 
 set_resolution()
 
+set_room_block_sprite()
+
 target = 0 // what player to target for the camera
 
 

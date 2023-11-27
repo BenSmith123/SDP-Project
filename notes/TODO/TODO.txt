@@ -4,8 +4,9 @@ TO DO
 --------------------
 
 - MVP
-	- player getting stuck on slopes - when stopping on or knocked into
-	- fix walk through walls
+	- player getting stuck on slopes when knocked into
+	- fix walk through walls - place walls where needed
+	- replace room blocks & remove block logic
 	- AI better movement
 
 - UI for inventory items

@@ -7,7 +7,7 @@ function ai_turn_around()
 	if can_turn == true
 	{
 	    can_turn = false
-	    alarm[2] = 15
+	    alarm[2] = 60
 
 	    image_xscale = -image_xscale
 	}
