@@ -26,6 +26,12 @@ enum ObjectDepth
 	Tiles = 1000
 }
 
+enum UserType
+{
+	Player,
+	GM
+}
+
 enum PlayerClass
 {
 	Beginner,

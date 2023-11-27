@@ -58,6 +58,7 @@ move_direction = "" // for when key or arrow is pressed
 bullet = 0 // creating bullet object
 can_be_hit = true // when the player can be hit again after taking damage
 start_speed = global.walk_speed
+has_second_jump_skill = global.is_game_master || global.class == "Ninja"
 second_jump = false // see if its the players second jump
 
 head_x = 0 // the x position for the head (to match all player sprites)

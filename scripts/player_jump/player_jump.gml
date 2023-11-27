@@ -21,7 +21,7 @@ function player_jump()
 		// jump VFX animation.
 		// instance_create_layer(x, bbox_bottom, "Instances", obj_effect_jump);
 	}
-	else if global.class = "Ninja" // double jump for ninja
+	else if has_second_jump_skill // double jump for ninja
 	{
 		if second_jump = false // if hasnt already second jumped
 		{

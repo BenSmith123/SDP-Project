@@ -7,7 +7,7 @@ game_set_speed(60, gamespeed_fps);
 randomize() // randomize gamemakers seed
 
 
-global.user = "GM"
+global.is_game_master = true
 global.error = ""
 global.show_debug = false
 global.overall_view = false // show the entire room
