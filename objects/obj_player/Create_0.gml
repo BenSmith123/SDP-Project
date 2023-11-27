@@ -1,6 +1,8 @@
 
 depth = ObjectDepth.Player
 
+
+
 // set where the player first spawns in the room
 global.player_start_x = x
 global.player_start_y = y
