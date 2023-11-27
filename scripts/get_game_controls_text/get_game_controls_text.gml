@@ -6,10 +6,13 @@ function get_game_controls_text()
 	P = pause
 	Escape = close game
 	
+	F1 = show all controls
+	F2 = toggle full camera
+	
+	F9 = full screen (max resolution)
 	F10 = previous map
 	F11 = next map
-	F12 = reset game (keep saved game)
-	<SHIFT> = reset game (delete saved progress)
+	F12 = reboot game (keep saved game)
 
 	--- PLAYER ---
 	Left arrow (or A) = move left
@@ -17,19 +20,28 @@ function get_game_controls_text()
 	Up arrow (or W) = jump
 	Down arrow = drop down
 	Spacebar (or S) = attack
-	F = teleport (if spellcaster)
+	F = teleport (if spellcaster)"
+}
 
+function get_game_debug_controls_text()
+{
+	return @"
+	
 	--- DEBUG ---
+	(GM only)
+	
 	Right Click = spawn AI
 
-	Q = level up
-	V = toggle game view (see entire map)
-	G = toggle debug mode 
-	L = teleport to mouse (UNSTICK)
+	1 = toggle debug mode
+	2 = teleport player to mouse
+	3 = level up
+	4 = hp & damage boost
 
-	1 = show ai detect distance
-	2 = show ai XYmeeting
-	3 = show ai main variables
-	4 = show ai platform variables
+	7 = show ai main variables
+	8 = show ai detect distance
+	9 = show ai XYmeeting
+	
+	0 = hard reset (delete saved progress)
 	"
+	
 }

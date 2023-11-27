@@ -1,4 +1,4 @@
-/// debug - skip menu
+///@description debug - skip menu
 
 var room_index = asset_get_index(global.current_map_name)
 

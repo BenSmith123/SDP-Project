@@ -42,7 +42,7 @@ function load_game() {
 			
 			global.inventory_array = json_parse(ini_read_string("INVENTORY", "inventory_array", "[]"))
 			
-			global.current_map_name = ini_read_string("GAME", "current_map_name", "room_village")
+			global.current_map_name = ini_read_string("GAME", "current_map_name", "room_test")
 			global.current_player_x = ini_read_real("GAME", "current_player_x", -1)
 			global.current_player_y = ini_read_real("GAME", "current_player_y", -1)
 

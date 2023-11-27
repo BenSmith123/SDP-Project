@@ -28,7 +28,7 @@ function scr_level_up() {
 	    if instance_exists(obj_player)
 	    {
 	        instance_create(obj_player.x,obj_player.y-40,obj_levelup_fx)
-	        obj_player.hp = obj_player.max_hp // give the player full health
+	        obj_player.hp = global.max_hp // give the player full health
         
 	        // update the players attributes
 	        obj_player.attack = global.attack
