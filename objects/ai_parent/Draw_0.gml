@@ -14,7 +14,7 @@ if show_hp == true
     scr_text_4()
 	
     //draw_sprite(spr_ai_health_bar,1,x-20,y+tag_y+36) // back
-    draw_sprite_stretched_ext(spr_ai_health_bar,healthbar_colour+1,x-20,y+tag_y+36,hp/maxhp*40,1,c_white,1) // front 
+    draw_sprite_stretched_ext(spr_ai_health_bar,healthbar_colour+1,x-20,bbox_top-20,hp/maxhp*40,1,c_white,1) // front 
     // 20 = half the sprite width
     // 40 = healthbar width
     // 1 = healthbar height

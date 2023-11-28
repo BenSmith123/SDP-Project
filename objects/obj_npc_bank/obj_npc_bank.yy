@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_npc",
+  "name": "obj_npc_bank",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -26,16 +26,13 @@
   "physicsRestitution": 0.1,
   "physicsSensor": false,
   "physicsShape": 0,
-  "physicsShapePoints": [
-    {"x":19.0,"y":39.0,},
-    {"x":39.0,"y":39.0,},
-  ],
+  "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_npc_1",
-    "path": "sprites/spr_npc_1/spr_npc_1.yy",
+    "name": "spr_npc_bank",
+    "path": "sprites/spr_npc_bank/spr_npc_bank.yy",
   },
   "spriteMaskId": null,
   "visible": true,
