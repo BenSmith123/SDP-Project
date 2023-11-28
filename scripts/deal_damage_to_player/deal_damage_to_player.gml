@@ -5,7 +5,7 @@ function deal_damage_to_player(player) {
 	if (player.can_be_hit == false) { exit }
 
 	player.can_be_hit = false
-	player.alarm[2] = 30 // can be hit again
+	player.alarm[2] = player.can_be_hit_time
 	
 	var damage = calculate_damage(attack, accuracy, player.defence)
     

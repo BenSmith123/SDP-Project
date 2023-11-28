@@ -33,9 +33,9 @@ function player_attack_melee()
 	enemy = instance_nearest(x,y,ai_parent)
 	if (enemy == noone) { exit }
 	
-	var attack_range = image_xscale * 120
+	var attack_range = image_xscale * melee_attack_range
 	
-	var y_position_meeting = y > enemy.y-20 && y < enemy.y+20
+	var y_position_meeting = y > enemy.bbox_top && y <enemy.bbox_bottom
 	if (y_position_meeting == false) { exit }
 	
 	var facing_left = image_xscale == -1

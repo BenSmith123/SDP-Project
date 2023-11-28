@@ -5,7 +5,7 @@ y = round(y)
 ai_draw_debug_info()
 
 // NAME TAG
-draw_nametag(name, tag_y)
+draw_nametag(name, y+tag_y)
 
 
 // HEALTH BAR

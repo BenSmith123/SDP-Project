@@ -42,9 +42,11 @@ can_attack = true
 attacking = false
 move_direction = "" // for when key or arrow is pressed
 can_be_hit = true // when the player can be hit again after taking damage
+can_be_hit_time = 60 // time in steps (1sec)
 start_speed = global.walk_speed
 has_second_jump_skill = global.is_game_master || global.class == "Ninja"
 second_jump = false // see if its the players second jump
+melee_attack_range = 100
 
 head_x = 0 // the x position for the head (to match all player sprites)
 

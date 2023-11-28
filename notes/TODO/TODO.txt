@@ -9,6 +9,7 @@ TO DO
 	- more content! - maps, mobs, items, NPCs!
 
 
+
 - UI for inventory items
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)

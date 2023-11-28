@@ -18,7 +18,7 @@ sprite_stand = spr_player_stand
 sprite_walk = spr_player_walking
 sprite_jump = spr_player_jump
 sprite_dead = spr_player_dead
-sprite_attack = spr_player_attack_2
+sprite_attack = choose(spr_player_attack_2, spr_player_attack_5)
 
 walkspeed = 4
 jump = 10

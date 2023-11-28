@@ -2,7 +2,7 @@
 x = round(x)
 y = round(y)
 
-draw_nametag(global.name, 38)
+draw_nametag(global.name, y+38)
 
 // debug - testing teleport marker on blocks
 //var above_block = instance_nearest(x,y-150,obj_block)
@@ -28,6 +28,8 @@ draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_ang
 
 
 
+if global.class != "Beginner" && global.class != "Fighter" { exit }
+
 // draw the target arrow for melee attacks
 enemy = instance_nearest(x,y,ai_parent)
 		
@@ -38,7 +40,7 @@ if image_xscale = -1
 {
     if enemy.x <= x
     {
-        if enemy.x > x-120 // range for hitting
+        if enemy.x > x-melee_attack_range // range for hitting
         {
             draw_sprite(spr_test,0,enemy.x,enemy.y-30)
         }
@@ -49,7 +51,7 @@ if image_xscale = 1
 {
     if enemy.x > x
     {
-        if enemy.x < x+120 // range for hitting
+        if enemy.x < x+melee_attack_range // range for hitting
         {
             draw_sprite(spr_test,0,enemy.x,enemy.y-30)
         }
