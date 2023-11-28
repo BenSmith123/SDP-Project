@@ -2,15 +2,15 @@
 target = 0 // set by object that created this
 y2 = 0 // 
 
-image_alpha = 1
+image_alpha = 2
 
 heal_amount = 0
 
 // top left
-col1 = c_aqua
-col2 = c_aqua
-col3 = c_blue
-col4 = c_blue
+col1 = #2bfc5f
+col2 = #2bfc5f
+col3 = #04b327
+col4 = #04b327
 //bottom right
 
 

@@ -5,7 +5,7 @@ function set_class_details(class)
 	    case PlayerClass.Hunter:
 	        class_name = "Hunter"
 			class_sprite = spr_player_attack_3
-			class_description = "+3 Speed#+50 Accuracy"
+			class_description = "+2 Speed#+50 Accuracy"
 	        break;
 			
 		case PlayerClass.Ninja:
@@ -35,7 +35,7 @@ function on_select_class()
 {
 	switch (class) {
 	    case PlayerClass.Hunter:
-			global.walk_speed += 3
+			global.walk_speed += 2
 			global.accuracy += 50
 	        break;
 			

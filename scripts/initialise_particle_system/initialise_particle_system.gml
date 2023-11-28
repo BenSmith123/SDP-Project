@@ -9,13 +9,13 @@ function initialise_particle_system()
 
 
 	global.boost_fx = part_type_create() // 
-	temp = global.boost_fx
+	var temp = global.boost_fx
 	part_type_shape(temp,pt_shape_spark)
-	part_type_size(temp,0.1,0.3,0,0)
-	part_type_color2(temp,c_orange,c_white)
-	part_type_life(temp,5,14)
-	part_type_alpha2(temp,1,0.02)
-	part_type_speed(temp,5,8,0,0.2)
+	part_type_size(temp,0.05,0.2,0,0)
+	part_type_color2(temp,c_white,c_red)
+	part_type_life(temp,7,14)
+	part_type_alpha2(temp,1,0.05)
+	part_type_speed(temp,4,7,0,0.3)
 	part_type_direction(temp,0,360,0,0)
 	part_type_gravity(temp,0.1,270)
 	part_type_blend(temp,true)

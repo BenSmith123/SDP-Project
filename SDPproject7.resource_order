@@ -197,7 +197,7 @@
     {"name":"scr_button","order":2,"path":"scripts/scr_button/scr_button.yy",},
     {"name":"scr_arrow_key_create","order":3,"path":"scripts/scr_arrow_key_create/scr_arrow_key_create.yy",},
     {"name":"scr_mouse_hover","order":4,"path":"scripts/scr_mouse_hover/scr_mouse_hover.yy",},
-    {"name":"calculate_damage","order":9,"path":"scripts/calculate_damage/calculate_damage.yy",},
+    {"name":"calculate_damage","order":13,"path":"scripts/calculate_damage/calculate_damage.yy",},
     {"name":"set_classes","order":10,"path":"scripts/set_classes/set_classes.yy",},
     {"name":"Effects","order":11,"path":"scripts/Effects/Effects.yy",},
     {"name":"spr_fx_spark_blue","order":6,"path":"sprites/spr_fx_spark_blue/spr_fx_spark_blue.yy",},
@@ -289,7 +289,7 @@
     {"name":"room_guide","order":2,"path":"rooms/room_guide/room_guide.yy",},
     {"name":"spr_ts_ground","order":9,"path":"sprites/spr_ts_ground/spr_ts_ground.yy",},
     {"name":"basic_collision_and_gravity","order":10,"path":"scripts/basic_collision_and_gravity/basic_collision_and_gravity.yy",},
-    {"name":"draw_nametag","order":16,"path":"scripts/draw_nametag/draw_nametag.yy",},
+    {"name":"draw_nametag","order":12,"path":"scripts/draw_nametag/draw_nametag.yy",},
     {"name":"Compatibility report","order":3,"path":"notes/Compatibility report/Compatibility report.yy",},
   ],
 }

@@ -18,22 +18,20 @@ draw_text(42,42,global.level)
 
 scr_text_3()
 
-// TODO - white/black colour outline text?
-//draw_set_color(c_black)
-
-
-// HEALTH TEXT
-draw_text(290,33,string(obj_player.hp) +"/" +string(obj_player.max_hp))
-
-// NAME & CLASS
-draw_text(88,33,global.name +"        ("+global.class+")")
+// name & class
+draw_text(88,33,global.name +"       ("+global.class+")")
 
 // EXP number
 draw_text(88,58,string(global.experience)+"/"+string(global.max_exp))
 
-draw_set_halign(fa_right)
+
+draw_set_halign(fa_right) // RIGHT ALIGNED TEXT
+
+// health text
+draw_text(336,33,string(obj_player.hp) +"/" +string(obj_player.max_hp))
+
 // EXP percentage
-draw_text(270,58,string(global.experience/global.max_exp*100)+"%")
+draw_text(316,58,string(global.experience/global.max_exp*100)+"%")
 
 
 // draw_text(WIDTH-20,64,string(global.current_kills)+ " kills")
@@ -41,5 +39,4 @@ draw_text(270,58,string(global.experience/global.max_exp*100)+"%")
 
 // coins
 draw_sprite(spr_coin_hud,0,80,120)
-
 draw_text(90,120,global.coins)

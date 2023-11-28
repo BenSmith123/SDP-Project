@@ -15,10 +15,10 @@ function deal_damage_to_player(player) {
 	if damage <= 0
 	{
 	    // colour the text
-		text.col1 = c_silver
-		text.col2 = c_silver
-		text.col3 = c_grey
-		text.col4 = c_grey
+		//text.col1 = c_silver
+		//text.col2 = c_silver
+		//text.col3 = c_grey
+		//text.col4 = c_grey
 		exit
 	}
 

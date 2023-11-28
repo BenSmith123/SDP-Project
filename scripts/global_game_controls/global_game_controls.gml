@@ -28,7 +28,8 @@ function global_game_controls()
 		if keyboard_check_pressed(ord("4")) 
 	    {
 			global.max_hp = 5000
-			global.attack = 500
+			// global.attack = 500
+			global.class = "Hunter"
 			global.defence = 200
 			global.walk_speed = 7
 			global.jump = 16
