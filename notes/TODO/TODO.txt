@@ -6,7 +6,8 @@ TO DO
 - MVP
 	- damage/speed etc. more balanced
 		- level up stats increase amount
-	- more content! - maps, mobs, items!
+	- more content! - maps, mobs, items, NPCs!
+
 
 - move health bars above AI
 - UI for inventory items
