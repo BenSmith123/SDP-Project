@@ -280,6 +280,7 @@
     {"name":"obj_npc_shop","order":1,"path":"objects/obj_npc_shop/obj_npc_shop.yy",},
     {"name":"obj_reset_game","order":1,"path":"objects/obj_reset_game/obj_reset_game.yy",},
     {"name":"font_arial_12_bold","order":14,"path":"fonts/font_arial_12_bold/font_arial_12_bold.yy",},
+    {"name":"room_5","order":29,"path":"rooms/room_5/room_5.yy",},
     {"name":"room_menu","order":3,"path":"rooms/room_menu/room_menu.yy",},
     {"name":"room13","order":5,"path":"rooms/room13/room13.yy",},
     {"name":"room_pvp","order":4,"path":"rooms/room_pvp/room_pvp.yy",},

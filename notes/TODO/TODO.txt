@@ -4,6 +4,7 @@ TO DO
 --------------------
 
 - MVP
+	- better damage text font - outlines don't really work
 	- more content! - maps, mobs, items, NPCs!
 
 
@@ -12,7 +13,8 @@ TO DO
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Bank - store coins
-- AI spawner?
+- AI spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
+- ^ only spawn when AI that was there in room start has been destroyed
 - fix player getting stuck on slopes when knocked into
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
@@ -23,13 +25,11 @@ TO DO
 - AI scripts still need more work - attacks with abilities don't always work
 - ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 - backgrounds & scenery! with depth
-- refactor mob parent initialise/create event? - fix order
 - projectile range & drop?
 - gain extra exp when hitting a mob mid air? or player is in air - show on event log
 - seeker to go pick up coins
 - fix player HP not being saved
 - add better collision & bullet sprites & effects
-- fix cam? - lowest blocks should be at bottom of screen regardless of screen size or room height
 - controls for when debug is disabled - escape is pause game, escape again to quit
 - windows execuable installer graphics!
 
@@ -40,9 +40,6 @@ refactor:
 
 
 item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
-
-
-GOAL: Focus on fixing bugs & adding features, not just refactoring old code!
 
 
 

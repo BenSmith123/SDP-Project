@@ -347,6 +347,7 @@
     {"id":{"name":"obj_reset_game","path":"objects/obj_reset_game/obj_reset_game.yy",},},
     {"id":{"name":"font_arial_12_bold","path":"fonts/font_arial_12_bold/font_arial_12_bold.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
+    {"id":{"name":"room_5","path":"rooms/room_5/room_5.yy",},},
     {"id":{"name":"room_menu","path":"rooms/room_menu/room_menu.yy",},},
     {"id":{"name":"spr_drone_piece","path":"sprites/spr_drone_piece/spr_drone_piece.yy",},},
     {"id":{"name":"room13","path":"rooms/room13/room13.yy",},},
@@ -372,6 +373,7 @@
     {"roomId":{"name":"room_template_playable","path":"rooms/room_template_playable/room_template_playable.yy",},},
     {"roomId":{"name":"room_village","path":"rooms/room_village/room_village.yy",},},
     {"roomId":{"name":"room_4","path":"rooms/room_4/room_4.yy",},},
+    {"roomId":{"name":"room_5","path":"rooms/room_5/room_5.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
