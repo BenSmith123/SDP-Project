@@ -61,9 +61,9 @@ function global_game_controls()
 		game_restart()
 	}
     
-	if keyboard_check_pressed(vk_f10) { move_to_map(true) }
+	if keyboard_check_pressed(vk_f10) { global.came_from_left_map = false; move_to_map(true) }
 	
-	if keyboard_check_pressed(vk_f11) { move_to_map() }
+	if keyboard_check_pressed(vk_f11) { global.came_from_left_map = true; move_to_map() }
 
 	if keyboard_check_pressed(vk_f12) { game_restart() }
     

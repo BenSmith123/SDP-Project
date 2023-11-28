@@ -2,9 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_block_solid",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -28,11 +26,13 @@
   "physicsShape": 0,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"image_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+  ],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_ground",
-    "path": "sprites/spr_block_ground/spr_block_ground.yy",
+    "name": "spr_block_test_2",
+    "path": "sprites/spr_block_test_2/spr_block_test_2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

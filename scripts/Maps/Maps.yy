@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "move_to_next_map",
+  "name": "Maps",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -8,7 +8,7 @@ function set_room_block_sprite()
 	        spr = spr_block_grey
 	        break;
 			
-		case room11:
+		case room_4:
 	        spr = spr_block_metal
 	        break;
 			

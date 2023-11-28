@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_marker_player_spawn_left",
-    "path": "sprites/spr_marker_player_spawn_left/spr_marker_player_spawn_left.yy",
+    "name": "spr_marker_player_spawn_right",
+    "path": "sprites/spr_marker_player_spawn_right/spr_marker_player_spawn_right.yy",
   },
   "spriteMaskId": null,
   "visible": false,

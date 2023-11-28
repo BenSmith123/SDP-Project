@@ -4,10 +4,10 @@ TO DO
 --------------------
 
 - MVP
-	- fix walk through walls - place walls where needed
 	- damage/speed etc. more balanced
 	- menu accessable via pause menu?
 	- fullscreen option? - default screensize for desktop
+	- more content! - maps, items!
 
 - move health bars above AI
 - UI for inventory items

@@ -22,8 +22,8 @@ function player_set_start_position()
 	if !instance_exists(obj_marker_player_spawn_right) { exit }
 	
 	var spawn_obj = global.came_from_left_map
-		? obj_marker_player_spawn_right
-		: obj_marker_player_spawn_left
+		? obj_marker_player_spawn_left
+		: obj_marker_player_spawn_right
 		
 	x = spawn_obj.x
 	y = spawn_obj.y
