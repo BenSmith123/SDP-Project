@@ -17,6 +17,10 @@ global.experience += experience
 log_player_message($"+{experience} experience")
 	
 mob_drop()
-    
-scr_level_up() // check for level up
+ 
+if global.experience >= global.max_exp
+{
+	scr_level_up()
+}
+
 

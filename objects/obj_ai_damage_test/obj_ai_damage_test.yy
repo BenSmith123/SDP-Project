@@ -1,18 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_stats",
+  "name": "obj_ai_damage_test",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "temp",
-    "path": "folders/Objects/temp.yy",
+    "name": "Mobs & AI",
+    "path": "folders/Objects/Mobs & AI.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "ai_parent",
+    "path": "objects/ai_parent/ai_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,9 +31,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprite33",
-    "path": "sprites/sprite33/sprite33.yy",
+    "name": "spr_drone",
+    "path": "sprites/spr_drone/spr_drone.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_drone",
+    "path": "sprites/spr_drone/spr_drone.yy",
+  },
   "visible": true,
 }

@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "initialise_stored_globals",
+  "name": "Globals",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Game",
-    "path": "folders/Scripts/Game.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }

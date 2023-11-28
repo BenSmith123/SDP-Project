@@ -1,28 +1,12 @@
-/// @param target {Id.Instance}
-/// @return {Boolean} returns true if damage was done
-function calculate_damage(target)
+// damage is calculated by:
+// random number between player attack minimum (attack - accuracy) and player attack
+// minus the defence of the mob
+
+function calculate_damage(attack = 0, accuracy = 0, otherDefence = 0)
 {
-
-	// text = created by object doing the damage
-	// damage = set by ai or passed to projectile
+	// TODO - multiply damage by skill
+	//var attack_range = irandom_range(accuracy, attack) // * skill_increase_percent
+	var attack_range = irandom_range(attack - accuracy, attack)
 	
-	var calculated_damage = round(damage-target.defence/2-irandom_range(0,target.defence/2)) // CALCULATE DAMAGE
-
-	if calculated_damage > 0 
-	{
-	    target.hp -= calculated_damage  // DO DAMAGE
-	    text.damage = calculated_damage
-    
-	    target.show_hp = true // show the enemy hp and healthbar
-	    target.alarm[3] = target.heal_time * room_speed // start counting down to heal time
-    
-	    return true // tell the object that the target was damaged
-
-	}
-	else // if no damage was done
-	{
-	    text.damage = "x" // "defend"
-	    return false // the object was not damaged (no knockback etc)
-	}
-
+	return attack_range - otherDefence
 }

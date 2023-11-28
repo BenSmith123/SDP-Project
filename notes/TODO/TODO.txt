@@ -5,6 +5,7 @@ TO DO
 
 - MVP
 	- damage/speed etc. more balanced
+		- level up stats increase amount
 	- menu accessable via pause menu?
 	- fullscreen option? - default screensize for desktop
 	- more content! - maps, items!

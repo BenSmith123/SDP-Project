@@ -13,3 +13,5 @@ image_xscale = 0
 image_yscale = 0
 
 x = round(x)
+
+damage = 0 // set by creator

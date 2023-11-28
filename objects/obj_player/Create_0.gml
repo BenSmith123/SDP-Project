@@ -41,7 +41,6 @@ image_speed = _image_speed
 can_attack = true
 attacking = false
 move_direction = "" // for when key or arrow is pressed
-bullet = 0 // creating bullet object
 can_be_hit = true // when the player can be hit again after taking damage
 start_speed = global.walk_speed
 has_second_jump_skill = global.is_game_master || global.class == "Ninja"

@@ -22,14 +22,11 @@ function global_game_controls()
 
 	    if keyboard_check_pressed(ord("3")) 
 	    {
-	        global.experience = global.max_exp
 	        scr_level_up()
 	    }
 		
 		if keyboard_check_pressed(ord("4")) 
 	    {
-			global.experience = global.max_exp
-			
 			global.max_hp = 5000
 			global.attack = 500
 			global.defence = 200

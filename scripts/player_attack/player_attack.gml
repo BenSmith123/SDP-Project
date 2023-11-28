@@ -63,7 +63,9 @@ function player_attack_projectile()
 	var x_pos = x + (image_xscale * 20)
 	var bullet_speed = image_xscale * 14
 	
-	bullet = instance_create(x_pos,y,obj_bullet_player)
+	var bullet = instance_create(x_pos,y,obj_bullet_player)
+	bullet.attack = attack
+	bullet.accuracy = accuracy
 
 	bullet.hspeed = bullet_speed
 	bullet.image_xscale = image_xscale

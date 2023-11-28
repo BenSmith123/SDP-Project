@@ -10,3 +10,23 @@ function display_banner_message(argument0) {
 	obj_message_banner.message_que += 1
 	obj_message_banner.text[obj_message_banner.message_que] = argument0
 }
+
+
+function level_up_display_message()
+{
+	if global.level = 5
+	{
+	    display_banner_message("Congratulations on reaching level 5#[+100 coins]")
+	    global.coins += 100
+	}
+       
+	if global.level = 6
+	{
+	    display_banner_message("Once you are level 10 you may#pick a class")
+	}
+    
+	if global.level = 9
+	{
+	    display_banner_message("Next time you level up you may#pick a class")
+	}
+}

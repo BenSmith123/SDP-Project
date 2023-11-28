@@ -1,24 +1,30 @@
 /// @description 
 /// @param mob {Id.Instance} mob thats hit
-function deal_damage_to_mob(mob) {
-
-	text = instance_create(mob.x,mob.y-30,obj_damage_text)
-	// colour the text
-	text.col1 = c_yellow
-	text.col2 = c_yellow
-	text.col3 = c_orange
-	text.col4 = c_orange
-
+function deal_damage_to_mob(mob)
+{
+	
 	mob.has_been_attacked = true
 
-	damage_was_done = calculate_damage(mob)
+	var damage = calculate_damage(attack, accuracy, mob.defence)
 	
-	if (!damage_was_done)
+	var text = instance_create(mob.x,mob.y-30,obj_damage_text)
+	text.damage = damage
+	
+	if (damage <= 0)
 	{
-		text.damage = "x" // "defend"
+		// override text colour
+		text.col1 = c_gray
+		text.col2 = c_gray
+		text.col3 = c_silver
+		text.col4 = c_silver
 		exit
 	}
 	
+	mob.hp -= damage  // DO DAMAGE
+	mob.show_hp = true // show the enemy hp and healthbar
+	mob.alarm[3] = mob.heal_time * room_speed // start counting down to heal time
+	
+	// push & hit mob before checking if its killed (otherwise death obj will be facing wrong way)
 	if (mob.can_be_knockedback)
 	{
 		var is_to_left_of_mob = x < mob.x
