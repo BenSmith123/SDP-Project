@@ -3,8 +3,13 @@ function room_start_messages() {
 
 	if room = room_test 
 	{
-	    display_banner_message("Welcome, Press <S> or <SPACE> to attack")
-	    display_banner_message("Head right towards the next map >>")
+	    // display_banner_message("Welcome, Press <S> or <SPACE> to attack")
+	    // display_banner_message("Head right towards the next map >>")
+	}
+	
+	if room == room_village
+	{
+		display_banner_message("Beginner's Village")
 	}
 
 	if room = room13

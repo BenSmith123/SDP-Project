@@ -1,5 +1,5 @@
 
-name = "Player236" // choose("Sam","Jacob","Georgia","Alex","Matt")
+name = "Player"+string(irandom(140))
 level = 1
 maxhp = 50
 attack = 25
@@ -32,4 +32,4 @@ tag_y = 40 // y position to show the name and hp
 scr_ai_initialize()
 
 attack_ability = true
-attack_distance = 200 // distance before attacking player
+attack_distance = 400 // distance before attacking player

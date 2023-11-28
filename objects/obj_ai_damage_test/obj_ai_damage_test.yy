@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mobs & AI",
-    "path": "folders/Objects/Mobs & AI.yy",
+    "name": "Mobs",
+    "path": "folders/Objects/Mobs.yy",
   },
   "parentObjectId": {
     "name": "ai_parent",

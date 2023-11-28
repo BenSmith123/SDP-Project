@@ -14,6 +14,7 @@ if (y_position_meeting && is_player_close)
 	draw_roundrect(x-text_bubble_width/2,y-140 ,x+text_bubble_width,y-70,false) 
 	
 	scr_text_1()
+	draw_set_valign(fa_top)
 	draw_set_color(c_black)
 	
 	// text

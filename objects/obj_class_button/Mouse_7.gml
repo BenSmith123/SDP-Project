@@ -1,5 +1,5 @@
 
-global.class = class
+global.class = class_name
 
 
 instance_activate_all()

@@ -9,5 +9,5 @@ function draw_nametag(name, y_pos, bold = false)
 	var width = round(string_width(name))
 	
 	draw_sprite_stretched(spr_name_label,0,x-width/2-4,y+y_pos,width+9,20)
-	draw_text(x,y+y_pos+9,name)
+	draw_text(x,y+y_pos+10,name)
 }
