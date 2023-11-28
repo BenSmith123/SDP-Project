@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "ts_block_test",
+  "name": "ts_ground",
   "autoTileSets": [
     {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_1","closed_edge":false,"tiles":[
         10,
@@ -141,8 +141,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "spr_ts_test",
-    "path": "sprites/spr_ts_test/spr_ts_test.yy",
+    "name": "spr_ts_ground",
+    "path": "sprites/spr_ts_ground/spr_ts_ground.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

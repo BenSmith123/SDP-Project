@@ -12,6 +12,10 @@ function set_room_block_sprite()
 	        spr = spr_block_metal
 	        break;
 			
+		case room_5:
+	        spr = spr_block_ground
+	        break;
+			
 	}
 	
 	if spr == 0 { exit }
@@ -22,6 +26,11 @@ function set_room_block_sprite()
 		sprite_index = spr 
 		depth = ObjectDepth.Tiles
 		image_speed = 0
+	}
+	
+	with (obj_block_solid) // wall block
+	{ 
+		image_index = 1
 	}
 	
 	// preserve the mask_index (for collisions)

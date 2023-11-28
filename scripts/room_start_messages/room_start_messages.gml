@@ -12,7 +12,7 @@ function room_start_messages() {
 		display_banner_message("Beginner's Village")
 	}
 
-	if room = room13
+	if room = room_5
 	{
 	    // display_banner_message("<Map 2>")
 	    display_banner_message("Seeker will follow you and help you by#picking up coins and warning you about any threats.")

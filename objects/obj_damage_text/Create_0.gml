@@ -4,8 +4,8 @@ image_alpha = 2
 
 // top left
 col1 = #ebc934
-col2 = #eb9f34
-col3 = #eb6734
+col2 = #ebc934
+col3 = #eb9f34
 col4 = #eb6734
 // bottom right
 
