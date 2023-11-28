@@ -55,9 +55,9 @@ function initialise_stored_globals()
 
 	global.max_hp = 10
 
-	global.attack = 8
+	global.attack = 6
 	global.defence = 5
-	global.accuracy = 2
+	global.accuracy = 0
 	global.jump = 12
 	global.walk_speed = 5
 

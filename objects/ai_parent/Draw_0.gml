@@ -4,11 +4,8 @@ y = round(y)
 
 ai_draw_debug_info()
 
-scr_text_1()
-
 // NAME TAG
-draw_sprite_stretched(spr_name_label,0,x-string_width(name)/2-10,y+tag_y,string_width(name)+20,20) // name label
-draw_text(x,y+tag_y+9,name)
+draw_nametag(name, tag_y)
 
 
 // HEALTH BAR

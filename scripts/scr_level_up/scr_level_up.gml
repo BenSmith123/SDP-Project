@@ -1,19 +1,26 @@
 
 function level_up_increase_stats()
 {
-		
+	// selecting a class will increase status
+	if global.level == 10 { exit }
+
 	if global.level > 10
 	{
-		global.max_exp += 40
+		global.max_exp += 50
+		
+		global.attack += 3
+		global.defence += 2
+		// global.accuracy += 1
+		
 		exit
 	}
 	
-	// update the stats
-	global.max_hp += 7
+	global.max_hp += 5
+	global.max_exp += 20
     
-	global.attack += 2
+	global.attack += 1
 	global.defence += 1
-	global.accuracy += 1
+	// global.accuracy += 1
 	global.jump += 0.1
 	global.walk_speed += 0.1
 }

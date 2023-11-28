@@ -6,9 +6,7 @@ TO DO
 - MVP
 	- damage/speed etc. more balanced
 		- level up stats increase amount
-	- menu accessable via pause menu?
-	- fullscreen option? - default screensize for desktop
-	- more content! - maps, items!
+	- more content! - maps, mobs, items!
 
 - move health bars above AI
 - UI for inventory items
@@ -40,7 +38,6 @@ refactor:
 - clean up unused vars from player - mainly movement
 - clean up /remove old scripts - get virtual joysticks fully working first
 - menu links
-- start healing only when standing still
 
 
 item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
