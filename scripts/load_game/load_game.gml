@@ -60,8 +60,8 @@ function load_game() {
 	        global.attack = ini_read_real("PLAYER","attack",0)
 	        global.defence = ini_read_real("PLAYER","defence",0) 
 	        global.accuracy = ini_read_real("PLAYER","accuracy",0) 
-	        global.jump = ini_read_real("PLAYER","jump",6) 
-	        global.walk_speed = ini_read_real("PLAYER","walk_speed",5) 
+	        global.jump = ini_read_real("PLAYER","jump",12) 
+	        global.walk_speed = ini_read_real("PLAYER","walk_speed",6) 
 	        global.heal_time = ini_read_real("PLAYER","heal_time",0)
 	        global.heal_amount = ini_read_real("PLAYER","heal_amount",0) 
         

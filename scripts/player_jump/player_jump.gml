@@ -2,9 +2,9 @@ function player_jump()
 {
 	if (grounded)
 	{
-		// This sets the Y velocity to negative jump_speed, making the player immediately jump upwards. It
+		// This sets the Y velocity to negative jump speed, making the player immediately jump upwards. It
 		// will automatically be brought down by the gravity code in the parent's Begin Step event.
-		vel_y = -jump_speed;
+		vel_y = -jump;
 
 		// This changes the player's sprite to the jump sprite, and resets the frame to 0.
 		sprite_index = spr_player_jump;
@@ -26,7 +26,7 @@ function player_jump()
 		if second_jump = false // if hasnt already second jumped
 		{
 		    instance_create(x,y,obj_fx_double_jump)
-		    vel_y = -jump_speed;
+		    vel_y = -jump;
 		    second_jump = true
 		}
 	}

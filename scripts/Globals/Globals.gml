@@ -59,7 +59,7 @@ function initialise_stored_globals()
 	global.defence = 5
 	global.accuracy = 0
 	global.jump = 12
-	global.walk_speed = 5
+	global.walk_speed = 6
 
 	global.heal_time = 7 // seconds
 	global.heal_amount = 10 

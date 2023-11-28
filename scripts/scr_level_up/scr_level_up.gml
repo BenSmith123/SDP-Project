@@ -21,8 +21,8 @@ function level_up_increase_stats()
 	global.attack += 1
 	global.defence += 1
 	// global.accuracy += 1
-	global.jump += 0.1
-	global.walk_speed += 0.1
+	// global.jump += 0.1
+	// global.walk_speed += 0.1
 }
 
 function scr_level_up() 

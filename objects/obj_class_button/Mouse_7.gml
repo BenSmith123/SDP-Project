@@ -1,6 +1,7 @@
 
 global.class = class_name
 
+on_select_class(class)
 
 instance_activate_all()
 room_restart()

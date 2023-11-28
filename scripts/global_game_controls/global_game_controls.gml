@@ -30,9 +30,12 @@ function global_game_controls()
 			global.max_hp = 5000
 			global.attack = 500
 			global.defence = 200
+			global.walk_speed = 7
+			global.jump = 16
+			
 			scr_level_up()
 			
-			log_player_message("Cheater")
+			display_banner_message("Cheater") // lol
 	    }
 	}
 	

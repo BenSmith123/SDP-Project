@@ -23,7 +23,7 @@ defence = global.defence
 accuracy = global.accuracy
 
 jump = global.jump
-walk_speed = global.walk_speed
+walk_speed = global.walk_speed // horizontal movement speed of the character (pixels per sec)
 
 heal_time = global.heal_time // seconds
 heal_amount = global.heal_amount
@@ -57,27 +57,17 @@ move_jump = false
 move_attack = false
 move_temp = false // debug
 
-// SKILLS
-
 
 collision_tilemap = layer_tilemap_get_id("CollisionTiles")
 
-// This is the horizontal movement speed of the character.
-// It's in pixels per second.
-move_speed = 6
-
-// This is the friction value applied to the character's horizontal movement every frame.
-// This is applied in the Begin Step event. The friction is reduced when the character is in mid-air.
+// friction value applied to the character's horizontal movement every frame
+// the friction is reduced when the character is in mid-air
 friction_power = 1
 
-// This is the jumping speed of the character.
-jump_speed = 14
-
-// This is the gravity applied every frame.
+// gravity applied every frame
 grav_speed = 0.75
 
-// vel_x and vel_y are the X and Y velocities of the character.
-// They store how much the character is moving in any given frame.
+// vel_x and vel_y are the X and Y velocities of the character
 vel_x = 0
 vel_y = 0
 
@@ -85,11 +75,9 @@ grounded = false
 in_knockback = false
 
 
+
 instance_create(x,y,obj_hud)
 
 set_classes()
-
-
-
 
 

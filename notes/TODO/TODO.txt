@@ -4,8 +4,6 @@ TO DO
 --------------------
 
 - MVP
-	- damage/speed etc. more balanced
-		- level up stats increase amount
 	- more content! - maps, mobs, items, NPCs!
 
 

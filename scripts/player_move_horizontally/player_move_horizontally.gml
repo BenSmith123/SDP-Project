@@ -8,9 +8,9 @@ function player_move_horizontally()
 		exit;
 	}
 
-	// set the X velocity to move_speed
+	// set the X velocity to walk_speed
 	// this makes the character move left
-	vel_x = move_left ? -move_speed : move_speed
+	vel_x = move_left ? -walk_speed : walk_speed
 
 	// This checks if the current sprite is the fall sprite, meaning the player hasn't landed yet.
 	if (sprite_index == spr_player_jump)
