@@ -1,5 +1,5 @@
 
-depth = ObjectDepth.NPC
+depth = ObjectDepth.NPCspeech
 
 text = "" // set by NPC
 

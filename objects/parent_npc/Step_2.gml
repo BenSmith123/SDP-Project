@@ -8,7 +8,8 @@ if (y_position_meeting && is_player_close)
 {
 	if instance_exists(text_bubble) { exit }
 	
-	text_bubble = instance_create(x+60, y-120, obj_npc_speech_bubble)
+	// TODO - fix position depending on text height?
+	text_bubble = instance_create(x+60, y-140, obj_npc_speech_bubble)
 	text_bubble.text = text
 }
 else

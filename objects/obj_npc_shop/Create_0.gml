@@ -1,5 +1,5 @@
 
-event_inherited()
+event_inherited();
 
 name = "Shop"
-text = ""
+text = "The developer hasn't got around to making me do anything yet soz"
