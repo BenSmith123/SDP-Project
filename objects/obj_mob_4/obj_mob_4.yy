@@ -31,12 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_stand",
-    "path": "sprites/spr_player_stand/spr_player_stand.yy",
+    "name": "spr_mob_4_stand",
+    "path": "sprites/spr_mob_4_stand/spr_mob_4_stand.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_player_stand",
-    "path": "sprites/spr_player_stand/spr_player_stand.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

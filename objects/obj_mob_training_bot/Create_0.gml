@@ -1,12 +1,25 @@
 
+event_inherited()
+
 name = "Training Bot"
 level = 1
-maxhp = 10
-attack = 3
+hp = 10
+attack = 2
 defence = 0
-accuracy = 0
+accuracy = 5
+experience = 5
+
+walkspeed = 0
+jump = 0
+heal_time = 0 // seconds
+heal_amount = 0
 
 aggressive = false // move/attack an enemy when unprovoked
+can_be_knockedback = true
+
+// skill
+attack_ability = false // projectiles, skills etc.
+attack_distance = 0 // distance before attacking player
 
 block_distance = 0 // distance for checking how far away blocks are (before jumping)
 jump_block_height = 0 // how high a block can be for ai to try jump
@@ -20,17 +33,6 @@ sprite_jump = spr_drone
 sprite_dead = spr_mob_training_bot
 sprite_attack = spr_drone_walking
 
-walkspeed = 0
-jump = 0
-heal_time = 0 // seconds
-heal_amount = 0 
+image_speed = 0.1
 
-experience = 5
-
-tag_y = 40 // y position to show the name and hp
-
-
-scr_ai_initialize()
-
-
-
+mob_after_initialised() // don't remove

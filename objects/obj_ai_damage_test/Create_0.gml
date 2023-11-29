@@ -1,12 +1,25 @@
 
+event_inherited()
+
 name = "Damage test"
 level = 1
-maxhp = 1000
-attack = 5
+hp = 10000
+attack = 1
 defence = 0
 accuracy = 5
+experience = 15
+
+walkspeed = 0
+jump = 0
+heal_time = 0 // seconds
+heal_amount = 0
 
 aggressive = false // move/attack an enemy when unprovoked
+can_be_knockedback = true
+
+// skill
+attack_ability = false // projectiles, skills etc.
+attack_distance = 0 // distance before attacking player
 
 block_distance = 0 // distance for checking how far away blocks are (before jumping)
 jump_block_height = 0 // how high a block can be for ai to try jump
@@ -20,17 +33,6 @@ sprite_jump = spr_drone
 sprite_dead = spr_drone_dead
 sprite_attack = spr_drone_walking
 
-walkspeed = 0
-jump = 0
-heal_time = 0 // seconds
-heal_amount = 0 
+image_speed = 0.1
 
-experience = 15
-
-tag_y = 40 // y position to show the name and hp
-
-
-scr_ai_initialize()
-
-
-
+mob_after_initialised() // don't remove

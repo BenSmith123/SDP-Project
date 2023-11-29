@@ -34,9 +34,6 @@
     "name": "spr_player_stand",
     "path": "sprites/spr_player_stand/spr_player_stand.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_player_stand",
-    "path": "sprites/spr_player_stand/spr_player_stand.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

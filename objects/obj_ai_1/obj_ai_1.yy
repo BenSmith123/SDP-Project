@@ -34,9 +34,6 @@
     "name": "spr_drone",
     "path": "sprites/spr_drone/spr_drone.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_drone",
-    "path": "sprites/spr_drone/spr_drone.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }
