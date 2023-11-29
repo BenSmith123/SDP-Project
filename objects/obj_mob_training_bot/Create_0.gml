@@ -28,10 +28,10 @@ detect_distance = 120 // how far can an ai spot a player
 health_run_percent = 20 // percent that health has to be before running away
 
 sprite_stand = spr_mob_training_bot
-sprite_walk = spr_drone_walking
-sprite_jump = spr_drone
+sprite_walk = spr_mob_training_bot
+sprite_jump = spr_mob_training_bot
 sprite_dead = spr_mob_training_bot
-sprite_attack = spr_drone_walking
+sprite_attack = spr_mob_training_bot
 
 image_speed = 0.1
 

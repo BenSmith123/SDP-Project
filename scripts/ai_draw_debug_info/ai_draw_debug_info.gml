@@ -3,6 +3,11 @@ function ai_draw_debug_info()
 	
 	if global.show_debug = false { exit }
 	
+	// debug collision mask
+	draw_set_alpha(0.4)
+	draw_rectangle_color(bbox_left,bbox_top,bbox_right,bbox_bottom,c_green,c_green,c_green,c_green,false);
+	draw_set_alpha(1)
+	
 	scr_text_1()
 	
 	draw_text(x,y+75,"State: " +string(state))
