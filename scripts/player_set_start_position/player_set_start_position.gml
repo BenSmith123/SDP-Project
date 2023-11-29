@@ -25,6 +25,9 @@ function player_set_start_position()
 		? obj_marker_player_spawn_left
 		: obj_marker_player_spawn_right
 		
+	// face the right direction
+	image_xscale = global.came_from_left_map ? 1 : -1
+		
 	x = spawn_obj.x
 	y = spawn_obj.y
 	

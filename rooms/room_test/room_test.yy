@@ -15,7 +15,6 @@
     {"name":"inst_D4D40B92_1","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_B8B5A74B_1","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_727206C1_1","path":"rooms/room_test/room_test.yy",},
-    {"name":"inst_A1A9857_1","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_1DC01BCC_1","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_5032770D_1","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_5B77A22E","path":"rooms/room_test/room_test.yy",},
@@ -313,7 +312,6 @@
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"NPC","depth":-5400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A1A9857_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1446.0,"y":580.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35F5D60F","colour":4280220671,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":-1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ai_damage_test","path":"objects/obj_ai_damage_test/obj_ai_damage_test.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":893.9263,"y":748.38586,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":-5000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

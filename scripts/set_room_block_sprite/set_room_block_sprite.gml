@@ -8,11 +8,12 @@ function set_room_block_sprite()
 	        spr = spr_block_grey
 	        break;
 			
-		case room_4:
+		case room_metal:
 	        spr = spr_block_metal
 	        break;
 			
-		case room_5:
+		case room_cave_small:
+		case room_cave_large:
 	        spr = spr_block_ground
 	        break;
 			

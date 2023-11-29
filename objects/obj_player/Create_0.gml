@@ -6,7 +6,7 @@ player_set_start_position()
 // store room for when game is next loaded
 global.current_map_name = room_get_name(room)
 
-if global.joystick_enabled = true {instance_create(x,y,obj_joystick)}
+if global.joystick_enabled = true { instance_create(x,y,obj_joystick) }
 
 
 // CONSTANT
@@ -62,7 +62,7 @@ collision_tilemap = layer_tilemap_get_id("CollisionTiles")
 
 // friction value applied to the character's horizontal movement every frame
 // the friction is reduced when the character is in mid-air
-friction_power = 1
+friction_power = 0.5 // NOTE - changing to 1 might cause a bug where player sometimes faces other way after moving
 
 // gravity applied every frame
 grav_speed = 0.75

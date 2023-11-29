@@ -8,8 +8,9 @@ function getPlayableMapsOrder()
 		// add maps here to be included in 
 		room_test,
 		room_village,
-		room_5,
-		room_4
+		room_cave_small,
+		room_cave_large,
+		room_metal
 	]
 }
 

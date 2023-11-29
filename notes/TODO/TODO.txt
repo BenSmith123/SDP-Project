@@ -5,6 +5,8 @@ TO DO
 
 - MVP
 	- more content! - maps, mobs, items, NPCs!
+	
+	- bug - player facing wrong way after jumping?
 
 
 - UI for inventory items
