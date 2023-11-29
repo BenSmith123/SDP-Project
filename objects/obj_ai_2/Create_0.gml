@@ -6,7 +6,7 @@ attack = 50
 defence = 30
 accuracy = 0
 
-aggressive = true
+aggressive = false
 
 block_distance = 50 // distance for checking how far away blocks are
 jump_block_height = 0 // how high a block can be for ai to try jump

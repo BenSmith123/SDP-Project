@@ -35,7 +35,7 @@ function on_select_class()
 {
 	switch (class) {
 	    case PlayerClass.Hunter:
-			global.walk_speed += 2
+			global.walk_speed += 1
 			global.accuracy += 50
 	        break;
 			

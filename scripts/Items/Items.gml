@@ -18,6 +18,7 @@ enum ItemRarity
 enum ItemId
 {
 	DronePiece,
+	DroneHeart,
 	Helmet
 }
 
@@ -36,6 +37,18 @@ function get_item(itemId)
 			sprite: spr_drone_piece,
 			rarity: ItemRarity.Common,
 			stackSize: 30,
+			isSellable: true,
+			sellValue: 10
+		}),
+		create_item(
+		{
+			iid: ItemId.DroneHeart,
+			name: "Drone heart",
+			type: ItemType.Misc,
+			description: "hello",
+			sprite: spr_drone_heart,
+			rarity: ItemRarity.Common,
+			stackSize: 10,
 			isSellable: true,
 			sellValue: 100
 		}),

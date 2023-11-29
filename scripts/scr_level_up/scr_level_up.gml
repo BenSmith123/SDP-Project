@@ -2,7 +2,7 @@
 function level_up_increase_stats()
 {
 	// selecting a class will increase status
-	if global.level == 10 { exit }
+	if global.level == 10 { global.walk_speed += 1; exit }
 
 	if global.level > 10
 	{

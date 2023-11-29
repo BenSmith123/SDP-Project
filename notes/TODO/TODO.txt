@@ -5,8 +5,6 @@ TO DO
 
 - MVP
 	- more content! - maps, mobs, items, NPCs!
-	
-	- bug - player facing wrong way after jumping?
 
 
 - UI for inventory items
@@ -35,6 +33,9 @@ TO DO
 
 item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
 
+
+https://maplestory.wiki/GMS/246/mob?page=6
+https://maplestory.wiki/GMS/246/mob?page=13
 
 
 

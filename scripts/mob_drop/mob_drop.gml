@@ -7,6 +7,11 @@ function mob_drop()
 	{
 		case obj_ai_1: 
 			mob_drop_item(obj_item_drone_piece)
+			mob_drop_item(obj_item_potion_blue, 20)
+		break
+		
+		case obj_ai_2: 
+			mob_drop_item(obj_item_drone_heart)
 			mob_drop_item(obj_item_potion_blue, 5)
 		break
 
