@@ -16,6 +16,7 @@ function scr_ai_initialize()
 	can_be_knockedback = true
 	attack_ability = false // projectiles, skills etc.
 	attack_distance = 0 // distance before attacking player
+	projectile_sprite = 0 // overridden when needed
 
 	// IN-GAME
 	hp = maxhp

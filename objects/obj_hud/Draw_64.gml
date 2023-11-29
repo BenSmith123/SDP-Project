@@ -7,7 +7,7 @@ if low_health_alpha != 0
 draw_sprite(spr_hud,0,10,10)
 
 // HEALTH BAR
-draw_sprite_part(spr_hud_health_bar,health_colour,0,0,(obj_player.hp/obj_player.max_hp * 287),31,63,16) // 20 = sprite height // 146 = sprite width
+draw_sprite_part(spr_hud_health_bar,health_colour,0,0,(obj_player.hp/obj_player.max_hp * 287),31,78,16) // 20 = sprite height // 146 = sprite width
 
 // EXPERIENCE BAR
 draw_sprite_part(spr_hud_experience,0,0,0,(global.experience/global.max_exp * 265),18,68,48) // 127 = sprite width

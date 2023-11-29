@@ -1,6 +1,6 @@
 
 // player stats
-name = "Drone Commander"
+name = "Drone Operator"
 level = 70
 maxhp = 1000
 attack = 200
@@ -20,6 +20,7 @@ sprite_walk = sprite_index
 sprite_jump = sprite_index
 sprite_dead = sprite_index
 sprite_attack = sprite_index
+sprite_projectile = spr_projectile_laser
 
 walkspeed = 2
 jump = 0
@@ -32,4 +33,5 @@ tag_y = 40 // y position to show the name and hp
 
 scr_ai_initialize()
 
-
+attack_ability = true
+attack_distance = 400 // distance before attacking player

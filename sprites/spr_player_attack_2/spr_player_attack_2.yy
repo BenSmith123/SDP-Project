@@ -4,7 +4,7 @@
   "name": "spr_player_attack_2",
   "bbox_bottom": 62,
   "bbox_left": 0,
-  "bbox_right": 80,
+  "bbox_right": 70,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"71c01dda-1584-4a89-ac0d-a579205c0b78",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"179ce1e9-c04b-4a04-ae3e-66735a2e1f87",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"71c01dda-1584-4a89-ac0d-a579205c0b78","path":"sprites/spr_player_attack_2/spr_player_attack_2.yy",},},},"Disabled":false,"id":"6e5bd049-b81a-49c9-b3d3-60cc054dabb4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"179ce1e9-c04b-4a04-ae3e-66735a2e1f87","path":"sprites/spr_player_attack_2/spr_player_attack_2.yy",},},},"Disabled":false,"id":"26c9a38b-f575-4189-9b05-2895f268966d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 11,
-    "yorigin": 31,
+    "xorigin": 14,
+    "yorigin": 33,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 81,
+  "width": 71,
 }

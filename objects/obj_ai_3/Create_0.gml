@@ -19,6 +19,7 @@ sprite_walk = spr_player_walking
 sprite_jump = spr_player_jump
 sprite_dead = spr_player_dead
 sprite_attack = choose(spr_player_attack_2, spr_player_attack_5)
+sprite_projectile = spr_bullet_2
 
 walkspeed = 4
 jump = 10

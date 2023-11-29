@@ -20,7 +20,7 @@ function effect_create_basic(obj_effect)
 	var xx = get_projectile_collision_x()
 	
 	var fx = instance_create(xx,y,obj_effect)
-	fx.image_index = irandom(fx.image_number)
+	fx.image_index = irandom(fx.image_number) // pick any sub image
 	fx.image_xscale = sign(hspeed)
 	part_particles_create(global.fx,xx,y,global.boost_fx,20)
 }
