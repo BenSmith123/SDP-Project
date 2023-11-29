@@ -1,8 +1,7 @@
 
 function scr_ai_meet_x()
 {
-	// TODO - replace with bbox (see below)
-	if (x >= enemy.x-x_meet and x <= enemy.x+x_meet)
+	if enemy.bbox_left > bbox_right && enemy.bbox_right < bbox_left
 	{
 	    return true
 	}

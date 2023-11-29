@@ -10,10 +10,6 @@
 //                            |_|            |___/ 
 // (used in game - not modified by different mobs)
 
-x_meet = sprite_get_height(sprite_index)/2 // distance for the x and enemy x for alignment (player above or below)
-y_meet = sprite_get_width(sprite_index)/2 // (player on same platform)
-// ^^^ divided by two because -height to +height is double the players size
-
 instance_create(x,y,obj_fx_teleport) // TODO - spawn fx
 friction = 0.1
 
