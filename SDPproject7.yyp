@@ -88,7 +88,6 @@
     {"id":{"name":"spr_player_attack_3","path":"sprites/spr_player_attack_3/spr_player_attack_3.yy",},},
     {"id":{"name":"spr_player_defend","path":"sprites/spr_player_defend/spr_player_defend.yy",},},
     {"id":{"name":"spr_player_attack_5","path":"sprites/spr_player_attack_5/spr_player_attack_5.yy",},},
-    {"id":{"name":"sprite35","path":"sprites/sprite35/sprite35.yy",},},
     {"id":{"name":"get_game_controls_text","path":"scripts/get_game_controls_text/get_game_controls_text.yy",},},
     {"id":{"name":"spr_drone","path":"sprites/spr_drone/spr_drone.yy",},},
     {"id":{"name":"spr_drone_walking","path":"sprites/spr_drone_walking/spr_drone_walking.yy",},},

@@ -1,11 +1,10 @@
 
-// player stats
 name = "Drone Operator"
 level = 70
-maxhp = 1000
-attack = 200
-defence = 150
-accuracy = 70
+maxhp = 100
+attack = 50
+defence = 30
+accuracy = 0
 
 aggressive = true
 
