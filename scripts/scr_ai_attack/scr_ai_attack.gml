@@ -14,7 +14,7 @@ function scr_ai_attack()
 	
 	var bullet_speed = image_xscale * 8 // TODO - speed variable instead
     
-	var bullet = instance_create(x+bullet_x,y,obj_bullet_ai)
+	var bullet = instance_create(x+bullet_x,y,obj_projectile_mob)
 	bullet.hspeed = bullet_speed
 	bullet.attack = attack
 	bullet.accuracy = accuracy

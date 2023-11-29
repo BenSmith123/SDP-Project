@@ -1,20 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fx_teleport",
+  "name": "obj_projectile_mob",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Effects",
-    "path": "folders/Objects/Effects.yy",
+    "name": "Projectiles",
+    "path": "folders/Objects/Projectiles.yy",
   },
   "parentObjectId": {
-    "name": "parent_effect",
-    "path": "objects/parent_effect/parent_effect.yy",
+    "name": "parent_projectile_mob",
+    "path": "objects/parent_projectile_mob/parent_projectile_mob.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_fx_teleport",
-    "path": "sprites/spr_fx_teleport/spr_fx_teleport.yy",
+    "name": "sprite70",
+    "path": "sprites/sprite70/sprite70.yy",
   },
   "spriteMaskId": null,
   "visible": true,

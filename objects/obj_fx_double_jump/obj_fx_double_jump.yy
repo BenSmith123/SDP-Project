@@ -14,8 +14,8 @@
     "path": "folders/Objects/Effects.yy",
   },
   "parentObjectId": {
-    "name": "effects_parent",
-    "path": "objects/effects_parent/effects_parent.yy",
+    "name": "parent_effect",
+    "path": "objects/parent_effect/parent_effect.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fx_teleport",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-  ],
+  "name": "obj_fx_spark_red",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Effects",
-    "path": "folders/Objects/Effects.yy",
+    "name": "spark",
+    "path": "folders/Objects/Effects/spark.yy",
   },
   "parentObjectId": {
-    "name": "parent_effect",
-    "path": "objects/parent_effect/parent_effect.yy",
+    "name": "parent_fx_spark",
+    "path": "objects/parent_fx_spark/parent_fx_spark.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_fx_teleport",
-    "path": "sprites/spr_fx_teleport/spr_fx_teleport.yy",
+    "name": "spr_spark",
+    "path": "sprites/spr_spark/spr_spark.yy",
   },
   "spriteMaskId": null,
   "visible": true,
