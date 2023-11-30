@@ -7,15 +7,20 @@ function mob_drop()
 	{
 		case obj_ai_1: 
 			mob_drop_item(obj_item_drone_piece)
-			mob_drop_item(obj_item_potion_blue, 20)
 		break
 		
 		case obj_ai_2: 
 			mob_drop_item(obj_item_drone_heart)
-			mob_drop_item(obj_item_potion_blue, 5)
+			mob_drop_coins(20,40)
+		break
+		
+		case obj_mob_training_bot: 
+			mob_drop_item(obj_item_drone_heart)
 		break
 
-	default: break;
+	default:
+		mob_drop_item(obj_item_potion_blue, 20)
+	break;
 	}
 	
 	mob_drop_coins()
@@ -26,12 +31,7 @@ function mob_drop()
 /// @param obj_index {Instance.Id}
 function mob_drop_item(obj_index, chance = 1) 
 {
-	
-	if chance != 1
-	{
-		// if num chosen is 1, continue to spawn item
-		if irandom(chance) != 1 {exit}
-	}
+	if !random_chance(chance) { exit }
 	
 	var item = instance_create(x, y,obj_index)
 	// randomise where the item is dropped

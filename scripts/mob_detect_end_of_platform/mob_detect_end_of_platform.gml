@@ -17,7 +17,7 @@ function mob_detect_end_of_platform()
 			// drop off platform if chasing
 			if aggressive || has_been_attacked { exit }
 			
-			var should_jump = chance(3)
+			var should_jump = random_chance(3)
 			if (should_jump)
 			{
 				vspeed = -jump

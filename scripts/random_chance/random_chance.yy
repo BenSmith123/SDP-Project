@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "chance",
+  "name": "random_chance",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

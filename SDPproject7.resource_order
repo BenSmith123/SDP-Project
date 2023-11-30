@@ -271,7 +271,7 @@
     {"name":"obj_arrow_key_jump","order":6,"path":"objects/obj_arrow_key_jump/obj_arrow_key_jump.yy",},
     {"name":"obj_arrow_key_attack","order":7,"path":"objects/obj_arrow_key_attack/obj_arrow_key_attack.yy",},
     {"name":"obj_block_slope_parent","order":103,"path":"objects/obj_block_slope_parent/obj_block_slope_parent.yy",},
-    {"name":"chance","order":14,"path":"scripts/chance/chance.yy",},
+    {"name":"random_chance","order":14,"path":"scripts/random_chance/random_chance.yy",},
     {"name":"spr_npc_bank","order":3,"path":"sprites/spr_npc_bank/spr_npc_bank.yy",},
     {"name":"get_healthbar_colour","order":6,"path":"scripts/get_healthbar_colour/get_healthbar_colour.yy",},
     {"name":"obj_player_stats_text","order":1,"path":"objects/obj_player_stats_text/obj_player_stats_text.yy",},

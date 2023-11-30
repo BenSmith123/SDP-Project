@@ -35,7 +35,7 @@ TO DO
 - fix player HP not being saved
 - add better collision & bullet sprites & effects
 - controls for when debug is disabled - escape is pause game, escape again to quit
-- windows execuable installer graphics!
+- windows executable installer graphics!
 
 item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
 
