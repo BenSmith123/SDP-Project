@@ -14,13 +14,15 @@ function mob_detect_end_of_platform()
 		// if can jump, jump off edge
 		if jump > 0
 		{
+			// drop off platform if chasing
+			if aggressive || has_been_attacked { exit }
+			
 			var should_jump = chance(3)
 			if (should_jump)
 			{
 				vspeed = -jump
 				exit
 			}
-
 		}
 		
 		// turn around immediately otherwise mob could go to 
