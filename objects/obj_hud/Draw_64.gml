@@ -24,6 +24,12 @@ draw_text(88,33,global.name +"       ("+global.class+")")
 // EXP number
 draw_text(88,58,string(global.experience)+"/"+string(global.max_exp))
 
+// coins
+var coin_spr_width = string_width(global.coins) + 19
+draw_sprite_stretched(spr_coin_hud,0,66,72, coin_spr_width, 28)
+draw_text(75,87,global.coins)
+
+
 
 draw_set_halign(fa_right) // RIGHT ALIGNED TEXT
 
@@ -37,6 +43,4 @@ draw_text(316,58,string(global.experience/global.max_exp*100)+"%")
 // draw_text(WIDTH-20,64,string(global.current_kills)+ " kills")
 
 
-// coins
-draw_sprite(spr_coin_hud,0,80,120)
-draw_text(90,120,global.coins)
+
