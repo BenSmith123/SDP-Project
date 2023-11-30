@@ -1,7 +1,5 @@
 /// @description handle sprites
 
-image_speed = 0.25
-
 if attacking == true 
 { 
 	sprite_index = sprite_attack 

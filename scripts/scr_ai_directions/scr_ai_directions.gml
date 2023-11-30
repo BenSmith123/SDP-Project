@@ -10,7 +10,6 @@ function ai_turn_around()
 	    alarm[2] = 60
 
 	    image_xscale = -image_xscale
-		state = string(image_xscale)
 	}
 }
 

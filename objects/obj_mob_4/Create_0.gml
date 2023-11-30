@@ -9,8 +9,8 @@ defence = 6
 accuracy = 15
 experience = 40
 
-walkspeed = 4
-jump = 10
+walkspeed = 3
+jump = 8
 heal_time = 3 // seconds
 heal_amount = 20
 
@@ -27,13 +27,13 @@ drop_distance = 150 // how far below a player is before dropping down
 detect_distance = 360 // how far can an ai spot a player
 health_run_percent = 20 // percent that health has to be before running away
 
-sprite_stand = spr_mob_4_walk
+sprite_stand = spr_mob_4_stand
 sprite_walk = spr_mob_4_walk
 sprite_jump = spr_player_jump
 sprite_dead = spr_mob_4_dead
 //sprite_attack = choose(spr_player_attack_2, spr_player_attack_5)
 //sprite_projectile = spr_bullet_2
 
-image_speed = 0.1
+image_speed = 1.5
 
 mob_after_initialised() // don't remove

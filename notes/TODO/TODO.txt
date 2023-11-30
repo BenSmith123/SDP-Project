@@ -6,26 +6,32 @@ TO DO
 - MVP
 	- more content! - maps, mobs, items, NPCs!
 
-
+- AI:
+	- place more mobs everywhere!!
+	- jumping mobs can walk through walls?
+	- ai never stand still
+	- training bot killed graphic
+	- walking up slope changes to jump sprite - looks glitchy
+	- scripts still need more work - attacks with abilities don't always work
+	  ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 - UI for inventory items
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Bank - store coins
-- AI spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
-- ^ only spawn when AI that was there in room start has been destroyed
+
 - fix player getting stuck on slopes when knocked into
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text
 - ^ Better fonts?
 - Ladders / ropes!
-- Fix HUD healthbar sprite
-- AI scripts still need more work - attacks with abilities don't always work
-- ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
+
 - backgrounds & scenery! with depth
 - projectile range & drop?
 - gain extra exp when hitting a mob mid air? or player is in air - show on event log
 - seeker to go pick up coins
+- mob spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
+  ^ only spawn when AI that was there in room start has been destroyed
 - fix player HP not being saved
 - add better collision & bullet sprites & effects
 - controls for when debug is disabled - escape is pause game, escape again to quit

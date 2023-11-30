@@ -1,4 +1,4 @@
-function scr_ai_block_jump()
+function mob_detect_wall()
 {
 
 	if !is_on_ground { exit }
@@ -20,7 +20,7 @@ function scr_ai_block_jump()
 			{
 				state = "Jump block"
 				vspeed = -jump
-				hspeed =speed_in_direction
+				hspeed = speed_in_direction
 			}
 	    }
 	    else // if cant jump over block, turn around

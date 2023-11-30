@@ -15,7 +15,7 @@ function scr_ai_movement() {
 
 			if place_meeting(x+hspeed, y-1, obj_block)
 			{
-				//state = "Slope"
+				state = "Slope"
 				
 				// loop to push the mob up depending on the slope
 				for(var new_y = 0; new_y < 10; new_y++)
@@ -40,9 +40,11 @@ function scr_ai_movement() {
 
 	//scr_ai_spread() // stop ai bunching together
 	
-	scr_ai_block_jump()
+	// jump or turn around
+	mob_detect_wall()
+	
+	mob_detect_end_of_platform()
 
-	scr_ai_room_end()
 	
 	// stop all scripts below if player doesn't exist - prevent crashes & avoid additional checks
 	if !instance_exists(enemy) { exit }

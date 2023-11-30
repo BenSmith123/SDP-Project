@@ -33,6 +33,6 @@ sprite_jump = spr_mob_dragon_stand
 sprite_dead = spr_player_dead
 sprite_attack = spr_player_attack_2
 
-image_speed = 0.1
+image_speed = 1
 
 mob_after_initialised() // don't remove

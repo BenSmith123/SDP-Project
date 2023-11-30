@@ -46,11 +46,13 @@ function ai_draw_debug_info()
 		show_xy_meeting = false
 	}
     
-	//if show_xy_meeting
-	//{
-	//	draw_text(x,y-140,"xy meeting")
-	//	show_detect_distance = false
-	//}
+	if show_xy_meeting
+	{
+		draw_text(x,y-140,"xy meeting")
+		draw_text(x+(speed_in_direction -20),bbox_bottom+16,"x")
+
+		show_detect_distance = false
+	}
 	
 	if show_platform_variables == true
 	{
