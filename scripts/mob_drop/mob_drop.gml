@@ -29,9 +29,12 @@ function mob_drop()
 
 
 /// @param obj_index {Instance.Id}
-function mob_drop_item(obj_index, chance = 1) 
+function mob_drop_item(obj_index, chance = 0) 
 {
-	if !random_chance(chance) { exit }
+	if chance == 0 // default skip this and 100% spawn
+	{ 
+		if !random_chance(chance) { exit }
+	}
 	
 	var item = instance_create(x, y,obj_index)
 	// randomise where the item is dropped

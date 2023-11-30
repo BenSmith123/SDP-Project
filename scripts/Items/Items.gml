@@ -23,11 +23,11 @@ enum ItemId
 }
 
 
-function get_item(itemId)
+function get_item(item_id)
 {
 	// create an array of all items
 	// NOTE - this was easier/faster to deal with than creating maps etc.
-	var allItemsArray = [
+	var all_items_array = [
 		create_item(
 		{
 			iid: ItemId.DronePiece,
@@ -36,9 +36,9 @@ function get_item(itemId)
 			description: "hello",
 			sprite: spr_drone_piece,
 			rarity: ItemRarity.Common,
-			stackSize: 30,
-			isSellable: true,
-			sellValue: 10
+			stack_size: 30,
+			is_sellable: true,
+			sell_value: 10
 		}),
 		create_item(
 		{
@@ -48,9 +48,9 @@ function get_item(itemId)
 			description: "hello",
 			sprite: spr_drone_heart,
 			rarity: ItemRarity.Common,
-			stackSize: 10,
-			isSellable: true,
-			sellValue: 100
+			stack_size: 10,
+			is_sellable: true,
+			sell_value: 100
 		}),
 		create_item(
 		{
@@ -60,19 +60,19 @@ function get_item(itemId)
 			description: "hello",
 			sprite: spr_drone_piece,
 			rarity: ItemRarity.Common,
-			stackSize: 1,
-			isSellable: true,
-			sellValue: 100
+			stack_size: 1,
+			is_sellable: true,
+			sell_value: 100
 		})
 	]
 
-	var arrayLength = array_length(allItemsArray)
+	var arr_length = array_length(all_items_array)
 	
 	// find the item and return it
-	for (var i = 0; i < arrayLength; i++) {
-		if (allItemsArray[i].iid == itemId)
+	for (var i = 0; i < arr_length; i++) {
+		if (all_items_array[i].iid == item_id)
 		{ 
-			return allItemsArray[i]
+			return all_items_array[i]
 		}
 	}
 }
@@ -88,8 +88,8 @@ function create_item(item)
 		description: item.description,
 		sprite: item.sprite,
 		rarity: item.rarity,
-		stackSize: item.stackSize, // 1 being unstackable
-		isSellable: item.isSellable,
-		sellValue: item.sellValue
+		stack_size: item.stack_size, // 1 being unstackable
+		is_sellable: item.is_sellable,
+		sell_value: item.sell_value
 	}
 }

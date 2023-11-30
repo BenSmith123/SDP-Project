@@ -224,6 +224,7 @@
     {"id":{"name":"load_game","path":"scripts/load_game/load_game.yy",},},
     {"id":{"name":"save_game","path":"scripts/save_game/save_game.yy",},},
     {"id":{"name":"reset_game","path":"scripts/reset_game/reset_game.yy",},},
+    {"id":{"name":"Sprite124","path":"sprites/Sprite124/Sprite124.yy",},},
     {"id":{"name":"set_resolution","path":"scripts/set_resolution/set_resolution.yy",},},
     {"id":{"name":"scr_level_up","path":"scripts/scr_level_up/scr_level_up.yy",},},
     {"id":{"name":"player_controls","path":"scripts/player_controls/player_controls.yy",},},

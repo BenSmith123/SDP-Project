@@ -36,3 +36,4 @@ sprite_attack = spr_player_attack_2
 image_speed = 1
 
 mob_after_initialised() // don't remove
+
