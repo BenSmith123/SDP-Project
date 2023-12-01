@@ -27,6 +27,12 @@ enum ObjectDepth
 	Tiles = 1000
 }
 
+enum SystemType
+{
+	Desktop,
+	Mobile
+}
+
 enum UserType
 {
 	Player,

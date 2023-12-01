@@ -1,19 +1,18 @@
 // @description initialise session globals (not stored)
 function initialise_globals()
 {
+	// DEBUG
 	global.is_game_master = true
 	global.error = ""
 	global.show_debug = false
 	global.overall_view = false // show the entire room
 
-
-	global.system = "" // incase there is no OS type?
-	if os_type = os_windows {global.system = "Windows"}
-	if os_type = os_android {global.system = "Android"}
-
-	// global.system = "Android" // testing hud
-
-	// in-game variables
+	// SYSTEM
+	global.system = os_type == os_windows
+		?  SystemType.Desktop
+		:  SystemType.Mobile
+		
+	// IN-GAME
 
 	// set where the player first spawns in the room
 	global.player_start_x = 0 
@@ -21,7 +20,6 @@ function initialise_globals()
 	global.session_first_spawn = true // spawn player where session ended
 	global.respawn_map_name = "room_village"
 	global.came_from_left_map = false // determine what side of the map to place character on room start
-
 
 	// SETTINGS
 	global.joystick_enabled = true
