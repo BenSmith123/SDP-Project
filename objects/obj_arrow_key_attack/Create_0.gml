@@ -1,2 +1,2 @@
 
-hit_effect()
+// hit_effect()

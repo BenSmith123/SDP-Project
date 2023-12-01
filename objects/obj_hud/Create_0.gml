@@ -9,7 +9,7 @@ low_health_alpha = 0
 instance_create(x,y,obj_pause_button)
 
 // create on screen buttons
-if global.system = "Android"
+//if global.system = "Android"
 {
     // left and right
     global.vk_left_x = 40
