@@ -15,7 +15,7 @@ heal_time = 0 // seconds
 heal_amount = 0
 
 aggressive = false // move/attack an enemy when unprovoked
-can_be_knockedback = true
+can_be_knockedback = false
 
 // skill
 attack_ability = false // projectiles, skills etc.
@@ -30,9 +30,11 @@ health_run_percent = 0 // percent that health has to be before running away
 sprite_stand = spr_mob_training_bot
 sprite_walk = spr_mob_training_bot
 sprite_jump = spr_mob_training_bot
-sprite_dead = spr_mob_training_bot
+sprite_dead = spr_mob_training_bot_dead
 sprite_attack = spr_mob_training_bot
 
-image_speed = 0
+animated_death = true
+
+image_speed = 0.3
 
 mob_after_initialised() // don't remove

@@ -81,4 +81,6 @@ sprite_dead = sprite_index
 sprite_attack = sprite_index
 sprite_projectile = spr_projectile_laser
 
+animated_death = false
+
 image_speed = 0.1

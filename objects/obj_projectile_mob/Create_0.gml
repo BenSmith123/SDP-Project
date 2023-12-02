@@ -5,4 +5,4 @@ event_inherited()
 attack = 0
 accuracy = 0
 
-destroy_effect_func = effect_create_spark_blue
+destroy_effect_func = get_projectile_destroy_effect()

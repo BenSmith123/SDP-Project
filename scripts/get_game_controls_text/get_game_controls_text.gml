@@ -41,6 +41,7 @@ function get_game_debug_controls_text()
 	8 = show ai detect distance
 	9 = show ai XYmeeting
 	
+	M = toggle mobile/desktop
 	0 = hard reset (delete saved progress)
 	"
 	

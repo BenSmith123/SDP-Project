@@ -8,8 +8,8 @@ function initialise_particle_system()
 	part_system_depth(global.fx,-5800)
 
 
-	global.boost_fx = part_type_create() // 
-	var temp = global.boost_fx
+	global.spark_fx_red = part_type_create()
+	var temp = global.spark_fx_red
 	part_type_shape(temp,pt_shape_spark)
 	part_type_size(temp,0.05,0.2,0,0)
 	part_type_color2(temp,c_white,c_red)
@@ -19,6 +19,20 @@ function initialise_particle_system()
 	part_type_direction(temp,0,360,0,0)
 	part_type_gravity(temp,0.1,270)
 	part_type_blend(temp,true)
+	
+	global.spark_fx_blue = part_type_create()
+	var temp =global.spark_fx_blue
+	part_type_shape(temp,pt_shape_spark)
+	part_type_size(temp,0.05,0.2,0,0)
+	part_type_color2(temp,c_white,c_blue)
+	part_type_life(temp,7,14)
+	part_type_alpha2(temp,1,0.05)
+	part_type_speed(temp,4,7,0,0.3)
+	part_type_direction(temp,0,360,0,0)
+	part_type_gravity(temp,0.1,270)
+	part_type_blend(temp,true)
+
+
 
 
 	/*

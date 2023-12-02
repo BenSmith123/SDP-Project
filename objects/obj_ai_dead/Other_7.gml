@@ -1,0 +1,1 @@
+if animated_death { instance_destroy() }

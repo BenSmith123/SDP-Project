@@ -2,6 +2,8 @@ function player_jump()
 {
 	if (grounded)
 	{
+		instance_create(x, bbox_bottom, obj_fx_player_jump)
+		
 		// This sets the Y velocity to negative jump speed, making the player immediately jump upwards. It
 		// will automatically be brought down by the gravity code in the parent's Begin Step event.
 		vel_y = -jump;

@@ -5,6 +5,8 @@ TO DO
 
 - MVP
 	- more content! - maps, mobs, items, NPCs!
+	- fix mob sprites
+	- backgrounds!
 
 - AI:
 	- place more mobs everywhere!!

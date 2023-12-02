@@ -29,7 +29,7 @@ health_run_percent = 20 // percent that health has to be before running away
 
 sprite_stand = spr_mob_4_stand
 sprite_walk = spr_mob_4_walk
-sprite_jump = spr_player_jump
+sprite_jump = spr_mob_4_stand
 sprite_dead = spr_mob_4_dead
 //sprite_attack = choose(spr_player_attack_2, spr_player_attack_5)
 //sprite_projectile = spr_bullet_2
