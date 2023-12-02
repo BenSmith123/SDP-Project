@@ -34,6 +34,10 @@ attacking = false // for sprite managing
 soft_kill = false // when ai is not killed by the player, don't reward
 speed_in_direction = 0 // hspeed or negative hspeed (depending on direction)
 
+// idle randoml
+alarm[1] = irandom_range_frames(6, 12)
+
+
 // DEBUG 
 show_detect_distance = false
 show_xy_meeting = false

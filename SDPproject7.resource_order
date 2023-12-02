@@ -266,6 +266,7 @@
     {"name":"spr_mob_4_walk","order":6,"path":"sprites/spr_mob_4_walk/spr_mob_4_walk.yy",},
     {"name":"obj_fx_spawn","order":3,"path":"objects/obj_fx_spawn/obj_fx_spawn.yy",},
     {"name":"font_arial_20_bold","order":15,"path":"fonts/font_arial_20_bold/font_arial_20_bold.yy",},
+    {"name":"get_seconds","order":29,"path":"scripts/get_seconds/get_seconds.yy",},
     {"name":"spr_scen_tree_4","order":3,"path":"sprites/spr_scen_tree_4/spr_scen_tree_4.yy",},
     {"name":"Collisions","order":12,"path":"scripts/Collisions/Collisions.yy",},
     {"name":"obj_fx_pick_up","order":4,"path":"objects/obj_fx_pick_up/obj_fx_pick_up.yy",},

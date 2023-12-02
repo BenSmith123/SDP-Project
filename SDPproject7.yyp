@@ -327,6 +327,7 @@
     {"id":{"name":"spr_mob_4_walk","path":"sprites/spr_mob_4_walk/spr_mob_4_walk.yy",},},
     {"id":{"name":"obj_fx_spawn","path":"objects/obj_fx_spawn/obj_fx_spawn.yy",},},
     {"id":{"name":"font_arial_20_bold","path":"fonts/font_arial_20_bold/font_arial_20_bold.yy",},},
+    {"id":{"name":"get_seconds","path":"scripts/get_seconds/get_seconds.yy",},},
     {"id":{"name":"spr_scen_tree_4","path":"sprites/spr_scen_tree_4/spr_scen_tree_4.yy",},},
     {"id":{"name":"Collisions","path":"scripts/Collisions/Collisions.yy",},},
     {"id":{"name":"spr_ts_test","path":"sprites/spr_ts_test/spr_ts_test.yy",},},
