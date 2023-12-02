@@ -13,6 +13,7 @@ enum ObjectDepth
 	Controller = -10100, // debug text
 	PauseMenu = -10060,
 	OverlayScreen = -10050, // pick class, player dead
+	HUDItem = -10010,
 	HUD = -10000,
 	DamageText = -6000,
 	Effect = -5800,

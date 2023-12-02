@@ -19,7 +19,10 @@ enum ItemId
 {
 	DronePiece,
 	DroneHeart,
-	Helmet
+	Helmet,
+	Banana,
+	Battery,
+	DragonEgg,
 }
 
 
@@ -33,22 +36,22 @@ function get_item(item_id)
 			iid: ItemId.DronePiece,
 			name: "Drone piece",
 			type: ItemType.Misc,
-			description: "hello",
+			description: "-",
 			sprite: spr_drone_piece,
 			rarity: ItemRarity.Common,
 			stack_size: 30,
 			is_sellable: true,
-			sell_value: 10
+			sell_value: 30
 		}),
 		create_item(
 		{
 			iid: ItemId.DroneHeart,
 			name: "Drone heart",
 			type: ItemType.Misc,
-			description: "hello",
+			description: "Used to power the Drone Operator",
 			sprite: spr_drone_heart,
 			rarity: ItemRarity.Common,
-			stack_size: 10,
+			stack_size: 9,
 			is_sellable: true,
 			sell_value: 100
 		}),
@@ -57,9 +60,45 @@ function get_item(item_id)
 			iid: ItemId.Helmet,
 			name: "Helmet",
 			type: ItemType.Misc,
-			description: "hello",
+			description: "-",
 			sprite: spr_drone_piece,
 			rarity: ItemRarity.Common,
+			stack_size: 10,
+			is_sellable: true,
+			sell_value: 100
+		}),
+		create_item(
+		{
+			iid: ItemId.Banana,
+			name: "Banana",
+			type: ItemType.Misc,
+			description: "1/100 chance of a finding",
+			sprite: spr_item_banana,
+			rarity: ItemRarity.Common,
+			stack_size: 1,
+			is_sellable: true,
+			sell_value: 100
+		}),
+		create_item(
+		{
+			iid: ItemId.Battery,
+			name: "Battery",
+			type: ItemType.Misc,
+			description: "-",
+			sprite: spr_item_battery,
+			rarity: ItemRarity.Common,
+			stack_size: 10,
+			is_sellable: true,
+			sell_value: 100
+		}),
+		create_item(
+		{
+			iid: ItemId.DragonEgg,
+			name: "Dragon Egg",
+			type: ItemType.Misc,
+			description: "-",
+			sprite: spr_item_dragon_egg,
+			rarity: ItemRarity.Rare,
 			stack_size: 1,
 			is_sellable: true,
 			sell_value: 100

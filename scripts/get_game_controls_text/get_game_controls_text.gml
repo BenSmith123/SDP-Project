@@ -20,7 +20,10 @@ function get_game_controls_text()
 	Up arrow (or W) = jump
 	Down arrow = drop down
 	Spacebar (or S) = attack
-	F = teleport (if spellcaster)"
+	F = teleport (if spellcaster)
+	
+	I = Open inventory
+	"
 }
 
 function get_game_debug_controls_text()

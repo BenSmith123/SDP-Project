@@ -49,7 +49,7 @@
   "origin": 4,
   "parent": {
     "name": "HUD",
-    "path": "folders/Sprites/characters/HUD.yy",
+    "path": "folders/Sprites/HUD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

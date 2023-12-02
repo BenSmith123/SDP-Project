@@ -2,6 +2,9 @@
 function mob_drop()
 {
 	
+	var coin_min = 0
+	var coin_max = 10
+	
 	// TODO - enum for each mob instead of checking object_index?	
 	switch(object_index)
 	{
@@ -11,19 +14,26 @@ function mob_drop()
 		
 		case obj_ai_2: 
 			mob_drop_item(obj_item_drone_heart)
-			mob_drop_coins(20,40)
+			coin_min = 20
+			coin_max = 40
 		break
 		
 		case obj_mob_training_bot: 
-			mob_drop_item(obj_item_drone_heart)
+			mob_drop_item(obj_item_battery)
+			coin_max = 0
 		break
-
-	default:
-		mob_drop_item(obj_item_potion_blue, 20)
-	break;
+		
+		case obj_mob_dragon: 
+			mob_drop_item(obj_item_dragon_egg)
+			coin_min = 20
+			coin_max = 40
+		break
 	}
 	
-	mob_drop_coins()
+	// common drops!
+	mob_drop_item(obj_item_potion_blue, 20)
+	mob_drop_item(obj_item_banana, 100)
+	mob_drop_coins(coin_min, coin_max)
 
 }
 
@@ -31,7 +41,7 @@ function mob_drop()
 /// @param obj_index {Instance.Id}
 function mob_drop_item(obj_index, chance = 0) 
 {
-	if chance == 0 // default skip this and 100% spawn
+	if chance != 0 // default skip this and 100% spawn
 	{ 
 		if !random_chance(chance) { exit }
 	}

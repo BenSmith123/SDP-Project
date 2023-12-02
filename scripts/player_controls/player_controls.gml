@@ -6,6 +6,11 @@ function player_controls()
 	if keyboard_check(ord("D")) { move_right = true }
 	if keyboard_check_pressed(ord("W")) { move_jump = true }
 	if keyboard_check_pressed(ord("S")) { move_attack = true }
+	if keyboard_check_pressed(ord("I"))
+	{
+		if instance_exists(obj_inventory) { instance_destroy(obj_inventory); exit }
+		instance_create(0, 0, obj_inventory)
+	}
 
 	// ALTERNATE KEYS
 	if keyboard_check_pressed(vk_space) {move_attack = true}

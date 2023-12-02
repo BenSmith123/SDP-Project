@@ -1,6 +1,7 @@
 /// @description  debug game controls - ran by obj_controller
 function global_game_controls()
 {
+	
 	if !global.is_game_master { exit }
 	
 	// TEMP DEBUG
@@ -30,7 +31,6 @@ function global_game_controls()
 			global.max_hp = 5000
 			global.attack = 500
 			global.class = "Hunter"
-			global.defence = 200
 			global.walk_speed = 7
 			global.jump = 16
 			

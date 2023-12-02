@@ -1,3 +1,9 @@
+// everything is stored in the 'global.inventory_array' as an array of arrays:
+// 0 = item ID
+// 1 = quantity
+// e.g. [[4, 32]] 
+
+
 ///@description
 ///@param {Real} item_id_to_add - ItemId enum
 ///@param {Real} amount - default = 1
@@ -25,7 +31,8 @@ function inventory_add(item_id_to_add, amount = 1)
 	}
 	
 	// check if item can be put on an existing stack
-	for (var i = 0; i < length; i++) {
+	for (var i = 0; i < length; i++) 
+	{
 		var item = global.inventory_array[i]
 		var inventory_item_id = item[0]
 		var inventory_item_amount = item[1]
@@ -69,3 +76,27 @@ function get_item_log_message(name, amount = 1)
 		: $"Gained item '{name}'"
 }
 
+
+function create_inventory_items() 
+{
+	var length = array_length(global.inventory_array)
+	if length == 0 { exit }
+	
+	var start_x = 160
+	var gap_x = 50
+		
+	// check if item can be put on an existing stack
+	for (var i = 0; i < length; i++) 
+	{
+		var inv_item = global.inventory_array[i]
+		var inventory_item_id = inv_item[0]
+		var inventory_item_amount = inv_item[1]
+		
+		var item_start_x = start_x + i * gap_x
+		
+		var item = instance_create_depth(item_start_x, 200, ObjectDepth.HUDItem, obj_hud_item, get_item(inventory_item_id))
+		item.amount = inv_item[1]
+		item.start_x = item_start_x
+		item.start_y = 200
+	}
+}
