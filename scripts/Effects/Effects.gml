@@ -1,22 +1,22 @@
 
 ///@description - returns the spark effect depending on the sprite_index
-function get_projectile_destroy_effect()
+function create_projectile_destroy_effect()
 {
 	switch (sprite_index) {
 	    case spr_bullet:
 		case spr_bullet_4:
 		case spr_projectile_laser:
-			return effect_create_spark_red
+			return effect_create_spark_red()
 			
 		case spr_bullet_2:
-			return effect_create_spark_blue
+			return effect_create_spark_blue()
 
 	    default:
-			return effect_create_spark_blue
+			return effect_create_spark_blue()
 	}
 }
 
-function get_projectile_collision_x() { return x + sign(hspeed) * (sprite_width/2) }
+function get_projectile_collision_x() { return hspeed < 0 ? bbox_left : bbox_right }
 
 
 function effect_create_spark_red()

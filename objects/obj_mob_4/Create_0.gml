@@ -18,8 +18,8 @@ aggressive = false // move/attack an enemy when unprovoked
 can_be_knockedback = true
 
 // skill
-attack_ability = false // projectiles, skills etc.
-attack_distance = 0 // distance before attacking player
+attack_ability = true // projectiles, skills etc.
+attack_distance = 200 // distance before attacking player
 
 block_distance = 40 // distance for checking how far away blocks are (before jumping)
 jump_block_height = -40 // how high a block can be for ai to try jump
@@ -31,9 +31,9 @@ sprite_stand = spr_mob_4_stand
 sprite_walk = spr_mob_4_walk
 sprite_jump = spr_mob_4_stand
 sprite_dead = spr_mob_4_dead
-//sprite_attack = choose(spr_player_attack_2, spr_player_attack_5)
-//sprite_projectile = spr_bullet_2
+sprite_attack = spr_mob_4_attack
+sprite_projectile = spr_bullet_2
 
-image_speed = 1.5
+image_speed = 0.5
 
 mob_after_initialised() // don't remove
