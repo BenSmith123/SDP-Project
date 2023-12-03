@@ -4,14 +4,13 @@ TO DO
 --------------------
 
 - MVP
-	- more content! - maps, mobs, items, NPCs!
+	- player damage as levels up? mob hp/damage etc
 	- backgrounds!
+	- more content! - maps, mobs, items, NPCs!
+
 
 - AI:
-	- place more mobs everywhere!!
 	- jumping mobs can walk through walls?
-	- ai never stand still
-	- training bot killed graphic
 	- walking up slope changes to jump sprite - looks glitchy
 	- scripts still need more work - attacks with abilities don't always work
 	  ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.

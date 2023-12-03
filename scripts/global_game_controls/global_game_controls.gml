@@ -19,25 +19,25 @@ function global_game_controls()
     
 	if instance_exists(obj_player)
 	{
-		if keyboard_check_pressed(ord("2")) {obj_player.x = mouse_x; obj_player.y = mouse_y}
+		if keyboard_check_pressed(ord("2")) { obj_player.x = mouse_x; obj_player.y = mouse_y }
 
-	    if keyboard_check_pressed(ord("3")) 
-	    {
-	        scr_level_up()
-	    }
+	    //if keyboard_check_pressed(ord("3")) 
+	    //{
+	    //    scr_level_up()
+	    //}
 		
-		if keyboard_check_pressed(ord("4")) 
-	    {
-			global.max_hp = 5000
-			global.attack = 500
-			global.class = "Hunter"
-			global.walk_speed = 7
-			global.jump = 16
+		//if keyboard_check_pressed(ord("4")) 
+	    //{
+		//	global.max_hp = 5000
+		//	global.attack = 500
+		//	global.class = "Hunter"
+		//	global.walk_speed = 7
+		//	global.jump = 16
 			
-			scr_level_up()
+		//	scr_level_up()
 			
-			display_banner_message("Cheater") // lol
-	    }
+		//	display_banner_message("Cheater") // lol
+	    //}
 		
 		if keyboard_check_pressed(ord("M"))
 	    {
@@ -77,7 +77,14 @@ function global_game_controls()
 
 	if keyboard_check_pressed(vk_f12) { game_restart() }
     
-	if keyboard_check_pressed(vk_escape) { game_end() }
+	if keyboard_check_pressed(vk_escape) 
+	{
+		if instance_exists(parent_dialog) { instance_destroy(parent_dialog) exit }
+		save_game()
+		game_end()
+	}
+		
+		
     
 
 	// instance_deactivate_region(view_xview[0],view_yview[0],WIDTH,HEIGHT,false,true)

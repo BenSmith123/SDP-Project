@@ -1,0 +1,3 @@
+instance_activate_object(obj_hud)
+instance_activate_object(obj_pause_button)
+instance_destroy(obj_hud_item)

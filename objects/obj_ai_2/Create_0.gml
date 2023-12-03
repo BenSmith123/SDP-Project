@@ -5,16 +5,16 @@ name = "Drone Operator"
 level = 20
 hp = 100
 attack = 50
-defence = 30
+defence = 20
 accuracy = 5
-experience = 15
+experience = 150
 
 walkspeed = 2
 jump = 0
 heal_time = 0 // seconds
 heal_amount = 0
 
-aggressive = false // move/attack an enemy when unprovoked
+aggressive = true // move/attack an enemy when unprovoked
 can_be_knockedback = true
 
 // skill

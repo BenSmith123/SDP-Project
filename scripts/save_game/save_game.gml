@@ -27,6 +27,8 @@ function save_game()
 	ini_write_real("PLAYER","heal_time",global.heal_time)
 	ini_write_real("PLAYER","heal_amount",global.heal_amount)
 	ini_write_real("PLAYER","coins",global.coins)
+	ini_write_real("PLAYER","coins_stored",global.coins_stored)
+
 
 	ini_close()
 

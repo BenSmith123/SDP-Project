@@ -3,7 +3,7 @@ event_inherited()
 
 name = "Drone"
 level = 1
-hp = 10
+hp = 25
 attack = 5
 defence = 0
 accuracy = 5

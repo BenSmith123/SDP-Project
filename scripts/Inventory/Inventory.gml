@@ -96,7 +96,5 @@ function create_inventory_items()
 		
 		var item = instance_create_depth(item_start_x, 200, ObjectDepth.HUDItem, obj_hud_item, get_item(inventory_item_id))
 		item.amount = inv_item[1]
-		item.start_x = item_start_x
-		item.start_y = 200
 	}
 }

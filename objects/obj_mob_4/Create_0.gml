@@ -3,11 +3,11 @@ event_inherited()
 
 name = "??"
 level = 15
-hp = 50
-attack = 25
+hp = 200
+attack = 60
 defence = 6
 accuracy = 15
-experience = 40
+experience = 200
 
 walkspeed = 3
 jump = 8

@@ -37,8 +37,6 @@ function get_game_debug_controls_text()
 
 	1 = toggle debug mode
 	2 = teleport player to mouse
-	3 = level up
-	4 = hp & damage boost
 
 	7 = show ai main variables
 	8 = show ai detect distance
@@ -49,3 +47,6 @@ function get_game_debug_controls_text()
 	"
 	
 }
+
+	//3 = level up
+	//4 = hp & damage boost

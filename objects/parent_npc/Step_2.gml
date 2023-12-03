@@ -4,8 +4,11 @@ if (!instance_exists(obj_player)) { exit }
 var y_position_meeting = obj_player.y > bbox_top && obj_player.y < bbox_bottom
 var is_player_close = distance_to_object(obj_player) < chat_distance
 
-if (y_position_meeting && is_player_close)
+can_interact = y_position_meeting && is_player_close
+
+if (can_interact)
 {
+	if keyboard_check_pressed(ord("E")) { event_user(0) }
 	if instance_exists(text_bubble) { exit }
 	
 	// TODO - fix position depending on text height?

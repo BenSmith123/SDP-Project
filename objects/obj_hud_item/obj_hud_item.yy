@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "HUD",
-    "path": "folders/Objects/HUD.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/HUD/Dialog.yy",
   },
   "parentObjectId": null,
   "persistent": false,

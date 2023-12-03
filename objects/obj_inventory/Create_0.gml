@@ -1,6 +1,6 @@
 
-depth = ObjectDepth.HUD
+event_inherited()
 
-instance_deactivate_object(obj_hud)
 create_inventory_items()
 
+title = "Inventory"

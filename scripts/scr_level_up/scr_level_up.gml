@@ -1,25 +1,44 @@
 
 function level_up_increase_stats()
 {
-	// selecting a class will increase status
-	if global.level == 10 { global.walk_speed += 1; exit }
-
-	if global.level > 10
+	
+	if global.level >= 20
 	{
-		global.max_exp += 50
+		global.max_hp += 50
+		global.max_exp += 100
 		
-		global.attack += 3
+		global.attack += 5
 		global.defence += 2
-		// global.accuracy += 1
+		global.accuracy += 2
 		
 		exit
 	}
+	
+	// selecting a class will increase status
+	if global.level == 10 
+	{ 
+		global.walk_speed += 1
+		global.jump += 1
+	}
+
+	if global.level >= 10
+	{
+		global.max_hp += 10
+		global.max_exp += 30
+		
+		global.attack += 3
+		global.defence += 1
+		global.accuracy += 1
+		exit
+	}
+	
+
 	
 	global.max_hp += 5
 	global.max_exp += 20
     
 	global.attack += 1
-	global.defence += 1
+	// global.defence += 1
 	// global.accuracy += 1
 	// global.jump += 0.1
 	// global.walk_speed += 0.1

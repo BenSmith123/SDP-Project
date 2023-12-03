@@ -58,10 +58,10 @@ function get_item(item_id)
 		create_item(
 		{
 			iid: ItemId.Helmet,
-			name: "Helmet",
+			name: "Blue Potion",
 			type: ItemType.Misc,
 			description: "-",
-			sprite: spr_drone_piece,
+			sprite: spr_item_potion_blue,
 			rarity: ItemRarity.Common,
 			stack_size: 10,
 			is_sellable: true,

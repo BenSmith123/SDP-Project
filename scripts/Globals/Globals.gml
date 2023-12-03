@@ -51,7 +51,7 @@ function initialise_stored_globals()
 	global.experience = 0
 	global.max_exp = 10
 
-	global.max_hp = 10
+	global.max_hp = 30
 
 	global.attack = 6
 	global.defence = 0
@@ -63,4 +63,5 @@ function initialise_stored_globals()
 	global.heal_amount = 10 
 
 	global.coins = 0
+	global.coins_stored = 0
 }

@@ -7,3 +7,6 @@ text = "Bla bla bla..."
 chat_distance = 120 // distance in px until showing text
 
 text_bubble = noone
+
+// interact if player is close
+can_interact = false

@@ -65,7 +65,10 @@ function load_game() {
 	        global.heal_time = ini_read_real("PLAYER","heal_time",global.heal_time)
 	        global.heal_amount = ini_read_real("PLAYER","heal_amount",global.heal_amount)
         
-	        global.coins = ini_read_real("PLAYER","coins",global.coins = 0) 
+	        global.coins = ini_read_real("PLAYER","coins",global.coins) 
+			global.coins_stored = ini_read_real("PLAYER","coins_stored",global.coins_stored) 
+
+			
 	        ini_close()
         
 	        file_delete("temp_2")
