@@ -48,8 +48,8 @@
   },
   "origin": 4,
   "parent": {
-    "name": "SDPproject7",
-    "path": "SDPproject7.yyp",
+    "name": "Buttons",
+    "path": "folders/Sprites/Buttons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

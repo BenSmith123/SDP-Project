@@ -1,5 +1,20 @@
 function player_camera() 
 {
+	// PARALLAX background scrolling
+	if layer_exists("Parallax1")
+	{
+		var _cam_x = camera_get_view_x(view_camera[0])
+		var _cam_y = camera_get_view_y(view_camera[0])
+		layer_x("Parallax1", _cam_x * 0.25)
+		layer_x("Parallax2", _cam_x * 0.5)
+		
+		//layer_y("parallax_background_1", _cam_y * 0.25)
+		//layer_y("parallax_background_2", _cam_y * 0.5)
+	}
+	
+	// clouds as asset layer (instead of objects)
+	//layer_x("Clouds2", layer_get_x("Clouds2") - 0.25)
+
 
 	if global.overall_view = true // debug (show whole room)
 	{
@@ -16,25 +31,6 @@ function player_camera()
     
 	    exit
 	}
-	
-	/***
-	if instance_exists(obj_player)  
-	{
-	    if instance_exists(obj_player_2) 
-	    {
-	        scr_camera_2_player() // if both players exist
-	        exit
-	    }
-	    else
-	    {
-	        target = obj_player // if only p1 exists
-	    }  
-	}
-	else if instance_exists(obj_player_2) 
-	{    
-	    target = obj_player_2 // if only p2 exists
-	}
-	***/
 	
 	// prevent camera from going out of room when window isn't open
 	if (!window_has_focus()) exit
