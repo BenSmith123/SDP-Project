@@ -21,10 +21,10 @@ function global_game_controls()
 	{
 		if keyboard_check_pressed(ord("2")) { obj_player.x = mouse_x; obj_player.y = mouse_y }
 
-	    //if keyboard_check_pressed(ord("3")) 
-	    //{
-	    //    scr_level_up()
-	    //}
+	    if keyboard_check_pressed(ord("3")) 
+	    {
+	        scr_level_up()
+	    }
 		
 		//if keyboard_check_pressed(ord("4")) 
 	    //{

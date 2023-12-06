@@ -36,14 +36,17 @@ function player_camera()
 	if (!window_has_focus()) exit
 	
 	var temp = obj_player
+	
+	var view_width_x = __view_get( e__VW.XView, 0)
+	var view_width_y = __view_get( e__VW.YView, 0)
 
 	// ROOM END X
-	if not(__view_get( e__VW.XView, 0 ) <= 0 and temp.x<WIDTH/1.5) and not(__view_get( e__VW.XView, 0 )+WIDTH >= room_width and temp.x > room_width-(WIDTH/2)) 
-	{__view_set( e__VW.XView, 0, round(__view_get( e__VW.XView, 0 ) + (((temp.x-(__view_get( e__VW.WView, 0 )/2)) - __view_get( e__VW.XView, 0 )) * 0.03) ))}
+	if not(view_width_x <= 0 and temp.x<WIDTH/1.5) and not(view_width_x+WIDTH >= room_width and temp.x > room_width-(WIDTH/2)) 
+	{__view_set( e__VW.XView, 0, round(view_width_x + (((temp.x-(__view_get( e__VW.WView, 0 )/2)) - view_width_x) * 0.03) ))}
 
 	// ROOM END Y
-	if not(__view_get( e__VW.YView, 0 ) <= 0 and temp.y<HEIGHT/1.5) and not(__view_get( e__VW.YView, 0 )+HEIGHT >= room_height and temp.y > room_height-(HEIGHT/2))
-	{__view_set( e__VW.YView, 0, round(__view_get( e__VW.YView, 0 ) + (((temp.y-(__view_get( e__VW.HView, 0 )/2)) - __view_get( e__VW.YView, 0 )) * 0.03) ))}
+	if not(view_width_y <= 0 and temp.y<HEIGHT/1.5) and not(view_width_y+HEIGHT >= room_height and temp.y > room_height-(HEIGHT/2))
+	{__view_set( e__VW.YView, 0, round(view_width_y + (((temp.y-(__view_get( e__VW.HView, 0 )/2)) - view_width_y) * 0.03) ))}
 
-	if __view_get( e__VW.YView, 0 ) < 0 {__view_set( e__VW.YView, 0, 0 )} // stops line at top of the screen. idk y needed
+	if view_width_y < 0 {__view_set( e__VW.YView, 0, 0 )} // stops line at top of the screen. idk y needed
 }

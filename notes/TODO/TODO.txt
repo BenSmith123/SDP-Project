@@ -7,6 +7,16 @@ TO DO
 	- player damage as levels up? mob hp/damage etc
 	- backgrounds!
 	- more content! - maps, mobs, items, NPCs!
+	
+	
+Tester1:
+	- More content
+	- Fix melee
+	- maybe less damage/more hp at the start
+	- player slope stick
+	- arrow drop & auto lock on? ( only lock on if player/mob Y is close enough)
+	- replace stickman as player
+	- jump down through block
 
 
 - AI:

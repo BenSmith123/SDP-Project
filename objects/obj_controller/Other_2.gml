@@ -12,3 +12,6 @@ initialise_stored_globals() // initialise all the saved global variables
 
 load_game() // if no save game then these variables aren't overridden
 
+
+//var game_version = "0.3.0"
+//window_set_caption($"{game_display_name} [v{game_version}]")
