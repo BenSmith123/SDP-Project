@@ -17,6 +17,8 @@ Tester1:
 	- arrow drop & auto lock on? ( only lock on if player/mob Y is close enough)
 	- replace stickman as player
 	- jump down through block
+	- max resolution (1920x1080?) - game looked tiny on his 4K screen
+	- save game more frequently (game crash reset)
 
 
 - AI:
@@ -29,7 +31,6 @@ Tester1:
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Bank - store coins
 
-- fix player getting stuck on slopes when knocked into
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text

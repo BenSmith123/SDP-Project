@@ -1,7 +1,7 @@
 function save_game() 
 {
 	////////// save the game (as temp ini) //////////
-	file = ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one
+	var file = ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one
 
 	ini_write_string("INVENTORY","inventory_array",json_stringify(global.inventory_array))
 
@@ -36,7 +36,7 @@ function save_game()
 	////////// read temporary decoded ini file, then delete it //////////
 
 	file = file_text_open_read(working_directory+"temp_2")
-	n = 1; 
+	var n = 1; 
 
 	while not (file_text_eof(file)) // while hasnt reached end of file
 	{
@@ -53,7 +53,7 @@ function save_game()
 	////////// encode the file and save it //////////
 	file = file_text_open_write(working_directory+"temp")
 
-	for(i = 1; i < n; i++)
+	for(var i = 1; i < n; i++)
 	{
 	    file_text_write_string(file,base64_encode(read[i]))
 	    file_text_writeln(file)
