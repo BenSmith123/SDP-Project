@@ -3,17 +3,6 @@
 global.current_player_x = x
 global.current_player_y = y
 
-
-// flips the character's sprite depending on whether it's moving left or right.
-if (vel_x < 0)
-{
-	image_xscale = -1;
-}
-else if (vel_x > 0)
-{
-	image_xscale = 1;
-}
-
 if (!grounded) 
 {
 	sprite_index = spr_player_jump

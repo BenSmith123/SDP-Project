@@ -25,7 +25,7 @@ function player_controls()
 	if move_jump = true { player_jump() }
 	if move_attack = true { player_attack() }
 
-	if move_temp = true {scr_teleport()} // teleport skill
+	if move_temp = true { scr_teleport() } // teleport skill
 
 	// player will stop moving when key is released
 

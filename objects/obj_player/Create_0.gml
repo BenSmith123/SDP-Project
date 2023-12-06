@@ -48,6 +48,7 @@ has_second_jump_skill = global.is_game_master || global.class == "Ninja"
 second_jump = false // see if its the players second jump
 melee_attack_range = 100
 
+
 head_x = 0 // the x position for the head (to match all player sprites)
 
 // movement variables
@@ -72,7 +73,6 @@ vel_x = 0
 vel_y = 0
 
 grounded = false
-in_knockback = false
 
 
 

@@ -1,12 +1,8 @@
 function player_move_horizontally()
 {
 
-	// This checks if the player is currently in knockback, after being hit by an enemy.
-	if (in_knockback)
-	{
-		// In that case we exit/stop the event here, so the player can't move.
-		exit;
-	}
+	// disable movement if in knockback
+	// if (in_knockback) { exit }
 
 	// set the X velocity to walk_speed
 	// this makes the character move left
@@ -25,6 +21,7 @@ function player_move_horizontally()
 	{
 		// Change the instance's sprite to the walking player sprite.
 		sprite_index = spr_player_walking;
+		image_xscale = move_left ? -1 : 1
 	}
 
 }
