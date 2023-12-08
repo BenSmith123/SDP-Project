@@ -1,10 +1,13 @@
 // This function checks if the instance is colliding with an object, or a tile, at the current
 // position + the given movement values (_move_x and _move_y).
 // The function returns true if a collision was found, or false if a collision was not found.
-function check_collision(_move_x, _move_y) 
-{
+function check_collision(_move_x, _move_y, disable_collision_check = false) 
+{	
 	// This checks for an object collision at the new position, where the instance is going to move
 	// We get the new position by adding _move_x and _move_y to the instance's X and Y values
+	
+	// disable collision check when player is jumping down through a slope block
+	if (disable_collision_check) { return false }
 	
 	// NOTE - prevent player from falling through slopes - this also stops player from jumping up through slope block
 	if place_meeting(x + _move_x, y + _move_y, obj_block_slope_parent)

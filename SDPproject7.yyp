@@ -70,7 +70,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"parent_effect","path":"objects/parent_effect/parent_effect.yy",},},
@@ -299,6 +299,7 @@
     {"id":{"name":"joystick_process_events","path":"scripts/joystick_process_events/joystick_process_events.yy",},},
     {"id":{"name":"joystick_ypos","path":"scripts/joystick_ypos/joystick_ypos.yy",},},
     {"id":{"name":"__view_get","path":"scripts/__view_get/__view_get.yy",},},
+    {"id":{"name":"player_jump_down","path":"scripts/player_jump_down/player_jump_down.yy",},},
     {"id":{"name":"__view_set","path":"scripts/__view_set/__view_set.yy",},},
     {"id":{"name":"__view_set_internal","path":"scripts/__view_set_internal/__view_set_internal.yy",},},
     {"id":{"name":"__init_view","path":"scripts/__init_view/__init_view.yy",},},

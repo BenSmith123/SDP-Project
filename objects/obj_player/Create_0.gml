@@ -28,8 +28,6 @@ walk_speed = global.walk_speed // horizontal movement speed of the character (pi
 heal_time = global.heal_time // seconds
 heal_amount = global.heal_amount
 
-
-
 // IN-GAME
 friction = 0.25
 image_xscale = 1
@@ -47,6 +45,7 @@ start_speed = global.walk_speed
 has_second_jump_skill = global.is_game_master || global.class == "Ninja"
 second_jump = false // see if its the players second jump
 melee_attack_range = 100
+disable_block_collision = false // used for jumping down through SLOPE blocks
 
 
 head_x = 0 // the x position for the head (to match all player sprites)
@@ -55,6 +54,7 @@ head_x = 0 // the x position for the head (to match all player sprites)
 move_left = false
 move_right = false
 move_jump = false
+move_jump_down = false
 move_attack = false
 move_temp = false // debug
 

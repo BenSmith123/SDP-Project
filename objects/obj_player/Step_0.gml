@@ -5,11 +5,18 @@ player_camera()
 
 player_controls()
 
-if hp <= 0 
+if hp <= 0
 {
     instance_destroy()
 }
 
+
+// if player is jumping down through a slope, ignore collision checking while player is
+// still falling through the block, and re-renable it once player is free falling
+if (disable_block_collision)
+{
+	disable_block_collision = check_collision(0, sign(vel_y), false)
+}
 
 
 // The section below handles pixel-perfect collision checking.
@@ -27,7 +34,7 @@ repeat (_move_count)
 {
 	// This calls the check_collision function to check for collisions on the X axis, if moved by the move_once value on that dimension.
 	// The Y argument is set to 0, so for this collision there is no Y movement.
-	var _collision_found = check_collision(_move_once, 0);
+	var _collision_found = check_collision(_move_once, 0, disable_block_collision);
 
 	// This checks if collision_found is false, meaning a collision was not found, and the player is free to move once on the X axis.
 	if (!_collision_found)
@@ -80,7 +87,7 @@ repeat (_move_count)
 {
 	// This calls the check_collision function to check for collisions on the Y axis, if moved by the move_once value.
 	// The result of the function, either true or false, is stored in the 'collision_found' variable, which is temporary.
-	var _collision_found = check_collision(0, _move_once);
+	var _collision_found = check_collision(0, _move_once, disable_block_collision);
 
 	// This checks if collision_found is false, meaning a collision was not found, and the player is free to move once on the Y axis.
 	if (!_collision_found && is_walking_up_slope == false)

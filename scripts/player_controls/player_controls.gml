@@ -5,7 +5,8 @@ function player_controls()
 	if keyboard_check(ord("A")) { move_left = true }
 	if keyboard_check(ord("D")) { move_right = true }
 	if keyboard_check_pressed(ord("W")) { move_jump = true }
-	if keyboard_check_pressed(ord("S")) { move_attack = true }
+	if keyboard_check_pressed(ord("S")) { move_jump_down = true }
+	//if keyboard_check_pressed(ord("S")) { move_attack = true }
 	if keyboard_check_pressed(ord("I"))
 	{
 		if instance_exists(obj_inventory) { instance_destroy(obj_inventory); exit }
@@ -13,8 +14,8 @@ function player_controls()
 	}
 
 	// ALTERNATE KEYS
-	if keyboard_check_pressed(vk_space) {move_attack = true}
-	if keyboard_check_pressed(ord("F")) {move_temp = true}
+	if keyboard_check_pressed(vk_space) { move_attack = true }
+	if keyboard_check_pressed(ord("F")) { move_temp = true }
 
 
 
@@ -23,6 +24,8 @@ function player_controls()
 	if move_left = true { player_move_horizontally() }
 	if move_right = true { player_move_horizontally() }
 	if move_jump = true { player_jump() }
+	if move_jump_down = true { player_jump_down() }
+
 	if move_attack = true { player_attack() }
 
 	if move_temp = true { scr_teleport() } // teleport skill
@@ -32,6 +35,7 @@ function player_controls()
 	move_left = false
 	move_right = false
 	move_jump = false
+	move_jump_down = false
 	move_attack = false
 
 	move_temp = false // debug
