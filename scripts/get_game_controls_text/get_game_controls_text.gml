@@ -15,11 +15,8 @@ function get_game_controls_text()
 	F12 = reboot game (keep saved game)
 
 	--- PLAYER ---
-	Left arrow (or A) = move left
-	Right arrow (or D) = move right
-	Up arrow (or W) = jump
-	Down arrow = drop down
-	Spacebar (or S) = attack
+	Movement = WASD or arrow keys
+	Attack = Spacebar
 	F = teleport (if spellcaster)
 	
 	I = Open inventory

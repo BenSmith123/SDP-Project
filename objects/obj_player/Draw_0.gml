@@ -4,6 +4,7 @@ y = round(y)
 
 draw_nametag(global.name, y+38)
 
+
 // debug - testing teleport marker on blocks
 //var above_block = instance_nearest(x,y-150,obj_block)
 //if distance_to_object(above_block) < 100
