@@ -7,6 +7,6 @@ image_speed = 0.4
 attack = 0
 accuracy = 0
 
-// debug - testing skill
-// num = 3
-//alarm[0] = 20
+alarm[0] = 20 // bullet drop
+gravity = 0.03
+gravity_direction = 270
