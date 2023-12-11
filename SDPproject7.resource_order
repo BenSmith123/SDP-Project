@@ -242,6 +242,7 @@
     {"name":"joystick_ypos","order":13,"path":"scripts/joystick_ypos/joystick_ypos.yy",},
     {"name":"__view_get","order":1,"path":"scripts/__view_get/__view_get.yy",},
     {"name":"player_jump_down","order":11,"path":"scripts/player_jump_down/player_jump_down.yy",},
+    {"name":"collision_line_first","order":31,"path":"scripts/collision_line_first/collision_line_first.yy",},
     {"name":"__view_set","order":3,"path":"scripts/__view_set/__view_set.yy",},
     {"name":"__view_set_internal","order":5,"path":"scripts/__view_set_internal/__view_set_internal.yy",},
     {"name":"__init_view","order":7,"path":"scripts/__init_view/__init_view.yy",},

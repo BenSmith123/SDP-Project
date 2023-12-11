@@ -300,6 +300,7 @@
     {"id":{"name":"joystick_ypos","path":"scripts/joystick_ypos/joystick_ypos.yy",},},
     {"id":{"name":"__view_get","path":"scripts/__view_get/__view_get.yy",},},
     {"id":{"name":"player_jump_down","path":"scripts/player_jump_down/player_jump_down.yy",},},
+    {"id":{"name":"collision_line_first","path":"scripts/collision_line_first/collision_line_first.yy",},},
     {"id":{"name":"__view_set","path":"scripts/__view_set/__view_set.yy",},},
     {"id":{"name":"__view_set_internal","path":"scripts/__view_set_internal/__view_set_internal.yy",},},
     {"id":{"name":"__init_view","path":"scripts/__init_view/__init_view.yy",},},

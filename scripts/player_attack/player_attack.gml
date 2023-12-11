@@ -68,8 +68,36 @@ function player_attack_projectile()
 	bullet.accuracy = accuracy
 
 	bullet.speed = bullet_speed
-	bullet.image_angle = bullet.direction
 	bullet.sprite_index = sprite_projectile
+	
+	// if near a mob, create projectile towards them
+	var mob = get_mob_to_shoot_at()
+	if mob == noone { exit }
+	
+	bullet.speed = abs(bullet_speed) // make speed positive as the direction now decides the bullet movement
+	bullet.direction = point_direction(x,y,mob.x,mob.y)
+
 }
+
+// returns noone or the closest mob that is in range, not behind a wall and not too far above
+function get_mob_to_shoot_at()
+{
+	var target_dist = 500
 	
+	with ai_parent
+	{
+		var is_in_range = point_distance(x,y,other.x,other.y) < target_dist
+		var player_facing_ai = sign(x - other.x) = other.image_xscale
+		var behind_block = collision_line(x, y, other.x, other.y, obj_block, false, true)
+		
+		if is_in_range && player_facing_ai && !behind_block
+		{
+			var angle = point_direction(x,y,other.x,other.y)
+			var is_too_far_above = angle > 225 && angle < 315
+			if is_too_far_above { return noone }
+			return id
+		}
+	}
 	
+	return noone
+}
