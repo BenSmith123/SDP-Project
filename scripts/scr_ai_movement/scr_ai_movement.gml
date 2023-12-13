@@ -10,8 +10,11 @@ function scr_ai_movement() {
 	    if stay == false
 	    {
 			// state = "Walking"
-		    // positive or negative walk speed depending on direction
-		    hspeed = speed_in_direction
+			if !stunned
+			{
+				// move!
+				hspeed = speed_in_direction
+			}
 
 			if place_meeting(x+hspeed, y-1, obj_block)
 			{

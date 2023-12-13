@@ -1,9 +1,6 @@
 function player_attack()
 {
-	
-	if can_attack != true { exit }
-	
-	damage = attack-irandom_range(0,accuracy) // calculate damage
+	if can_attack == false { exit }
    
 	alarm[0] = 30 // can shoot again
 	alarm[1] = 20 // for attacking sprite
@@ -30,6 +27,7 @@ function player_attack()
 
 function player_attack_melee() 
 {
+	
 	enemy = instance_nearest(x,y,ai_parent)
 	if (enemy == noone) { exit }
 	

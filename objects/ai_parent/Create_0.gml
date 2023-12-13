@@ -10,7 +10,6 @@
 //                            |_|            |___/ 
 // (used in game - not modified by different mobs)
 
-instance_create(x,y,obj_fx_teleport) // TODO - spawn fx
 friction = 0.1
 
 // IN-GAME
@@ -33,9 +32,15 @@ reached_dead_end = false // used to override the direction when running from pla
 attacking = false // for sprite managing
 soft_kill = false // when ai is not killed by the player, don't reward
 speed_in_direction = 0 // hspeed or negative hspeed (depending on direction)
+stunned = false // temporarily stop moving when hit
 
-// idle randoml
-alarm[1] = irandom_range_frames(6, 12)
+// idle random
+alarm[1] = irandom_range_frames(2, 14)
+
+image_alpha = 0
+alarm[6] = 1 // fade in
+
+
 
 
 // DEBUG 

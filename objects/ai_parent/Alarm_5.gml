@@ -1,2 +1,2 @@
-///description - stay = false (stop idle)
+///@description stay = false (stop idle)
 stay = false

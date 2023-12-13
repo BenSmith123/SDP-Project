@@ -6,9 +6,13 @@ draw_nametag(global.name, y+38)
 
 
 // debug - testing teleport marker on blocks
-//var above_block = instance_nearest(x,y-150,obj_block)
-//if distance_to_object(above_block) < 100
-//{draw_sprite(spr_test,0,above_block.x,above_block.y)}
+if has_teleport_skill
+{
+	above_block = instance_nearest(x,y-150,obj_block)
+	if distance_to_object(above_block) < 100
+	{draw_sprite(spr_test,0,above_block.x,above_block.y)}
+}
+
 
 
 // draw the healthbar
@@ -25,36 +29,4 @@ if global.show_debug = true // debug text
 
 // body
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
-
-
-
-if global.class != "Beginner" && global.class != "Fighter" { exit }
-
-// draw the target arrow for melee attacks
-enemy = instance_nearest(x,y,ai_parent)
-		
-if (enemy == noone) { exit }
-		
-// MELEE ATTACKS
-if image_xscale = -1
-{
-    if enemy.x <= x
-    {
-        if enemy.x > x-melee_attack_range // range for hitting
-        {
-            draw_sprite(spr_test,0,enemy.x,enemy.y-30)
-        }
-    }
-}
-        
-if image_xscale = 1
-{
-    if enemy.x > x
-    {
-        if enemy.x < x+melee_attack_range // range for hitting
-        {
-            draw_sprite(spr_test,0,enemy.x,enemy.y-30)
-        }
-    }
-}
 

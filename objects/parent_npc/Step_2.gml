@@ -8,7 +8,7 @@ can_interact = y_position_meeting && is_player_close
 
 if (can_interact)
 {
-	if keyboard_check_pressed(ord("E")) { event_user(0) }
+	if keyboard_check_pressed(ord("E")) || obj_player.attacking { event_user(0) }
 	if instance_exists(text_bubble) { exit }
 	
 	// TODO - fix position depending on text height?

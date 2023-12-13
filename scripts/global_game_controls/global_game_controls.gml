@@ -54,6 +54,7 @@ function global_game_controls()
 	if mouse_check_button_released(mb_right) 
 	{
 	    var choice = choose(obj_ai_1,obj_ai_3)
+		instance_create(mouse_x,mouse_y,obj_fx_teleport)
 	    instance_create(mouse_x,mouse_y,choice)
 	}
 	

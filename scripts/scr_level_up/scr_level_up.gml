@@ -35,7 +35,7 @@ function level_up_increase_stats()
 	if global.level == 10 
 	{ 
 		global.walk_speed += 1
-		global.jump += 1
+		// global.jump += 1
 	}
 
 	if global.level >= 10

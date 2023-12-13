@@ -36,6 +36,10 @@ function deal_damage_to_mob(mob)
 		mob.image_xscale = is_to_left_of_mob ? image_xscale : -image_xscale
 	
 		mob.vspeed = -2
+		
+		// stun mob!
+		mob.stunned = true
+		mob.alarm[7] = 45
 	}
 	
 	// kill mob if health is too low

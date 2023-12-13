@@ -17,11 +17,10 @@ Tester1:
 	- Equips, backpack
 
 
-- 
+- Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - UI for inventory items
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
-- Bank - store coins
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text
@@ -32,6 +31,8 @@ Tester1:
 - MOBILE:
 	- jump down?
 	- inventory
+	- interact with npc
+	- debugging?
 - AI:
 	- jumping mobs can walk through walls?
 	- walking up slope changes to jump sprite - looks glitchy

@@ -43,6 +43,7 @@ can_be_hit = true // when the player can be hit again after taking damage
 can_be_hit_time = 60 // time in steps (1sec)
 start_speed = global.walk_speed
 has_second_jump_skill = global.is_game_master || global.class == "Ninja"
+has_teleport_skill = global.class == "Spellcaster"
 second_jump = false // see if its the players second jump
 melee_attack_range = 100
 disable_block_collision = false // used for jumping down through SLOPE blocks
