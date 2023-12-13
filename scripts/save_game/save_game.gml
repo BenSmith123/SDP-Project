@@ -1,5 +1,13 @@
 function save_game() 
 {
+
+	if instance_exists(obj_player)
+	{
+		// update the player position for next log in
+		global.current_player_x = obj_player.x
+		global.current_player_y = obj_player.y
+	}
+	
 	////////// save the game (as temp ini) //////////
 	var file = ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one
 

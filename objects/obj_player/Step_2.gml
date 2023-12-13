@@ -1,8 +1,4 @@
 
-// update the player position for next log in
-global.current_player_x = x
-global.current_player_y = y
-
 if (!grounded) 
 {
 	sprite_index = spr_player_jump

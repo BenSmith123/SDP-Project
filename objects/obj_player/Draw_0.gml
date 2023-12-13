@@ -13,8 +13,7 @@ draw_nametag(global.name, y+38)
 
 // draw the healthbar
 //draw_sprite_stretched_ext(spr_ai_health_bar,health_colour,x-32,y+60,hp/max_hp*64,1,c_white,1)
-// 16 = half sprite width (for centering), 32 = healthbar width, 1 = healthbar height
-
+// 16 = half sprite width (for centering), 32 = healthbar width, 1 = healthbar 
 
 if global.show_debug = true // debug text
 {

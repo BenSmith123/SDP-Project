@@ -36,6 +36,6 @@ function effect_create_basic(obj_effect)
 	
 	var fx = instance_create(xx,y,obj_effect)
 	fx.image_index = irandom(fx.image_number) // pick any sub image
-	fx.image_xscale = sign(hspeed)
+	fx.image_angle = image_angle
 }
 

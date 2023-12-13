@@ -12,7 +12,6 @@ if animated_death
 	dead_body.image_speed = image_speed
 }
 
-
 // if not killed by player (no reward)
 if soft_kill == true { exit }
 
@@ -27,5 +26,4 @@ if global.experience >= global.max_exp
 {
 	scr_level_up()
 }
-
 

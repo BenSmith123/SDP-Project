@@ -1,5 +1,5 @@
 
-if not instance_exists(target) {instance_destroy()}
+if not instance_exists(target) { instance_destroy(); exit } // yes, the exit is needed, avoids crash
 
 y2 -= 0.3
 image_alpha -= 0.04

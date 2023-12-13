@@ -79,6 +79,7 @@ function player_attack_projectile()
 
 }
 
+
 // returns noone or the closest mob that is in range, not behind a wall and not too far above
 function get_mob_to_shoot_at()
 {

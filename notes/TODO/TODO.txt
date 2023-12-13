@@ -13,12 +13,11 @@ Tester1:
 	- More content
 	- Fix melee
 	- maybe less damage/more hp at the start
-	- player slope stick
-	- arrow drop & auto lock on? ( only lock on if player/mob Y is close enough)
 	- replace stickman as player
-	- jump down through block
 	- max resolution (1920x1080?) - game looked tiny on his 4K screen
-	- save game more frequently (game crash reset)
+	- Equips, backpack
+	- Fix seeker
+	- Higher levels more damage
 
 
 - AI:
