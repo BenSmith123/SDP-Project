@@ -6,9 +6,9 @@ function initialise_globals()
 	global.error = ""
 	global.show_debug = false
 	global.overall_view = false // show the entire room
-
+	
 	// SYSTEM
-	global.system = os_type == os_windows
+	global.system = os_type == os_windows || os_macosx
 		?  SystemType.Desktop
 		:  SystemType.Mobile
 		
@@ -51,7 +51,7 @@ function initialise_stored_globals()
 	global.experience = 0
 	global.max_exp = 10
 
-	global.max_hp = 30
+	global.max_hp = 50
 
 	global.attack = 6
 	global.defence = 0

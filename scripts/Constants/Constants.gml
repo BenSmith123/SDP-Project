@@ -1,9 +1,29 @@
 
 #macro HIGHEST_LEVEL 100
-#macro WIDTH window_get_width()
-#macro HEIGHT window_get_height()
-#macro HEIGHT2 640
+	
 #macro WIDTH2 960
+#macro HEIGHT2 640
+
+#macro WIDTH window_get_width_os()
+#macro HEIGHT window_get_height_os()
+
+// use this to cap the max window size
+//#macro WIDTH min(window_get_width(), 1920)
+//#macro HEIGHT min(window_get_height(), 1080)
+
+function window_get_width_os()
+{
+	if global.system == SystemType.Desktop return window_get_width()
+	return WIDTH2
+}
+
+function window_get_height_os()
+{
+	if global.system == SystemType.Desktop return window_get_height()
+	return HEIGHT2
+}
+
+
 #macro SCREEN_DISTANCE 1000
 
 #macro TERMINAL_VELOCITY 12

@@ -15,18 +15,23 @@ function get_playable_maps_order()
 }
 
 
-function move_to_map(previousMap = false) 
+function move_to_map(previous_map = false) 
 {
-	var currentMapIndex = get_current_map_index()
-	if (currentMapIndex == -1) { exit } // TODO - what if map doesn't exist?
+	var current_map_index = get_current_map_index()
 	
-	var nextMapIndex = previousMap 
-		? currentMapIndex-1
-		: currentMapIndex+1
+	var next_map_index = previous_map 
+		? current_map_index-1
+		: current_map_index+1
 		
 	var maps = get_playable_maps_order()
+	
+	if next_map_index < 0 || next_map_index >= array_length(maps) 
+	{ 
+		log_player_message("DEBUG: No further maps")
+		exit
+	}
 
-	room_goto(maps[nextMapIndex])
+	room_goto(maps[next_map_index])
 }
 
 function get_current_map_index()

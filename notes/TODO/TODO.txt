@@ -12,12 +12,9 @@ TO DO
 Tester1:
 	- More content
 	- Fix melee
-	- maybe less damage/more hp at the start
 	- replace stickman as player
 	- max resolution (1920x1080?) - game looked tiny on his 4K screen
 	- Equips, backpack
-	- Fix seeker
-	- Higher levels more damage
 
 
 - AI:
@@ -30,12 +27,13 @@ Tester1:
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Bank - store coins
 
+
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text
 - ^ Better fonts?
 - Ladders / ropes!
-
+- Grapple gun / teleport
 - backgrounds & scenery! with depth
 - projectile range & drop?
 - gain extra exp when hitting a mob mid air? or player is in air - show on event log

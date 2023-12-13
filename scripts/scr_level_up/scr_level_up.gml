@@ -1,10 +1,27 @@
 
 function level_up_increase_stats()
 {
+
+	if global.level > 40 {
+		global.attack += global.level // TODO - is this OP, increase attack based on current level
+	}
+	
+	if global.level >= 30
+	{
+		global.max_hp += 50
+		global.max_exp += 150
+		
+		global.attack += 10
+		global.defence += 4
+		global.accuracy += 4
+		
+		exit
+	}
+	
 	
 	if global.level >= 20
 	{
-		global.max_hp += 50
+		global.max_hp += 30
 		global.max_exp += 100
 		
 		global.attack += 5
@@ -24,7 +41,7 @@ function level_up_increase_stats()
 	if global.level >= 10
 	{
 		global.max_hp += 10
-		global.max_exp += 30
+		global.max_exp += 20
 		
 		global.attack += 3
 		global.defence += 1

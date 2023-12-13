@@ -67,7 +67,7 @@ function global_game_controls()
 	
 	if keyboard_check_pressed(vk_f9) 
 	{ 
-		window_set_fullscreen(true)
+		window_set_fullscreen(!window_get_fullscreen())
 		game_restart()
 	}
     
