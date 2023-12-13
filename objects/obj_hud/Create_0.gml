@@ -51,7 +51,7 @@ key.y2 = global.vk_y
  
     
 key = instance_create(x,y,obj_arrow_key_attack)
-virtual_key = virtual_key_add(global.vk_attack1_x,global.vk_attack1_y,global.vk_size,global.vk_size,ord("S"))
+virtual_key = virtual_key_add(global.vk_attack1_x,global.vk_attack1_y,global.vk_size,global.vk_size,vk_space)
 key.x2 = global.vk_attack1_x
 key.y2 = global.vk_attack1_y
 // virtual_key_show(virtual_key)

@@ -17,17 +17,11 @@ Tester1:
 	- Equips, backpack
 
 
-- AI:
-	- jumping mobs can walk through walls?
-	- walking up slope changes to jump sprite - looks glitchy
-	- scripts still need more work - attacks with abilities don't always work
-	  ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
+- 
 - UI for inventory items
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Bank - store coins
-
-
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text
@@ -35,7 +29,13 @@ Tester1:
 - Ladders / ropes!
 - Grapple gun / teleport
 - backgrounds & scenery! with depth
-- projectile range & drop?
+- MOBILE:
+	- jump down?
+	- inventory
+- AI:
+	- jumping mobs can walk through walls?
+	- walking up slope changes to jump sprite - looks glitchy
+	  ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 - gain extra exp when hitting a mob mid air? or player is in air - show on event log
 - seeker to go pick up coins
 - mob spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
