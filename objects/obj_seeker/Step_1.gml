@@ -7,9 +7,12 @@ if hspeed != 0
 	: 1
 }
 
+image_speed = 0 // don't animate while moving vertically
+
 if stay
 {
 	vspeed = 0
+	image_speed = 0.02
 }
 
 var coin = instance_nearest(x,y,obj_coin)
@@ -37,7 +40,7 @@ else
 {
 	if !instance_exists(obj_player) { exit }
 	
-	if distance_to_object(obj_player) < 100
+	if distance_to_object(obj_player) < 80
 	{
 		stay = true
 		hspeed = 0
