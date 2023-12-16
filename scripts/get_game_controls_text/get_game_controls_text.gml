@@ -35,6 +35,7 @@ function get_game_debug_controls_text()
 	1 = toggle debug mode
 	2 = teleport player to mouse
 
+	6 = spawn mob
 	7 = show ai main variables
 	8 = show ai detect distance
 	9 = show ai XYmeeting

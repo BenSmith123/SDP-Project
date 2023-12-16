@@ -39,6 +39,12 @@ function global_game_controls()
 		//	display_banner_message("Cheater") // lol
 	    //}
 		
+		if keyboard_check_pressed(ord("6")) 
+	    {
+		    var choice = choose(obj_ai_1,obj_ai_3)
+		    instance_create(mouse_x,mouse_y,choice)
+	    }
+		
 		if keyboard_check_pressed(ord("M"))
 	    {
 			global.system = global.system == SystemType.Desktop
@@ -47,15 +53,6 @@ function global_game_controls()
 			room_restart()
 	    }
 		
-	}
-	
-
-	// spawn AI
-	if mouse_check_button_released(mb_right) 
-	{
-	    var choice = choose(obj_ai_1,obj_ai_3)
-		instance_create(mouse_x,mouse_y,obj_fx_teleport)
-	    instance_create(mouse_x,mouse_y,choice)
 	}
 	
 	// hard reset game

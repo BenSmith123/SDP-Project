@@ -14,13 +14,13 @@
 function window_get_width_os()
 {
 	if global.system == SystemType.Desktop return window_get_width()
-	return WIDTH2
+	return window_get_width() / 2
 }
 
 function window_get_height_os()
 {
 	if global.system == SystemType.Desktop return window_get_height()
-	return HEIGHT2
+	return window_get_height() / 2
 }
 
 

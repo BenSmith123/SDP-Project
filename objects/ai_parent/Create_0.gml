@@ -72,9 +72,11 @@ heal_amount = 0
 
 aggressive = false // move/attack an enemy when unprovoked
 can_be_knockedback = true
+can_be_stunned = true
 
 // skill
-attack_ability = false // projectiles, skills etc.
+attack_ability = function() {} // empty function to default mob attacks
+has_attack_ability = false // projectiles, skills etc.
 attack_distance = 0 // distance before attacking player
 
 block_distance = 0 // distance for checking how far away blocks are (before jumping)

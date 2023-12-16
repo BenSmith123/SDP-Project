@@ -16,9 +16,10 @@ heal_amount = 0
 
 aggressive = true // move/attack an enemy when unprovoked
 can_be_knockedback = true
+can_be_stunned = false
 
 // skill
-attack_ability = true // projectiles, skills etc.
+has_attack_ability = true // projectiles, skills etc.
 attack_distance = 200 // distance before attacking player
 
 block_distance = 0 // distance for checking how far away blocks are (before jumping)
@@ -37,3 +38,9 @@ sprite_projectile = spr_projectile_laser
 image_speed = 0.1
 
 mob_after_initialised() // don't remove
+
+do_attack_ability = function()
+{
+show_message("nice")
+
+}

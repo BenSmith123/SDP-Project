@@ -10,7 +10,7 @@ function scr_ai_movement() {
 	    if stay == false
 	    {
 			// state = "Walking"
-			if !stunned
+			if !(can_be_stunned && stunned)
 			{
 				// move!
 				hspeed = speed_in_direction
@@ -59,8 +59,8 @@ function scr_ai_movement() {
 
 	if aggressive || has_been_attacked
 	{
-	    scr_ai_chase()
-		scr_ai_confront()
+	    mob_chase()
+		mob_attack()
 	}
 
 }

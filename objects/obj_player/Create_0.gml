@@ -1,12 +1,13 @@
 
 depth = ObjectDepth.Player
-
 player_set_start_position()
 
 // store room for when game is next loaded
 global.current_map_name = room_get_name(room)
 
-if global.joystick_enabled = true { instance_create(x,y,obj_joystick) }
+//if global.system == SystemType.Mobile {
+instance_create(WIDTH * 0.8, 20, obj_button_open_inventory)
+if global.joystick_enabled { instance_create(x,y,obj_joystick) }
 
 
 // CONSTANT

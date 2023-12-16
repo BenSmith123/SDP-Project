@@ -1,10 +1,12 @@
 
 // update x/y values to keep the mask_index in the same place
 // that the GUI is drawn (otherwise tapping won't work)
-x = __view_get( e__VW.XView, 0 )+WIDTH-10
-y = __view_get( e__VW.YView, 0 )+10
+//x = __view_get( e__VW.XView, 0 )+WIDTH-10
+//y = __view_get( e__VW.YView, 0 )+10
+x = WIDTH-10
+y = 10
 
-draw_sprite(sprite_index,0,WIDTH-10,10)
+draw_sprite(sprite_index,0,x,y)
 
 if (!paused) { exit }
 

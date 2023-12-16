@@ -16,9 +16,11 @@ heal_amount = 0
 
 aggressive = true
 can_be_knockedback = false
+can_be_stunned = false
+
 
 // skill
-attack_ability = false // projectiles, skills etc.
+has_attack_ability = true // projectiles, skills etc.
 attack_distance = 0 // distance before attacking player
 
 block_distance = 0 // distance for checking how far away blocks are (before jumping)

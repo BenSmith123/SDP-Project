@@ -16,9 +16,10 @@ heal_amount = 20
 
 aggressive = false // move/attack an enemy when unprovoked
 can_be_knockedback = true
+can_be_stunned = false
 
 // skill
-attack_ability = true // projectiles, skills etc.
+has_attack_ability = true // projectiles, skills etc.
 attack_distance = 200 // distance before attacking player
 
 block_distance = 40 // distance for checking how far away blocks are (before jumping)

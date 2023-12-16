@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_ai_confront",
+  "name": "mob_attack_shoot",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
