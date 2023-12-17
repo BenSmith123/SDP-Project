@@ -23,7 +23,7 @@ function global_game_controls()
 
 	    if keyboard_check_pressed(ord("3")) 
 	    {
-	        scr_level_up()
+	        level_up()
 	    }
 		
 		//if keyboard_check_pressed(ord("4")) 
@@ -34,7 +34,7 @@ function global_game_controls()
 		//	global.walk_speed = 7
 		//	global.jump = 16
 			
-		//	scr_level_up()
+		//	level_up()
 			
 		//	display_banner_message("Cheater") // lol
 	    //}
@@ -47,10 +47,14 @@ function global_game_controls()
 		
 		if keyboard_check_pressed(ord("M"))
 	    {
-			global.system = global.system == SystemType.Desktop
-				? SystemType.Mobile
-				: SystemType.Desktop
-			room_restart()
+			if instance_exists(arrow_key_parent) { instance_destroy(arrow_key_parent); exit }
+			display_banner_message("Mocking mobile keys - not running system as mobile")
+			create_mobile_controls()
+			// actual mobile testing: (will squash screen on desktop
+			//global.system = global.system == SystemType.Desktop
+			//	? SystemType.Mobile
+			//	: SystemType.Desktop
+			//room_restart()
 	    }
 		
 	}

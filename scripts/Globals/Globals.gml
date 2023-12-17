@@ -8,7 +8,7 @@ function initialise_globals()
 	global.overall_view = false // show the entire room
 	
 	// SYSTEM
-	global.system = os_type == os_windows || os_macosx
+	global.system = os_type == os_windows || os_type == os_macosx
 		?  SystemType.Desktop
 		:  SystemType.Mobile
 		

@@ -7,6 +7,8 @@ global.current_map_name = room_get_name(room)
 
 //if global.system == SystemType.Mobile {
 instance_create(WIDTH * 0.8, 20, obj_button_open_inventory)
+instance_create(WIDTH * 0.7, 20, obj_button_open_debug)
+
 if global.joystick_enabled { instance_create(x,y,obj_joystick) }
 
 

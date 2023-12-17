@@ -24,6 +24,6 @@ mob_drop()
  
 if global.experience >= global.max_exp
 {
-	scr_level_up()
+	level_up()
 }
 

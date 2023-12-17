@@ -19,6 +19,7 @@ can_be_knockedback = true
 can_be_stunned = false
 
 // skill
+attack_ability = mob_attack_shoot
 has_attack_ability = true // projectiles, skills etc.
 attack_distance = 200 // distance before attacking player
 

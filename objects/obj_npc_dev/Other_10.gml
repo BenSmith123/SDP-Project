@@ -7,6 +7,6 @@ global.attack = 500
 global.walk_speed = 6
 global.jump = 14
 			
-scr_level_up()
+level_up()
 			
 display_banner_message("HAVE FUN!")

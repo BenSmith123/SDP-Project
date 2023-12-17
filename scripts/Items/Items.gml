@@ -108,7 +108,8 @@ function get_item(item_id)
 	var arr_length = array_length(all_items_array)
 	
 	// find the item and return it
-	for (var i = 0; i < arr_length; i++) {
+	for (var i = 0; i < arr_length; i++) 
+	{
 		if (all_items_array[i].iid == item_id)
 		{ 
 			return all_items_array[i]

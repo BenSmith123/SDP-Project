@@ -19,6 +19,7 @@ can_be_knockedback = true
 can_be_stunned = false
 
 // skill
+attack_ability = mob_attack_shoot
 has_attack_ability = true // projectiles, skills etc.
 attack_distance = 200 // distance before attacking player
 
@@ -38,9 +39,3 @@ sprite_projectile = spr_projectile_laser
 image_speed = 0.1
 
 mob_after_initialised() // don't remove
-
-do_attack_ability = function()
-{
-show_message("nice")
-
-}
