@@ -1,6 +1,9 @@
 function create_mobile_debug_controls()
 {
 
+	// NOTE - anonymous functions declared as values of a struct act from the scope of that struct, not the current instance
+	// this will cause crashes when creating instances because the struct has no depth, use with keyword when creating instances
+
 	var debug_controls = 
 	[
 		{
@@ -13,7 +16,7 @@ function create_mobile_debug_controls()
 		},
 		{
 			text: "Level up",
-			action: function() { level_up() }
+			action: function() { with (obj_player) { level_up() } }
 		},
 		{
 			text: "Change name",
@@ -23,6 +26,15 @@ function create_mobile_debug_controls()
 			text: "Change class",
 			action: function() {
 				global.class = choose("Hunter", "Fighter", "Spellcaster", "Ninja")
+			}
+		},
+		{
+			text: "Test haptics",
+			action: function() {
+				var duration = choose(5, 300)
+				var strength = choose(10, 255)
+				Vibrate(duration, strength) // TODO - replace with script
+				global.name = ($"{duration} | {strength}")
 			}
 		}
 	]
@@ -35,7 +47,7 @@ function create_mobile_debug_controls()
 	for (var i = 0; i < array_length(debug_controls); i++) 
 	{
 		var yy = y_gap * i + 1
-		var button = instance_create(start_x,start_y + yy, obj_button_mobile_debug)
+		var button = instance_create_depth(start_x,start_y + yy, 0, obj_button_mobile_debug)
 		button.text = debug_controls[i].text
 		button.action = debug_controls[i].action
 	}

@@ -19,7 +19,6 @@ Tester1:
 - Mobile jump down - press jump and hold down to jump down
 - Discord logging & release notes
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
-- UI for inventory items
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
 - Game save - mob positions?
@@ -44,14 +43,13 @@ Loading/saving mob positions
 	- Load file on room_start
 	- Check age of file and whether or not to use?
 	^ Will have to override mob spawner?
-- gain extra exp when hitting a mob mid air? or player is in air - show on event log
-- seeker to go pick up coins
 - mob spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
   ^ only spawn when AI that was there in room start has been destroyed
 - fix player HP not being saved
 - add better collision & bullet sprites & effects
 - controls for when debug is disabled - escape is pause game, escape again to quit
 - windows executable installer graphics!
+- ios app icon & splash screen
 
 item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
 https://maplestory.io/api/GMS/246/item/5240001/icon?resize=1

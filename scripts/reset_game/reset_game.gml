@@ -1,13 +1,10 @@
 function reset_game() 
 {
-	//if file_exists("temp")
-	{
-	    file_delete("temp")
+	file_delete("temp")
     
-	    initialise_stored_globals()
-    
-	    room_goto(room_menu)
+	initialise_stored_globals()
+	
+	//room_goto(room_menu)
 		
-	    //game_restart()
-	}
+	game_restart()
 }
