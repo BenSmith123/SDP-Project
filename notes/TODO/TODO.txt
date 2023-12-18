@@ -43,6 +43,7 @@ Loading/saving mob positions
 	- Load file on room_start
 	- Check age of file and whether or not to use?
 	^ Will have to override mob spawner?
+- put xcode app in project
 - mob spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
   ^ only spawn when AI that was there in room start has been destroyed
 - fix player HP not being saved
