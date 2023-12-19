@@ -28,7 +28,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c75fe0ba-2b0a-4431-bf43-cf1a0a917189","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 4,
   "parent": {
     "name": "Mobs",
     "path": "folders/Sprites/Mobs.yy",
@@ -70,7 +70,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 66,
-    "yorigin": 56,
+    "yorigin": 57,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

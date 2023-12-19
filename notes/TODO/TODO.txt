@@ -9,15 +9,14 @@ TO DO
 	- more content! - maps, mobs, items, NPCs!
 	
 	
-Tester1:
-	- More content
-	- Fix melee
+Tester1 & 2 feedback
 	- replace stickman as player
 	- max resolution (1920x1080?) - game looked tiny on his 4K screen
 	- Equips, backpack
+	- can hit mobs through walls
 
-- Mobile jump down - press jump and hold down to jump down
-- Discord logging & release notes
+
+- Discord logging
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
@@ -29,16 +28,16 @@ Tester1:
 - Grapple gun / teleport
 - backgrounds & scenery! with depth
 - MOBILE:
-	- jump down?
-	- inventory
+	- jump down - press jump and hold down to jump down
+	- inventory icon
 	- interact with npc
 	- debugging?
 - AI:
 	- jumping mobs can walk through walls?
 	- walking up slope changes to jump sprite - looks glitchy
 	  ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
-	  
-Loading/saving mob positions
+Android build
+- Loading/saving mob positions
 	- Save to file on room_end
 	- Load file on room_start
 	- Check age of file and whether or not to use?
@@ -52,12 +51,19 @@ Loading/saving mob positions
 - windows executable installer graphics!
 - ios app icon & splash screen
 
+- Scrap the classes?
+	- Have equipable weapons that anyone can use
+	- Skills can be brought - teleportation stone
+
 item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
 https://maplestory.io/api/GMS/246/item/5240001/icon?resize=1
 ^ use param to get correct size
 
 https://maplestory.wiki/GMS/246/mob?page=6
 https://maplestory.wiki/GMS/246/mob?page=13
+
+character/NPC design:
+https://maplestory.net/design/designer
 
 
 

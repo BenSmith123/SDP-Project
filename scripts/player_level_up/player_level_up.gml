@@ -87,6 +87,7 @@ function level_up()
 		// level up effect!
 	    instance_create(obj_player.x,obj_player.y-40,obj_levelup_fx)
 	    obj_player.hp = global.max_hp // give the player full health
+		obj_player.max_hp = global.max_hp
         
 	    // update the players attributes
 	    obj_player.attack = global.attack

@@ -59,7 +59,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"14523500-89af-4d98-8139-7eddd8138af5","path":"sprites/spr_player_attack_5/spr_player_attack_5.yy",},},},"Disabled":false,"id":"7a3c5c30-9a3a-4788-8ba7-6cb881a4420b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 13,
     "yorigin": 29,

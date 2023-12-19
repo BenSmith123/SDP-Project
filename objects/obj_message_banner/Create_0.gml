@@ -7,5 +7,5 @@ fade_out = false
 
 alarm[0] = 360 // 6 sec
 
-
+depth = ObjectDepth.OverlayScreen
 

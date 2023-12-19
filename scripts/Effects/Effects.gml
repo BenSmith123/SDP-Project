@@ -21,11 +21,13 @@ function get_projectile_collision_x() { return hspeed < 0 ? bbox_left : bbox_rig
 
 function effect_create_spark_red()
 {
+	part_particles_create(global.fx,x,y,global.fx_flare_2,1)
 	effect_create_basic(obj_fx_spark_red)
 }
 
 function effect_create_spark_blue()
 {
+	part_particles_create(global.fx,x,y,global.fx_flare,1)
 	effect_create_basic(obj_fx_spark_blue)
 }
 

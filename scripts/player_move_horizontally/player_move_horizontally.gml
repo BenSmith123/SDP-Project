@@ -7,6 +7,7 @@ function player_move_horizontally()
 	// set the X velocity to walk_speed
 	// this makes the character move left
 	vel_x = move_left ? -walk_speed : walk_speed
+
 	image_xscale = move_left ? -1 : 1
 
 	// This checks if the current sprite is the fall sprite, meaning the player hasn't landed yet.

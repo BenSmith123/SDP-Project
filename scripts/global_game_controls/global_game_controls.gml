@@ -5,14 +5,12 @@ function global_game_controls()
 	if !global.is_game_master { exit }
 	
 	// TEMP DEBUG
-	if keyboard_check_pressed(ord("e"))
+	if keyboard_check_pressed(ord("E"))
 	{
-
+		//log_player_message("Testing message - 4573")
 		//room_goto(room1)
-
 		//show_message(global.inventory_array)
 		//inventory_add(ItemId.DronePiece)
-
 	}
 
 	if keyboard_check_pressed(ord("1")) { global.show_debug = !global.show_debug }

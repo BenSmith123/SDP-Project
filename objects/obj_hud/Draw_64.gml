@@ -14,7 +14,7 @@ draw_sprite_part(spr_hud_experience,0,0,0,(global.experience/global.max_exp * 26
 
 
 scr_text_2()
-draw_text(42,42,global.level)
+draw_text(44,42,global.level)
 
 scr_text_3()
 

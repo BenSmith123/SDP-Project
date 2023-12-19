@@ -1,13 +1,13 @@
 
-if (!grounded) 
-{
-	sprite_index = spr_player_jump
-}
-
 if attacking = true 
 {
     sprite_index = attack_sprite
     if image_index = 1 { deal_damage_to_mob(enemy) } // attacking = false}
+}
+
+if (!grounded && !attacking) 
+{
+	sprite_index = spr_player_jump
 }
 
 

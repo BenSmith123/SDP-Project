@@ -1,2 +1,2 @@
 
-y_start_pos -= 20
+y_start_pos += 20

@@ -12,8 +12,18 @@ function mob_attack()
     
 	    stay = true
 	    if is_left_of_enemy { image_xscale = 1 } else { image_xscale = -1 } // face enemy
+		
+		if !can_shoot { exit }
 			
-		if has_attack_ability { attack_ability() }
+		if has_attack_ability 
+		{
+			can_shoot = false
+			attacking = true
+			image_index = 0
+			sprite_index = sprite_attack
+			
+			attack_ability()
+		}
 	}
 	else
 	{

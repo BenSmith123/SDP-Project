@@ -20,22 +20,34 @@ can_be_stunned = false
 
 
 // skill
+attack_pound = function()
+{
+	stunned = true
+	can_shoot = false
+	//alarm[2] = 240
+	//alarm[7] = 240
+
+
+}
+attack_ability = attack_pound
 has_attack_ability = true // projectiles, skills etc.
-attack_distance = 0 // distance before attacking player
+animated_attack = true
+attack_distance = 120 // distance before attacking player
+stay_while_attacking = true
 
 block_distance = 0 // distance for checking how far away blocks are (before jumping)
 jump_block_height = 0 // how high a block can be for ai to try jump
 drop_distance = 150 // how far below a player is before dropping down
-detect_distance = 120 // how far can an ai spot a player
-health_run_percent = 20 // percent that health has to be before running away
+detect_distance = 300 // how far can an ai spot a player
+health_run_percent = 0 // percent that health has to be before running away
 
 sprite_stand = spr_mob_dragon_stand
 sprite_walk = spr_mob_dragon_walk
 sprite_jump = spr_mob_dragon_stand
 sprite_dead = spr_player_dead
-sprite_attack = spr_player_attack_2
+sprite_attack = spr_mob_dragon_attack
 
-image_speed = 1
+image_speed = 0.75
 
 mob_after_initialised() // don't remove
 

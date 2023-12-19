@@ -1,12 +1,9 @@
 function mob_attack_shoot() 
 {
-	if !can_shoot { exit }
 	
-	can_shoot = false
-	
+	// TODO - replace this will cool-down vars (move out of shoot script & put in mob_attack)
 	alarm[0] = 90 // can shoot again
 	alarm[4] = 15 // turn off sprite
-	attacking = true
 	
 	var bullet_x = facing_left
 		? -20

@@ -11,7 +11,6 @@ instance_create(WIDTH * 0.7, 20, obj_button_open_debug)
 
 if global.joystick_enabled { instance_create(x,y,obj_joystick) }
 
-
 // CONSTANT
 state = "-" // temporary (testing)
 collision_distance = 5 // for when player is about to hit a block

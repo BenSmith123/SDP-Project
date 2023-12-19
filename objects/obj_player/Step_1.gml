@@ -7,6 +7,7 @@ grounded = check_collision(0, 1) || place_meeting(x+vel_x, y+vel_y, obj_block_sl
 
 // DEBUG
 //if vel_x < 0.5 && vel_x > -0.5 && vel_x != 0 show_debug_message(vel_x)
+global.name = string(vel_x)
 
 // In this part we are applying friction to the player's velocity, so it eventually comes to a stop when there is no input.
 // The 'round' function rounds the X velocity to the nearest integer. Then it checks if that integer is NOT 0. This means there is an

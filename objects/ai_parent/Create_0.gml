@@ -78,6 +78,9 @@ can_be_stunned = true
 attack_ability = function() {} // empty function to default mob attacks
 has_attack_ability = false // projectiles, skills etc.
 attack_distance = 0 // distance before attacking player
+stay_while_attacking = false // prevent movement while in attack
+animated_attack = false
+do_damage_frame = 5 // image index of animation on when to deal the damage (only for animated attacks)
 
 block_distance = 0 // distance for checking how far away blocks are (before jumping)
 jump_block_height = 0 // how high a block can be for ai to try jump
