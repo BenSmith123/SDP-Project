@@ -5,8 +5,12 @@ function player_move_horizontally()
 	// if (in_knockback) { exit }
 
 	// set the X velocity to walk_speed
-	// this makes the character move left
-	vel_x = move_left ? -walk_speed : walk_speed
+	// this makes the character move left/right
+	var reached_terminal_velocity = vel_x > -walk_speed && vel_x < walk_speed
+	if reached_terminal_velocity
+	{
+		vel_x += move_left ? -1 : 1
+	}
 
 	image_xscale = move_left ? -1 : 1
 
