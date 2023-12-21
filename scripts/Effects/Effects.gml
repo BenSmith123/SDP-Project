@@ -17,7 +17,15 @@ function create_projectile_destroy_effect()
 }
 
 function get_projectile_collision_x() { return hspeed < 0 ? bbox_left : bbox_right }
+function get_melee_collision_x() { return image_xscale < 0 ? bbox_left : bbox_right }
 
+function effect_create_spark_red_melee()
+{
+	var xx = get_melee_collision_x()
+	part_particles_create(global.fx,xx,y,global.fx_flare_2,1)
+	var fx = instance_create(xx,y,obj_fx_spark_red)
+	fx.image_index = irandom(fx.image_number)
+}
 
 function effect_create_spark_red()
 {

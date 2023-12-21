@@ -1,11 +1,9 @@
 /// @description 
 /// @param mob {Id.Instance} mob thats hit
-function deal_damage_to_mob(mob)
+/// @param damage {Real}
+function deal_damage_to_mob(mob, damage)
 {
-	
 	mob.has_been_attacked = true
-
-	var damage = calculate_damage(attack, accuracy, mob.defence)
 	
 	var text = instance_create(mob.x,mob.y-30,obj_damage_text)
 	text.damage = damage

@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_arrow_key_attack",
-    "path": "sprites/spr_arrow_key_attack/spr_arrow_key_attack.yy",
+    "name": "spr_mobile_key_attack",
+    "path": "sprites/spr_mobile_key_attack/spr_mobile_key_attack.yy",
   },
   "spriteMaskId": null,
   "visible": true,

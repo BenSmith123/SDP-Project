@@ -16,7 +16,7 @@
     "name": "parent_hud_button",
     "path": "objects/parent_hud_button/parent_hud_button.yy",
   },
-  "persistent": false,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,

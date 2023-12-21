@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_arrow_key_jump",
-    "path": "sprites/spr_arrow_key_jump/spr_arrow_key_jump.yy",
+    "name": "spr_mobile_key_jump",
+    "path": "sprites/spr_mobile_key_jump/spr_mobile_key_jump.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,7 +1,9 @@
 /// @description Called by AI colliding into player or projectile hitting player
 /// @param player {Id.Instance} player thats hit
-function deal_damage_to_player(player) {
-
+function deal_damage_to_player(player) 
+{
+	
+	if !instance_exists(obj_player) { exit }
 	if (player.can_be_hit == false) { exit }
 
 	player.can_be_hit = false

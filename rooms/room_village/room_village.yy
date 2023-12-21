@@ -76,12 +76,14 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3AAF8DB2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block_stone","path":"objects/obj_block_stone/obj_block_stone.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1710.0,"y":971.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_407B8056","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block_stone","path":"objects/obj_block_stone/obj_block_stone.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1620.0,"y":971.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"ScenicTiles","depth":100,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":18,"SerialiseWidth":22,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"ScenicTiles","depth":100,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":20,"SerialiseWidth":22,"TileCompressedData":[
 -64,-2147483648,-2,0,-20,-2147483648,-2,0,-20,-2147483648,-2,0,-20,-2147483648,-2,0,-20,-2147483648,-2,0,-20,-2147483648,
 -2,0,-18,-2147483648,-4,0,-18,-2147483648,-4,0,-18,-2147483648,-4,0,-16,-2147483648,-6,0,-11,-2147483648,-11,0,
--11,-2147483648,-11,0,-2,-2147483648,1,0,-6,-2147483648,-13,0,-2,-2147483648,1,0,-6,-2147483648,-13,0,44,1,
+-11,-2147483648,-11,0,-2,-2147483648,1,0,-6,-2147483648,-13,0,-2,-2147483648,1,0,-6,-2147483648,-13,0,66,1,
 4,4,6,6,3,1,4,4,5,6,3,1,6,4,6,2,2,1,3,3,5,3,
-1,5,3,4,6,2,3,6,1,3,2,5,5,3,6,5,1,2,6,6,4,],"TileDataFormat":1,},"tilesetId":{"name":"tile_stone_wall","path":"tilesets/tile_stone_wall/tile_stone_wall.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":25,},
+1,5,3,4,6,2,3,6,1,3,2,5,5,3,6,5,1,2,6,6,4,4,
+3,4,2,5,3,4,6,5,6,4,4,1,3,2,2,4,5,1,2,6,3,-22,
+-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tile_stone_wall","path":"tilesets/tile_stone_wall/tile_stone_wall.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":25,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Clouds2","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_77A3CE09","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_cloud_1","path":"sprites/spr_cloud_1/spr_cloud_1.yy",},"x":288.0,"y":640.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_5B59DD10","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_cloud_2","path":"sprites/spr_cloud_2/spr_cloud_2.yy",},"x":1344.0,"y":704.0,},
@@ -134,7 +136,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "roomSettings": {
-    "Height": 1080,
+    "Height": 1165,
     "inheritRoomSettings": false,
     "persistent": false,
     "Width": 1920,

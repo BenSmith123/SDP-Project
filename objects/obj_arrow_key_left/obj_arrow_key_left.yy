@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_arrow_key_left",
-    "path": "sprites/spr_arrow_key_left/spr_arrow_key_left.yy",
+    "name": "spr_mobile_key_left",
+    "path": "sprites/spr_mobile_key_left/spr_mobile_key_left.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -6,7 +6,7 @@ function create_mobile_controls()
 	global.vk_right_x = 260
     
 	global.vk_jump_x = WIDTH-280 // jump
-	global.vk_jump_down_x = WIDTH-150
+	global.vk_jump_down_x = WIDTH-140
 
     
 	global.vk_y = HEIGHT-160 // y for both left and right keys
