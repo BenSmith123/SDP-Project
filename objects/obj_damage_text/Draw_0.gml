@@ -16,6 +16,18 @@ if image_alpha <= 0
 
 if (damage < 0) damage = 0
 
+var digits_num = string_length(string(damage))
+
+for(var i = digits_num; i != 0; i--)
+{
+	var digit = get_digit(damage, i)
+	var x_pos = i * 22
+	draw_sprite_ext(sprite_index, digit, x + x_pos, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+}
+
+
+
+/*
 scr_text_2()
 
 var col = c_white

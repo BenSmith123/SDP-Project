@@ -23,6 +23,8 @@ function deal_damage_to_mob(mob, damage)
 	mob.alarm[3] = mob.heal_time * room_speed // start counting down to heal time
 	
 	vibrate()
+
+log_player_message(damage)
 	
 	// push & hit mob before checking if its killed (otherwise death obj will be facing wrong way)
 	if (mob.can_be_knockedback)

@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_damage_text",
+    "path": "sprites/spr_damage_text/spr_damage_text.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
