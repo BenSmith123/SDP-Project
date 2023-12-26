@@ -40,8 +40,7 @@ function global_game_controls()
 		
 		if keyboard_check_pressed(ord("6")) 
 	    {
-		    //var choice = choose(obj_ai_1,obj_ai_3)
-		    var choice = choose(obj_ai_1)
+		    var choice = choose(obj_ai_1,obj_ai_3)
 		    instance_create(mouse_x,mouse_y,choice)
 	    }
 		

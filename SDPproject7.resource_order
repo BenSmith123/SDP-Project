@@ -304,6 +304,7 @@
     {"name":"obj_life_pickup","order":2,"path":"objects/obj_life_pickup/obj_life_pickup.yy",},
     {"name":"obj_speed_boost","order":3,"path":"objects/obj_speed_boost/obj_speed_boost.yy",},
     {"name":"obj_health_pickup","order":1,"path":"objects/obj_health_pickup/obj_health_pickup.yy",},
+    {"name":"obj_get_player_name","order":25,"path":"objects/obj_get_player_name/obj_get_player_name.yy",},
     {"name":"obj_fx_spark_red","order":2,"path":"objects/obj_fx_spark_red/obj_fx_spark_red.yy",},
     {"name":"obj_fx_speed","order":1,"path":"objects/obj_fx_speed/obj_fx_speed.yy",},
     {"name":"obj_fx_lol","order":2,"path":"objects/obj_fx_lol/obj_fx_lol.yy",},

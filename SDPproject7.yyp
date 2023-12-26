@@ -351,6 +351,7 @@
     {"id":{"name":"obj_life_pickup","path":"objects/obj_life_pickup/obj_life_pickup.yy",},},
     {"id":{"name":"obj_speed_boost","path":"objects/obj_speed_boost/obj_speed_boost.yy",},},
     {"id":{"name":"obj_health_pickup","path":"objects/obj_health_pickup/obj_health_pickup.yy",},},
+    {"id":{"name":"obj_get_player_name","path":"objects/obj_get_player_name/obj_get_player_name.yy",},},
     {"id":{"name":"obj_fx_spark_red","path":"objects/obj_fx_spark_red/obj_fx_spark_red.yy",},},
     {"id":{"name":"obj_dialog_bank","path":"objects/obj_dialog_bank/obj_dialog_bank.yy",},},
     {"id":{"name":"obj_fx_teleport","path":"objects/obj_fx_teleport/obj_fx_teleport.yy",},},

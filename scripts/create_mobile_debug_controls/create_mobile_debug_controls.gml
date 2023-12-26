@@ -22,14 +22,22 @@ function create_mobile_debug_controls()
 		},
 		{
 			text: "Change name",
-			action: function() { get_string_async("Change name", "") }
+			action: function() { 
+				with (obj_player)
+				{
+					instance_create(x, y, obj_get_player_name)
+				}
+			}
 		},
 		{
 			text: "Change class",
 			action: function() {
 				//global.class = choose("Hunter", "Fighter", "Spellcaster", "Ninja")
 				//room_restart()
-				instance_create(x,y,obj_pick_class)
+				with (obj_player)
+				{
+					instance_create(x,y,obj_pick_class)
+				}
 			}
 		},
 		{

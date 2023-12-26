@@ -8,12 +8,10 @@ TO DO
 	- backgrounds!
 	- more content! - maps, mobs, items, NPCs!
 	
-	
 Tester1 & 2 feedback
 	- replace stickman as player
 	- max resolution (1920x1080?) - game looked tiny on his 4K screen
 	- Equips, backpack
-	- can hit mobs through walls
 
 
 - Discord logging
@@ -23,8 +21,8 @@ Tester1 & 2 feedback
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text
+- HUD colour/font hard to read
 - ^ Better fonts?
-- Ladders / ropes!
 - Grapple gun / teleport
 - backgrounds & scenery! with depth
 - MOBILE:
@@ -33,6 +31,7 @@ Tester1 & 2 feedback
 	- interact with npc
 	- debugging?
 - AI:
+	- MOB movement - fix mobs sliding through walls? end of platform script works - might be conflicting
 	- jumping mobs can walk through walls?
 	- walking up slope changes to jump sprite - looks glitchy
 	  ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.

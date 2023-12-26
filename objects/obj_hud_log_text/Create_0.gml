@@ -1,14 +1,19 @@
 
 depth = ObjectDepth.HUD
 
-y_start_pos = 74 // HEIGHT - 10
-
-text = "" // set by creation script
-
-// trigger existing text to move up
-with(obj_hud_log_text) {
-	event_perform(ev_other, ev_user0)
-}
+y_start_pos = 94 // HEIGHT - 10
 
 start_fade = false
 alarm[0] = 120
+
+// set by creation script
+text = ""
+repeat_count = 1
+
+repeat_message = function()
+{
+	repeat_count++
+	image_alpha = 1
+	start_fade = false
+	alarm[0] = 120
+}

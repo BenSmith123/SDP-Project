@@ -24,7 +24,7 @@ has_attack_ability = true // projectiles, skills etc.
 attack_distance = 300 // distance before attacking player
 
 block_distance = 40 // distance for checking how far away blocks are (before jumping)
-jump_block_height = -40 // how high a block can be for ai to try jump
+jump_block_height = -140 // how high a block can be for ai to try jump
 drop_distance = 150 // how far below a player is before dropping down
 detect_distance = 360 // how far can an ai spot a player
 health_run_percent = 20 // percent that health has to be before running away

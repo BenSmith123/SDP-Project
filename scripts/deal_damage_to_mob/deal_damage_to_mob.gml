@@ -29,8 +29,6 @@ function deal_damage_to_mob(mob, damage)
 	{
 		var is_to_left_of_mob = x < mob.x
 	
-
-
 		// turn to face attacker
 		mob.image_xscale = is_to_left_of_mob ? -image_xscale : image_xscale
 	

@@ -98,3 +98,4 @@ sprite_projectile = spr_projectile_laser
 animated_death = false
 
 image_speed = 0.1
+// friction = 0.25

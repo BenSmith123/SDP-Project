@@ -14,10 +14,14 @@ function scr_ai_movement()
 			if !(can_be_stunned && stunned)
 			{
 				// move!
-				hspeed = speed_in_direction
+				if place_empty(x+speed_in_direction, y-1, obj_block_solid)
+				{
+					state = "moving"
+					hspeed = speed_in_direction
+				}
 			}
 
-			if place_meeting(x+hspeed, y-1, obj_block)
+			if place_meeting(x+hspeed, y-1, obj_block_slope_parent)
 			{
 				state = "Slope"
 				
@@ -25,7 +29,7 @@ function scr_ai_movement()
 				for(var new_y = 0; new_y < 10; new_y++)
 				{
 					// checks for place free above the slope (prevent walking up/through a wall)
-					if (place_empty(x+hspeed, y-new_y, obj_block))
+					if (place_empty(x+hspeed, y-new_y, obj_block_slope_parent))
 					{
 						y -= new_y;
 					    break

@@ -21,6 +21,8 @@ function initialise_globals()
 	global.respawn_map_name = "room_village"
 	global.came_from_left_map = true // determine what side of the map to place character on room start
 
+	global.last_log_message_obj = noone
+
 	// SETTINGS
 	global.joystick_enabled = true
 }
