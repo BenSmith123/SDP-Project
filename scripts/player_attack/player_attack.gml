@@ -2,11 +2,19 @@ function player_attack()
 {
 	if can_attack == false { exit }
    
-	alarm[0] = 30 // can shoot again
+   	can_attack = false
+	alarm[0] = 30 // can attack again
+	
+	if is_on_ladder && (move_left || move_right)
+	{
+		is_on_ladder = false
+		vel_y = -jump
+		exit
+	}
+	
 	alarm[1] = 20 // for attacking sprite
     
 	attacking = true
-	can_attack = false
     
 	image_index = 0 // restart the animation
 	image_speed = 0.15

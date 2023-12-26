@@ -10,6 +10,11 @@ if hp <= 0
     instance_destroy()
 }
 
+if is_on_ladder 
+{
+	if !place_meeting(x, y, obj_ladder) { is_on_ladder = false }
+	exit 
+}
 
 // if player is jumping down through a slope, ignore collision checking while player is
 // still falling through the block, and re-renable it once player is free falling

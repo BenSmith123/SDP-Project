@@ -1,5 +1,12 @@
 function player_jump_down()
 {
+	
+	if is_on_ladder
+	{
+		y += 3
+		exit
+	}
+	
 	var block = instance_place(x, y + 1, obj_block)
 	if block == noone { exit }
 	

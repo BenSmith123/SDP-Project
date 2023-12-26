@@ -286,11 +286,13 @@
     {"name":"inst_5822377","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_2CFBEF6E","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_70F69F59","path":"rooms/room_test/room_test.yy",},
+    {"name":"inst_315A8E40","path":"rooms/room_test/room_test.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"NPC","depth":-5400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35F5D60F","colour":4280220671,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":-1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ai_damage_test","path":"objects/obj_ai_damage_test/obj_ai_damage_test.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":110.92627,"y":853.38586,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35F5D60F","colour":4280220671,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":-1,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ai_damage_test","path":"objects/obj_ai_damage_test/obj_ai_damage_test.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":832.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_315A8E40","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ladder","path":"objects/obj_ladder/obj_ladder.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":10.333334,"x":1585.0,"y":736.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":-5000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A3E4F80_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":864.0,},

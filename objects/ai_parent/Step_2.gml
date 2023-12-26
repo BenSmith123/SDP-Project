@@ -1,5 +1,4 @@
 /// @description handle sprites
-
 if attacking == true 
 { 
 	sprite_index = sprite_attack

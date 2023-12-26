@@ -4,13 +4,14 @@ function player_controls()
 	// WINDOWS AND VIRTUAL KEYS
 	if keyboard_check(ord("A")) { move_left = true }
 	if keyboard_check(ord("D")) { move_right = true }
-	if keyboard_check_pressed(ord("W")) { move_jump = true }
-	if keyboard_check_pressed(ord("S")) { move_jump_down = true }
+	if keyboard_check(ord("W")) { move_jump = true }
+	if keyboard_check(ord("S")) { move_jump_down = true }
+
 	
 	if keyboard_check(vk_left) { move_left = true }
 	if keyboard_check(vk_right) { move_right = true }
-	if keyboard_check_pressed(vk_up) { move_jump = true }
-	if keyboard_check_pressed(vk_down) { move_jump_down = true }
+	if keyboard_check(vk_up) { move_jump = true }
+	if keyboard_check(vk_down) { move_jump_down = true }
 	
 	
 	//if keyboard_check_pressed(ord("S")) { move_attack = true }

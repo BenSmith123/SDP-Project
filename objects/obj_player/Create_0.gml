@@ -49,6 +49,7 @@ has_teleport_skill = global.class == "Spellcaster"
 second_jump = false // see if its the players second jump
 melee_attack_range = 100
 disable_block_collision = false // used for jumping down through SLOPE blocks
+is_on_ladder = false
 
 
 head_x = 0 // the x position for the head (to match all player sprites)

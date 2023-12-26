@@ -1,4 +1,5 @@
-function scr_ai_movement() {
+function scr_ai_movement()
+{
 
 	speed_in_direction = image_xscale * walkspeed
 	is_on_ground = place_meeting(x,y+1, obj_block)

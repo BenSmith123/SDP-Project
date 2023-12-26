@@ -8,7 +8,7 @@ function mob_detect_wall()
 		
 		
 	// if wall or slope to the left or right
-	if position_meeting(x+block_dist_x,y,obj_block)
+	if place_meeting(x+block_dist_x,y,obj_block_solid)
 	{
 	    stay = false
         
@@ -16,7 +16,7 @@ function mob_detect_wall()
 	    if  jump > 0
 	    {
 			// if block in front isnt too high
-			if !position_meeting(x+block_dist_x ,y+jump_block_height, obj_block)
+			if !place_meeting(x+block_dist_x ,y+jump_block_height, obj_block_solid)
 			{
 				state = "Jump block"
 				vspeed = -jump

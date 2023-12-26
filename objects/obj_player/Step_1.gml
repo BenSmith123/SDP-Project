@@ -1,3 +1,6 @@
+
+if is_on_ladder { exit }
+
 // check if there is a collision 1 pixel below the character
 grounded = check_collision(0, 1) || place_meeting(x+vel_x, y+vel_y, obj_block_slope_parent)
 

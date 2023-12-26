@@ -1,5 +1,5 @@
-function apply_gravity() {
-
+function apply_gravity()
+{
 	if (place_empty(x, y+1, obj_block))
 	{
 		gravity = 0.5

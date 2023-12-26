@@ -29,12 +29,13 @@ function deal_damage_to_mob(mob, damage)
 	{
 		var is_to_left_of_mob = x < mob.x
 	
-		// knock enemy back in direction the projectile was facing
-		mob.hspeed = is_to_left_of_mob ? 3 : -3
+
 
 		// turn to face attacker
 		mob.image_xscale = is_to_left_of_mob ? -image_xscale : image_xscale
 	
+		// knock enemy back in direction the projectile was facing
+		mob.hspeed = is_to_left_of_mob ? 3 : -3
 		mob.vspeed = -2
 		
 		// stun mob!

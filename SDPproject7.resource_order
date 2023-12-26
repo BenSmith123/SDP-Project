@@ -112,6 +112,7 @@
     {"name":"spr_menu_button_selected","order":5,"path":"sprites/spr_menu_button_selected/spr_menu_button_selected.yy",},
     {"name":"spr_item_banana","order":4,"path":"sprites/spr_item_banana/spr_item_banana.yy",},
     {"name":"spr_pause_button","order":1,"path":"sprites/spr_pause_button/spr_pause_button.yy",},
+    {"name":"obj_ladder","order":24,"path":"objects/obj_ladder/obj_ladder.yy",},
     {"name":"spr_button_back","order":2,"path":"sprites/spr_button_back/spr_button_back.yy",},
     {"name":"spr_coin_hud","order":3,"path":"sprites/spr_coin_hud/spr_coin_hud.yy",},
     {"name":"spr_black","order":4,"path":"sprites/spr_black/spr_black.yy",},

@@ -3,6 +3,8 @@ function player_move_horizontally()
 
 	// disable movement if in knockback
 	// if (in_knockback) { exit }
+	
+	if is_on_ladder { exit }
 
 	// set the X velocity to walk_speed
 	// this makes the character move left/right

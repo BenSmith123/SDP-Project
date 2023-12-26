@@ -21,7 +21,7 @@ can_be_knockedback = true
 has_attack_ability = false // projectiles, skills etc.
 attack_distance = 0 // distance before attacking player
 
-block_distance = 0 // distance for checking how far away blocks are (before jumping)
+block_distance = 3 // distance for checking how far away blocks are (before jumping)
 jump_block_height = 0 // how high a block can be for ai to try jump
 drop_distance = 150 // how far below a player is before dropping down
 detect_distance = 120 // how far can an ai spot a player

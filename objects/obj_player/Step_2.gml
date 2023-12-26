@@ -1,4 +1,11 @@
 
+
+if is_on_ladder
+{
+	sprite_index = spr_player_defend
+	exit
+}
+
 if attacking = true 
 {
     sprite_index = attack_sprite

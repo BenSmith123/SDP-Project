@@ -32,6 +32,8 @@ function deal_damage_to_player(player)
 	player.hp -= damage  // DO DAMAGE
 	player.alarm[3] = player.heal_time * room_speed // start counting down to heal time
 	
+	player.is_on_ladder = false
+	
 	// knockback physics
 	player.vel_x = x < player.x ? 5 : -5 // TODO - knockback variable depending on mob type?
 	player.vel_y = -8
