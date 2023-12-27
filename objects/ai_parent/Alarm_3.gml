@@ -5,6 +5,8 @@ heal_text.heal_amount = heal_amount
 
 hp += heal_amount
 
+get_healthbar_colour(hp, maxhp)
+
 if hp > maxhp
 {
     hp = maxhp

@@ -8,9 +8,10 @@ if attacking == true
 		if round(image_index) == do_damage_frame
 		{
 			//if distance_to_object(enemy) < 100
-			//{
-				deal_damage_to_player(obj_player)
-			//}
+			if instance_exists(obj_player)
+			{
+				if obj_player.grounded { deal_damage_to_player(obj_player) }
+			}
 		}
 	}
 	

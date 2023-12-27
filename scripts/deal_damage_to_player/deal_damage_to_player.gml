@@ -3,6 +3,8 @@
 function deal_damage_to_player(player) 
 {
 	
+	player.is_on_ladder = false
+	
 	if !instance_exists(obj_player) { exit }
 	if (player.can_be_hit == false) { exit }
 

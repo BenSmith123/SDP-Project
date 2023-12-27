@@ -13,7 +13,7 @@ Tester1 & 2 feedback
 	- Equips, backpack
 
 
-- Discord logging
+
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
@@ -46,6 +46,7 @@ Android build
 - add better collision & bullet sprites & effects
 - controls for when debug is disabled - escape is pause game, escape again to quit
 - windows executable installer graphics!
+- Discord logging
 - ios app icon & splash screen
 
 - Scrap the classes?

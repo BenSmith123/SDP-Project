@@ -6,6 +6,7 @@ function get_playable_maps_order()
 	return 
 	[
 		// add maps here to be included in 
+		room_test_mobs,
 		room_test,
 		room_village,
 		room_cave_small,
