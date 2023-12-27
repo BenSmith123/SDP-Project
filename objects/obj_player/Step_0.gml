@@ -12,7 +12,7 @@ if hp <= 0
 
 if is_on_ladder 
 {
-	if !place_meeting(x, y, obj_ladder) { is_on_ladder = false }
+	if !place_meeting(x, y, parent_climbable) { is_on_ladder = false }
 	exit 
 }
 

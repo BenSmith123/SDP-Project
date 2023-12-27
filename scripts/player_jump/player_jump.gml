@@ -2,14 +2,17 @@ function player_jump()
 {
 	// global.name = is_on_ladder == true ? "yes" : "no"
 
-	if place_meeting(x, y, obj_ladder)
+	var ladder = instance_nearest(x, y, parent_climbable)
+
+	if place_meeting(x, y, ladder)
 	{
-		if bbox_bottom > obj_ladder.bbox_top
+		if bbox_bottom > ladder.bbox_top
 		{
 			is_on_ladder = true
 			vel_x = 0
-			x = obj_ladder.x
+			x = ladder.x
 			y -= 3
+			image_speed = 1
 			exit
 		}
 	}

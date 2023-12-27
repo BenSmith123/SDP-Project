@@ -44,6 +44,7 @@ enum ObjectDepth
 	Item = -4500,
 	NPCspeech = -4310,
 	NPC = -4300,
+	Ladder = -4010,
 	Mob = -4000,
 	Tiles = 1000
 }

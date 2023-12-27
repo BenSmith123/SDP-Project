@@ -1,7 +1,7 @@
 function initialise_particle_system() 
 {
 
-	// CREATE FX: part_particles_create(global.fx,x,y,global.fx_coin_pickup,1)
+	// CREATE FX: part_particles_create(global.fx,x,y,global.fx_smoke,1)
 
 	global.fx = part_system_create()
 	part_system_depth(global.fx,ObjectDepth.Effect)
@@ -49,7 +49,7 @@ function initialise_particle_system()
 	// normal smoke trail
 	var _ptype1 = part_type_create();
 	part_type_shape(_ptype1, pt_shape_cloud);
-	part_type_size(_ptype1, 0.3, 0.5, 0, 0);
+	part_type_size(_ptype1, 0.3, 0.5, -0.01, 0);
 	part_type_scale(_ptype1, 1, 1);
 	part_type_speed(_ptype1, 0, 0, 0, 0);
 	part_type_direction(_ptype1, 1, 1, 0.1, 0);

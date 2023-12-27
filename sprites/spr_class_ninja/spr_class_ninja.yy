@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "HUD",
+    "path": "folders/Sprites/HUD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"600eb46e-22e8-433e-a1f6-e12e5f79a5f8","path":"sprites/spr_class_ninja/spr_class_ninja.yy",},},},"Disabled":false,"id":"85fb1f64-8afb-4749-81df-1174fab01a51","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 13,
     "yorigin": 30,

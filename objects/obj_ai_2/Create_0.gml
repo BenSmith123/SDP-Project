@@ -34,7 +34,9 @@ sprite_walk = sprite_index
 sprite_jump = sprite_index
 sprite_dead = sprite_index
 sprite_attack = sprite_index
-sprite_projectile = spr_projectile_laser
+sprite_projectile = spr_projectile_rocket
+
+projectile_obj = obj_projectile_mob_tracking
 
 image_speed = 0.1
 

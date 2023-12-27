@@ -2,14 +2,15 @@
 
 if is_on_ladder
 {
-	sprite_index = spr_player_defend
+	sprite_index = spr_player_climb
+	if y == yprevious { image_speed = 0 } // stop animation if not moving
 	exit
 }
 
 if attacking = true 
 {
     sprite_index = attack_sprite
-    if image_index = 1 
+    if image_index = 1
 	{ 
 		var damage = calculate_damage(attack, accuracy, enemy.defence)
 		deal_damage_to_mob(enemy, damage) 

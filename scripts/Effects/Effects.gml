@@ -6,6 +6,7 @@ function create_projectile_destroy_effect()
 	    case spr_bullet:
 		case spr_bullet_4:
 		case spr_projectile_laser:
+		case spr_projectile_rocket:
 			return effect_create_spark_red()
 			
 		case spr_bullet_2:

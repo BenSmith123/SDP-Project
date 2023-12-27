@@ -5,7 +5,6 @@ TO DO
 
 - MVP
 	- player damage as levels up? mob hp/damage etc
-	- backgrounds!
 	- more content! - maps, mobs, items, NPCs!
 	
 Tester1 & 2 feedback
@@ -24,7 +23,6 @@ Tester1 & 2 feedback
 - HUD colour/font hard to read
 - ^ Better fonts?
 - Grapple gun / teleport
-- backgrounds & scenery! with depth
 - MOBILE:
 	- jump down - press jump and hold down to jump down
 	- inventory icon

@@ -78,10 +78,6 @@ vel_y = 0
 
 grounded = false
 
-
-
 instance_create(x,y,obj_hud)
 
 set_classes()
-
-
