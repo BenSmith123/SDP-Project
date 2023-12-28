@@ -3,15 +3,11 @@
 TO DO
 --------------------
 
-- MVP
-	- player damage as levels up? mob hp/damage etc
-	- more content! - maps, mobs, items, NPCs!
 	
 Tester1 & 2 feedback
 	- replace stickman as player
 	- max resolution (1920x1080?) - game looked tiny on his 4K screen
 	- Equips, backpack
-
 
 
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
@@ -28,6 +24,7 @@ Tester1 & 2 feedback
 	- Drone operator destroyed
 	- Tilesets work
 	
+Content: Maps, Mobs, Items, NPCs
 - MOBILE:
 	- jump down - press jump and hold down to jump down
 	- inventory icon

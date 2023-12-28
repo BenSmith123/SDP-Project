@@ -33,27 +33,22 @@ function test_skill_spray_projectiles()
 
 	with(ai_parent)
 	{
-		
 		var mob = self
-		
 		if collision_line(x,y,obj_player.x,obj_player.y, obj_block,false,true) == noone
 		{
 			with (obj_player)
 			{
-					var x_pos = x + (image_xscale * 20)
+				var x_pos = x + (image_xscale * 20)
 	
-					var bullet = instance_create(x_pos, y, obj_projectile_player)
-					bullet.attack = attack
-					bullet.accuracy = accuracy
+				var bullet = instance_create(x_pos, y, obj_projectile_player)
+				bullet.attack = attack
+				bullet.accuracy = accuracy
 
-					bullet.sprite_index = sprite_projectile
-	
-					bullet.speed = 14
-					
-					//log_player_message(string(self.level))
-					bullet.direction = point_direction(x,y,mob.x,mob.y)
-					
-					bullet.alarm[0] = -1
+				bullet.sprite_index = sprite_projectile
+				bullet.speed = 14
+				//log_player_message(string(self.level))
+				bullet.direction = point_direction(x,y,mob.x,mob.y)
+				bullet.alarm[0] = -1
 			}
 			
 			//var damage = calculate_damage(obj_player.attack, obj_player.accuracy, self.defence)
