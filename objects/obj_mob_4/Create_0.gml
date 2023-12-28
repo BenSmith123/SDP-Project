@@ -36,6 +36,6 @@ sprite_dead = spr_mob_4_dead
 sprite_attack = spr_mob_4_attack
 sprite_projectile = spr_bullet_2
 
-image_speed = 0.5
+image_speed = 0.3
 
 mob_after_initialised() // don't remove

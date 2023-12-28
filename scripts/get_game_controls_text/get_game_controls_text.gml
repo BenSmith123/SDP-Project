@@ -29,11 +29,10 @@ function get_game_debug_controls_text()
 	
 	--- DEBUG ---
 	(GM only)
-	
-	Right Click = spawn AI
 
 	1 = toggle debug mode
 	2 = teleport player to mouse
+	3 = level up
 
 	6 = spawn mob
 	7 = show ai main variables
@@ -46,5 +45,5 @@ function get_game_debug_controls_text()
 	
 }
 
-	//3 = level up
+	
 	//4 = hp & damage boost

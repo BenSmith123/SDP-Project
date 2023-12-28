@@ -6,5 +6,8 @@
 
 //move_towards_point(obj_player.x,obj_player.y,5)
 
+x = round(x)
+y = round(y)
+
 draw_self()
 

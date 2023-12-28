@@ -5,7 +5,7 @@ image_alpha = 2
 image_xscale = 0
 image_yscale = 0
 
-space_between_digits = 20
+space_between_digits = 16
 
 x = round(x)
 

@@ -23,6 +23,11 @@ Tester1 & 2 feedback
 - HUD colour/font hard to read
 - ^ Better fonts?
 - Grapple gun / teleport
+
+- Graphics
+	- Drone operator destroyed
+	- Tilesets work
+	
 - MOBILE:
 	- jump down - press jump and hold down to jump down
 	- inventory icon
@@ -43,7 +48,6 @@ Android build
 - mob spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
   ^ only spawn when AI that was there in room start has been destroyed
 - fix player HP not being saved
-- add better collision & bullet sprites & effects
 - controls for when debug is disabled - escape is pause game, escape again to quit
 - windows executable installer graphics!
 - Discord logging
@@ -52,6 +56,9 @@ Android build
 - Scrap the classes?
 	- Have equipable weapons that anyone can use
 	- Skills can be brought - teleportation stone
+	
+	
+Resources:
 
 item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
 https://maplestory.io/api/GMS/246/item/5240001/icon?resize=1

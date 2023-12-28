@@ -7,7 +7,7 @@ function global_game_controls()
 	// TEMP DEBUG
 	if keyboard_check_pressed(ord("E"))
 	{
-		//test_player_skill()
+		test_player_skill()
 		//log_player_message("Testing message - 4573")
 		//room_goto(room1)
 		//show_message(global.inventory_array)
