@@ -48,8 +48,8 @@
   },
   "origin": 9,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/HUD.yy",
+    "name": "Inventory",
+    "path": "folders/Sprites/HUD/Inventory.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -3,32 +3,41 @@
 TO DO
 --------------------
 
+
+fix inventory positioning on diff device sizes
+inventory close button
+
+Sort out items - values, stack size, desc etc
+inventory & shop HUD graphics
+test on ipad
+player custom stats! attack, defense, accuracy, max_hp
+set up windows direct to xcode
+
+
+user feedback
+	- Can't close banker NPC chat
+	- Movement buttons too close together
+	- mob spawn rate slightly too fast
+
+
+
+
+
+- Android screen glitch? (Resolution broken on huawei p30 - 1080x2340
+- Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
+- fullscreen/small screen option
+- shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
 Shop!
 	- Revive potion
 	- Seeker
 	- projectiles
 	- shield
 	- full gamemaster controls
-
-
-place mob spawners
-Sort out items - values, stack size, desc etc
-inventory & shop HUD graphics
-android build
-fixed width on inventory & dialogs?
-^ items on new line
-test on ipad
-
-carry bow/sword on player back?
-
-
-
-
-
-- Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
-- fullscreen/small screen option
-- shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
+	- HUD change
+	- Nametag change gfx?
+	- Custom name?
 - Game save - mob positions?
+- Hidden maps - collision with obj will take them to map (outside of global map array)
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text
 - HUD colour/font hard to read

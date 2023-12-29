@@ -4,12 +4,13 @@
   "name": "obj_inventory",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialog",
-    "path": "folders/Objects/HUD/Dialog.yy",
+    "name": "Inventory",
+    "path": "folders/Objects/HUD/Inventory.yy",
   },
   "parentObjectId": {
     "name": "parent_dialog",
@@ -31,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_hud_inventory",
-    "path": "sprites/spr_hud_inventory/spr_hud_inventory.yy",
+    "name": "spr_coin_hud",
+    "path": "sprites/spr_coin_hud/spr_coin_hud.yy",
   },
   "spriteMaskId": null,
   "visible": true,

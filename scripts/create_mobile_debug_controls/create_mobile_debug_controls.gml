@@ -57,6 +57,10 @@ function create_mobile_debug_controls()
 			text: "Next Map >",
 			action: function() { move_to_map() }
 		},
+		{
+			text: "Debugging mode",
+			action: function() { global.show_debug = !global.show_debug }
+		},
 	]
 	
 	var x_column_1 = WIDTH / 4
@@ -65,7 +69,7 @@ function create_mobile_debug_controls()
 	var start_y = 160
 	var y_pos = start_y
 
-	var y_gap = 48
+	var y_gap = 52
 	
 	var buttons_per_column = 6
 

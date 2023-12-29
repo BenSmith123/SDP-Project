@@ -79,22 +79,32 @@ function get_item_log_message(name, amount = 1)
 
 function create_inventory_items() 
 {
-	var length = array_length(global.inventory_array)
-	if length == 0 { exit }
+	var num_of_items = array_length(global.inventory_array)
+	if num_of_items == 0 { exit }
 	
-	var start_x = 160
-	var gap_x = 50
+	var start_x = width / 2 - 242
+	var start_y = height / 2 - 80
+	var gap_x = 52
+	var gap_y = 0
+	var item_x = start_x
 		
 	// check if item can be put on an existing stack
-	for (var i = 0; i < length; i++) 
+	for (var i = 0; i < num_of_items; i++) 
 	{
+		item_x += gap_x
+		
+		var new_row	= i % 7 == 0
+		if new_row
+		{
+			item_x = start_x
+			gap_y += 52
+		}
+		
 		var inv_item = global.inventory_array[i]
 		var inventory_item_id = inv_item[0]
 		var inventory_item_amount = inv_item[1]
 		
-		var item_start_x = start_x + i * gap_x
-		
-		var item = instance_create_depth(item_start_x, 200, ObjectDepth.HUDItem, obj_hud_item, get_item(inventory_item_id))
+		var item = instance_create_depth(item_x, start_y + gap_y, ObjectDepth.HUDItem, obj_hud_item, get_item(inventory_item_id))
 		item.amount = inv_item[1]
 	}
 }

@@ -1,12 +1,16 @@
 function set_resolution()
 {
+	
+	var w = WIDTH
+	var h = HEIGHT
 
 	view_enabled = true
 	__view_set( e__VW.Visible, 0, true )
 
-	__view_set( e__VW.XPort, 0, 0 )__view_set( e__VW.YPort, 0, 0 )
-	__view_set( e__VW.WPort, 0, WIDTH )
-	__view_set( e__VW.HPort, 0, HEIGHT )
+	__view_set( e__VW.XPort, 0, 0 )
+	__view_set( e__VW.YPort, 0, 0 )
+	__view_set( e__VW.WPort, 0, w )
+	__view_set( e__VW.HPort, 0, h )
 	
 	// prevent camera zooming to player
 	if (instance_exists(obj_player))
@@ -14,7 +18,6 @@ function set_resolution()
 		// start the camera where the player is - avoid camera zooming to player
 		__view_set( e__VW.XView, 0, get_cam_start_position_x())
 		__view_set( e__VW.YView, 0, get_cam_start_position_y())
-		
 	}
 	else
 	{
@@ -22,8 +25,8 @@ function set_resolution()
 		__view_set( e__VW.YView, 0, 0)
 	}
 	
-	__view_set( e__VW.WView, 0, WIDTH )
-	__view_set( e__VW.HView, 0, HEIGHT )
+	__view_set( e__VW.WView, 0, w )
+	__view_set( e__VW.HView, 0, h )
 	
 
 	// full screen & higher res on desktop
@@ -33,8 +36,8 @@ function set_resolution()
 	//    window_set_size(__view_get( e__VW.WPort, 0 ), __view_get( e__VW.HPort, 0 ))
 	//}
 
-	display_set_gui_size(WIDTH, HEIGHT)
-	surface_resize(application_surface, WIDTH, HEIGHT)
+	display_set_gui_size(w, h)
+	surface_resize(application_surface, w, h)
 }
 
 

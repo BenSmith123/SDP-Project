@@ -31,14 +31,23 @@ function mob_drop()
 	}
 	
 	// common drops!
-	mob_drop_item(ItemId.Helmet, 20)
-	mob_drop_item(ItemId.Banana, 100)
+	//mob_drop_item(ItemId.Helmet, 20)
+	//mob_drop_item(ItemId.Banana, 100)
 	
-	mob_drop_item(ItemId.GoldPlate, 1000)
-	mob_drop_item(ItemId.GoldRock, 10000)
-	mob_drop_item(ItemId.Orb, 150)
-	mob_drop_item(ItemId.RevivePotion, 300)
-	mob_drop_item(ItemId.Ruby, 100)
+	//mob_drop_item(ItemId.GoldPlate, 1000)
+	//mob_drop_item(ItemId.GoldRock, 10000)
+	//mob_drop_item(ItemId.Orb, 150)
+	//mob_drop_item(ItemId.RevivePotion, 300)
+	//mob_drop_item(ItemId.Ruby, 100)
+	
+	mob_drop_item(ItemId.Helmet, 0)
+	mob_drop_item(ItemId.Banana, 0)
+	
+	mob_drop_item(ItemId.GoldPlate, 0)
+	mob_drop_item(ItemId.GoldRock, 0)
+	mob_drop_item(ItemId.Orb, 0)
+	mob_drop_item(ItemId.RevivePotion, 0)
+	mob_drop_item(ItemId.Ruby, 0)
 
 	mob_drop_coins(coin_min, coin_max)
 

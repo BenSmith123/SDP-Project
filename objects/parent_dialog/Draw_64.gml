@@ -2,7 +2,7 @@
 var padding = 100
 var padding_2 = padding * 2
 
-draw_sprite_stretched(sprite_index, 0, padding, padding, WIDTH-padding_2, HEIGHT-padding_2)
+draw_sprite_stretched(sprite_index, 0, padding, padding, width, height)
 
 scr_text_2()
 draw_text(WIDTH/2, 140, title)

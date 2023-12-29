@@ -11,10 +11,17 @@
 
 if show_details || position_meeting(mouse_x,mouse_y,self)
 {
-	gpu_set_blendmode(bm_add);
-	draw_circle_colour(gui_x, gui_y, 20, c_white, c_black, 0);
-	gpu_set_blendmode(bm_normal);
+	gpu_set_blendmode(bm_add)
+	draw_circle_colour(gui_x, gui_y, 20, c_silver, c_black, 0)
+	gpu_set_blendmode(bm_normal)
 }
+
+// shadow
+//gpu_set_blendmode(bm_add)
+//draw_circle_colour(gui_x, gui_y, 20, c_black, c_white, 0)
+//gpu_set_blendmode(bm_normal)
+
+
 
 draw_sprite(sprite, 0, gui_x, gui_y)
 

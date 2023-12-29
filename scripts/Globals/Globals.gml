@@ -33,7 +33,7 @@ function initialise_stored_globals()
 {
 	
 	// inventory
-	global.inventory_size = 18
+	global.inventory_size = 42
 	global.inventory_array = []//array_create(global.inventory_size, noone) // TODO - 10
 	// array items: ["itemId", amount]
 	

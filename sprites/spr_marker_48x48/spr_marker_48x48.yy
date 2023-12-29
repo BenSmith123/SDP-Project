@@ -13,7 +13,6 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c7c2906-3fc3-480e-9b8c-6323889d3918",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b470f61-bb39-40ad-ac0f-e85c766fa382",},
   ],
   "gridX": 0,
@@ -44,7 +43,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 1.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,8 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5c7c2906-3fc3-480e-9b8c-6323889d3918","path":"sprites/spr_marker_48x48/spr_marker_48x48.yy",},},},"Disabled":false,"id":"b6707e35-e0ca-4105-8677-a29586b68896","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b470f61-bb39-40ad-ac0f-e85c766fa382","path":"sprites/spr_marker_48x48/spr_marker_48x48.yy",},},},"Disabled":false,"id":"df8802b0-5b43-4fc8-8e68-a16a6551dc73","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b470f61-bb39-40ad-ac0f-e85c766fa382","path":"sprites/spr_marker_48x48/spr_marker_48x48.yy",},},},"Disabled":false,"id":"df8802b0-5b43-4fc8-8e68-a16a6551dc73","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

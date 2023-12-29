@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialog",
-    "path": "folders/Objects/HUD/Dialog.yy",
+    "name": "Inventory",
+    "path": "folders/Objects/HUD/Inventory.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_marker_48x48",
-    "path": "sprites/spr_marker_48x48/spr_marker_48x48.yy",
+    "name": "spr_inventory_item_background",
+    "path": "sprites/spr_inventory_item_background/spr_inventory_item_background.yy",
   },
   "spriteMaskId": null,
   "visible": true,

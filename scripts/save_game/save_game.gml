@@ -9,7 +9,7 @@ function save_game()
 	}
 	
 	////////// save the game (as temp ini) //////////
-	var file = ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one
+	ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one
 
 	ini_write_string("INVENTORY","inventory_array",json_stringify(global.inventory_array))
 
@@ -43,7 +43,7 @@ function save_game()
 
 	////////// read temporary decoded ini file, then delete it //////////
 
-	file = file_text_open_read(working_directory+"temp_2")
+	var file = file_text_open_read(working_directory+"temp_2")
 	var n = 1; 
 
 	while not (file_text_eof(file)) // while hasnt reached end of file
@@ -68,6 +68,4 @@ function save_game()
 	}
 
 	file_text_close(file)
-
-
 }
