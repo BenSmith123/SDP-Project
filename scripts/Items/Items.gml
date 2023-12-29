@@ -11,8 +11,10 @@ enum ItemRarity
 	Common,
 	Uncommon,
 	Rare,
+	VeryRare,
+	UltraRare,
 	Legendary,
-	Mythic // ?
+	// Mythic // ?
 }
 	
 enum ItemId
@@ -23,6 +25,11 @@ enum ItemId
 	Banana,
 	Battery,
 	DragonEgg,
+	Ruby,
+	GoldPlate,
+	GoldRock,
+	Orb,
+	RevivePotion
 }
 
 
@@ -72,9 +79,9 @@ function get_item(item_id)
 			iid: ItemId.Banana,
 			name: "Banana",
 			type: ItemType.Misc,
-			description: "1/100 chance of a finding",
+			description: "1% chance of a finding",
 			sprite: spr_item_banana,
-			rarity: ItemRarity.Common,
+			rarity: ItemRarity.Rare,
 			stack_size: 1,
 			is_sellable: true,
 			sell_value: 100
@@ -102,6 +109,66 @@ function get_item(item_id)
 			stack_size: 1,
 			is_sellable: true,
 			sell_value: 100
+		}),
+		create_item(
+		{
+			iid: ItemId.GoldPlate,
+			name: "Gold Plate",
+			type: ItemType.Misc,
+			description: "0.1% chance of finding",
+			sprite: spr_item_gold_plate,
+			rarity: ItemRarity.VeryRare,
+			stack_size: 10,
+			is_sellable: true,
+			sell_value: 1000
+		}),
+		create_item(
+		{
+			iid: ItemId.GoldRock,
+			name: "Gold Nugget",
+			type: ItemType.Misc,
+			description: "0.01% chance of finding",
+			sprite: spr_item_gold_rock,
+			rarity: ItemRarity.UltraRare,
+			stack_size: 10,
+			is_sellable: true,
+			sell_value: 1000
+		}),
+		create_item(
+		{
+			iid: ItemId.Orb,
+			name: "Orb",
+			type: ItemType.Misc,
+			description: "-",
+			sprite: spr_item_orb,
+			rarity: ItemRarity.UltraRare,
+			stack_size: 10,
+			is_sellable: true,
+			sell_value: 1000
+		}),
+		create_item(
+		{
+			iid: ItemId.RevivePotion,
+			name: "Revive Potion",
+			type: ItemType.Misc,
+			description: "Revive and lose no coins or EXP",
+			sprite: spr_item_revive_potion,
+			rarity: ItemRarity.Rare,
+			stack_size: 10,
+			is_sellable: true,
+			sell_value: 1000
+		}),
+		create_item(
+		{
+			iid: ItemId.Ruby,
+			name: "Ruby",
+			type: ItemType.Misc,
+			description: "-",
+			sprite: spr_item_ruby,
+			rarity: ItemRarity.VeryRare,
+			stack_size: 10,
+			is_sellable: true,
+			sell_value: 1000
 		})
 	]
 
@@ -121,7 +188,8 @@ function get_item(item_id)
 // function for ensuring all times have the same attributes & can de defaulted easily
 function create_item(item)
 {
-	return {	
+	return 
+	{	
 		iid: item.iid,
 		name: item.name,
 		type: item.type,
@@ -131,5 +199,20 @@ function create_item(item)
 		stack_size: item.stack_size, // 1 being unstackable
 		is_sellable: item.is_sellable,
 		sell_value: item.sell_value
+	}
+}
+
+
+///@description - return the item rarity string (because GM doesn't support enums wtf)
+function get_item_rarity_name(rarity)
+{
+	switch(rarity)
+	{
+		case ItemRarity.Uncommon: return "Uncommon"
+		case ItemRarity.Rare: return "Rare"
+		case ItemRarity.VeryRare: return "Very rare"
+		case ItemRarity.UltraRare: return "Ultra rare"
+		case ItemRarity.Legendary: return "Legendary"
+		default: return "Common"
 	}
 }

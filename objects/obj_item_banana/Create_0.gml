@@ -1,4 +1,4 @@
 
 event_inherited()
 
-itemId = ItemId.Banana
+item_details = get_item(ItemId.Banana)

@@ -1,4 +1,6 @@
 
+if spawner != noone { spawner.mob_count -= 1 }
+
 // create the dead body for AI
 var dead_body = instance_create(x,y,obj_ai_dead)
 dead_body.sprite_index = sprite_dead

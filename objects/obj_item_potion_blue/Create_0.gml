@@ -1,4 +1,4 @@
 
 event_inherited()
 
-itemId = ItemId.Helmet
+item_details = get_item(itemId.Helmet)

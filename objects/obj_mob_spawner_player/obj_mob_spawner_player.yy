@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_item_battery",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_mob_spawner_player",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "name": "MobSpawners",
+    "path": "folders/Objects/MobSpawners.yy",
   },
   "parentObjectId": {
-    "name": "parent_item",
-    "path": "objects/parent_item/parent_item.yy",
+    "name": "parent_mob_spawner",
+    "path": "objects/parent_mob_spawner/parent_mob_spawner.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_item_battery",
-    "path": "sprites/spr_item_battery/spr_item_battery.yy",
+    "name": "spr_player_stand",
+    "path": "sprites/spr_player_stand/spr_player_stand.yy",
   },
   "spriteMaskId": null,
   "visible": true,

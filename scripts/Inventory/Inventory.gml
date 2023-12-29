@@ -5,11 +5,11 @@
 
 
 ///@description
-///@param {Real} item_id_to_add - ItemId enum
+///@param {Real} item_details - ItemId enum
 ///@param {Real} amount - default = 1
-function inventory_add(item_id_to_add, amount = 1)
+function inventory_add(item_details, amount = 1)
 {
-	var item_details = get_item(item_id_to_add)
+	var item_id_to_add = item_details.iid
 	
 	var length = array_length(global.inventory_array)
 	if length == 0 

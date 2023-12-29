@@ -1,4 +1,4 @@
 
 event_inherited()
 
-itemId = ItemId.DragonEgg
+item_details = get_item(ItemId.DragonEgg)

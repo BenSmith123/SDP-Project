@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_item_drone_heart",
+  "name": "obj_item_pickup_any",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_drone_heart",
-    "path": "sprites/spr_drone_heart/spr_drone_heart.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

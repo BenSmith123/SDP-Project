@@ -38,6 +38,7 @@ hp = global.max_hp
 stance = "Spawn"
 _image_speed = 0.1 // default image_speed to revert back to
 image_speed = _image_speed
+item_on_back_sprite = 0 // set by classes i.e. carry bow or sword
 can_attack = true
 attacking = false
 move_direction = "" // for when key or arrow is pressed

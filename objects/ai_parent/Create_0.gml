@@ -18,6 +18,7 @@ image_xscale = choose(-1,1) // which way to start walking
 depth = ObjectDepth.Mob
 attacker = "" // player that attacked
 state = "Spawn.." // debug
+spawner = noone // id of the spawner object - used to count num of active AI
 can_shoot = true
 can_turn = true
 stay = false // done move (while fighting, etc)

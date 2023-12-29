@@ -3,27 +3,42 @@
 TO DO
 --------------------
 
-	
-Tester1 & 2 feedback
-	- replace stickman as player
-	- max resolution (1920x1080?) - game looked tiny on his 4K screen
-	- Equips, backpack
+Shop!
+	- Revive potion
+	- Seeker
+	- projectiles
+	- shield
+	- full gamemaster controls
+
+
+place mob spawners
+Sort out items - values, stack size, desc etc
+inventory & shop HUD graphics
+android build
+fixed width on inventory & dialogs?
+^ items on new line
+test on ipad
+
+carry bow/sword on player back?
+
+
+
 
 
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - fullscreen/small screen option
-- shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10)
+- shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
 - Game save - mob positions?
 - Debug for screen settings - game looks tiny on high res
 - Text outline for HUD/damage text
 - HUD colour/font hard to read
 - ^ Better fonts?
+- Stats!
 - Grapple gun / teleport
-
+- User decides what stats to increase as they level
 - Graphics
-	- Drone operator destroyed
 	- Tilesets work
-	
+- Skill - spawn mob on your side
 Content: Maps, Mobs, Items, NPCs
 - MOBILE:
 	- jump down - press jump and hold down to jump down
@@ -34,14 +49,12 @@ Content: Maps, Mobs, Items, NPCs
 	- MOB movement - fix mobs sliding through walls? end of platform script works - might be conflicting
 	- jumping mobs can walk through walls?
 	- walking up slope changes to jump sprite - looks glitchy
-	  ^ improve AI behavior, chasing, randomness (stopping, jumping), visibility etc.
 Android build
 - Loading/saving mob positions
 	- Save to file on room_end
 	- Load file on room_start
 	- Check age of file and whether or not to use?
 	^ Will have to override mob spawner?
-- put xcode app in project
 - mob spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
   ^ only spawn when AI that was there in room start has been destroyed
 - fix player HP not being saved
@@ -50,9 +63,29 @@ Android build
 - Discord logging
 - ios app icon & splash screen
 
+
+Tester1 & 2 feedback
+	- replace stickman as player
+	- max resolution (1920x1080?) - game looked tiny on his 4K screen
+	- Equips, backpack
+
+
+IDEAS
 - Scrap the classes?
 	- Have equipable weapons that anyone can use
 	- Skills can be brought - teleportation stone
+	- Auto melee attack if mob close instead of fire projectile?
+- Healing stones? rather than progressively increasing stats
+- Daily challenges
+- Starter pack
+
+
+
+
+
+
+
+
 	
 	
 Resources:

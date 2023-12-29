@@ -30,9 +30,8 @@ if show_details
 	draw_sprite(sprite, 0, details_x+10, details_y+8)
 	scr_text_6()
 	
-	// TODO - enum to string
 	draw_text(details_x, details_y+32, "Description: " + description)
-	draw_text(details_x, details_y+60, "Rarity: Common")
+	draw_text(details_x, details_y+60, $"Rarity: {get_item_rarity_name(rarity)}")
 	draw_text(details_x, details_y+86, "Type: Misc.")	
 	draw_text(details_x, details_y+112, "Sellable: Yes")
 
