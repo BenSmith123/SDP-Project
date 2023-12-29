@@ -46,14 +46,15 @@ function global_game_controls()
 		
 		if keyboard_check_pressed(ord("M"))
 	    {
-			if instance_exists(arrow_key_parent) { instance_destroy(arrow_key_parent); exit }
-			display_banner_message("Mocking mobile keys - not running system as mobile")
-			create_mobile_controls()
+			//if instance_exists(arrow_key_parent) { instance_destroy(arrow_key_parent); exit }
+			//display_banner_message("Mocking mobile keys - not running system as mobile")
+			//create_mobile_controls()
 			// actual mobile testing: (will squash screen on desktop)
-			//global.system = global.system == SystemType.Desktop
-			//	? SystemType.Mobile
-			//	: SystemType.Desktop
-			//room_restart()
+			global.system = global.system == SystemType.Desktop
+				? SystemType.Mobile
+				: SystemType.Desktop
+			set_screen_resolution()
+			room_restart()
 	    }
 		
 	}
@@ -68,8 +69,9 @@ function global_game_controls()
 	
 	if keyboard_check_pressed(vk_f9) 
 	{ 
-		window_set_fullscreen(!window_get_fullscreen())
-		game_restart()
+		global.desktop_fullscreen = !global.desktop_fullscreen
+		set_screen_resolution()
+		initialise_display()
 	}
     
 	if keyboard_check_pressed(vk_f10) { global.came_from_left_map = false; move_to_map(true) }

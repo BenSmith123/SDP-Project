@@ -1,26 +1,28 @@
 
 #macro HIGHEST_LEVEL 100
 	
-#macro WIDTH2 960
-#macro HEIGHT2 640
+#macro MinWidth 960
+#macro MinHeight 640
 
-#macro WIDTH window_get_width_os()
-#macro HEIGHT window_get_height_os()
+// function reference - hack to use constants that can change value
+#macro WIDTH function() { return global.screen_w }()
+#macro HEIGHT function() { return global.screen_h }()
 
 // use this to cap the max window size
 //#macro WIDTH min(window_get_width(), 1920)
 //#macro HEIGHT min(window_get_height(), 1080)
 
+
 function window_get_width_os()
 {
 	if global.system == SystemType.Desktop return window_get_width()
-	return window_get_width() / 2
+	return display_get_width() / 2
 }
 
 function window_get_height_os()
 {
 	if global.system == SystemType.Desktop return window_get_height()
-	return window_get_height() / 2
+	return display_get_height() / 2
 }
 
 

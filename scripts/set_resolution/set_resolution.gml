@@ -1,5 +1,52 @@
-function set_resolution()
+
+function get_screen_width()
 {
+	var use_default_resolution = global.system == SystemType.Desktop && !global.desktop_fullscreen
+	if use_default_resolution { return global.desktop_default_width }
+	
+	var width_full = display_get_width()
+	var width_half = width_full / 2
+	
+	// half width on mobile devices (brings the view closer)
+	var display_width = global.system == SystemType.Desktop
+		? width_full
+		: width_half
+	
+	// if on mobile the resolution is very low, use the full width
+	// ^ this seems to be a bug with some android devices not returning their true display size
+	return display_width < MinWidth
+		? width_full
+		: display_width
+}
+
+function get_screen_height()
+{
+	var use_default_resolution = global.system == SystemType.Desktop && !global.desktop_fullscreen
+	if use_default_resolution { return global.desktop_default_height }
+	
+	var height_full = display_get_height()
+	var height_half = height_full / 2
+	
+	var display_height = global.system == SystemType.Desktop
+		? height_full
+		: height_half
+
+	return display_height < MinHeight
+		? height_full
+		: display_height
+}
+
+
+function set_screen_resolution()
+{
+	global.screen_w = get_screen_width()
+	global.screen_h = get_screen_height()
+}
+
+function initialise_display()
+{
+	
+	global.name = string(global.screen_w) + "x" + string(global.screen_h)
 	
 	var w = WIDTH
 	var h = HEIGHT
@@ -30,11 +77,11 @@ function set_resolution()
 	
 
 	// full screen & higher res on desktop
-	//if global.system == SystemType.Desktop
-	//{
-	//    window_set_fullscreen(true)
-	//    window_set_size(__view_get( e__VW.WPort, 0 ), __view_get( e__VW.HPort, 0 ))
-	//}
+	if global.system == SystemType.Desktop
+	{
+	    window_set_fullscreen(global.desktop_fullscreen)
+	    window_set_size(__view_get( e__VW.WPort, 0 ), __view_get( e__VW.HPort, 0 ))
+	}
 
 	display_set_gui_size(w, h)
 	surface_resize(application_surface, w, h)

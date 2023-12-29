@@ -11,6 +11,17 @@ function initialise_globals()
 	global.system = os_type == os_windows || os_type == os_macosx
 		?  SystemType.Desktop
 		:  SystemType.Mobile
+	
+	// default window resolution without fullscreen
+	global.desktop_default_width = 1280
+	global.desktop_default_height = 720
+
+	global.desktop_fullscreen = false
+		
+	global.screen_w = 0
+	global.screen_h = 0
+	set_screen_resolution()
+
 		
 	// IN-GAME
 

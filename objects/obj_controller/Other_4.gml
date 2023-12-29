@@ -1,7 +1,7 @@
 
 depth = ObjectDepth.Controller
 
-set_resolution()
+initialise_display()
 
 set_room_block_sprite()
 
