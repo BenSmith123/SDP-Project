@@ -1,10 +1,7 @@
 
-var padding = 100
-var padding_2 = padding * 2
+// background
+draw_sprite_stretched(sprite_index, 0, dialog_x_left, dialog_y_top, dialog_width, dialog_height)
 
-draw_sprite_stretched(sprite_index, 0, padding, padding, width, height)
-
+// title
 scr_text_2()
-draw_text(WIDTH/2, 140, title)
-
-draw_sprite_stretched(spr_hud_line_verticle, 0, WIDTH/2, padding+80, 1, HEIGHT-padding_2-100)
+draw_text(dialog_center_x, dialog_y_top+40, title)

@@ -21,6 +21,8 @@ function initialise_globals()
 	global.screen_w = 0
 	global.screen_h = 0
 	set_screen_resolution()
+	
+	global.dialog_y_pos = (global.screen_h / 4) - 80 // position for all dialogs to be displayed
 
 		
 	// IN-GAME
@@ -32,7 +34,7 @@ function initialise_globals()
 	global.respawn_map_name = "room_village"
 	global.came_from_left_map = true // determine what side of the map to place character on room start
 
-	global.last_log_message_obj = noone
+	global.last_log_message_obj = noone // tracking duplicate messages to stack
 
 	// SETTINGS
 	global.joystick_enabled = true

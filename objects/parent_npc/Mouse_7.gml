@@ -1,2 +1,2 @@
-if can_interact { event_user(0) }
 
+// if can_interact { event_user(0) }

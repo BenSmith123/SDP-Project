@@ -10,8 +10,8 @@
     "path": "folders/Objects/HUD/Inventory.yy",
   },
   "parentObjectId": {
-    "name": "obj_button_generic",
-    "path": "objects/obj_button_generic/obj_button_generic.yy",
+    "name": "obj_dialog_button_generic",
+    "path": "objects/obj_dialog_button_generic/obj_dialog_button_generic.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

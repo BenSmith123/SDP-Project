@@ -269,7 +269,7 @@
     {"id":{"name":"is_on_screen","path":"scripts/is_on_screen/is_on_screen.yy",},},
     {"id":{"name":"scr_pause_game","path":"scripts/scr_pause_game/scr_pause_game.yy",},},
     {"id":{"name":"load_game","path":"scripts/load_game/load_game.yy",},},
-    {"id":{"name":"obj_button_generic","path":"objects/obj_button_generic/obj_button_generic.yy",},},
+    {"id":{"name":"obj_dialog_button_generic","path":"objects/obj_dialog_button_generic/obj_dialog_button_generic.yy",},},
     {"id":{"name":"save_game","path":"scripts/save_game/save_game.yy",},},
     {"id":{"name":"reset_game","path":"scripts/reset_game/reset_game.yy",},},
     {"id":{"name":"set_resolution","path":"scripts/set_resolution/set_resolution.yy",},},

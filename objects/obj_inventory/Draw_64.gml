@@ -1,12 +1,7 @@
 
-// background
-draw_sprite_stretched(sprite_index, 0, inventory_x, inventory_y, inventory_width, inventory_height)
+event_inherited()
 
-scr_text_2()
-draw_text(center_x, inventory_y+40, title)
-
-draw_sprite_stretched(spr_hud_line_verticle, 0, center_x, inventory_y+80, 1, inventory_height-100)
-
+draw_sprite_stretched(spr_hud_line_verticle, 0, dialog_center_x, inventory_y+80, 1, inventory_height-100)
 
 // draw the EMPTY grid of slots!
 var slot_x = slot_x_start

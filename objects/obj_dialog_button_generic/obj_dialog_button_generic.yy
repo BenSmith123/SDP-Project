@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_button_generic",
+  "name": "obj_dialog_button_generic",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "HUD",
-    "path": "folders/Objects/HUD.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/HUD/Dialog.yy",
   },
   "parentObjectId": {
     "name": "parent_hud_button",

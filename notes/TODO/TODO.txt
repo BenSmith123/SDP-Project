@@ -5,9 +5,6 @@ TO DO
 
 
 
-drop item button
-
-
 Sort out items - values, stack size, desc etc
 inventory & shop HUD graphics
 test on ipad
