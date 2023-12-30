@@ -4,6 +4,8 @@
 //draw_circle_colour(x, y, 14, c_white, c_black, 0);
 //gpu_set_blendmode(bm_normal);
 
+image_alpha = can_pick_up ? 1 : 0.6
+
 draw_self()
 
 

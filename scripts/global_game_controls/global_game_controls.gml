@@ -46,10 +46,6 @@ function global_game_controls()
 		
 		if keyboard_check_pressed(ord("M"))
 	    {
-			//if instance_exists(arrow_key_parent) { instance_destroy(arrow_key_parent); exit }
-			//display_banner_message("Mocking mobile keys - not running system as mobile")
-			//create_mobile_controls()
-			// actual mobile testing: (will squash screen on desktop)
 			global.system = global.system == SystemType.Desktop
 				? SystemType.Mobile
 				: SystemType.Desktop

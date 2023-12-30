@@ -4,8 +4,9 @@ TO DO
 --------------------
 
 
-fix inventory positioning on diff device sizes
-inventory close button
+
+drop item button
+
 
 Sort out items - values, stack size, desc etc
 inventory & shop HUD graphics

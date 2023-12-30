@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "HUD",
-    "path": "folders/Objects/HUD.yy",
+    "name": "Mobile",
+    "path": "folders/Objects/HUD/Mobile.yy",
   },
   "parentObjectId": {
     "name": "arrow_key_parent",
