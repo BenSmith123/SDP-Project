@@ -38,6 +38,11 @@ function initialise_globals()
 
 	// SETTINGS
 	global.joystick_enabled = true
+	
+	// FILES
+	var save_file_id = "_100" // change this to force reset a users game save on install
+	global.file_save_encoded_name = "temp" + save_file_id
+	global.file_save_decoded_name = "temp_2" + save_file_id
 }
 
 

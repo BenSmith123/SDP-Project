@@ -1,5 +1,8 @@
 function save_game() 
 {
+	
+	var file_path_and_name_encoded = working_directory + global.file_save_encoded_name
+	var file_path_and_name_decoded = working_directory + global.file_save_decoded_name
 
 	if instance_exists(obj_player)
 	{
@@ -9,7 +12,7 @@ function save_game()
 	}
 	
 	////////// save the game (as temp ini) //////////
-	ini_open(working_directory + "temp_2") // if doesnt exist, automatically creates one
+	ini_open(file_path_and_name_decoded) // if doesnt exist, automatically creates one
 
 	ini_write_string("INVENTORY","inventory_array",json_stringify(global.inventory_array))
 
@@ -37,13 +40,11 @@ function save_game()
 	ini_write_real("PLAYER","coins",global.coins)
 	ini_write_real("PLAYER","coins_stored",global.coins_stored)
 
-
 	ini_close()
-
 
 	////////// read temporary decoded ini file, then delete it //////////
 
-	var file = file_text_open_read(working_directory+"temp_2")
+	var file = file_text_open_read(file_path_and_name_decoded)
 	var n = 1; 
 
 	while not (file_text_eof(file)) // while hasnt reached end of file
@@ -56,10 +57,10 @@ function save_game()
 
 	file_text_close(file) // CLOSE FILE
 
-	file_delete("temp_2")
+	file_delete(global.file_save_decoded_name)
 
 	////////// encode the file and save it //////////
-	file = file_text_open_write(working_directory+"temp")
+	file = file_text_open_write(file_path_and_name_encoded)
 
 	for(var i = 1; i < n; i++)
 	{

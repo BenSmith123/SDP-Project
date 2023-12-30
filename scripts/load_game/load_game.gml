@@ -3,10 +3,13 @@
 function load_game() 
 {
 	
-	if !file_exists(working_directory+"temp") { exit } // if file doesnt exists, game starts from nothing
+	var file_path_and_name_encoded = working_directory + global.file_save_encoded_name
+	var file_path_and_name_decoded = working_directory + global.file_save_decoded_name
+	
+	if !file_exists(file_path_and_name_encoded) { exit } // if file doesnt exists, game starts from nothing
 
 	////////// load encoded file //////////
-	var file = file_text_open_read(working_directory+"temp")
+	var file = file_text_open_read(file_path_and_name_encoded)
     
 	var n = 1
 	while not (file_text_eof(file)) // while hasnt reached end of file
@@ -19,7 +22,7 @@ function load_game()
 	file_text_close(file) // close file
     
 	////////// decode the encoded file and save to a temporary file
-	file = file_text_open_write(working_directory+"temp_2")
+	file = file_text_open_write(file_path_and_name_decoded)
     
 	for(var i = 1; i < n; i++)
 	{
@@ -33,9 +36,9 @@ function load_game()
     
 	////////// read the decoded temp file (load game) then delete the file
     
-	if file_exists(working_directory + "temp_2")
+	if file_exists(file_path_and_name_decoded)
 	{
-		ini_open(working_directory + "temp_2")
+		ini_open(file_path_and_name_decoded)
 			
 		global.inventory_array = json_parse(ini_read_string("INVENTORY", "inventory_array", "[]"))
 			
@@ -68,7 +71,7 @@ function load_game()
 			
 		ini_close()
         
-		file_delete("temp_2")
+		file_delete(global.file_save_decoded_name)
     
 	}
 

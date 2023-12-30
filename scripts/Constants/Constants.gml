@@ -13,19 +13,6 @@
 //#macro HEIGHT min(window_get_height(), 1080)
 
 
-function window_get_width_os()
-{
-	if global.system == SystemType.Desktop return window_get_width()
-	return display_get_width() / 2
-}
-
-function window_get_height_os()
-{
-	if global.system == SystemType.Desktop return window_get_height()
-	return display_get_height() / 2
-}
-
-
 #macro SCREEN_DISTANCE 1000
 
 #macro TERMINAL_VELOCITY 12

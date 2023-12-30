@@ -1,6 +1,6 @@
 function reset_game() 
 {
-	file_delete("temp")
+	file_delete(global.file_save_encoded_name)
     
 	initialise_stored_globals()
 	
