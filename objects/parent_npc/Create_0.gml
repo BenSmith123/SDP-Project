@@ -10,3 +10,4 @@ text_bubble = noone
 
 // interact if player is close
 can_interact = false
+has_interacted = false // avoid spam interaction

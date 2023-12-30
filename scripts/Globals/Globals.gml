@@ -11,6 +11,10 @@ function initialise_globals()
 	global.system = os_type == os_windows || os_type == os_macosx
 		?  SystemType.Desktop
 		:  SystemType.Mobile
+		
+	// alternative vars to reduce code :)
+	global.is_mobile = global.system == SystemType.Mobile
+	global.is_desktop = global.system == SystemType.Desktop
 	
 	// default window resolution without fullscreen
 	global.desktop_default_width = 1280

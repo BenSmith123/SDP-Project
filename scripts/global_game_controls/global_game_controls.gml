@@ -49,6 +49,10 @@ function global_game_controls()
 			global.system = global.system == SystemType.Desktop
 				? SystemType.Mobile
 				: SystemType.Desktop
+				
+			global.is_mobile = global.system == SystemType.Mobile
+			global.is_desktop = global.system == SystemType.Desktop
+
 			set_screen_resolution()
 			room_restart()
 	    }

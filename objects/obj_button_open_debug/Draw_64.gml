@@ -1,8 +1,5 @@
 
-
-draw_sprite(sprite_index, 0, x, y)
-
+draw_self()
 
 scr_text_1()
-//draw_set_font(font_arial_12_bold)
-draw_text(x, y+22, "Debug")
+draw_text(x, y, "Debug")

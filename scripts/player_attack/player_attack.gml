@@ -5,10 +5,14 @@ function player_attack()
    	can_attack = false
 	alarm[0] = 30 // can attack again
 	
-	if is_on_ladder && (move_left || move_right)
+	if is_on_ladder
 	{
-		is_on_ladder = false
-		vel_y = -jump
+		// use attack button to jump off ladder
+		if move_left || move_right
+		{
+			is_on_ladder = false
+			vel_y = -jump
+		}
 		exit
 	}
 	
