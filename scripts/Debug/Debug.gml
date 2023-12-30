@@ -28,3 +28,23 @@ function draw_game_debug_info()
 	draw_text(x+10,y+HEIGHT-20,string_hash_to_newline("DEBUG MODE ON: " +string(global.system)))
 
 }
+
+
+function debug_show_screen_info()
+{
+	global.name = string(global.screen_w) + "x" + string(global.screen_h)
+
+	var system = global.system == SystemType.Desktop ? "Desktop" : "Mobile"
+
+	var text = $"System: {system}#"
+	text += $"Android: {os_type == os_android}#"
+	text += $"Window res: {window_get_width()}x{window_get_height()}#"
+	text += $"Display res: {display_get_width()}x{display_get_height()}#"
+	text += $"Screen width: {global.screen_w}#"
+	text += $"Screen height: {global.screen_h}#"
+	text += $"WIDTH: {WIDTH}#"
+	text += $"HEIGHT height: {HEIGHT}#"
+
+	show_message_async(string_hash_to_newline(text))
+}
+

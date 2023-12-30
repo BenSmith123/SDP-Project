@@ -1,16 +1,14 @@
 
 #macro HIGHEST_LEVEL 100
-	
-#macro MinWidth 960
-#macro MinHeight 640
+
+// min half-size mobile display size
+// some Androids claim their resolution is lower than it is - doesn't count retina?
+#macro MinWidth 640 
+#macro MinHeight 480
 
 // function reference - hack to use constants that can change value
 #macro WIDTH function() { return global.screen_w }()
 #macro HEIGHT function() { return global.screen_h }()
-
-// use this to cap the max window size
-//#macro WIDTH min(window_get_width(), 1920)
-//#macro HEIGHT min(window_get_height(), 1080)
 
 
 #macro SCREEN_DISTANCE 1000

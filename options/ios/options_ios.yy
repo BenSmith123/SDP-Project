@@ -42,7 +42,7 @@
   "option_ios_podfile_path": "${options_dir}/ios/Podfile",
   "option_ios_scale": 0,
   "option_ios_splashscreen_background_colour": 255,
-  "option_ios_team_id": "MEMB031",
+  "option_ios_team_id": "L544623ZMM",
   "option_ios_texture_page": "2048x2048",
   "option_ios_version": "1.0.0.0",
 }

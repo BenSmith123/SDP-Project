@@ -42,7 +42,8 @@ function create_mobile_debug_controls()
 		},
 		{
 			text: "Test haptics",
-			action: function() {
+			action: function() 
+			{
 				var duration = choose(5, 300)
 				var strength = choose(10, 255)
 				Vibrate(duration, strength) // TODO - replace with script
@@ -61,6 +62,21 @@ function create_mobile_debug_controls()
 			text: "Debugging mode",
 			action: function() { global.show_debug = !global.show_debug }
 		},
+		{
+			text: "Display settings",
+			action: function() { debug_show_screen_info() }
+		},
+		{
+			text: "Reset display",
+			action: function() 
+			{
+				with (obj_player)
+				{
+					set_screen_resolution()
+					initialise_display()
+				}
+			}
+		}
 	]
 	
 	var x_column_1 = WIDTH / 4
