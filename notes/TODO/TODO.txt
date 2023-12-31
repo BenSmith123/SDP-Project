@@ -5,25 +5,19 @@ TO DO
 
 
 
-Sort out items - values, stack size, desc etc
+
 inventory & shop HUD graphics
 test on ipad
-player custom stats! attack, defense, accuracy, max_hp
-set up windows direct to xcode
 
 
 user feedback
-	- Can't close banker NPC chat
 	- Movement buttons too close together
 	- mob spawn rate slightly too fast
 
 
 
 
-
-- Android screen glitch? (Resolution broken on huawei p30 - 1080x2340
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
-- fullscreen/small screen option
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
 Shop!
 	- Revive potion
@@ -50,13 +44,10 @@ Content: Maps, Mobs, Items, NPCs
 - MOBILE:
 	- jump down - press jump and hold down to jump down
 	- inventory icon
-	- interact with npc
-	- debugging?
 - AI:
 	- MOB movement - fix mobs sliding through walls? end of platform script works - might be conflicting
 	- jumping mobs can walk through walls?
 	- walking up slope changes to jump sprite - looks glitchy
-Android build
 - Loading/saving mob positions
 	- Save to file on room_end
 	- Load file on room_start
@@ -64,7 +55,6 @@ Android build
 	^ Will have to override mob spawner?
 - mob spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
   ^ only spawn when AI that was there in room start has been destroyed
-- fix player HP not being saved
 - controls for when debug is disabled - escape is pause game, escape again to quit
 - windows executable installer graphics!
 - Discord logging
