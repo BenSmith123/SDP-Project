@@ -77,7 +77,7 @@ function initialise_stored_globals()
 	global.max_exp = 10
 
 	global.max_hp = 50
-	global.hp = global.max_hp
+	global.hp_last = global.max_hp // last known player HP (not necessarily the current - used for storing between maps or sessions)
 
 	global.attack = 6
 	global.defence = 0

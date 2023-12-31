@@ -16,7 +16,7 @@ state = "-" // temporary (testing)
 collision_distance = 5 // for when player is about to hit a block
 
 // ATTRIBUTES
-hp = global.hp
+hp = global.hp_last
 max_hp = global.max_hp
 
 attack = global.attack
@@ -82,3 +82,12 @@ grounded = false
 instance_create(x,y,obj_hud)
 
 set_classes()
+
+// check if the player should be healing
+check_for_heal = function()
+{
+	if hp > max_hp { hp = max_hp }
+	else { alarm[3] = heal_time * room_speed }
+}
+
+check_for_heal()

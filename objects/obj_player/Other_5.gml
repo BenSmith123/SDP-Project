@@ -1,2 +1,2 @@
 
-global.hp = hp
+global.hp_last = hp
