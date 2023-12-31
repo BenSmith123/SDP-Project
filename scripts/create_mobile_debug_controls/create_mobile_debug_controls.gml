@@ -4,7 +4,7 @@ function create_mobile_debug_controls()
 	if instance_exists(obj_button_mobile_debug) { instance_destroy(obj_button_mobile_debug); exit }
 
 	// NOTE - anonymous functions declared as values of a struct act from the scope of that struct, not the current instance
-	// this will cause crashes when creating instances because the struct has no depth, use with keyword when creating instances
+	// this will cause crashes when creating instances because the struct has no depth, use 'with' keyword when creating instances
 
 	var debug_controls = 
 	[
