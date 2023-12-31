@@ -9,10 +9,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "HUD",
-    "path": "folders/Objects/HUD.yy",
+    "name": "HUD button",
+    "path": "folders/Objects/HUD/HUD button.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "parent_gui_pressable",
+    "path": "objects/parent_gui_pressable/parent_gui_pressable.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

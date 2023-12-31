@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mobile",
-    "path": "folders/Objects/HUD/Mobile.yy",
+    "name": "HUD button",
+    "path": "folders/Objects/HUD/HUD button.yy",
   },
   "parentObjectId": {
     "name": "parent_hud_button",

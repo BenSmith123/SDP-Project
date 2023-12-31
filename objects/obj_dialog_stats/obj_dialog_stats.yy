@@ -1,21 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_button_open_inventory",
+  "name": "obj_dialog_stats",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "HUD button",
-    "path": "folders/Objects/HUD/HUD button.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/HUD/Dialog.yy",
   },
   "parentObjectId": {
-    "name": "parent_hud_button",
-    "path": "objects/parent_hud_button/parent_hud_button.yy",
+    "name": "parent_dialog",
+    "path": "objects/parent_dialog/parent_dialog.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

@@ -7,7 +7,7 @@ for (var i = 0; i < _max_devices; i++)
 	
 	if !device_mouse_check_button_pressed(i, mb_any) { exit }
         
-    var ui_obj = instance_position(touch_x, touch_y, parent_hud_button)
+    var ui_obj = instance_position(touch_x, touch_y, parent_gui_pressable)
 
 	// use this for touch/hold
     //var held = device_mouse_check_button(i, mb_left)

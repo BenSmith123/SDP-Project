@@ -13,8 +13,8 @@
     "path": "folders/Objects/HUD/Mobile.yy",
   },
   "parentObjectId": {
-    "name": "parent_hud_button",
-    "path": "objects/parent_hud_button/parent_hud_button.yy",
+    "name": "parent_gui_pressable",
+    "path": "objects/parent_gui_pressable/parent_gui_pressable.yy",
   },
   "persistent": true,
   "physicsAngularDamping": 0.1,

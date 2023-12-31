@@ -1,6 +1,6 @@
 instance_activate_object(obj_hud)
 instance_activate_object(obj_pause_button)
-instance_activate_object(obj_button_open_inventory)
+instance_activate_object(parent_hud_button)
 instance_destroy(obj_hud_item)
 instance_destroy(obj_dialog_close_button)
 instance_destroy(obj_dialog_button_generic)

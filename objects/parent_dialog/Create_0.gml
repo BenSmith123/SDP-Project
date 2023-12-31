@@ -5,7 +5,7 @@ depth = ObjectDepth.HUD
 
 instance_deactivate_object(obj_hud)
 instance_deactivate_object(obj_pause_button)
-instance_deactivate_object(obj_button_open_inventory)
+instance_deactivate_object(parent_hud_button)
 
 dialog_width = 760
 dialog_height = 440
