@@ -16,7 +16,7 @@ state = "-" // temporary (testing)
 collision_distance = 5 // for when player is about to hit a block
 
 // ATTRIBUTES
-
+hp = global.hp
 max_hp = global.max_hp
 
 attack = global.attack
@@ -34,7 +34,7 @@ heal_amount = global.heal_amount
 friction = 0.25
 image_xscale = 1
 image_yscale = 1
-hp = global.max_hp
+
 stance = "Spawn"
 _image_speed = 0.1 // default image_speed to revert back to
 image_speed = _image_speed

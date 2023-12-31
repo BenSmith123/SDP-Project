@@ -37,6 +37,7 @@ function initialise_globals()
 	global.session_first_spawn = true // spawn player where session ended
 	global.respawn_map_name = "room_village"
 	global.came_from_left_map = true // determine what side of the map to place character on room start
+	global.inventory_size_max = 42
 
 	global.last_log_message_obj = noone // tracking duplicate messages to stack
 
@@ -55,7 +56,7 @@ function initialise_stored_globals()
 {
 	
 	// inventory
-	global.inventory_size = 42
+	global.inventory_size = 21
 	global.inventory_array = []//array_create(global.inventory_size, noone) // TODO - 10
 	// array items: ["itemId", amount]
 	
@@ -76,6 +77,7 @@ function initialise_stored_globals()
 	global.max_exp = 10
 
 	global.max_hp = 50
+	global.hp = global.max_hp
 
 	global.attack = 6
 	global.defence = 0

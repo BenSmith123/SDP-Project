@@ -75,9 +75,10 @@ function level_up()
 	    exit
 	}
     
-	global.level += 1 // level up!
-    
 	level_up_increase_stats()
+	
+	global.level += 1 // level up!
+    global.hp = global.max_hp
     
 	if instance_exists(obj_player)
 	{

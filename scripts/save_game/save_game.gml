@@ -28,6 +28,7 @@ function save_game()
 	ini_write_real("PLAYER","level",global.level)
 	ini_write_real("PLAYER","experience",global.experience)
 	ini_write_real("PLAYER","max_exp",global.max_exp)
+	ini_write_real("PLAYER","hp",global.hp)
 	ini_write_real("PLAYER","max_hp",global.max_hp)
 
 	ini_write_real("PLAYER","attack",global.attack)

@@ -7,7 +7,7 @@ draw_sprite_stretched(spr_hud_line_verticle, 0, dialog_center_x, inventory_y+80,
 var slot_x = slot_x_start
 var slot_y = slot_y_start
 
-var num_of_slots = 42
+var num_of_slots = global.inventory_size_max
 
 for (var i = 0; i < num_of_slots; i++) 
 {
@@ -19,7 +19,9 @@ for (var i = 0; i < num_of_slots; i++)
 		slot_x = slot_x_start
 		slot_y += slot_gap
 	}
-	draw_sprite(spr_inventory_item_background, 0, slot_x, slot_y)
+	
+	var slot_locked = i >= global.inventory_size
+	draw_sprite(spr_inventory_item_background, slot_locked, slot_x, slot_y)
 }
 
 
