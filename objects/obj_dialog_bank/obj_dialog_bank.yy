@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dialog",
-    "path": "folders/Objects/HUD/Dialog.yy",
+    "path": "folders/Objects/Dialog.yy",
   },
   "parentObjectId": {
     "name": "parent_dialog",

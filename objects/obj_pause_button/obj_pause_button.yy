@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "HUD button",
-    "path": "folders/Objects/HUD/HUD button.yy",
+    "name": "Button",
+    "path": "folders/Objects/HUD/Button.yy",
   },
   "parentObjectId": {
     "name": "parent_hud_button",

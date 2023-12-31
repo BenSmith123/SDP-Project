@@ -1,20 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "parent_hud_button",
+  "name": "obj_inventory_item",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Button",
-    "path": "folders/Objects/HUD/Button.yy",
+    "path": "folders/Objects/Dialog/Button.yy",
   },
   "parentObjectId": {
-    "name": "parent_gui_pressable",
-    "path": "objects/parent_gui_pressable/parent_gui_pressable.yy",
+    "name": "parent_dialog_component",
+    "path": "objects/parent_dialog_component/parent_dialog_component.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_inventory_item_background",
+    "path": "sprites/spr_inventory_item_background/spr_inventory_item_background.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

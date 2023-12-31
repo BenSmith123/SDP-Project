@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialog",
-    "path": "folders/Objects/HUD/Dialog.yy",
+    "name": "Button",
+    "path": "folders/Objects/Dialog/Button.yy",
   },
   "parentObjectId": {
     "name": "obj_dialog_button_generic",

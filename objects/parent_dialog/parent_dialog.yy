@@ -12,9 +12,12 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dialog",
-    "path": "folders/Objects/HUD/Dialog.yy",
+    "path": "folders/Objects/Dialog.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "parent_dialog_component",
+    "path": "objects/parent_dialog_component/parent_dialog_component.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

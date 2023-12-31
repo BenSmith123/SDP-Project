@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "parent_hud_button",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-  ],
+  "name": "obj_shop_item",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Button",
-    "path": "folders/Objects/HUD/Button.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "parent_gui_pressable",
-    "path": "objects/parent_gui_pressable/parent_gui_pressable.yy",
+    "name": "parent_scrollable_item",
+    "path": "objects/parent_scrollable_item/parent_scrollable_item.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_btn",
+    "path": "sprites/spr_btn/spr_btn.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -112,7 +112,7 @@ function update_inventory_if_open()
 	// if inventory is open, force update it
 	if instance_exists(obj_inventory)
 	{
-		instance_destroy(obj_hud_item)
+		instance_destroy(obj_inventory_item)
 		with(obj_inventory) { create_inventory_items() }
 	}
 }
@@ -142,7 +142,7 @@ function create_inventory_items()
 		var inventory_item_id = inv_item[0]
 		var inventory_item_amount = inv_item[1]
 		
-		var item = instance_create_depth(item_x, item_y, ObjectDepth.HUDItem, obj_hud_item)
+		var item = instance_create_depth(item_x, item_y, ObjectDepth.HUDItem, obj_inventory_item)
 		item.item_details = get_item(inventory_item_id)
 		item.amount = inv_item[1]
 		item.inventory_index = i

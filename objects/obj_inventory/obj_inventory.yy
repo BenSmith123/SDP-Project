@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inventory",
-    "path": "folders/Objects/HUD/Inventory.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/Dialog.yy",
   },
   "parentObjectId": {
     "name": "parent_dialog",

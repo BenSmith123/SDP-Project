@@ -10,12 +10,12 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialog",
-    "path": "folders/Objects/HUD/Dialog.yy",
+    "name": "Shared",
+    "path": "folders/Objects/Dialog/Shared.yy",
   },
   "parentObjectId": {
-    "name": "parent_gui_pressable",
-    "path": "objects/parent_gui_pressable/parent_gui_pressable.yy",
+    "name": "parent_dialog_component",
+    "path": "objects/parent_dialog_component/parent_dialog_component.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

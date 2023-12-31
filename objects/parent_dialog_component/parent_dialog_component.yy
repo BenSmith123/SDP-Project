@@ -1,17 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_hud_item",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
-  ],
+  "name": "parent_dialog_component",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inventory",
-    "path": "folders/Objects/HUD/Inventory.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/Dialog.yy",
   },
   "parentObjectId": {
     "name": "parent_gui_pressable",
@@ -32,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_inventory_item_background",
-    "path": "sprites/spr_inventory_item_background/spr_inventory_item_background.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
