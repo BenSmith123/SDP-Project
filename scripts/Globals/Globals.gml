@@ -45,7 +45,7 @@ function initialise_globals()
 	global.joystick_enabled = true
 	
 	// FILES
-	var save_file_id = "_100" // change this to force reset a users game save on install
+	var save_file_id = "_200" // change this to force reset a users game save on install
 	global.file_save_encoded_name = "temp" + save_file_id
 	global.file_save_decoded_name = "temp_2" + save_file_id
 }
@@ -64,10 +64,6 @@ function initialise_stored_globals()
 	global.current_map_name = "room_test"
 	global.current_player_x = -1
 	global.current_player_y = -1
-	
-	// stats
-	global.current_kills = 0
-	global.kills = 0
 
 	// player attributes
 	global.class = "Beginner"
@@ -75,6 +71,8 @@ function initialise_stored_globals()
 	global.level = 1
 	global.experience = 0
 	global.max_exp = 10
+	
+	global.stat_points = 0
 
 	global.max_hp = 50
 	global.hp_last = global.max_hp // last known player HP (not necessarily the current - used for storing between maps or sessions)
@@ -90,4 +88,8 @@ function initialise_stored_globals()
 
 	global.coins = 0
 	global.coins_stored = 0
+	
+	// statistics
+	global.current_kills = 0
+	global.kills = 0
 }

@@ -16,6 +16,11 @@ function player_controls()
 	// ALTERNATE KEYS
 	if keyboard_check(vk_space) { move_attack = true }
 	if keyboard_check_pressed(ord("F")) { move_temp = true }
+	
+	if keyboard_check_pressed(ord("I"))
+	{
+		event_perform_object(obj_button_open_inventory, ev_other, ev_user0)
+	}
 
 
 

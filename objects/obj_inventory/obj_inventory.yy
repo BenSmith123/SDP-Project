@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_coin_hud",
-    "path": "sprites/spr_coin_hud/spr_coin_hud.yy",
+    "name": "spr_hud_inventory",
+    "path": "sprites/spr_hud_inventory/spr_hud_inventory.yy",
   },
   "spriteMaskId": null,
   "visible": true,

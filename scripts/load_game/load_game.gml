@@ -55,6 +55,7 @@ function load_game()
 		global.level = ini_read_real("PLAYER","level",global.level)
 		global.experience = ini_read_real("PLAYER","experience",global.experience)
 		global.max_exp = ini_read_real("PLAYER","max_exp",global.max_exp)
+		global.stat_points = ini_read_real("PLAYER","stat_points",global.stat_points)
 		global.max_hp = ini_read_real("PLAYER","max_hp",global.max_hp)
 		global.hp_last = ini_read_real("PLAYER","hp_last",global.hp_last)
         

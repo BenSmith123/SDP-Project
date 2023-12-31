@@ -46,9 +46,9 @@ function get_item(item_id)
 			description: "-",
 			sprite: spr_drone_piece,
 			rarity: ItemRarity.Common,
-			stack_size: 30,
+			stack_size: 50,
 			is_sellable: true,
-			sell_value: 30
+			sell_value: 10
 		}),
 		create_item(
 		{
@@ -58,7 +58,7 @@ function get_item(item_id)
 			description: "Used to power the Drone Operator",
 			sprite: spr_drone_heart,
 			rarity: ItemRarity.Common,
-			stack_size: 9,
+			stack_size: 20,
 			is_sellable: true,
 			sell_value: 100
 		}),
@@ -72,19 +72,19 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			stack_size: 10,
 			is_sellable: true,
-			sell_value: 100
+			sell_value: 50
 		}),
 		create_item(
 		{
 			iid: ItemId.Banana,
 			name: "Banana",
 			type: ItemType.Misc,
-			description: "1% chance of a finding",
+			description: "A useless banana..",
 			sprite: spr_item_banana,
 			rarity: ItemRarity.Rare,
-			stack_size: 1,
+			stack_size: 50,
 			is_sellable: true,
-			sell_value: 100
+			sell_value: 1
 		}),
 		create_item(
 		{
@@ -94,9 +94,9 @@ function get_item(item_id)
 			description: "-",
 			sprite: spr_item_battery,
 			rarity: ItemRarity.Common,
-			stack_size: 10,
+			stack_size: 50,
 			is_sellable: true,
-			sell_value: 100
+			sell_value: 20
 		}),
 		create_item(
 		{
@@ -106,9 +106,9 @@ function get_item(item_id)
 			description: "-",
 			sprite: spr_item_dragon_egg,
 			rarity: ItemRarity.Rare,
-			stack_size: 1,
+			stack_size: 10,
 			is_sellable: true,
-			sell_value: 100
+			sell_value: 300
 		}),
 		create_item(
 		{
@@ -120,50 +120,50 @@ function get_item(item_id)
 			rarity: ItemRarity.VeryRare,
 			stack_size: 10,
 			is_sellable: true,
-			sell_value: 1000
+			sell_value: 2000
 		}),
 		create_item(
 		{
 			iid: ItemId.GoldRock,
 			name: "Gold Nugget",
 			type: ItemType.Misc,
-			description: "0.01% chance of finding",
+			description: "Extremely valuable gold rock..",
 			sprite: spr_item_gold_rock,
-			rarity: ItemRarity.UltraRare,
+			rarity: ItemRarity.Legendary,
 			stack_size: 10,
 			is_sellable: true,
-			sell_value: 1000
+			sell_value: 10000
 		}),
 		create_item(
 		{
 			iid: ItemId.Orb,
 			name: "Orb",
 			type: ItemType.Misc,
-			description: "-",
+			description: "Orb used to find hidden maps.",
 			sprite: spr_item_orb,
 			rarity: ItemRarity.UltraRare,
 			stack_size: 10,
 			is_sellable: true,
-			sell_value: 1000
+			sell_value: 1500
 		}),
 		create_item(
 		{
 			iid: ItemId.RevivePotion,
 			name: "Revive Potion",
 			type: ItemType.Misc,
-			description: "Revive and lose no coins or EXP",
+			description: "Revive and lose no coins or EXP.",
 			sprite: spr_item_revive_potion,
-			rarity: ItemRarity.Rare,
-			stack_size: 10,
+			rarity: ItemRarity.Common,
+			stack_size: 1,
 			is_sellable: true,
-			sell_value: 1000
+			sell_value: 200
 		}),
 		create_item(
 		{
 			iid: ItemId.Ruby,
 			name: "Ruby",
 			type: ItemType.Misc,
-			description: "-",
+			description: "A valuable rare ruby gem.",
 			sprite: spr_item_ruby,
 			rarity: ItemRarity.VeryRare,
 			stack_size: 10,
