@@ -5,6 +5,8 @@ scrollTop = 0
 scrollBottom = 0
 tapped_in_region = false
 
+scroll_disabled = false
+
 // defaults
 
 // draggable on-screen region
