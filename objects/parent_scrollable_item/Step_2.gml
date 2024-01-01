@@ -1,4 +1,4 @@
 
-if !instance_exists(scrollable_controller) { instance_destroy() }
+if !instance_exists(scrollable_controller) { instance_destroy(); exit }
 
 y = ystart+scrollable_controller.scrollY

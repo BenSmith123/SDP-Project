@@ -16,7 +16,7 @@ user feedback
 
 
 
-
+- Configurable partcile fx - epic mode?
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
 Shop!

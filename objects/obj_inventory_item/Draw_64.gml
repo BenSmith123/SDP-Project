@@ -9,7 +9,7 @@
 //is_sellable: true,
 //sell_value: 100
 
-var is_selected = inventory_index == obj_inventory.selected_item_inv_index
+var is_selected = inventory_index == obj_dialog_inventory.selected_item_inv_index
 
 if is_selected || position_meeting(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),self)
 {

@@ -1,5 +1,10 @@
 
-scrollBottom = scrollable_height/2 + scrollY
+// center the controller
+x = xstart - region_width/2
+
+
+scrollBottom = scrollable_height + scrollY
+//scrollBottom = scrollY
 
 scrollY += dragData;
 dragData *= 0.9;

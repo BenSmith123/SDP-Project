@@ -12,7 +12,7 @@ function inventory_remove_by_index(inventory_index, amount_to_remove)
 	
 	if amount_in_inventory == 1 || amount_in_inventory == amount_to_remove
 	{
-		if instance_exists(obj_inventory) { obj_inventory.deselect_item() }
+		if instance_exists(obj_dialog_inventory) { obj_dialog_inventory.deselect_item() }
 		array_delete(global.inventory_array, inventory_index, 1)
 	}
 	else
@@ -110,10 +110,10 @@ function get_item_log_message(name, amount = 1)
 function update_inventory_if_open()
 {
 	// if inventory is open, force update it
-	if instance_exists(obj_inventory)
+	if instance_exists(obj_dialog_inventory)
 	{
 		instance_destroy(obj_inventory_item)
-		with(obj_inventory) { create_inventory_items() }
+		with(obj_dialog_inventory) { create_inventory_items() }
 	}
 }
 
@@ -126,7 +126,6 @@ function create_inventory_items()
 	var item_x = slot_x_start
 	var item_y = slot_y_start
 		
-	// check if item can be put on an existing stack
 	for (var i = 0; i < num_of_items; i++) 
 	{
 		item_x += slot_gap

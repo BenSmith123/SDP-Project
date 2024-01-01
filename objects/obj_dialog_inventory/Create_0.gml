@@ -34,8 +34,8 @@ create_drop_item_buttons = function(inv_item_index, item_details)
 	selected_item_amount = global.inventory_array[selected_item_inv_index][1]
 	
 	// drop item buttons
-	var xx = obj_inventory.dialog_center_x + obj_inventory.inventory_width/4
-	var yy = obj_inventory.inventory_y+300
+	var xx = obj_dialog_inventory.dialog_center_x + obj_dialog_inventory.inventory_width/4
+	var yy = obj_dialog_inventory.inventory_y+300
 
 	button_obj_drop_item = instance_create(xx, yy, obj_dialog_button_generic)
 	button_obj_drop_item.text = "Drop item"

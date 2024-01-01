@@ -1,5 +1,10 @@
 
-/*** FOR DEBUGGING SCROLL REGION
+var yy = (scrollY/-scrollBottom) * 200 // 200% for some reason..
+draw_sprite(spr_scroll_bar, 0, x+region_width+16, ystart+yy)
+
+// FOR DEBUGGING SCROLL REGION
+
+/*
 draw_set_alpha(0.5)
 draw_rectangle(x,y, x+region_width, y+region_height, false)
 

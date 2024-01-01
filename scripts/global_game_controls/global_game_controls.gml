@@ -7,6 +7,7 @@ function global_game_controls()
 	// TEMP DEBUG
 	if keyboard_check_pressed(ord("E"))
 	{
+		//global.inventory_array = [[0, 4], [1, 2], [2, 20],  [3, 8],  [4, 1],  [5, 8], [6, 1], [7, 1], [8, 1], [9, 1]]
 		test_player_skill()
 		//log_player_message("Testing message - 4573")
 		//room_goto(room1)

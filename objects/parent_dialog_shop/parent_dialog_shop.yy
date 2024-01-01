@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_shop_item",
-  "eventList": [],
+  "name": "parent_dialog_shop",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/Dialog.yy",
   },
   "parentObjectId": {
-    "name": "parent_scrollable_item",
-    "path": "objects/parent_scrollable_item/parent_scrollable_item.yy",
+    "name": "parent_dialog",
+    "path": "objects/parent_dialog/parent_dialog.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_btn",
-    "path": "sprites/spr_btn/spr_btn.yy",
+    "name": "spr_hud_inventory",
+    "path": "sprites/spr_hud_inventory/spr_hud_inventory.yy",
   },
   "spriteMaskId": null,
   "visible": true,

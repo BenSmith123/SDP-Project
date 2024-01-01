@@ -3,11 +3,6 @@ event_inherited()
 
 title = $"{global.name}'s stats"
 
-// TEMP
-var a = instance_create(dialog_x_left+44, dialog_y_top+112, obj_scrollable_region_controller)
-a.max_scroll_height = dialog_y_top + dialog_height
-
-
 var button_left_x = dialog_center_x + 70
 var button_right_x = dialog_center_x + 220
 
