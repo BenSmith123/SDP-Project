@@ -55,24 +55,27 @@ function get_current_map_index()
 ///@description - set all block sprite_index's based on room
 function set_room_block_sprite()
 {
+	
 	var spr = 0
 
 	switch (room) {
 	    case room_test:
 	        spr = spr_block_grey
-	        break;
+	        break
 			
 		case room_metal:
 	        spr = spr_block_metal
-	        break;
+	        break
 			
 		case room_cave_small:
+		case room_snow:
 		case room_cave_large:
 		case room_plains:
 		case room_dark_forest:
 	        spr = spr_block_ground
-	        break;
+	        break
 			
+		// dont use default - some blocks aren't 24x24
 	}
 	
 	if spr == 0 { exit }

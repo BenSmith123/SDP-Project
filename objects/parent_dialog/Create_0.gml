@@ -21,10 +21,10 @@ var dialog_width_quarter = dialog_width / 4
 
 
 dialog_center_x = global.screen_w / 2
-dialog_y_top = global.dialog_y_pos // y position from the TOP
+
 dialog_x_left = dialog_center_x - dialog_width_half // left side x position
 dialog_x_right = dialog_center_x + dialog_width_half // right x position
-
+dialog_y_top = global.dialog_y_pos // y position from the TOP
 dialog_x_center_left = dialog_center_x - dialog_width_quarter
 dialog_x_center_right = dialog_center_x + dialog_width_quarter
 

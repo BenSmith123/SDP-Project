@@ -2,6 +2,7 @@
 if !scroll_disabled
 {
 	var yy = (scrollY/-scrollBottom) * 200 // 200% for some reason..
+	//var vv = min(ystart+yy, region_height)
 	draw_sprite(spr_scroll_bar, 0, x+region_width+16, ystart+yy)
 }
 

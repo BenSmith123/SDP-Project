@@ -4,7 +4,8 @@ TO DO
 --------------------
 
 
-
+go menu-less
+apply filter in code instead - for snow map?
 
 inventory & shop HUD graphics
 test on ipad

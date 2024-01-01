@@ -7,9 +7,33 @@ function global_game_controls()
 	// TEMP DEBUG
 	if keyboard_check_pressed(ord("E"))
 	{
-		var full_inventory = [[0, 4], [1, 2], [2, 20],  [3, 8],  [4, 1],  [5, 8], [6, 1], [7, 1], [8, 1], [9, 1]]
 		
-		global.inventory_array = choose([[0, 4]], full_inventory)
+ //room_goto(room_snow)
+
+		
+//		var _fx_tint = fx_create("_filter_tintfilter");
+//fx_set_parameter(_fx_tint, "g_TintCol", [1, 0, 0, 1]);
+
+////fx_set_single_layer(_fx_tint, true)
+//layer_set_fx("Blocks", _fx_tint);
+
+	//var layer_fx = layer_get_fx("Blocks");
+
+	//    if (layer_fx != -1)
+	//    {
+	//        if (fx_get_name(layer_fx) == "_filter_tintfilter")
+	//        {   
+	//			fx_set_single_layer(layer_fx, true)
+	//            fx_set_parameter(layer_fx, "g_TintCol", [0, 0, 1, 1]);
+	//        }
+	//    }
+		
+		// room_goto(room_snow)
+		
+		//var full_inventory = [[0, 4], [1, 2], [2, 20],  [3, 8],  [4, 1],  [5, 8], [6, 1], [7, 1], [8, 1], [9, 1]]
+		//global.inventory_array = choose([[0, 4]], full_inventory)
+		//global.inventory_array = full_inventory
+
 		
 		test_player_skill()
 		//log_player_message("Testing message - 4573")

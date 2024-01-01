@@ -1,6 +1,4 @@
 
-event_inherited()
-
 // scrollable creator
 scrollable_controller = 0
 

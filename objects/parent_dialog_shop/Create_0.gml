@@ -1,17 +1,19 @@
 
 dialog_width = 960
-dialog_height = 520
+dialog_height = 560
 
 event_inherited()
 
 
 title = "Shop"
 
-scroll_region_item_obj = instance_create(dialog_x_center_right, dialog_y_top+112, obj_scrollable_region_controller)
+scroll_region_item_obj = instance_create(dialog_x_center_right, dialog_y_top+132, obj_scrollable_region_controller)
 scroll_region_item_obj.region_height = 400
 
+instance_create(x, y, obj_coin_display)
+
 item_gap = 68
-item_start_y = dialog_y_top+112 + item_gap/2
+item_start_y = dialog_y_top+132 + item_gap/2
 
 create_inventory_shop_items = function() 
 {

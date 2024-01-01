@@ -1,24 +1,23 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_scrollable_region_controller",
+  "name": "obj_shop_button_sell_item",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":67,"eventType":13,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":68,"eventType":13,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":66,"eventType":13,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Shared",
-    "path": "folders/Objects/Dialog/Shared.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/Dialog.yy",
   },
   "parentObjectId": {
-    "name": "parent_dialog_component",
-    "path": "objects/parent_dialog_component/parent_dialog_component.yy",
+    "name": "parent_gui_pressable",
+    "path": "objects/parent_gui_pressable/parent_gui_pressable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -35,7 +34,13 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
-  "spriteMaskId": null,
+  "spriteId": {
+    "name": "spr_button_bg_1",
+    "path": "sprites/spr_button_bg_1/spr_button_bg_1.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_button_bg_1",
+    "path": "sprites/spr_button_bg_1/spr_button_bg_1.yy",
+  },
   "visible": true,
 }
