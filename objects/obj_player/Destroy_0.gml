@@ -8,6 +8,8 @@ global.coins = 0
 global.current_map_name = global.respawn_map_name
 global.current_player_x = -1
 
+global.hp_last = global.max_hp // max hp for next spawn
+
 var dead_body = instance_create(x,y,obj_player_dead)
 dead_body.friction = friction
 dead_body.hspeed = hspeed
