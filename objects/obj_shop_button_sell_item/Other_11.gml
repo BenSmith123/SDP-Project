@@ -4,7 +4,7 @@
 // if item hasn't been scrolled
 if y_when_pressed == y
 {
-	if image_alpha > 0.8 // if item isn't scrolled out of view
+	if image_alpha > 0.75 // if item isn't scrolled out of view
 	{
 		inventory_remove_by_index(attached_item_obj.inventory_index, 1)
 		attached_item_obj.amount -= 1

@@ -11,6 +11,6 @@ instance_create(x,y,obj_pause_button)
 // create on screen buttons for mobile
 if (global.system == SystemType.Mobile)
 {
-	create_mobile_controls()
+	create_mobile_virtual_keys()
 }
 

@@ -37,7 +37,6 @@ Shop!
 - ^ Better fonts?
 - Stats!
 - Grapple gun / teleport
-- User decides what stats to increase as they level
 - Graphics
 	- Tilesets work
 - Skill - spawn mob on your side

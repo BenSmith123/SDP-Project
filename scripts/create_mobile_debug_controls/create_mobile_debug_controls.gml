@@ -17,8 +17,46 @@ function create_mobile_debug_controls()
 			action: function() { reset_game() }
 		},
 		{
+			text: "< Previous Map",
+			action: function() { move_to_map(true) }
+		},
+		{
+			text: "Next Map >",
+			action: function() { move_to_map() }
+		},
+		{
 			text: "Level up",
 			action: function() { with (obj_player) { level_up() } }
+		},
+		{
+			text: "Test haptics",
+			action: function() 
+			{
+				var duration = choose(5, 300)
+				var strength = choose(10, 255)
+				Vibrate(duration, strength) // TODO - replace with script
+				global.name = ($"{duration} | {strength}")
+			}
+		},
+
+		{
+			text: "Debugging mode",
+			action: function() { global.show_debug = !global.show_debug }
+		},
+		{
+			text: "Display settings",
+			action: function() { debug_show_screen_info() }
+		},
+		{
+			text: "Reset display",
+			action: function() 
+			{
+				with (obj_player)
+				{
+					set_screen_resolution()
+					initialise_display()
+				}
+			}
 		},
 		{
 			text: "Change name",
@@ -41,39 +79,17 @@ function create_mobile_debug_controls()
 			}
 		},
 		{
-			text: "Test haptics",
+			text: "Random inventory",
 			action: function() 
-			{
-				var duration = choose(5, 300)
-				var strength = choose(10, 255)
-				Vibrate(duration, strength) // TODO - replace with script
-				global.name = ($"{duration} | {strength}")
-			}
-		},
-		{
-			text: "< Previous Map",
-			action: function() { move_to_map(true) }
-		},
-		{
-			text: "Next Map >",
-			action: function() { move_to_map() }
-		},
-		{
-			text: "Debugging mode",
-			action: function() { global.show_debug = !global.show_debug }
-		},
-		{
-			text: "Display settings",
-			action: function() { debug_show_screen_info() }
-		},
-		{
-			text: "Reset display",
-			action: function() 
-			{
+			{ 
 				with (obj_player)
 				{
-					set_screen_resolution()
-					initialise_display()
+					var full_inventory = [[0, 4], [1, 2], [2, 20],  [3, 8],  [4, 1],  [5, 8], [6, 1], [7, 1], [8, 1], [9, 1]]
+					
+					var full = choose(true, false)
+					global.inventory_array = full ? [[5, 4]] : full_inventory
+					
+					log_player_message(full ? "FULL INVENTORY" : "1 ITEM")
 				}
 			}
 		}

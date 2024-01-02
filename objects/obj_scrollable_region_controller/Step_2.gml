@@ -4,7 +4,7 @@ x = xstart - region_width/2
 
 scroll_disabled = scrollable_height < region_height
 
-scrollBottom = scrollable_height + scrollY
+scrollBottom = scrollable_height + scrollY// - ystart
 
 scrollY += round(dragData);
 dragData *= 0.9;

@@ -1,9 +1,9 @@
-function create_mobile_controls()
+function create_mobile_virtual_keys()
 {
 
 	// left and right
-	global.vk_left_x = 40
-	global.vk_right_x = 260
+	global.vk_left_x = 60
+	global.vk_right_x = 220
     
 	global.vk_jump_x = WIDTH-280 // jump
 	global.vk_jump_down_x = WIDTH-140

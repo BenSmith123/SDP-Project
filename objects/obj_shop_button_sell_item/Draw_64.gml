@@ -13,13 +13,11 @@ image_yscale = round(height /  sprite_get_height(sprite_index))
 
 scr_text_4()
 draw_set_font(font_arial_12_bold)
+
 draw_set_alpha(image_alpha)
 
 draw_self()
 
 draw_text(x, y, string_hash_to_newline($"Sell#(${attached_item_obj.item_details.sell_value})"))
-
-draw_text(x, y+40, attached_item_obj.inventory_index)
-
 
 draw_set_alpha(1)

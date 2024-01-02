@@ -12,6 +12,10 @@
 
 friction = 0.1
 
+// automatically show when debugging is on
+show_main_variables = global.show_debug
+show_xy_meeting = global.show_debug
+
 // IN-GAME
 enemy = obj_player // nearest enemy
 image_xscale = choose(-1,1) // which way to start walking

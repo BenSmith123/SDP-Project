@@ -35,9 +35,11 @@ function debug_show_screen_info()
 	global.name = string(global.screen_w) + "x" + string(global.screen_h)
 
 	var system = global.system == SystemType.Desktop ? "Desktop" : "Mobile"
+	
+	var os = os_type == os_android ? "Android" : "iOS"
 
 	var text = $"System: {system}#"
-	text += $"Android: {os_type == os_android}#"
+	text += $"OS: {os}#"
 	text += $"Window res: {window_get_width()}x{window_get_height()}#"
 	text += $"Display res: {display_get_width()}x{display_get_height()}#"
 	text += $"Screen width: {global.screen_w}#"

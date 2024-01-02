@@ -1,5 +1,6 @@
 
 depth = ObjectDepth.HUD-50
+image_speed = 0
 
 y_when_pressed = 0 // check if y hasn't changed between when pressed and released
 
