@@ -4,9 +4,13 @@ if global.coins != displayed_coins && add_coins_timer_set == false
 	add_coins_timer_set = true
 }
 
-
-
-var coin_text = $"${round(displayed_coins)}"
+scr_text_2()
+var coin_text = $"${number_format_commas(round(displayed_coins))}"
 var coin_spr_width = string_width(coin_text) + 19
-draw_sprite_stretched(spr_coin_hud,0,x+66,72, coin_spr_width, 28)
-draw_text_colour(75,87, coin_text, c_yellow, c_yellow, #f5d442, #f5d442, image_alpha)
+var coin_spr_height = string_height(coin_text) + 12
+
+var spr_center_x = x-coin_spr_width/2
+var spr_center_y = y-coin_spr_height/2
+
+draw_sprite_stretched(spr_coin_hud,0,spr_center_x,spr_center_y, coin_spr_width, coin_spr_height)
+draw_text_colour(x,y, coin_text, c_yellow, c_yellow, #f5d442, #f5d442, image_alpha)

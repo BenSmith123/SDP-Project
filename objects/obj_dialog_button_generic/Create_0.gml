@@ -14,3 +14,4 @@ width = 160
 height = 32
 text_colour = c_white
 disabled = false
+use_fixed_size = false

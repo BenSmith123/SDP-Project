@@ -3,6 +3,7 @@ event_inherited()
 
 width = 32
 height = 32
+use_fixed_size = true
 
 disabled = false
 

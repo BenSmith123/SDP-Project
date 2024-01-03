@@ -18,6 +18,6 @@ draw_set_alpha(image_alpha)
 
 draw_self()
 
-draw_text(x, y, string_hash_to_newline($"Sell#(${attached_item_obj.item_details.sell_value})"))
+draw_text(x, y, string_hash_to_newline($"Sell#(${number_format_commas(attached_item_obj.item_details.sell_value)})"))
 
 draw_set_alpha(1)

@@ -1,2 +1,5 @@
-///@description pressed_function
-pressed_function()
+
+if !disabled 
+{
+	image_index = 2
+}

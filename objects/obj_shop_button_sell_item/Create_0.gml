@@ -6,7 +6,7 @@ y_when_pressed = 0 // check if y hasn't changed between when pressed and release
 
 attached_item_obj = 0 // set by creator
 
-width = 72
+width = 80
 height = 48
 
 shuffle_index = function(deleted_item_index)

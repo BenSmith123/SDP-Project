@@ -13,7 +13,8 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4e6a049a-f353-4433-b115-d0088c75d326",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e774dc68-b1eb-49c3-a210-5d1d7ec8ef7d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"78ed0f60-b00e-42b3-923c-15a585fdc96a",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +44,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 2.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -54,7 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4e6a049a-f353-4433-b115-d0088c75d326","path":"sprites/spr_dialog_close_button/spr_dialog_close_button.yy",},},},"Disabled":false,"id":"8c77d127-643e-4cec-8b30-ca486e64700e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e774dc68-b1eb-49c3-a210-5d1d7ec8ef7d","path":"sprites/spr_dialog_close_button/spr_dialog_close_button.yy",},},},"Disabled":false,"id":"c1af5b73-3e2c-45c7-a0cc-8c02cf2b987c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"78ed0f60-b00e-42b3-923c-15a585fdc96a","path":"sprites/spr_dialog_close_button/spr_dialog_close_button.yy",},},},"Disabled":false,"id":"95933efa-3e05-4541-87d3-1ad55dc8f00b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e047bf66-e25b-4810-9744-97d45405e37d",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7409e1a4-236e-4cd5-9ee2-a42fe788465a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ed35103f-37d5-4cb1-9517-9c7e7df3ea07",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -67,7 +68,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -80,6 +81,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e047bf66-e25b-4810-9744-97d45405e37d","path":"sprites/spr_button_bg_2/spr_button_bg_2.yy",},},},"Disabled":false,"id":"9dfbebc7-8bff-41b3-9fa0-748daac28ce2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7409e1a4-236e-4cd5-9ee2-a42fe788465a","path":"sprites/spr_button_bg_2/spr_button_bg_2.yy",},},},"Disabled":false,"id":"ee523456-fe59-4366-b641-b740e2fe7534","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ed35103f-37d5-4cb1-9517-9c7e7df3ea07","path":"sprites/spr_button_bg_2/spr_button_bg_2.yy",},},},"Disabled":false,"id":"a27881c0-4ba6-4c26-ae17-31f2360852bd","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

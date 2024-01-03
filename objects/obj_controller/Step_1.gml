@@ -1,3 +1,5 @@
+// handle global tapping for all HUD/dialog buttons
+
 var _max_devices = 3 // max 5?
 
 for (var i = 0; i < _max_devices; i++)

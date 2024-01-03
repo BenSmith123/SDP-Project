@@ -1,6 +1,8 @@
 
 //if disabled { exit }
 
+image_index = 0
+
 // if item hasn't been scrolled
 if y_when_pressed == y
 {
