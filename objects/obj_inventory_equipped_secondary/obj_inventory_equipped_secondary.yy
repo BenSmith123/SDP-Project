@@ -1,11 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_inventory_item",
+  "name": "obj_inventory_equipped_secondary",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -14,8 +12,8 @@
     "path": "folders/Objects/Dialog/Inventory.yy",
   },
   "parentObjectId": {
-    "name": "parent_dialog_component",
-    "path": "objects/parent_dialog_component/parent_dialog_component.yy",
+    "name": "parent_inventory_equipped",
+    "path": "objects/parent_inventory_equipped/parent_inventory_equipped.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

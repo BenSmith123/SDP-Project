@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprite66",
-    "path": "sprites/sprite66/sprite66.yy",
+    "name": "spr_item_beginners_sword",
+    "path": "sprites/spr_item_beginners_sword/spr_item_beginners_sword.yy",
   },
   "spriteMaskId": null,
   "visible": true,

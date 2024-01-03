@@ -19,13 +19,11 @@ function inventory_remove_by_index(inventory_index, amount_to_remove)
 	{
 		global.inventory_array[inventory_index][1] -= 1
 	}
-	
-	update_inventory_if_open()
 }
 
 
 ///@description
-///@param {Real} item_details
+///@param {Struct} item_details
 ///@param {Real} amount - default = 1
 ///@returns {Bool} - returns true if successful
 function inventory_add(item_details, amount = 1)

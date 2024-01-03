@@ -57,8 +57,17 @@ function initialise_stored_globals()
 	
 	// inventory
 	global.inventory_size = 21
-	global.inventory_array = []//array_create(global.inventory_size, noone) // TODO - 10
+	global.inventory_array = []
 	// array items: ["itemId", amount]
+	
+	// equips - TODO save these equip vars
+	global.equip_item_id_primary = ItemId.BeginnersSword // sword, bow
+	global.equip_item_id_secondary = 0 // throwing star, arrow, shield
+	
+	// icon
+	// type: primary/secondary? - not yet needed
+	// class
+	
 	
 	// game
 	global.current_map_name = "room_test"

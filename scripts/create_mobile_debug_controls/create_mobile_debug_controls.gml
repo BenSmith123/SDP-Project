@@ -84,7 +84,7 @@ function create_mobile_debug_controls()
 			{ 
 				with (obj_player)
 				{
-					var full_inventory = [[0, 4], [1, 2], [2, 20],  [3, 8],  [4, 1],  [5, 8], [6, 1], [7, 1], [8, 1], [9, 1]]
+					var full_inventory = [[ItemId.BasicSword, 1], [0, 4], [1, 2], [2, 20],  [3, 8],  [4, 1],  [5, 8], [6, 1], [7, 1], [8, 1], [9, 1]]
 					var full = choose(true, false)
 					global.inventory_array = full ? full_inventory :  [[5, 4]]
 					log_player_message(full ? "FULL INVENTORY" : "1 ITEM")

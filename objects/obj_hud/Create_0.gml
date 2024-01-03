@@ -13,4 +13,3 @@ if (global.system == SystemType.Mobile)
 {
 	create_mobile_virtual_keys()
 }
-

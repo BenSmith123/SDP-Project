@@ -28,6 +28,7 @@ scr_text_3()
 draw_text_colour(88,33,global.name +"       ("+global.class+")", c1, c2, c3, c4, image_alpha)
 
 
+
 // EXP number
 draw_text_colour(88,58,string(global.experience)+"/"+string(global.max_exp), c1, c2, c3, c4, image_alpha)
 

@@ -3,6 +3,7 @@ var text_padding_px = 12
 
 // force button width to grow if text is longer than the width
 scr_text_2()
+draw_set_font(font)
 
 if !use_fixed_size
 {

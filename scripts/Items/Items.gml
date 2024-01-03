@@ -5,6 +5,12 @@ enum ItemType
 	Usable,
 	Misc
 }
+
+enum ItemSlot
+{
+	Primary,
+	Secondary
+}
 	
 enum ItemRarity
 {
@@ -29,7 +35,14 @@ enum ItemId
 	GoldPlate,
 	GoldRock,
 	Orb,
-	RevivePotion
+	RevivePotion,
+	// equips
+	BeginnersSword,
+	BasicSword,
+	BasicShuriken,
+	BasicBow,
+	BasicArrow,
+	// spellcasters book/orb?
 }
 
 
@@ -169,6 +182,39 @@ function get_item(item_id)
 			stack_size: 10,
 			is_sellable: true,
 			sell_value: 1000
+		}),
+		create_item_equip(
+		{
+			iid: ItemId.BeginnersSword,
+			name: "Beginner's Sword",
+			description: "",
+			equip_slot: ItemSlot.Primary,
+			sprite: spr_item_beginners_sword,
+			rarity: ItemRarity.Common,
+			is_sellable: true,
+			sell_value: 1000
+		}),
+		create_item_equip(
+		{
+			iid: ItemId.BasicSword,
+			name: "Basic Sword",
+			description: "",
+			equip_slot: ItemSlot.Primary,
+			sprite: spr_carry_sword,
+			rarity: ItemRarity.Common,
+			is_sellable: true,
+			sell_value: 1000
+		}),
+		create_item_equip(
+		{
+			iid: ItemId.BasicBow,
+			name: "Basic Bow",
+			description: "",
+			equip_slot: ItemSlot.Primary,
+			sprite: spr_carry_bow,
+			rarity: ItemRarity.Common,
+			is_sellable: true,
+			sell_value: 1000
 		})
 	]
 
@@ -201,6 +247,22 @@ function create_item(item)
 		sell_value: item.sell_value
 	}
 }
+
+// ensure all equip items have the extra vars set
+function create_item_equip(item)
+{
+	// default overrides
+	item.stack_size = 1 // force stack size of 1
+	item.type = ItemType.Equipable
+	
+	var new_item = create_item(item)
+	
+	// additional equip item vars
+	new_item.equip_slot = item.equip_slot
+	
+	return new_item
+}
+
 
 
 ///@description - return the item rarity string (because GM doesn't support enums wtf)

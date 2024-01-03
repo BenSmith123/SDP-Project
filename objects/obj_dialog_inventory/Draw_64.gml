@@ -3,6 +3,9 @@ event_inherited()
 
 draw_sprite_stretched(spr_hud_line_verticle, 0, dialog_center_x, inventory_y+80, 1, inventory_height-100)
 
+scr_text_4()
+draw_text(dialog_x_center_right, inventory_y+70, "Equipped")
+
 // draw the EMPTY grid of slots!
 var slot_x = slot_x_start
 var slot_y = slot_y_start
@@ -26,10 +29,11 @@ for (var i = 0; i < num_of_slots; i++)
 
 
 
-if selected_item_inv_index != -1
+// check if the item_details is not empty (item or equip has been selected)
+if struct_exists(selected_item_details, "name")
 {
 	var details_x = WIDTH/2+16
-	var details_y = 180
+	var details_y = 276
 	
 	draw_sprite(selected_item_details.sprite, 0, details_x+10, details_y+8)
 	scr_text_6()

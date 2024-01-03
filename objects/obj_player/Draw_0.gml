@@ -35,6 +35,13 @@ if item_on_back_sprite != 0
 	}
 }
 
-
 // body
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+
+// temp draw mouse x/y
+if global.show_debug
+{
+	//var mouse_pos = $"{mouse_x}#{mouse_y}"
+	var mouse_pos = $"{device_mouse_x_to_gui(0)}#{device_mouse_y_to_gui(0)}"
+	draw_text(mouse_x+32, mouse_y, string_hash_to_newline(mouse_pos))
+}
