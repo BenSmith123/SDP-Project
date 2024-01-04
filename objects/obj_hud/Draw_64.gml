@@ -34,7 +34,7 @@ draw_text_colour(88,58,string(global.experience)+"/"+string(global.max_exp), c1,
 
 
 // coins
-var coin_text = $"${global.coins}"
+var coin_text = $"${number_format_commas(global.coins)}"
 var coin_spr_width = string_width(coin_text) + 19
 draw_sprite_stretched(spr_coin_hud,0,66,72, coin_spr_width, 28)
 draw_text_colour(75,87, coin_text, c_yellow, c_yellow, #f5d442, #f5d442, image_alpha)

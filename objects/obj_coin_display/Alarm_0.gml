@@ -1,5 +1,5 @@
 
-if displayed_coins < global.coins
+if displayed_coins != global.coins
 {
 	var coin_diff = global.coins - displayed_coins
 	

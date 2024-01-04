@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_shop_inventory_item",
+  "name": "obj_shop_button_sell",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -12,8 +12,8 @@
     "path": "folders/Objects/Dialog/Shop.yy",
   },
   "parentObjectId": {
-    "name": "parent_shop_item",
-    "path": "objects/parent_shop_item/parent_shop_item.yy",
+    "name": "parent_scrollable_shop_button",
+    "path": "objects/parent_scrollable_shop_button/parent_scrollable_shop_button.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,9 +31,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_button_bg_2",
+    "path": "sprites/spr_button_bg_2/spr_button_bg_2.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_button_bg_1",
     "path": "sprites/spr_button_bg_1/spr_button_bg_1.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

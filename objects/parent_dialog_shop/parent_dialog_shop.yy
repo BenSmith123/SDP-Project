@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialog",
-    "path": "folders/Objects/Dialog.yy",
+    "name": "Shop",
+    "path": "folders/Objects/Dialog/Shop.yy",
   },
   "parentObjectId": {
     "name": "parent_dialog",
@@ -31,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_hud_inventory",
-    "path": "sprites/spr_hud_inventory/spr_hud_inventory.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -1,8 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_shop_inventory_item",
+  "name": "parent_shop_item",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
@@ -12,8 +13,8 @@
     "path": "folders/Objects/Dialog/Shop.yy",
   },
   "parentObjectId": {
-    "name": "parent_shop_item",
-    "path": "objects/parent_shop_item/parent_shop_item.yy",
+    "name": "parent_scrollable_item",
+    "path": "objects/parent_scrollable_item/parent_scrollable_item.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_button_bg_1",
-    "path": "sprites/spr_button_bg_1/spr_button_bg_1.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

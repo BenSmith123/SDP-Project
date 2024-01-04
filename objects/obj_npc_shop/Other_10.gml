@@ -1,3 +1,2 @@
 
-// TODO - replace with actual obj
-dialog_obj = instance_create(x,y, parent_dialog_shop)
+dialog_obj = instance_create(x,y, obj_dialog_shop_weapons)

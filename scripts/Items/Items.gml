@@ -215,6 +215,28 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 1000
+		}), 
+		create_item_equip(
+		{
+			iid: ItemId.BasicShuriken,
+			name: "Basic Shuriken",
+			description: "",
+			equip_slot: ItemSlot.Primary,
+			sprite: spr_item_shuriken,
+			rarity: ItemRarity.Common,
+			is_sellable: true,
+			sell_value: 1000
+		}),
+		create_item_equip(
+		{
+			iid: ItemId.BasicArrow,
+			name: "Basic Arrow",
+			description: "",
+			equip_slot: ItemSlot.Secondary,
+			sprite: spr_bullet_4,
+			rarity: ItemRarity.Common,
+			is_sellable: true,
+			sell_value: 10
 		})
 	]
 

@@ -48,8 +48,6 @@ create_drop_item_buttons = function(inv_item_index, item_details)
 	// create equip button
 	if selected_item_details.type = ItemType.Equipable
 	{
-		//console_log(selected_item_details)
-		
 		var dialog_eighth = dialog_width / 8
 		drop_button_x = dialog_center_x + dialog_eighth
 		equip_button = instance_create(dialog_x_right-dialog_eighth, yy-42, obj_dialog_button_generic)

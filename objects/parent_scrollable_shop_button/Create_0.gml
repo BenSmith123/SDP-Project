@@ -8,9 +8,9 @@ attached_item_obj = 0 // set by creator
 
 width = 80
 height = 48
+disabled = false
 
-shuffle_index = function(deleted_item_index)
-{
-	if attached_item_obj.inventory_index > deleted_item_index
-	attached_item_obj.inventory_index -= 1
-}
+// set by child
+on_press_accepted = function(){}
+
+text = ""

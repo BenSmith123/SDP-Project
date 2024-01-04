@@ -18,6 +18,7 @@ draw_set_alpha(image_alpha)
 
 draw_self()
 
-draw_text(x, y, string_hash_to_newline($"Sell#(${number_format_commas(attached_item_obj.item_details.sell_value)})"))
+// text has to be a function call as its not set on create
+draw_text(x, y, string_hash_to_newline(get_text()))
 
 draw_set_alpha(1)

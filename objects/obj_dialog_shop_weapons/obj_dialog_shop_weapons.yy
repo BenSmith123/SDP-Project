@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_shop_inventory_item",
+  "name": "obj_dialog_shop_weapons",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -12,8 +12,8 @@
     "path": "folders/Objects/Dialog/Shop.yy",
   },
   "parentObjectId": {
-    "name": "parent_shop_item",
-    "path": "objects/parent_shop_item/parent_shop_item.yy",
+    "name": "parent_dialog_shop",
+    "path": "objects/parent_dialog_shop/parent_dialog_shop.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_button_bg_1",
-    "path": "sprites/spr_button_bg_1/spr_button_bg_1.yy",
+    "name": "spr_hud_inventory",
+    "path": "sprites/spr_hud_inventory/spr_hud_inventory.yy",
   },
   "spriteMaskId": null,
   "visible": true,
