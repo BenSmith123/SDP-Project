@@ -8,7 +8,8 @@ if !scroll_disabled
 
 
 // FOR DEBUGGING SCROLL REGION
-/*
+if global.show_debug { exit }
+
 draw_set_alpha(0.5)
 draw_rectangle(x,y, x+region_width, y+region_height, false)
 

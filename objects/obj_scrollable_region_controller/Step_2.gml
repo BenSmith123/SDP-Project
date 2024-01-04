@@ -4,7 +4,9 @@ x = xstart - region_width/2
 
 scroll_disabled = scrollable_height < region_height
 
-scrollBottom = scrollable_height + scrollY// - ystart
+if scroll_disabled { exit } // prevent bounce when not many items?
+
+scrollBottom = scrollable_height - region_height// + scrollY// - ystart
 
 scrollY += round(dragData);
 dragData *= 0.9;

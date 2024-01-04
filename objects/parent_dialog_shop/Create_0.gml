@@ -17,7 +17,7 @@ title = "Shop"
 instance_create(dialog_x_center_right, dialog_y_top+80, obj_coin_display)
 
 scrollable_y = dialog_y_top+132
-region_height = 400
+region_height = 367
 
 item_gap = 68
 item_start_y = dialog_y_top+132 + item_gap/2
@@ -40,8 +40,8 @@ create_player_inventory_items = function()
 		var inventory_item_amount = inv_item[1]
 		
 		var item = instance_create_depth(dialog_x_center_right, item_y, ObjectDepth.HUDItem, obj_shop_inventory_item)
-		item.top_y = item_start_y // top to start fading out
-		item.bottom_y = scroll_region_item_obj.y + scroll_region_item_obj.region_height - 100 // fade out bottom
+		item.top_y = item_start_y-20 // top to start fading out
+		item.bottom_y = scroll_region_item_obj.y + scroll_region_item_obj.region_height - 50 // fade out bottom
 		item.scrollable_controller = scroll_region_item_obj
 		item.item_details = get_item(inventory_item_id)
 		item.amount = inv_item[1]
@@ -50,7 +50,7 @@ create_player_inventory_items = function()
 		item_y += item_gap
 	}
 	
-	scroll_region_item_obj.scrollable_height = instance_number(obj_shop_inventory_item) * item_gap + item_gap/2
+	scroll_region_item_obj.scrollable_height = instance_number(obj_shop_inventory_item) * item_gap // + item_gap/2
 }
 
 create_player_inventory_items()
