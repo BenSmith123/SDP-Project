@@ -20,8 +20,8 @@ function save_game()
 	ini_write_string("GAME","current_player_x",global.current_player_x)
 	ini_write_string("GAME","current_player_y",global.current_player_y)
 
-	ini_write_real("STATS","current_kills",global.current_kills)
-	ini_write_real("STATS","kills",global.kills)
+	ini_write_real("STATS","mob_kills_current",global.mob_kills_current)
+	ini_write_real("STATS","mob_kills",global.mob_kills)
 
 	ini_write_string("PLAYER","class",global.class)
 	ini_write_string("PLAYER","name",global.name)

@@ -16,20 +16,9 @@ if global.joystick_enabled { instance_create(x,y,obj_joystick) }
 state = "-" // temporary (testing)
 collision_distance = 5 // for when player is about to hit a block
 
-// ATTRIBUTES
 hp = global.hp_last
-max_hp = global.max_hp
 
-attack = global.attack
-defence = global.defence
-
-accuracy = global.accuracy
-
-jump = global.jump
-walk_speed = global.walk_speed // horizontal movement speed of the character (pixels per sec)
-
-heal_time = global.heal_time // seconds
-heal_amount = global.heal_amount
+update_player_stats() // set all stats
 
 // IN-GAME
 friction = 0.25
@@ -46,8 +35,10 @@ move_direction = "" // for when key or arrow is pressed
 can_be_hit = true // when the player can be hit again after taking damage
 can_be_hit_time = 60 // time in steps (1sec)
 start_speed = global.walk_speed
-has_second_jump_skill = global.is_game_master || global.class == "Ninja"
 has_teleport_skill = global.class == "Spellcaster"
+has_second_jump_skill = (global.is_game_master || global.class == "Ninja") && !has_teleport_skill
+can_teleport_to_point = false // when a block is above and close
+block_to_teleport_to = 0
 second_jump = false // see if its the players second jump
 melee_attack_range = 100
 disable_block_collision = false // used for jumping down through SLOPE blocks

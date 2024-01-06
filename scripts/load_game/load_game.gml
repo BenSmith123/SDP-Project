@@ -46,8 +46,8 @@ function load_game()
 		global.current_player_x = ini_read_real("GAME", "current_player_x", global.current_player_x)
 		global.current_player_y = ini_read_real("GAME", "current_player_y", global.current_player_y)
 
-		global.current_kills = ini_read_real("STATS","current_kills",global.current_kills)
-		global.show_time = ini_read_real("STATS","kills",global.kills)
+		global.mob_kills_current = ini_read_real("STATS","mob_kills_current",global.mob_kills_current)
+		global.mob_kills = ini_read_real("STATS","mob_kills",global.mob_kills)
         
 		global.class = ini_read_string("PLAYER","class",global.class)
 		global.name = ini_read_string("PLAYER","name",global.name)

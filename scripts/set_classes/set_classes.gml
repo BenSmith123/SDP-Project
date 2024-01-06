@@ -29,7 +29,7 @@ function set_classes() {
 	{
 	    attack_sprite = spr_player_attack
 	    melee_attack = false
-	    sprite_projectile = spr_bullet
+	    sprite_projectile = spr_projectile_kunai
 	}
 
 	if global.class = "Spellcaster" 

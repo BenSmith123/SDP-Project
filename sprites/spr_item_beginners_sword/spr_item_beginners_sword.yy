@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_item_beginners_sword",
-  "bbox_bottom": 6,
+  "bbox_bottom": 34,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 26,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,11 +13,11 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1076bef3-920f-49bf-b1db-bf1191f430f3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b4fcd42-4334-493c-922c-8f7d73a4b39d",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 7,
+  "height": 35,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"24319be6-e632-4344-b694-843510e79984","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Equips",
+    "path": "folders/Sprites/Items/Equips.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1076bef3-920f-49bf-b1db-bf1191f430f3","path":"sprites/spr_item_beginners_sword/spr_item_beginners_sword.yy",},},},"Disabled":false,"id":"a1c57bd2-69bf-4124-a9c8-d90d39ae2140","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b4fcd42-4334-493c-922c-8f7d73a4b39d","path":"sprites/spr_item_beginners_sword/spr_item_beginners_sword.yy",},},},"Disabled":false,"id":"7d92a35b-a9e5-4f7a-b18d-77c66da01ca5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 16,
-    "yorigin": 3,
+    "xorigin": 13,
+    "yorigin": 17,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 32,
+  "width": 27,
 }

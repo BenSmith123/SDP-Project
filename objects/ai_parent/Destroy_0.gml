@@ -17,7 +17,8 @@ if animated_death
 // if not killed by player (no reward)
 if soft_kill == true { exit }
 
-global.current_kills += 1
+global.mob_kills += 1
+global.mob_kills_current += 1
 global.experience += experience
 	
 log_player_message($"+{experience} experience")

@@ -99,6 +99,6 @@ function initialise_stored_globals()
 	global.coins_stored = 0
 	
 	// statistics
-	global.current_kills = 0
-	global.kills = 0
+	global.mob_kills_current = 0
+	global.mob_kills = 0
 }

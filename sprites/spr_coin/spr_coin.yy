@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "pickups",
-    "path": "folders/Sprites/pickups.yy",
+    "name": "old pickups",
+    "path": "folders/Sprites/Items/old pickups.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

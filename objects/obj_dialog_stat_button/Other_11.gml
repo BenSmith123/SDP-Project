@@ -14,4 +14,4 @@ else
 	global.stat_points++
 }
 
-
+update_player_stats()

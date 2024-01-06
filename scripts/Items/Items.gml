@@ -42,6 +42,10 @@ enum ItemId
 	BasicShuriken,
 	BasicBow,
 	BasicArrow,
+	Kunai,
+	ThrowingStar1,
+	ThrowingStar2,
+	SnowflakeStar
 	// spellcasters book/orb?
 }
 
@@ -189,7 +193,7 @@ function get_item(item_id)
 			name: "Beginner's Sword",
 			description: "",
 			equip_slot: ItemSlot.Primary,
-			sprite: spr_item_beginners_sword,
+			sprite: spr_item_sword_red,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 1000
@@ -229,11 +233,44 @@ function get_item(item_id)
 		}),
 		create_item_equip(
 		{
-			iid: ItemId.BasicArrow,
-			name: "Basic Arrow",
+			iid: ItemId.Kunai,
+			name: "Kunai Throwing Knife",
 			description: "",
 			equip_slot: ItemSlot.Secondary,
-			sprite: spr_bullet_4,
+			sprite: spr_item_throwing_kunai,
+			rarity: ItemRarity.Common,
+			is_sellable: true,
+			sell_value: 10
+		}),
+		create_item_equip(
+		{
+			iid: ItemId.ThrowingStar1,
+			name: "Bliss Throwing Star",
+			description: "",
+			equip_slot: ItemSlot.Secondary,
+			sprite: spr_item_throwing_star_1,
+			rarity: ItemRarity.Common,
+			is_sellable: true,
+			sell_value: 10
+		}),
+		create_item_equip(
+		{
+			iid: ItemId.SnowflakeStar,
+			name: "Black Snowflake Star",
+			description: "",
+			equip_slot: ItemSlot.Secondary,
+			sprite: spr_item_throwing_star_3,
+			rarity: ItemRarity.Common,
+			is_sellable: true,
+			sell_value: 10
+		}),
+		create_item_equip(
+		{
+			iid: ItemId.ThrowingStar2,
+			name: "Snowflake Throwing Star",
+			description: "",
+			equip_slot: ItemSlot.Secondary,
+			sprite: spr_item_throwing_star_2,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 10

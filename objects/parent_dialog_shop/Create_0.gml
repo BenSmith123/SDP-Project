@@ -50,21 +50,14 @@ create_player_inventory_items = function()
 		item_y += item_gap
 	}
 	
-	scroll_region_item_obj.scrollable_height = instance_number(obj_shop_inventory_item) * item_gap // + item_gap/2
+	scroll_region_item_obj.scrollable_height = instance_number(obj_shop_inventory_item) * item_gap
 }
 
 create_player_inventory_items()
 
 
 // array of all shop items to create
-shop_items = 
-[
-	{
-		type: SellableType.Item,
-		item_id: 0,
-		cost: 1000
-	}
-]
+shop_items = []
 
 
 // called by child once the items have been set
@@ -87,8 +80,8 @@ create_shop_items = function()
 		
 		var item_obj = instance_create_depth(dialog_x_center_left, item_y, ObjectDepth.HUDItem, obj_shop_forsale_item)
 		item_obj.cost = cost
-		item_obj.top_y = item_start_y // top to start fading out
-		item_obj.bottom_y = scroll_region_forsale_obj.y + scroll_region_forsale_obj.region_height - 100 // fade out bottom
+		item_obj.top_y = item_start_y-20 // top to start fading out
+		item_obj.bottom_y = scroll_region_forsale_obj.y + scroll_region_forsale_obj.region_height - 50 // fade out bottom
 		item_obj.scrollable_controller = scroll_region_forsale_obj
 		
 		// TODO - if not sell type is item
@@ -97,5 +90,5 @@ create_shop_items = function()
 		item_y += item_gap
 	}
 	
-	scroll_region_forsale_obj.scrollable_height = instance_number(obj_shop_forsale_item) * item_gap + item_gap/2
+	scroll_region_forsale_obj.scrollable_height = instance_number(obj_shop_forsale_item) * item_gap
 }

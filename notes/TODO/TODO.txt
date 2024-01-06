@@ -4,10 +4,21 @@ TO DO
 --------------------
 
 
-go menu-less
+MVP
+- Shop equips working
+- Rebalance stats
+- Snow map
+- New mobs
+- More gfx
+- Windows/Android build
+
+
+
+
+
+
 apply filter in code instead - for snow map?
 
-inventory & shop HUD graphics
 test on ipad
 
 

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_carry_sword",
-  "bbox_bottom": 31,
+  "bbox_bottom": 34,
   "bbox_left": 0,
-  "bbox_right": 21,
+  "bbox_right": 25,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,11 +13,11 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"067718aa-faca-42f0-aba7-a38f4cfb6001",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"603dbd33-cfc5-4ef1-83d2-b1f1129da8b5",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 32,
+  "height": 35,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2a0337ac-456a-495f-a45d-5ad4ac82d429","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"067718aa-faca-42f0-aba7-a38f4cfb6001","path":"sprites/spr_carry_sword/spr_carry_sword.yy",},},},"Disabled":false,"id":"03ca182f-f971-48aa-9e3f-2fff30cb3bbd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"603dbd33-cfc5-4ef1-83d2-b1f1129da8b5","path":"sprites/spr_carry_sword/spr_carry_sword.yy",},},},"Disabled":false,"id":"dec7f980-caa3-4062-8863-e91c439c4504","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 22,
+  "width": 26,
 }

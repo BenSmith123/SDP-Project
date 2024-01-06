@@ -3,8 +3,8 @@ event_inherited()
 
 title = $"{global.name}'s stats"
 
-var button_left_x = dialog_center_x + 70
-var button_right_x = dialog_center_x + 220
+var button_left_x = dialog_center_x + 90
+var button_right_x = dialog_center_x + 282
 
 var stats_start_y = dialog_y_top+112
 var stat_y = stats_start_y
@@ -25,6 +25,7 @@ var stats =
 	},
 	{
 		global_var_name: "attack",
+		min_value: 1,
 		label: "Attack"
 	},
 	{
@@ -33,6 +34,7 @@ var stats =
 	},
 	{
 		global_var_name: "defence",
+		min_value: 0,
 		label: "Defence"
 	},
 	{
@@ -41,6 +43,7 @@ var stats =
 	},
 	{
 		global_var_name: "accuracy",
+		min_value: 0,
 		label: "Accuracy"
 	},
 	{
@@ -49,8 +52,8 @@ var stats =
 	},
 	{
 		global_var_name: "heal_amount",
-		label: "Heal amount",
-		min_value: 0
+		min_value: 0,
+		label: "Heal amount"
 	},
 	{
 		global_var_name: "heal_amount",
@@ -70,16 +73,22 @@ for (var i = 0; i < array_length(stats); i++)
 	button.text = is_plus_button ? "+" : "-"
 	button.is_plus_button = is_plus_button
 	
+	
 	var stat_button = stats[i]
 
 	button.label = stat_button.label
-	
 	button.global_var_name = stat_button.global_var_name
+	
 	
 	// reset position every second button
 	if is_plus_button
 	{
-		stat_y += 40
+		stat_y += 56
+	}
+	else
+	{
+		// only minus buttons have a min value
+		button.min_value = stat_button.min_value
 	}
 	
 }

@@ -8,7 +8,7 @@ function global_game_controls()
 	if keyboard_check_pressed(ord("E"))
 	{
 		
- //room_goto(room_snow)
+ room_goto(room_snow)
 
 		
 	//		var _fx_tint = fx_create("_filter_tintfilter");

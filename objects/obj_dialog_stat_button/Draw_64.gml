@@ -1,6 +1,7 @@
 
 event_inherited()
 
+// only minus buttons show labels
 scr_text_4()
-
-draw_text(x+72, y, label)
+if label == "" { exit }
+draw_text(x+96, y, $"{label} ({current_glob_value})")
