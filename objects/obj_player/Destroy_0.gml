@@ -21,8 +21,8 @@ dead_body.image_xscale = image_xscale
 // destroy controller obj if its enabled
 if global.joystick_enabled { with (obj_joystick) instance_destroy() }
 
-with arrow_key_parent instance_destroy()
-with obj_hud instance_destroy()
-with obj_heal_text instance_destroy()
+instance_destroy(arrow_key_parent)
+instance_destroy(obj_hud)
+instance_destroy(obj_heal_text)
 
 

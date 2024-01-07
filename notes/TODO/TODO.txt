@@ -5,11 +5,13 @@ TO DO
 
 
 MVP
-- Shop equips working
-- Rebalance stats
+- Equip projectiles working
+- More items in shop
 - Snow map
 - New mobs
 - More gfx
+
+- remove level up button?
 - Windows/Android build
 
 

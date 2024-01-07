@@ -1,4 +1,6 @@
 
+if !instance_exists(obj_player) { exit }
+
 health_colour = get_healthbar_colour(obj_player.hp, obj_player.max_hp)
 
 // if health red, fade in hud warning

@@ -83,6 +83,11 @@ create_drop_item_buttons = function(inv_item_index, item_details)
 				global.equip_item_id_secondary = selected_item_details.iid 
 				obj_inventory_equipped_secondary.item_details = selected_item_details
 			}
+			
+			// global.player_projectile_sprite = selected_item_details.
+			
+			// TODO - handle multiple damage multipliers from all equips rather than just overwrite it each time
+			global.equip_damage_multiplier = selected_item_details.damage_multiplier
 				
 			// remove item being equipped
 			inventory_remove_by_index(selected_item_inv_index, 1)
@@ -94,6 +99,7 @@ create_drop_item_buttons = function(inv_item_index, item_details)
 
 	// single item button
 	button_drop = instance_create(drop_button_x, yy-42, obj_dialog_button_generic)
+	button_drop.sprite_index = spr_button_bg_3
 	button_drop.text = "Drop item"
 	button_drop.font = button_font
 	
@@ -112,6 +118,7 @@ create_drop_item_buttons = function(inv_item_index, item_details)
 	if selected_item_amount <= 1 { exit }
 
 	button_drop_stack = instance_create(drop_button_x, yy, obj_dialog_button_generic)
+	button_drop_stack.sprite_index = spr_button_bg_3
 	button_drop_stack.text = $"Drop stack ({selected_item_amount})"
 	button_drop_stack.font = button_font
 	button_drop_stack.pressed_function = function() 

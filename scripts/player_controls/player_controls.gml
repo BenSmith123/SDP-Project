@@ -19,7 +19,7 @@ function player_controls()
 	
 	if keyboard_check_pressed(ord("I"))
 	{
-		event_perform_object(obj_button_open_inventory, ev_other, ev_user0)
+		event_perform_object(obj_button_open_inventory, ev_other, ev_user1)
 	}
 
 

@@ -58,6 +58,8 @@ function load_game()
 		global.stat_points = ini_read_real("PLAYER","stat_points",global.stat_points)
 		global.max_hp = ini_read_real("PLAYER","max_hp",global.max_hp)
 		global.hp_last = ini_read_real("PLAYER","hp_last",global.hp_last)
+		global.equip_damage_multiplier = ini_read_real("PLAYER","equip_damage_multiplier",global.equip_damage_multiplier)
+
         
 		global.attack = ini_read_real("PLAYER","attack",global.attack)
 		global.defence = ini_read_real("PLAYER","defence",global.defence) 

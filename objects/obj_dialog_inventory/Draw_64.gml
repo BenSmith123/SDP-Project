@@ -40,8 +40,8 @@ if struct_exists(selected_item_details, "name")
 	
 	draw_text(details_x, details_y+32, "Description: " + selected_item_details.description)
 	draw_text(details_x, details_y+60, $"Rarity: {get_item_rarity_name(selected_item_details.rarity)}")
-	draw_text(details_x, details_y+86, "Type: Misc.")	// TODO
-	draw_text(details_x, details_y+112, "Sellable: Yes") // TODO
+	draw_text(details_x, details_y+86, $"Type: ${get_item_type_name(selected_item_details.type)}")
+	draw_text(details_x, details_y+112, "Sellable") // TODO
 
 	// title
 	draw_set_font(font_arial_12_bold)

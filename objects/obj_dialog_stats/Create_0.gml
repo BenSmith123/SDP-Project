@@ -16,7 +16,7 @@ var stats =
 [
 	{
 		global_var_name: "max_hp",
-		min_value: 50,
+		min_value: 30,
 		label: "Health"
 	},
 	{

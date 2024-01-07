@@ -1,5 +1,8 @@
 
 event_inherited()
 
-image_xscale = 2
-image_yscale = 2
+width = 76
+height = 60
+
+label = "Dev control"
+icon_sprite = spr_test

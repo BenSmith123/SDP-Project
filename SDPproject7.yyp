@@ -297,6 +297,7 @@
     {"id":{"name":"scr_ai_meet","path":"scripts/scr_ai_meet/scr_ai_meet.yy",},},
     {"id":{"name":"player_attack","path":"scripts/player_attack/player_attack.yy",},},
     {"id":{"name":"spr_damage_0_blue","path":"sprites/spr_damage_0_blue/spr_damage_0_blue.yy",},},
+    {"id":{"name":"spr_hud_button_bg","path":"sprites/spr_hud_button_bg/spr_hud_button_bg.yy",},},
     {"id":{"name":"deal_damage_to_mob","path":"scripts/deal_damage_to_mob/deal_damage_to_mob.yy",},},
     {"id":{"name":"spr_bg_trees_1","path":"sprites/spr_bg_trees_1/spr_bg_trees_1.yy",},},
     {"id":{"name":"spr_scroll_bar","path":"sprites/spr_scroll_bar/spr_scroll_bar.yy",},},

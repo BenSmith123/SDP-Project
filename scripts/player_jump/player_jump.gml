@@ -1,6 +1,5 @@
 function player_jump()
 {
-	// global.name = is_on_ladder == true ? "yes" : "no"
 
 	var ladder = instance_nearest(x, y, parent_climbable)
 
@@ -33,23 +32,16 @@ function player_jump()
 		second_jump = false
 		exit
 	}
-	else if has_teleport_skill
+	else if keyboard_check_pressed(ord("W")) 
 	{
-		if !keyboard_check_pressed(ord("W")) { exit }
+		// spellcaster teleport
+		if has_teleport_skill { scr_teleport(); exit }
 		
-		scr_teleport()
-	}
-	else if has_second_jump_skill // double jump for ninja
-	{
-		
-		
-
-		if second_jump = false // if hasnt already second jumped
+		if second_jump == false // if hasnt already second jumped
 		{
 		    instance_create(x,y,obj_fx_double_jump)
 		    vel_y = -jump;
 		    second_jump = true
 		}
 	}
-	
 }

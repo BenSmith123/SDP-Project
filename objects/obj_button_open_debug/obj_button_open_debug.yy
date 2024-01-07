@@ -3,7 +3,6 @@
   "resourceVersion": "1.0",
   "name": "obj_button_open_debug",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -33,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_hud_inventory",
-    "path": "sprites/spr_hud_inventory/spr_hud_inventory.yy",
+    "name": "spr_hud_button_bg",
+    "path": "sprites/spr_hud_button_bg/spr_hud_button_bg.yy",
   },
   "spriteMaskId": null,
   "visible": true,

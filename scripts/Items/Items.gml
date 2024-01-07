@@ -187,16 +187,18 @@ function get_item(item_id)
 			is_sellable: true,
 			sell_value: 1000
 		}),
+		// EQUIPS
 		create_item_equip(
 		{
 			iid: ItemId.BeginnersSword,
 			name: "Beginner's Sword",
 			description: "",
 			equip_slot: ItemSlot.Primary,
-			sprite: spr_item_sword_red,
+			sprite: spr_item_beginners_sword,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 1000
+			sell_value: 1000,
+			damage_multiplier: 0
 		}),
 		create_item_equip(
 		{
@@ -207,7 +209,8 @@ function get_item(item_id)
 			sprite: spr_carry_sword,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 1000
+			sell_value: 1000,
+			damage_multiplier: 0
 		}),
 		create_item_equip(
 		{
@@ -218,7 +221,8 @@ function get_item(item_id)
 			sprite: spr_carry_bow,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 1000
+			sell_value: 1000,
+			damage_multiplier: 0
 		}), 
 		create_item_equip(
 		{
@@ -229,51 +233,56 @@ function get_item(item_id)
 			sprite: spr_item_shuriken,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 1000
+			sell_value: 1000,
+			damage_multiplier: 0
 		}),
 		create_item_equip(
 		{
 			iid: ItemId.Kunai,
 			name: "Kunai Throwing Knife",
-			description: "",
-			equip_slot: ItemSlot.Secondary,
+			description: "+2% damage",
+			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_kunai,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 10
+			sell_value: 10,
+			damage_multiplier: 0.02
 		}),
 		create_item_equip(
 		{
 			iid: ItemId.ThrowingStar1,
 			name: "Bliss Throwing Star",
-			description: "",
-			equip_slot: ItemSlot.Secondary,
+			description: "+3% damage",
+			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_1,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 10
+			sell_value: 10,
+			damage_multiplier: 0.03
 		}),
 		create_item_equip(
 		{
 			iid: ItemId.SnowflakeStar,
 			name: "Black Snowflake Star",
-			description: "",
-			equip_slot: ItemSlot.Secondary,
+			description: "+5% damage",
+			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_3,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 10
+			sell_value: 10,
+			damage_multiplier: 0.05
 		}),
 		create_item_equip(
 		{
 			iid: ItemId.ThrowingStar2,
 			name: "Snowflake Throwing Star",
-			description: "",
-			equip_slot: ItemSlot.Secondary,
+			description: "+5% damage",
+			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_2,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 10
+			sell_value: 10,
+			damage_multiplier: 0.05
 		})
 	]
 
@@ -318,13 +327,26 @@ function create_item_equip(item)
 	
 	// additional equip item vars
 	new_item.equip_slot = item.equip_slot
+	new_item.damage_multiplier = item.damage_multiplier
 	
 	return new_item
 }
 
 
+///@description - return the item type string (because GM doesn't support enums wtf)
+function get_item_type_name(type)
+{
+	switch(type)
+	{
+		case ItemType.Equipable: return "Equipable"
+		case ItemType.Usable: return "Usable"
+		case ItemType.Misc: return "Misc."
+		default: return "Misc."
+	}
+}
 
-///@description - return the item rarity string (because GM doesn't support enums wtf)
+
+///@description - return the item rarity string
 function get_item_rarity_name(rarity)
 {
 	switch(rarity)

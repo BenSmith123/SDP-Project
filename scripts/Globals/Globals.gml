@@ -45,7 +45,7 @@ function initialise_globals()
 	global.joystick_enabled = true
 	
 	// FILES
-	var save_file_id = "_200" // change this to force reset a users game save on install
+	var save_file_id = "_300" // change this to force reset a users game save on install
 	global.file_save_encoded_name = "temp" + save_file_id
 	global.file_save_decoded_name = "temp_2" + save_file_id
 }
@@ -83,8 +83,10 @@ function initialise_stored_globals()
 	
 	global.stat_points = 0
 
-	global.max_hp = 50
+	global.max_hp = 30
 	global.hp_last = global.max_hp // last known player HP (not necessarily the current - used for storing between maps or sessions)
+	
+	global.equip_damage_multiplier = 0
 
 	global.attack = 6
 	global.defence = 0
@@ -93,7 +95,7 @@ function initialise_stored_globals()
 	global.walk_speed = 4
 
 	global.heal_time = 7 // seconds
-	global.heal_amount = 10 
+	global.heal_amount = 10
 
 	global.coins = 0
 	global.coins_stored = 0
