@@ -193,6 +193,7 @@ function get_item(item_id)
 			iid: ItemId.BeginnersSword,
 			name: "Beginner's Sword",
 			description: "",
+			class: "Fighter",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_beginners_sword,
 			rarity: ItemRarity.Common,
@@ -205,6 +206,7 @@ function get_item(item_id)
 			iid: ItemId.BasicSword,
 			name: "Basic Sword",
 			description: "",
+			class: "Fighter",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_carry_sword,
 			rarity: ItemRarity.Common,
@@ -217,6 +219,7 @@ function get_item(item_id)
 			iid: ItemId.BasicBow,
 			name: "Basic Bow",
 			description: "",
+			class: "Hunter",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_carry_bow,
 			rarity: ItemRarity.Common,
@@ -229,6 +232,7 @@ function get_item(item_id)
 			iid: ItemId.BasicShuriken,
 			name: "Basic Shuriken",
 			description: "",
+			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_shuriken,
 			rarity: ItemRarity.Common,
@@ -241,6 +245,7 @@ function get_item(item_id)
 			iid: ItemId.Kunai,
 			name: "Kunai Throwing Knife",
 			description: "+2% damage",
+			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_kunai,
 			rarity: ItemRarity.Common,
@@ -253,6 +258,7 @@ function get_item(item_id)
 			iid: ItemId.ThrowingStar1,
 			name: "Bliss Throwing Star",
 			description: "+3% damage",
+			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_1,
 			rarity: ItemRarity.Common,
@@ -265,6 +271,7 @@ function get_item(item_id)
 			iid: ItemId.SnowflakeStar,
 			name: "Black Snowflake Star",
 			description: "+5% damage",
+			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_3,
 			rarity: ItemRarity.Common,
@@ -277,6 +284,7 @@ function get_item(item_id)
 			iid: ItemId.ThrowingStar2,
 			name: "Snowflake Throwing Star",
 			description: "+5% damage",
+			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_2,
 			rarity: ItemRarity.Common,
@@ -327,6 +335,7 @@ function create_item_equip(item)
 	
 	// additional equip item vars
 	new_item.equip_slot = item.equip_slot
+	new_item.class = item.class
 	new_item.damage_multiplier = item.damage_multiplier
 	
 	return new_item

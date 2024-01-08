@@ -29,7 +29,14 @@ function set_classes() {
 	{
 	    attack_sprite = spr_player_attack
 	    melee_attack = false
-	    sprite_projectile = spr_projectile_kunai
+	    sprite_projectile = spr_bullet
+		
+		// TODO - apply to other classes
+		if global.equip_item_id_primary != 0
+		{
+			var item = get_item(global.equip_item_id_primary)
+			sprite_projectile = item.sprite // TODO - item sprite should differ from projectile sprite
+		}
 	}
 
 	if global.class = "Spellcaster" 

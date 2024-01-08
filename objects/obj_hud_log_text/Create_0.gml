@@ -1,5 +1,5 @@
 
-depth = ObjectDepth.HUD
+depth = ObjectDepth.HUD-10
 
 y_start_pos = 94 // HEIGHT - 10
 

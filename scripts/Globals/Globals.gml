@@ -60,14 +60,9 @@ function initialise_stored_globals()
 	global.inventory_array = []
 	// array items: ["itemId", amount]
 	
-	// equips - TODO save these equip vars
+	// equips
 	global.equip_item_id_primary = ItemId.BeginnersSword // sword, bow
-	global.equip_item_id_secondary = 0 // throwing star, arrow, shield
-	
-	// icon
-	// type: primary/secondary? - not yet needed
-	// class
-	
+	global.equip_item_id_secondary = -1 // arrow, shield
 	
 	// game
 	global.current_map_name = "room_test"

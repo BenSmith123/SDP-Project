@@ -15,24 +15,9 @@ MVP
 - Windows/Android build
 
 
-
-
-
-
-apply filter in code instead - for snow map?
-
 test on ipad
 
 
-user feedback
-	- Movement buttons too close together
-	- mob spawn rate slightly too fast
-
-
-
-
-
-- player /text outline shader: https://marketplace.gamemaker.io/assets/5888/outline-shader-by-matharoo
 - Configurable partcile fx - epic mode?
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
