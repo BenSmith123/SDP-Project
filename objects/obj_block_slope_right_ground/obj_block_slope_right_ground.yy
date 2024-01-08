@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_ground",
+  "name": "obj_block_slope_right_ground",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -12,8 +12,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_block",
-    "path": "objects/obj_block/obj_block.yy",
+    "name": "obj_block_slope_parent",
+    "path": "objects/obj_block_slope_parent/obj_block_slope_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_ground",
-    "path": "sprites/spr_block_ground/spr_block_ground.yy",
+    "name": "spr_block_br",
+    "path": "sprites/spr_block_br/spr_block_br.yy",
   },
   "spriteMaskId": null,
   "visible": true,

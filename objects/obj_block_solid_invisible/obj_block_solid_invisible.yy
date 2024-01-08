@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_ground",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_block_solid_invisible",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -12,8 +10,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_block",
-    "path": "objects/obj_block/obj_block.yy",
+    "name": "obj_block_solid",
+    "path": "objects/obj_block_solid/obj_block_solid.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -28,12 +26,14 @@
   "physicsShape": 0,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"image_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+  ],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_ground",
-    "path": "sprites/spr_block_ground/spr_block_ground.yy",
+    "name": "spr_block_test_2",
+    "path": "sprites/spr_block_test_2/spr_block_test_2.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

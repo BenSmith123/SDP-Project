@@ -13,6 +13,7 @@ function get_playable_maps_order()
 		room_plains,
 		room_cave_large,
 		room_dark_forest,
+		room_snow,
 		room_metal
 	]
 }
@@ -68,10 +69,8 @@ function set_room_block_sprite()
 	        break
 			
 		case room_cave_small:
-		case room_snow:
 		case room_cave_large:
 		case room_plains:
-		case room_dark_forest:
 	        spr = spr_block_ground
 	        break
 			

@@ -7,10 +7,7 @@ function global_game_controls()
 	// TEMP DEBUG
 	if keyboard_check_pressed(ord("E"))
 	{
-		
-	//room_goto(room_snow)
 
-		
 	//		var _fx_tint = fx_create("_filter_tintfilter");
 	//fx_set_parameter(_fx_tint, "g_TintCol", [1, 0, 0, 1]);
 
