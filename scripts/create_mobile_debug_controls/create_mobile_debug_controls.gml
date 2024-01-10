@@ -2,6 +2,9 @@ function create_mobile_debug_controls()
 {
 	
 	if instance_exists(obj_button_mobile_debug) { instance_destroy(obj_button_mobile_debug); exit }
+	
+	
+
 
 	// NOTE - anonymous functions declared as values of a struct act from the scope of that struct, not the current instance
 	// this will cause crashes when creating instances because the struct has no depth, use 'with' keyword when creating instances
@@ -26,7 +29,10 @@ function create_mobile_debug_controls()
 		},
 		{
 			text: "Level up",
-			action: function() { with (obj_player) { level_up() } }
+			action: function() { 
+				if global.name != "BEN705" { debug_show_no_access(); exit }
+				with (obj_player) { level_up() } 
+			}
 		},
 		{
 			text: "Test haptics",
@@ -70,18 +76,23 @@ function create_mobile_debug_controls()
 		{
 			text: "Change class",
 			action: function() {
-				//global.class = choose("Hunter", "Fighter", "Spellcaster", "Ninja")
-				//room_restart()
+				
+				global.class = choose("Hunter", "Fighter", "Spellcaster", "Ninja")
+				
 				with (obj_player)
 				{
-					instance_create(x,y,obj_pick_class)
+					log_player_message($"Set class: {global.class}")
+					set_classes()
+					// instance_create(x,y,obj_pick_class)
 				}
 			}
 		},
 		{
 			text: "Random inventory",
 			action: function() 
-			{ 
+			{
+				if global.name != "BEN705" { debug_show_no_access(); exit }
+				
 				with (obj_player)
 				{
 					var full_inventory = [[ItemId.BasicSword, 1], [ItemId.BasicBow, 1],[ItemId.BasicShuriken, 1], [0, 4], [1, 2], [2, 20],  [3, 8],  [4, 1],  [5, 8], [6, 1], [7, 1], [8, 1], [9, 1]]
@@ -117,5 +128,15 @@ function create_mobile_debug_controls()
 		
 		y_pos += y_gap
 
+	}
+}
+
+
+// TEMP function
+function debug_show_no_access()
+{
+	with (obj_player)
+	{
+		log_player_message("NO ACCESS")
 	}
 }

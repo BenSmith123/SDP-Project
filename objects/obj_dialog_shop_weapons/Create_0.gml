@@ -6,6 +6,21 @@ title = "Weapons shop"
 shop_items = 
 [
 	{
+		item_id: ItemId.BasicSword,
+		type: SellableType.Item,
+		cost: 50
+	},
+	{
+		item_id: ItemId.BasicShuriken,
+		type: SellableType.Item,
+		cost: 50
+	},
+	{
+		item_id: ItemId.RevivePotion,
+		type: SellableType.Item,
+		cost: 500
+	},
+	{
 		item_id: ItemId.ThrowingStar1,
 		type: SellableType.Item,
 		cost: 1000

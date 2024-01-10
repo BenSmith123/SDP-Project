@@ -1,4 +1,7 @@
 
+
+// depth = ObjectDepth.Clouds // changing the depth will break the filters
+
 sprite_index = choose(spr_cloud_1, spr_cloud_2, spr_cloud_3)
 
 max_y = room_height * 0.6

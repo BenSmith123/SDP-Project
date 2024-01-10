@@ -23,6 +23,7 @@ enum ObjectDepth
 	HUDItem = -10010,
 	HUD = -10000,
 	DamageText = -6000,
+	Clouds = -5900,
 	Effect = -5800,
 	Projectile = -5500,
 	Player = -5000,

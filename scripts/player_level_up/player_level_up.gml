@@ -64,6 +64,7 @@ function level_up_increase_stats()
 	{
 		stat_points = 10
 		max_exp = 100
+		attack = 10
 		defence = 1
 	}
 	
@@ -73,7 +74,7 @@ function level_up_increase_stats()
 		
 		max_exp = 200
 		max_hp = 5
-		attack = 8
+		attack = 15
 		accuracy = 2
 		defence = 2
 	}
@@ -82,7 +83,7 @@ function level_up_increase_stats()
 	{
 		max_exp = 400
 		max_hp = 10
-		attack = 15
+		attack = global.level // ? is this OP
 		defence = 3
 		accuracy = 4
 	}

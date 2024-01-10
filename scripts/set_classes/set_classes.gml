@@ -35,7 +35,11 @@ function set_classes() {
 		if global.equip_item_id_primary != 0
 		{
 			var item = get_item(global.equip_item_id_primary)
-			sprite_projectile = item.sprite // TODO - item sprite should differ from projectile sprite
+			
+			if item.class == global.class
+			{
+				sprite_projectile = item.sprite // TODO - item sprite should differ from projectile sprite
+			}
 		}
 	}
 

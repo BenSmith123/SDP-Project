@@ -71,7 +71,7 @@ function initialise_stored_globals()
 
 	// player attributes
 	global.class = "Beginner"
-	global.name = choose("Ben705", "Hell0_", "Steve007", "Tiger", "xVaderx")
+	global.name = choose("Ben", "_mo_", "zlazz0", "J3tt.0", "Vilz", "Chocolate", "N00B", "tInA")
 	global.level = 1
 	global.experience = 0
 	global.max_exp = 10
