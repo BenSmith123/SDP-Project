@@ -1,0 +1,1 @@
+virtual_key_delete(virtual_key)

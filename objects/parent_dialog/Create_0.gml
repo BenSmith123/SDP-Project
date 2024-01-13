@@ -6,9 +6,10 @@ depth = ObjectDepth.HUD
 instance_deactivate_object(obj_hud)
 instance_deactivate_object(obj_pause_button)
 instance_deactivate_object(parent_hud_button)
-instance_deactivate_object(obj_arrow_key_attack)
-instance_deactivate_object(obj_arrow_key_jump)
-instance_deactivate_object(obj_arrow_key_jump_down)
+
+instance_destroy(obj_arrow_key_attack)
+instance_destroy(obj_arrow_key_jump)
+instance_destroy(obj_arrow_key_jump_down)
 
 
 // children components set this BEFORE the positions are set below

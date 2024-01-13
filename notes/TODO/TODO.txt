@@ -5,19 +5,21 @@ TO DO
 
 
 MVP
+- Jump controls hidden but still usable with dialog open?
+- Mob spawns on your position
+- ^ Make an easier map for noobs or fast level up or weaker mob?
+- Sell sword for $1k but buy for $50?
+- Weapon items dropped from mobs
+
+
 - Equip projectiles working
 - More items in shop
-
-- Snow map
 - New mobs
 - More gfx
 
-- remove level up button?
-- Windows/Android build
 
 
-test on ipad
-
+- Portrait mode
 
 - Configurable partcile fx - epic mode?
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
