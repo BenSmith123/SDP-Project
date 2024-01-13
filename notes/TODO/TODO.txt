@@ -5,7 +5,6 @@ TO DO
 
 
 MVP
-- Jump controls hidden but still usable with dialog open?
 - Mob spawns on your position
 - ^ Make an easier map for noobs or fast level up or weaker mob?
 - Sell sword for $1k but buy for $50?

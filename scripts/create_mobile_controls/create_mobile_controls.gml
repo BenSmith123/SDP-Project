@@ -1,22 +1,29 @@
-function create_mobile_virtual_keys()
-{
 
+function initialise_virtual_key_globals()
+{
 	// left and right
 	global.vk_left_x = 60
 	global.vk_right_x = 220
     
 	global.vk_jump_x = WIDTH-280 // jump
 	global.vk_jump_down_x = WIDTH-140
-
-    
+	
 	global.vk_y = HEIGHT-160 // y for both left and right keys
-	var key_y = global.vk_y
-    
+	
 	// attack 
 	global.vk_attack1_x = WIDTH-150
 	global.vk_attack1_y = HEIGHT-280
 
 	global.vk_size = 140 // size of the virtual key AND sprite
+}
+
+
+function create_mobile_virtual_keys()
+{
+	
+	initialise_virtual_key_globals()
+	
+	var key_y = global.vk_y
 	var key_size = global.vk_size
 
 	// TODO - refactor - have each instance create virtual keys, map to global of player controls
@@ -46,6 +53,8 @@ function create_mobile_virtual_keys()
 
 function create_mobile_virtual_action_keys()
 {
+	initialise_virtual_key_globals()
+	
 	var key_y = global.vk_y
 	var key_size = global.vk_size
 	

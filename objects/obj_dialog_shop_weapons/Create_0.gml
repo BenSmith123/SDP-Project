@@ -8,7 +8,7 @@ shop_items =
 	{
 		item_id: ItemId.BasicSword,
 		type: SellableType.Item,
-		cost: 50
+		cost: 1000
 	},
 	{
 		item_id: ItemId.BasicShuriken,

@@ -198,7 +198,7 @@ function get_item(item_id)
 			sprite: spr_item_beginners_sword,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 1000,
+			sell_value: 500,
 			damage_multiplier: 0
 		}),
 		create_item_equip(
@@ -211,7 +211,7 @@ function get_item(item_id)
 			sprite: spr_carry_sword,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 1000,
+			sell_value: 500,
 			damage_multiplier: 0
 		}),
 		create_item_equip(
