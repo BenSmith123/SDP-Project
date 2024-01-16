@@ -24,7 +24,7 @@ function mob_drop()
 		break
 		
 		case obj_mob_dragon: 
-			mob_drop_item(ItemId.Battery)
+			mob_drop_item(ItemId.DragonEgg)
 			coin_min = 20
 			coin_max = 40
 		break
@@ -39,6 +39,15 @@ function mob_drop()
 	mob_drop_item(ItemId.Orb, 150)
 	mob_drop_item(ItemId.RevivePotion, 300)
 	mob_drop_item(ItemId.Ruby, 100)
+	
+	// equips
+	mob_drop_item(ItemId.BasicSword, 100)
+	mob_drop_item(ItemId.BasicShuriken, 100)
+	mob_drop_item(ItemId.Kunai, 100)
+	mob_drop_item(ItemId.BasicShuriken, 200)
+	mob_drop_item(ItemId.ThrowingStar1, 300)
+	mob_drop_item(ItemId.ThrowingStar2, 300)
+	mob_drop_item(ItemId.SnowflakeStar, 400)
 
 	mob_drop_coins(coin_min, coin_max)
 

@@ -3,26 +3,12 @@
 TO DO
 --------------------
 
-
-0.7.0
-- Mob graphics when stunned
-
-
-
-
-
-- player not spawning in village when killed
-
-
-
 - Make an easier map for noobs or fast level up or weaker mob?
-- Weapon items dropped from mobs
 
 
 - Mob hit graphics? (can tell when mob is stunned)
 
 
-- Equip projectiles working
 - More items in shop
 - Portrait mode?
 - Configurable particle fx - epic mode?
