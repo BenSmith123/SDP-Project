@@ -1,4 +1,5 @@
 /// @description handle sprites
+
 if attacking == true 
 { 
 	sprite_index = sprite_attack
@@ -30,6 +31,15 @@ if attacking == true
 	}
 	exit
 }
+
+
+if stunned 
+{
+	sprite_index = sprite_hit
+	image_index = 0
+	exit
+}
+
 
 if place_empty(x, y+1, obj_block)
 {

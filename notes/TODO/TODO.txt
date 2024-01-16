@@ -4,11 +4,19 @@ TO DO
 --------------------
 
 
+0.7.0
+- Mob graphics when stunned
+
+
+
+
 MVP
 - Mob spawns on your position
 - ^ Make an easier map for noobs or fast level up or weaker mob?
-- Sell sword for $1k but buy for $50?
 - Weapon items dropped from mobs
+
+
+- Mob hit graphics? (can tell when mob is stunned)
 
 
 - Equip projectiles working
@@ -20,7 +28,7 @@ MVP
 
 - Portrait mode
 
-- Configurable partcile fx - epic mode?
+- Configurable particle fx - epic mode?
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
 Shop!
