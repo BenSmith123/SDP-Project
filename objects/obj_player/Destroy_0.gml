@@ -8,6 +8,7 @@ global.mob_kills_current = 0
 // spawn where he died and most likely die again instantly 
 global.current_map_name = global.respawn_map_name
 global.current_player_x = -1
+global.player_is_respawning = true
 
 global.hp_last = global.max_hp // max hp for next spawn
 

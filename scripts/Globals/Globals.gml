@@ -35,6 +35,7 @@ function initialise_globals()
 	global.player_start_x = 0 
 	global.player_start_y = 0
 	global.session_first_spawn = true // spawn player where session ended
+	global.player_is_respawning = false // used to place player at a spawn position after dying
 	global.respawn_map_name = "room_village"
 	global.came_from_left_map = true // determine what side of the map to place character on room start
 	global.inventory_size_max = 42

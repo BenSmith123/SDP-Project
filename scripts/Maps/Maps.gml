@@ -109,4 +109,10 @@ function set_block_defaults(spr)
 		image_index = 4
 		mask_index = spr_block_br
 	}
+	with (obj_block_slope_right_long)
+	{
+		sprite_index = spr_block_ramp_right
+		image_index = 0
+		mask_index = sprite_index
+	}
 }

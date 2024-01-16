@@ -3,6 +3,13 @@ function player_set_start_position()
 	// set where the player first spawns in the room
 	global.player_start_x = x
 	global.player_start_y = y
+	
+	// use room position of obj_player if respawning from being killed
+	if global.player_is_respawning
+	{
+		global.player_is_respawning = false
+		exit
+	}
 
 	// use last known player position if continuing saved game
 	if global.session_first_spawn 

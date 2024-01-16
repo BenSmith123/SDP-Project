@@ -8,7 +8,7 @@ if not instance_exists(obj_player)
     if image_alpha >= 1 
     {
         //instance_create(global.player_start_x,global.player_start_y,obj_player) // spawn player
-		room_goto(room_test)
+		room_goto(asset_get_index(global.respawn_map_name))
         fade_in = true
         exit
     }

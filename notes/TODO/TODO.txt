@@ -10,9 +10,12 @@ TO DO
 
 
 
-MVP
-- Mob spawns on your position
-- ^ Make an easier map for noobs or fast level up or weaker mob?
+
+- player not spawning in village when killed
+
+
+
+- Make an easier map for noobs or fast level up or weaker mob?
 - Weapon items dropped from mobs
 
 
@@ -21,13 +24,7 @@ MVP
 
 - Equip projectiles working
 - More items in shop
-- New mobs
-- More gfx
-
-
-
-- Portrait mode
-
+- Portrait mode?
 - Configurable particle fx - epic mode?
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
@@ -51,7 +48,7 @@ Shop!
 - Graphics
 	- Tilesets work
 - Skill - spawn mob on your side
-Content: Maps, Mobs, Items, NPCs
+Content: Maps, Mobs, Items, NPCs, Shop items
 - MOBILE:
 	- jump down - press jump and hold down to jump down
 	- inventory icon
