@@ -26,6 +26,7 @@ if attacking == true
 			stay = false
 			sprite_index = sprite_walk
 			alarm[0] = 120 // cooldown until attack again
+			stunned = false // disable stunned to allow knockback since animation is over
 		}
 	}
 	exit
@@ -46,6 +47,7 @@ if place_empty(x, y+1, obj_block)
     sprite_index = sprite_jump
 	exit
 }
+
 
 sprite_index = stay
 	? sprite_stand

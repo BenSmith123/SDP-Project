@@ -42,7 +42,7 @@ health_run_percent = 0 // percent that health has to be before running away
 
 sprite_stand = spr_mob_dragon_stand
 sprite_walk = spr_mob_dragon_walk
-sprite_jump = spr_mob_dragon_stand
+sprite_jump = spr_mob_dragon_walk
 sprite_dead = spr_player_dead
 sprite_attack = spr_mob_dragon_attack
 

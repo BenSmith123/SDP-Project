@@ -14,7 +14,8 @@ friction = 0.1
 
 // automatically show when debugging is on
 show_main_variables = global.show_debug
-show_xy_meeting = global.show_debug
+show_detect_distance = false
+show_debug_3 = false
 
 // IN-GAME
 enemy = obj_player // nearest enemy
@@ -46,13 +47,6 @@ image_alpha = 0
 alarm[6] = 1 // fade in
 
 
-
-
-// DEBUG 
-show_detect_distance = false
-show_xy_meeting = false
-show_main_variables = false
-show_platform_variables = false
 
 //  ____        __             _ _       
 // |  _ \  ___ / _| __ _ _   _| | |_ ___ 
