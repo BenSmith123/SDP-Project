@@ -7,28 +7,9 @@ if attacking == true
 	
 	if animated_attack
 	{
-		if round(image_index) == do_damage_frame
-		{
-			//if distance_to_object(enemy) < 100
-			if instance_exists(obj_player)
-			{
-				if obj_player.grounded { deal_damage_to_player(obj_player) }
-			}
-		}
+		mob_attack_perform_animated()
 	}
 	
-	if image_number > 1 // ignore this if is an attack that isn't animated
-	{
-		var animation_end = image_index > image_number-1
-		if animation_end
-		{
-			attacking = false
-			stay = false
-			sprite_index = sprite_walk
-			alarm[0] = 120 // cooldown until attack again
-			stunned = false // disable stunned to allow knockback since animation is over
-		}
-	}
 	exit
 }
 

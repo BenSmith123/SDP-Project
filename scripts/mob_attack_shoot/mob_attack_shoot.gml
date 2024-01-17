@@ -34,3 +34,15 @@ function mob_attack_shoot()
 	
 	bullet.shoot_in_direction(_speed, _direction)
 }
+
+
+function mob_attack_ground_slam()
+{
+	if !instance_exists(obj_player) { exit }
+
+	if obj_player.grounded 
+	{ 
+		deal_damage_to_player(obj_player) 
+		// TODO - fx of player hit?
+	}
+}

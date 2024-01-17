@@ -4,9 +4,6 @@ y = round(y)
 
 ai_draw_debug_info()
 
-
-name = sprite_get_name(sprite_index)
-
 // NAME TAG
 draw_nametag(name, bbox_bottom + 6)
 

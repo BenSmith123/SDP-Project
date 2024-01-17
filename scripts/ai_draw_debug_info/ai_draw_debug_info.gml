@@ -19,7 +19,8 @@ function ai_draw_debug_info()
 	string_hash_to_newline(
 		"state: " +string(state) +
 		"#stay: " +string(stay) +
-		"#stunned: " +string(stunned)
+		"#stunned: " +string(stunned) +
+		"#sprite: " + sprite_get_name(sprite_index)
 	)))
 	
     // optional debugging vars

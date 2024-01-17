@@ -65,7 +65,7 @@ function scr_ai_movement()
 	if aggressive || has_been_attacked
 	{
 	    mob_chase()
-		mob_attack()
+		mob_detect_attack()
 	}
 
 }

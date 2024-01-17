@@ -19,15 +19,8 @@ can_be_knockedback = false
 can_be_stunned = false
 
 
-// skill
-attack_pound = function()
-{
-	stunned = true // hack to prevent mob getting knocked back while attacking?
-	//alarm[2] = 240
-	//alarm[7] = 240
-}
-
-attack_ability = attack_pound
+// SKILL
+attack_ability = mob_attack_ground_slam
 has_attack_ability = true // projectiles, skills etc.
 animated_attack = true
 attack_distance = 130 // distance before attacking player

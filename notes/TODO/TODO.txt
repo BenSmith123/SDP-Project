@@ -13,7 +13,8 @@ TO DO
 - Mob hit graphics? (can tell when mob is stunned)
 
 
-
+- Unbreaking projectiles - hit multiple mobs at once (by percentage) - skill or equip?
+  ^ i.e. 10% unbreaking
 - More helper NPCs - ones that tell you tips
 - More items in shop
 - Portrait mode?
@@ -31,8 +32,6 @@ Shop!
 	- Custom name?
 - Game save - mob positions?
 - Hidden maps - collision with obj will take them to map (outside of global map array)
-- Debug for screen settings - game looks tiny on high res
-- Text outline for HUD/damage text
 - HUD colour/font hard to read
 - ^ Better fonts?
 - Stats!
@@ -41,17 +40,13 @@ Shop!
 	- Tilesets work
 - Skill - spawn mob on your side
 Content: Maps, Mobs, Items, NPCs, Shop items
-- AI:
+- AI / Mobs:
+	- Skills: Ground slam, spawn other mobs, area of effect, teleport?
+	- Mobs walk back and forth when on one stretched out block - i.e. village map (might be mob_detect_wall script)
 	- MOB movement - fix mobs sliding through walls? end of platform script works - might be conflicting
 	- jumping mobs can walk through walls?
 	- walking up slope changes to jump sprite - looks glitchy
-- Loading/saving mob positions
-	- Save to file on room_end
-	- Load file on room_start
-	- Check age of file and whether or not to use?
-	^ Will have to override mob spawner?
-- mob spawner? - create one where AI spawns (unless boss) set alarm random time that will continue to spawn
-  ^ only spawn when AI that was there in room start has been destroyed
+
 - controls for when debug is disabled - escape is pause game, escape again to quit
 - windows executable installer graphics!
 - Discord logging
@@ -72,6 +67,12 @@ IDEAS
 - Healing stones? rather than progressively increasing stats
 - Daily challenges
 - Starter pack
+
+- Loading/saving mob positions
+	- Save to file on room_end
+	- Load file on room_start
+	- Check age of file and whether or not to use?
+	^ Will have to override mob spawner?
 
 
 
