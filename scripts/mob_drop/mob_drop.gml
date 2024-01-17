@@ -8,7 +8,7 @@ function mob_drop()
 	// TODO - enum for each mob instead of checking object_index?	
 	switch(object_index)
 	{
-		case obj_ai_1: 
+		case obj_mob_drone: 
 			mob_drop_item(ItemId.DronePiece)
 		break
 		
@@ -19,6 +19,7 @@ function mob_drop()
 		break
 		
 		case obj_mob_training_bot: 
+		case obj_mob_training_bot_fly: 
 			mob_drop_item(ItemId.Battery)
 			coin_max = 0
 		break

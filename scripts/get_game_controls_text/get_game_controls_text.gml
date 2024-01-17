@@ -34,7 +34,9 @@ function get_game_debug_controls_text()
 	2 = teleport player to mouse
 	3 = level up
 
-	6 = spawn mob
+	4 = spawn mob
+	5 = previous map
+	6 = next map
 	7 = show ai main variables
 	8 = show ai detect distance
 	9 = show ai XYmeeting

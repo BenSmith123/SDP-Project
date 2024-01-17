@@ -7,10 +7,9 @@ TO DO
 - Map tweaks
 
 
+- animate & rename mob_4
 
 - Make an easier map for noobs or fast level up or weaker mob?
-
-- more gravity less floating
 - Mob hit graphics? (can tell when mob is stunned)
 
 

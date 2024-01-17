@@ -31,7 +31,8 @@ function mob_attack()
 	}
 	else
 	{
-		// can't see enemy, keep moving
+		// not close enough to attack but can still see enemy
+		// state = "player out of attack range"
 	    stay = false
 	}
 

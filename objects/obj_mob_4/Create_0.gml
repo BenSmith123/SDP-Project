@@ -28,6 +28,7 @@ jump_block_height = -40 // how high a block can be for ai to try jump
 drop_distance = 150 // how far below a player is before dropping down
 detect_distance = 360 // how far can an ai spot a player
 health_run_percent = 20 // percent that health has to be before running away
+do_damage_frame = 5 // image index of animation on when to deal the damage (only for animated attacks)
 
 sprite_stand = spr_mob_4_stand
 sprite_walk = spr_mob_4_walk

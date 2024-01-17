@@ -41,6 +41,7 @@ function global_game_controls()
 
 	    if keyboard_check_pressed(ord("3")) 
 	    {
+			global.max_hp = 1000
 	        level_up()
 	    }
 		
@@ -57,11 +58,16 @@ function global_game_controls()
 		//	display_banner_message("Cheater") // lol
 	    //}
 		
-		if keyboard_check_pressed(ord("6")) 
+		if keyboard_check_pressed(ord("4")) 
 	    {
-		    var choice = choose(obj_ai_1,obj_ai_3)
+		    var choice = choose(obj_mob_drone,obj_ai_3)
 		    instance_create(mouse_x,mouse_y,choice)
 	    }
+		
+		// TEMP - function keys don't work on Mac, use instead
+		if keyboard_check_pressed(ord("5")) { move_to_map(true) }
+		if keyboard_check_pressed(ord("6")) { move_to_map() }
+		
 		
 		if keyboard_check_pressed(ord("M"))
 	    {

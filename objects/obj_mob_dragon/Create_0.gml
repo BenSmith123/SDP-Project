@@ -22,23 +22,22 @@ can_be_stunned = false
 // skill
 attack_pound = function()
 {
-	stunned = true
-	can_shoot = false
+	stunned = true // hack to prevent mob getting knocked back while attacking?
 	//alarm[2] = 240
 	//alarm[7] = 240
-
-
 }
+
 attack_ability = attack_pound
 has_attack_ability = true // projectiles, skills etc.
 animated_attack = true
-attack_distance = 120 // distance before attacking player
+attack_distance = 130 // distance before attacking player
 stay_while_attacking = true
+do_damage_frame = 5 // image index of animation on when to deal the damage (only for animated attacks)
 
-block_distance = 0 // distance for checking how far away blocks are (before jumping)
+block_distance = 60 // distance for checking how far away blocks are (before jumping)
 jump_block_height = 0 // how high a block can be for ai to try jump
 drop_distance = 150 // how far below a player is before dropping down
-detect_distance = 300 // how far can an ai spot a player
+detect_distance = 400 // how far can an ai spot a player
 health_run_percent = 0 // percent that health has to be before running away
 
 sprite_stand = spr_mob_dragon_stand

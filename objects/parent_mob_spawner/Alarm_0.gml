@@ -7,7 +7,7 @@ if skip_spawn { exit }
 
 if mob_count < mobs_to_spawn
 {
-	var mob = instance_create(x, y, obj_ai_1)
+	var mob = instance_create(x, y, mob_obj)
 	mob.spawner = id
 	mob_count++
 }
