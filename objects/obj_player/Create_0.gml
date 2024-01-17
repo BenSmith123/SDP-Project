@@ -63,7 +63,7 @@ collision_tilemap = layer_tilemap_get_id("CollisionTiles")
 friction_power = 0.5 // NOTE - changing to 1 might cause a bug where player sometimes faces other way after moving
 
 // gravity applied every frame
-grav_speed = 0.75
+grav_speed = 1
 
 // vel_x and vel_y are the X and Y velocities of the character
 vel_x = 0

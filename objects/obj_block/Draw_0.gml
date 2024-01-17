@@ -1,5 +1,6 @@
 
 draw_self()
+
 /*
 if global.show_debug
 {

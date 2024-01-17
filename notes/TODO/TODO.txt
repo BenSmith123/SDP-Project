@@ -3,17 +3,24 @@
 TO DO
 --------------------
 
+
+- Map tweaks
+
+
+
 - Make an easier map for noobs or fast level up or weaker mob?
 
-
+- more gravity less floating
 - Mob hit graphics? (can tell when mob is stunned)
 
 
+
+- More helper NPCs - ones that tell you tips
 - More items in shop
 - Portrait mode?
 - Configurable particle fx - epic mode?
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
-- shop: buy/sell items (seeker, sell drone pieces, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
+- shop: buy/sell items (seeker, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
 Shop!
 	- Revive potion
 	- Seeker
@@ -35,9 +42,6 @@ Shop!
 	- Tilesets work
 - Skill - spawn mob on your side
 Content: Maps, Mobs, Items, NPCs, Shop items
-- MOBILE:
-	- jump down - press jump and hold down to jump down
-	- inventory icon
 - AI:
 	- MOB movement - fix mobs sliding through walls? end of platform script works - might be conflicting
 	- jumping mobs can walk through walls?

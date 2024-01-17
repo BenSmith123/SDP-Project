@@ -34,7 +34,7 @@ enum ObjectDepth
 	NPC = -4300,
 	Ladder = -4010,
 	Mob = -4000,
-	Tiles = 1000
+	Tiles = 0 // blocks
 }
 
 enum SystemType
