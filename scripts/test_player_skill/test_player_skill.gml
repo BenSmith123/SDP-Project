@@ -3,7 +3,11 @@ function test_player_skill()
 	
 	if !instance_exists(ai_parent) || !instance_exists(obj_player) { exit }
 	
-	var skill = choose(test_skill_spray_projectiles, test_skill_damage_all)
+	var skill = choose
+	(
+		test_skill_spray_projectiles, 
+		// test_skill_damage_all
+	)
 	
 	skill()
 }

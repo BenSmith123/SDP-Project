@@ -5,9 +5,11 @@ TO DO
 
 
 - Map tweaks
+- Test with maple character
 
 
-- animate & rename mob_4
+- add mobs abilities!
+- animate mob 4
 
 - Make an easier map for noobs or fast level up or weaker mob?
 - Mob hit graphics? (can tell when mob is stunned)
@@ -60,6 +62,7 @@ Tester1 & 2 feedback
 
 
 IDEAS
+- Map builder?
 - Scrap the classes?
 	- Have equipable weapons that anyone can use
 	- Skills can be brought - teleportation stone
