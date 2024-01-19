@@ -12,7 +12,6 @@ instance_create(WIDTH * 0.6, 32, obj_button_open_debug)
 
 if global.joystick_enabled { instance_create(x,y,obj_joystick) }
 
-// CONSTANT
 state = "-" // temporary (testing)
 collision_distance = 5 // for when player is about to hit a block
 
@@ -25,7 +24,6 @@ friction = 0.25
 image_xscale = 1
 image_yscale = 1
 
-stance = "Spawn"
 _image_speed = 0.1 // default image_speed to revert back to
 image_speed = _image_speed
 item_on_back_sprite = 0 // set by classes i.e. carry bow or sword
@@ -56,16 +54,25 @@ move_attack = false
 move_temp = false // debug
 
 
+// sprites
+sprite_stand = spr_player_stand
+sprite_walk = spr_player_walking
+sprite_jump = spr_player_jump
+sprite_jump_in_direction = spr_player_jump_in_direction
+sprite_climb_rope = spr_player_climb
+sprite_climb_ladder = spr_player_climb // TODO
+sprite_attack = spr_player_attack // overridden by set_classes
+
+
+
 collision_tilemap = layer_tilemap_get_id("CollisionTiles")
 
 // friction value applied to the character's horizontal movement every frame
 // the friction is reduced when the character is in mid-air
 friction_power = 0.5 // NOTE - changing to 1 might cause a bug where player sometimes faces other way after moving
 
-// gravity applied every frame
-grav_speed = 1
+grav_speed = 1 // applied every frame
 
-// vel_x and vel_y are the X and Y velocities of the character
 vel_x = 0
 vel_y = 0
 

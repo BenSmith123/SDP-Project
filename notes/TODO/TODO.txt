@@ -7,7 +7,7 @@ TO DO
 - Map tweaks
 - Test with maple character
 
-
+- Weapon attack speeds - slow/average/fast - based on equip
 - add mobs abilities!
 - animate mob 4
 

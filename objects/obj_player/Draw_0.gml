@@ -22,7 +22,7 @@ if global.show_debug // debug text
 // draw whatever the player is carrying
 if item_on_back_sprite != 0 
 {
-	if sprite_index != attack_sprite
+	if sprite_index != sprite_attack
 	{
 		draw_sprite_ext(item_on_back_sprite, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
 	}
