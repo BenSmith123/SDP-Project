@@ -5,13 +5,16 @@ y = round(y)
 draw_nametag(global.name, y+38)
 
 // draw the healthbar
-//draw_sprite_stretched_ext(spr_ai_health_bar,health_colour,x-32,y+60,hp/max_hp*64,1,c_white,1)
+// draw_sprite_stretched_ext(spr_ai_health_bar,health_colour,x-32,y+60,hp/max_hp*64,1,c_white,1)
 // 16 = half sprite width (for centering), 32 = healthbar width, 1 = healthbar 
 
 if global.show_debug // debug text
-{
+{	
     draw_set_halign(fa_center)
-	var debug_text = "state" +string(state)
+	var debug_text = "state" +string(state) +
+	"#image_index: " + string(image_index) +
+	"#image_speed: " + string(image_speed) +
+	"#sprite_index: " + sprite_get_name(sprite_index)
     draw_text(x,y-85, string_hash_to_newline(debug_text))
 	
 	//var mouse_pos = $"{mouse_x}#{mouse_y}"
@@ -28,8 +31,17 @@ if item_on_back_sprite != 0
 	}
 }
 
+
+
 // body
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+
+// weapon
+if attacking && global.class == "Fighter"
+{
+	draw_sprite_ext(spr_template_player_swing_weapon, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+}
+
 
 if has_teleport_skill
 {

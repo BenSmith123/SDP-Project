@@ -17,7 +17,7 @@ function player_move_horizontally()
 	image_xscale = move_left ? -1 : 1
 
 	// This checks if the current sprite is the fall sprite, meaning the player hasn't landed yet.
-	if (sprite_index == spr_player_jump)
+	if (sprite_index == sprite_jump)
 	{
 		// In that case we exit/stop the event here, so the sprite doesn't change.
 		exit;
@@ -28,7 +28,7 @@ function player_move_horizontally()
 	if (grounded)
 	{
 		// Change the instance's sprite to the walking player sprite.
-		sprite_index = spr_player_walking;
+		sprite_index = sprite_walk;
 	}
 
 }

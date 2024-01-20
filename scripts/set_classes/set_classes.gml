@@ -5,14 +5,12 @@ function set_classes() {
 
 	if global.class = "Beginner"
 	{
-	    sprite_attack = spr_player_attack_4
 	    melee_attack = true
 		item_on_back_sprite = spr_carry_sword
 	}
 
 	if global.class = "Hunter" 
 	{
-	    sprite_attack = spr_player_attack_3
 	    melee_attack = false
 	    sprite_projectile = spr_bullet_4
 		item_on_back_sprite = spr_carry_bow
@@ -20,14 +18,12 @@ function set_classes() {
 
 	if global.class = "Fighter" 
 	{
-	    sprite_attack = spr_player_attack_4
 	    melee_attack = true
 		item_on_back_sprite = spr_carry_sword
 	}
 
 	if global.class = "Ninja" 
 	{
-	    sprite_attack = spr_player_attack
 	    melee_attack = false
 	    sprite_projectile = spr_bullet
 		
@@ -45,7 +41,6 @@ function set_classes() {
 
 	if global.class = "Spellcaster" 
 	{
-	    sprite_attack = spr_player_attack_2
 	    melee_attack = false
 	    sprite_projectile = spr_bullet_2
 	}

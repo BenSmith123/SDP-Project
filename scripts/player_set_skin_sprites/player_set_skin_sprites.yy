@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_player_2_movement",
+  "name": "player_set_skin_sprites",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

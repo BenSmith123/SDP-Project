@@ -4,7 +4,6 @@ function player_jump_down()
 	if is_on_ladder
 	{
 		y += 3
-		image_speed = 1
 		exit
 	}
 	

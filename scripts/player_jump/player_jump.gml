@@ -11,7 +11,6 @@ function player_jump()
 			vel_x = 0
 			x = ladder.x
 			y -= 3
-			image_speed = 1
 			exit
 		}
 	}
@@ -21,12 +20,8 @@ function player_jump()
 	{
 		instance_create(x, bbox_bottom, obj_fx_player_jump)
 		
-		vel_y = -jump;
-
-		sprite_index = spr_player_jump;
-		image_index = 0;
-
-		grounded = false;
+		vel_y = -jump
+		grounded = false
 	
 		// reset second jump for ninja class
 		second_jump = false

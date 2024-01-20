@@ -24,7 +24,7 @@ friction = 0.25
 image_xscale = 1
 image_yscale = 1
 
-_image_speed = 0.1 // default image_speed to revert back to
+_image_speed = 0.2 // default image_speed to revert back to
 image_speed = _image_speed
 item_on_back_sprite = 0 // set by classes i.e. carry bow or sword
 can_attack = true
@@ -54,14 +54,9 @@ move_attack = false
 move_temp = false // debug
 
 
-// sprites
-sprite_stand = spr_player_stand
-sprite_walk = spr_player_walking
-sprite_jump = spr_player_jump
-sprite_jump_in_direction = spr_player_jump_in_direction
-sprite_climb_rope = spr_player_climb
-sprite_climb_ladder = spr_player_climb // TODO
-sprite_attack = spr_player_attack // overridden by set_classes
+player_set_skin_sprites()
+
+animated_attack = sprite_get_number(sprite_attack) > 1
 
 
 

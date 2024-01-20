@@ -13,6 +13,7 @@ global.player_is_respawning = true
 global.hp_last = global.max_hp // max hp for next spawn
 
 var dead_body = instance_create(x,y,obj_player_dead)
+dead_body.sprite_index = sprite_dead
 dead_body.friction = friction
 dead_body.hspeed = hspeed
 dead_body.vspeed = vspeed

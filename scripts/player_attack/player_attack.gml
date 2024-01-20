@@ -1,3 +1,4 @@
+///@description - perform an attack if the player can do so
 function player_attack()
 {
 	if can_attack == false { exit }
@@ -16,30 +17,38 @@ function player_attack()
 		exit
 	}
 	
-	alarm[1] = 20 // for attacking sprite
-    
-	attacking = true
-    
 	image_index = 0 // restart the animation
-	image_speed = 0.15
-    
-	if melee_attack == true
+	
+	attacking = true
+	
+	// animated attack, wait for the correct attack frame (end-step)
+	if animated_attack { exit }
+	
+	// instant attack!
+	player_attack_execute()
+	
+	alarm[1] = 20 // stop the attacking sprite
+}
+
+
+///@description - create projectile or deal damage if melee attack
+function player_attack_execute()
+{
+	// non-animated attack - do immediately
+	if melee_attack
 	{
 		// MELEE ATTACKS
-		player_attack_melee() 
+		player_attack_melee()
+		exit
 	}
-	else
-	{
-		// PROJECTILE ATTACKS
-		player_attack_projectile()	
-	}
-
+	
+	// PROJECTILE ATTACKS
+	player_attack_projectile()	
 }
 
 
 function player_attack_melee() 
 {
-	
 	enemy = instance_nearest(x,y,ai_parent)
 	if (enemy == noone) { exit }
 	
@@ -61,8 +70,9 @@ function player_attack_melee()
 		
 	if (is_enemy_infront && is_enemy_in_range)
 	{
-		// do damage!
-		alarm[9] = 15
+		var damage = calculate_damage(attack, accuracy, other.defence)
+		with (enemy) { effect_create_spark_red_melee() }
+		deal_damage_to_mob(enemy, damage)
 	}
 	
 }

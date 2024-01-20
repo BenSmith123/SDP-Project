@@ -30,7 +30,7 @@ detect_distance = 360 // how far can an ai spot a player
 health_run_percent = 20 // percent that health has to be before running away
 
 sprite_stand = spr_player_stand
-sprite_walk = spr_player_walking
+sprite_walk = spr_player_walk
 sprite_jump = spr_player_jump
 sprite_dead = spr_player_dead
 sprite_attack = choose(spr_player_attack_2, spr_player_attack_5)

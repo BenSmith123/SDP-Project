@@ -5,7 +5,12 @@ TO DO
 
 
 - Map tweaks
-- Test with maple character
+- Skins
+	- debug button or npc to change them
+	- loading/saving current skin id
+	- with weapon?
+	- skins sold at a store?
+	
 
 - Weapon attack speeds - slow/average/fast - based on equip
 - add mobs abilities!
@@ -15,6 +20,7 @@ TO DO
 - Mob hit graphics? (can tell when mob is stunned)
 
 
+- large distant cloud background (i.e. behind mountain)
 - Unbreaking projectiles - hit multiple mobs at once (by percentage) - skill or equip?
   ^ i.e. 10% unbreaking
 - More helper NPCs - ones that tell you tips
@@ -63,19 +69,22 @@ Tester1 & 2 feedback
 
 IDEAS
 - Map builder?
-- Scrap the classes?
-	- Have equipable weapons that anyone can use
-	- Skills can be brought - teleportation stone
-	- Auto melee attack if mob close instead of fire projectile?
+- Starter pack
+- Consistent game content - i.e. if boss killed don't re-spawn on new map
+	- similar idea with loading/saving mobs - load file each map - check data/save on exit
 - Healing stones? rather than progressively increasing stats
 - Daily challenges
-- Starter pack
 
 - Loading/saving mob positions
 	- Save to file on room_end
 	- Load file on room_start
 	- Check age of file and whether or not to use?
 	^ Will have to override mob spawner?
+	
+- Scrap the classes?
+	- Have equipable weapons that anyone can use
+	- Skills can be brought - teleportation stone
+	- Auto melee attack if mob close instead of fire projectile?
 
 
 
