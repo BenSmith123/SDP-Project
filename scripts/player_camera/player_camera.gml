@@ -39,14 +39,25 @@ function player_camera()
 	
 	var view_width_x = __view_get( e__VW.XView, 0)
 	var view_width_y = __view_get( e__VW.YView, 0)
+	
+	// max possible camera widths to avoid camera going off room
+	var max_cam_x = room_width - global.screen_w
+	var max_cam_y = room_height - global.screen_h
+
 
 	// ROOM END X
 	if not(view_width_x <= 0 and temp.x<WIDTH/1.5) and not(view_width_x+WIDTH >= room_width and temp.x > room_width-(WIDTH/2)) 
-	{__view_set( e__VW.XView, 0, round(view_width_x + (((temp.x-(__view_get( e__VW.WView, 0 )/2)) - view_width_x) * 0.03) ))}
+	{
+		var view_x = round(view_width_x + (((temp.x-(__view_get( e__VW.WView, 0 )/2)) - view_width_x) * 0.03) )
+		__view_set(e__VW.XView, 0, min(view_x, max_cam_x))
+	}
 
 	// ROOM END Y
 	if not(view_width_y <= 0 and temp.y<HEIGHT/1.5) and not(view_width_y+HEIGHT >= room_height and temp.y > room_height-(HEIGHT/2))
-	{__view_set( e__VW.YView, 0, round(view_width_y + (((temp.y-(__view_get( e__VW.HView, 0 )/2)) - view_width_y) * 0.03) ))}
+	{
+		var view_y = round(view_width_y + (((temp.y-(__view_get( e__VW.HView, 0 )/2)) - view_width_y) * 0.03) )
+		__view_set( e__VW.YView, 0, min(view_y, max_cam_y))
+	}
 
 	if view_width_y < 0 {__view_set( e__VW.YView, 0, 0 )} // stops line at top of the screen. idk y needed
 }
