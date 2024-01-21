@@ -17,7 +17,7 @@ function player_set_skin_sprites()
 	function get_attack_action()
 	{
 		if global.class = "Fighter" || global.class = "Beginner" return "swing"
-		if global.class = "Ninja" || "Spellcaster" return "throw_2"
+		if global.class = "Ninja" || global.class == "Spellcaster" return "throw_2"
 		if global.class = "Spellcaster" return "throw"
 		if global.class = "Hunter" return "shoot"
 		
@@ -33,5 +33,27 @@ function player_set_skin_sprites()
 	sprite_dead = get_sprite("dead")
 
 	sprite_attack = get_sprite(get_attack_action())
+	
+	player_set_weapon_sprites()
+	
+	sprite_index = sprite_stand
 }
 
+
+///@description sets the projectile/weapon attack sprites based on equipped items
+function player_set_weapon_sprites()
+{
+	if global.equip_item_id_primary == 0 { exit }
+	
+	// TODO - secondary item
+	var item = get_item(global.equip_item_id_primary)
+			
+	// if item.class != global.class { exit } // somehow changed class and haven't updated equip?
+	
+	// note - bow can have both animation and projectile
+
+	// these might still be undefined!
+	sprite_carrying = item.sprite_carrying
+	sprite_projectile = item.sprite_projectile
+	sprite_weapon_attack = item.sprite_attacking
+}

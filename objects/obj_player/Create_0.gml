@@ -26,7 +26,6 @@ image_yscale = 1
 
 _image_speed = 0.2 // default image_speed to revert back to
 image_speed = _image_speed
-item_on_back_sprite = 0 // set by classes i.e. carry bow or sword
 can_attack = true
 attacking = false
 move_direction = "" // for when key or arrow is pressed
@@ -55,10 +54,9 @@ move_temp = false // debug
 
 
 player_set_skin_sprites()
+player_set_class_attributes()
 
 animated_attack = sprite_get_number(sprite_attack) > 1
-
-
 
 collision_tilemap = layer_tilemap_get_id("CollisionTiles")
 
@@ -74,8 +72,6 @@ vel_y = 0
 grounded = false
 
 instance_create(x,y,obj_hud)
-
-set_classes()
 
 // check if the player should be healing
 check_for_heal = function()

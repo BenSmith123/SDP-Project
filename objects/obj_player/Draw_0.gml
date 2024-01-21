@@ -22,24 +22,22 @@ if global.show_debug // debug text
 	draw_text(mouse_x+32, mouse_y, string_hash_to_newline(mouse_pos))
 }
 
-// draw whatever the player is carrying
-if item_on_back_sprite != 0 
+// item being carried
+if sprite_carrying != undefined
 {
 	if sprite_index != sprite_attack
 	{
-		draw_sprite_ext(item_on_back_sprite, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+		draw_sprite_ext(sprite_carrying, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
 	}
 }
-
-
 
 // body
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 
 // weapon
-if attacking && global.class == "Fighter"
+if sprite_weapon_attack != undefined && attacking
 {
-	draw_sprite_ext(spr_template_player_swing_weapon, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+	draw_sprite_ext(sprite_weapon_attack, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
 }
 
 

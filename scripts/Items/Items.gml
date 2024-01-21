@@ -50,6 +50,34 @@ enum ItemId
 }
 
 
+// ITEM STRUCTS:
+
+/***
+
+// ALL ITEMS
+iid - ID of the item - must be in 'ItemIds'
+name
+type
+description
+sprite
+rarity
+stack_size
+is_sellable
+sell_value
+
+// EQUIP EXTRAS:
+class,
+equip_sloty,
+damage_multiplier
+
+// OPTIONAL: (default to undefined if not set)
+sprite_projectile
+sprite_attacking - for swinging/shooting bow
+sprite_carrying
+
+
+***/
+
 function get_item(item_id)
 {
 	// create an array of all items
@@ -193,13 +221,15 @@ function get_item(item_id)
 			iid: ItemId.BeginnersSword,
 			name: "Beginner's Sword",
 			description: "",
-			class: "Fighter",
+			class: "Beginner",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_beginners_sword,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 500,
-			damage_multiplier: 0
+			damage_multiplier: 0,
+			sprite_carrying: spr_carry_sword,
+			sprite_attacking: spr_swing_sword_basic
 		}),
 		create_item_equip(
 		{
@@ -212,7 +242,9 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 500,
-			damage_multiplier: 0
+			damage_multiplier: 0,
+			sprite_carrying: spr_carry_sword,
+			sprite_attacking: spr_swing_sword_basic
 		}),
 		create_item_equip(
 		{
@@ -225,7 +257,8 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 1000,
-			damage_multiplier: 0
+			damage_multiplier: 0,
+			sprite_carrying: spr_carry_bow
 		}), 
 		create_item_equip(
 		{
@@ -238,7 +271,8 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 1000,
-			damage_multiplier: 0
+			damage_multiplier: 0,
+			sprite_projectile: spr_projectile_basic_shuriken
 		}),
 		create_item_equip(
 		{
@@ -251,7 +285,8 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 10,
-			damage_multiplier: 0.02
+			damage_multiplier: 0.02,
+			sprite_projectile: spr_projectile_kunai
 		}),
 		create_item_equip(
 		{
@@ -264,8 +299,10 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 10,
-			damage_multiplier: 0.03
-		}),
+			damage_multiplier: 0.03,
+			sprite_projectile: spr_item_throwing_star_1
+		}),			
+
 		create_item_equip(
 		{
 			iid: ItemId.SnowflakeStar,
@@ -277,7 +314,8 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 10,
-			damage_multiplier: 0.05
+			damage_multiplier: 0.05,
+			sprite_projectile: spr_item_throwing_star_3
 		}),
 		create_item_equip(
 		{
@@ -290,7 +328,8 @@ function get_item(item_id)
 			rarity: ItemRarity.Common,
 			is_sellable: true,
 			sell_value: 10,
-			damage_multiplier: 0.05
+			damage_multiplier: 0.05,
+			sprite_projectile: spr_item_throwing_star_2
 		})
 	]
 
@@ -338,6 +377,15 @@ function create_item_equip(item)
 	new_item.class = item.class
 	new_item.damage_multiplier = item.damage_multiplier
 	
+	// optional vars - default to undefined if not set
+	var has_sprite_carrying = struct_exists(item, "sprite_carrying")
+	var has_sprite_projectile = struct_exists(item, "sprite_projectile")
+	var has_sprite_attacking = struct_exists(item, "sprite_attacking")
+	
+	new_item.sprite_carrying = has_sprite_carrying ? item.sprite_carrying : undefined
+	new_item.sprite_projectile = has_sprite_projectile ? item.sprite_projectile : undefined
+	new_item.sprite_attacking = has_sprite_attacking ? item.sprite_attacking : undefined
+
 	return new_item
 }
 

@@ -82,7 +82,9 @@ function create_mobile_debug_controls()
 				with (obj_player)
 				{
 					log_player_message($"Set class: {global.class}")
-					set_classes()
+					player_set_class_attributes(true)
+					player_set_skin_sprites()
+					player_set_class_attributes()
 					// instance_create(x,y,obj_pick_class)
 				}
 			}

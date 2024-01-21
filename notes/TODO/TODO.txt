@@ -11,8 +11,13 @@ TO DO
 	- with weapon?
 	- skins sold at a store?
 	
+	
+- test each class when recieving weapons
+	
+	
+- Mobile zoomed in gfx
+- Keep an eye out for off screen spawining since transitions were added? FIX
 
-- Weapon attack speeds - slow/average/fast - based on equip
 - add mobs abilities!
 - animate mob 4
 
@@ -27,6 +32,7 @@ TO DO
 - More items in shop
 - Portrait mode?
 - Configurable particle fx - epic mode?
+- Weapon attack speeds? - slow/average/fast - based on equip
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 - shop: buy/sell items (seeker, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
 Shop!

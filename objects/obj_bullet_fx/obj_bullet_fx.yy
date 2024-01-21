@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet",
-    "path": "sprites/spr_bullet/spr_bullet.yy",
+    "name": "spr_projectile_basic_shuriken",
+    "path": "sprites/spr_projectile_basic_shuriken/spr_projectile_basic_shuriken.yy",
   },
   "spriteMaskId": null,
   "visible": true,

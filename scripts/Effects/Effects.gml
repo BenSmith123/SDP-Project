@@ -3,8 +3,8 @@
 function create_projectile_destroy_effect()
 {
 	switch (sprite_index) {
-	    case spr_bullet:
-		case spr_bullet_4:
+	    case spr_projectile_basic_shuriken:
+		case spr_projectile_arrow_0:
 		case spr_projectile_laser:
 		case spr_projectile_rocket:
 			return effect_create_spark_red()

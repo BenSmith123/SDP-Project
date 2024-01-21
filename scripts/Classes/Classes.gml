@@ -33,6 +33,8 @@ function set_class_details(class)
 //@description - handler for when a class is selected
 function on_select_class()
 {
+	player_set_class_attributes(true)
+	
 	switch (class) {
 	    case PlayerClass.Hunter:
 			global.accuracy += 30
