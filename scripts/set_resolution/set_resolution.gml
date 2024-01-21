@@ -2,7 +2,7 @@
 function get_screen_width()
 {
 	var width_full = display_get_width()
-	var width_half = width_full / 2
+	var width_half = round(width_full / 2)
 	
 	// half width on mobile devices (brings the view closer)
 	return global.system == SystemType.Desktop
@@ -13,7 +13,7 @@ function get_screen_width()
 function get_screen_height()
 {	
 	var height_full = display_get_height()
-	var height_half = height_full / 2
+	var height_half = round(height_full / 2)
 	
 	return global.system == SystemType.Desktop
 		? height_full
@@ -51,8 +51,8 @@ function set_screen_resolution()
 function initialise_display()
 {
 	
-	var w = WIDTH
-	var h = HEIGHT
+	var w = global.screen_w// WIDTH
+	var h = global.screen_h//HEIGHT
 
 	view_enabled = true
 	__view_set( e__VW.Visible, 0, true )
@@ -83,7 +83,7 @@ function initialise_display()
 	if global.system == SystemType.Desktop
 	{
 	    window_set_fullscreen(global.desktop_fullscreen)
-	    window_set_size(__view_get( e__VW.WPort, 0 ), __view_get( e__VW.HPort, 0 ))
+	    window_set_size(w, h)
 	}
 
 	display_set_gui_size(w, h)

@@ -3,7 +3,7 @@
 if y > room_height 
 { 
 	var block = instance_nearest(x,y,obj_block)
-	y = block.bbox_top - 60
+	y = block.bbox_top - 76
 	exit 
 }
 
