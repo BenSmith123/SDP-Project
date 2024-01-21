@@ -12,7 +12,7 @@ if is_on_ladder
 if attacking
 {
     sprite_index = sprite_attack
-	image_speed = melee_attack ? 0.25 : 0.2 
+	image_speed = 0.2 
 
 	// create projectile or do damage on last frame
 	var animation_end = image_index == image_number-1

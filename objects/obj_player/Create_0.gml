@@ -73,6 +73,13 @@ grounded = false
 
 instance_create(x,y,obj_hud)
 
+
+draw_item_on_back = function()
+{
+	if sprite_carrying == undefined || sprite_index == sprite_attack { exit }
+	draw_sprite_ext(sprite_carrying, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+}
+
 // check if the player should be healing
 check_for_heal = function()
 {

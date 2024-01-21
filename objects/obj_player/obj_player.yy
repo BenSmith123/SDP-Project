@@ -52,8 +52,8 @@
     "path": "sprites/spr_player_stand/spr_player_stand.yy",
   },
   "spriteMaskId": {
-    "name": "spr_player_mask",
-    "path": "sprites/spr_player_mask/spr_player_mask.yy",
+    "name": "spr_player_mask_2",
+    "path": "sprites/spr_player_mask_2/spr_player_mask_2.yy",
   },
   "visible": true,
 }

@@ -6,8 +6,14 @@ function save_game()
 
 	if instance_exists(obj_player)
 	{
+		var player_x = obj_player.x
+		
+		// if player is out of map (transitioning) push back on map
+		if obj_player.x < 0 { player_x = 30 }
+		if obj_player.x > room_width { player_x = room_width-30 }
+		
 		// update the player position for next log in
-		global.current_player_x = obj_player.x
+		global.current_player_x = player_x
 		global.current_player_y = obj_player.y
 	}
 	

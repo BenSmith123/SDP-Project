@@ -32,8 +32,6 @@ function draw_game_debug_info()
 
 function debug_show_screen_info()
 {
-	global.name = string(global.screen_w) + "x" + string(global.screen_h)
-
 	var system = global.system == SystemType.Desktop ? "Desktop" : "Mobile"
 	
 	var os = os_type == os_android ? "Android" : "iOS"
