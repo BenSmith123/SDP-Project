@@ -29,6 +29,7 @@ function save_game()
 	ini_write_real("STATS","mob_kills_current",global.mob_kills_current)
 	ini_write_real("STATS","mob_kills",global.mob_kills)
 
+	ini_write_string("PLAYER","player_skin_id",global.player_skin_id)
 	ini_write_string("PLAYER","class",global.class)
 	ini_write_string("PLAYER","name",global.name)
 	ini_write_real("PLAYER","level",global.level)

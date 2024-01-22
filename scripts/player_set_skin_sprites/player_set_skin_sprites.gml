@@ -9,9 +9,8 @@ function player_set_skin_sprites()
 	//enum PlayerSkinId
 	
 	function get_sprite(action)
-	{
-		var player_skin_id = 0 // TODO make this global
-		return asset_get_index($"spr_player_{player_skin_id}_{action}")
+	{	
+		return asset_get_index($"spr_player_{global.player_skin_id}_{action}")
 	}
 	
 	function get_attack_action()

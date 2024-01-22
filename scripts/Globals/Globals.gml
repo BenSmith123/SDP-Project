@@ -76,12 +76,13 @@ function initialise_stored_globals()
 	global.current_player_y = -1
 
 	// player attributes
+	global.player_skin_id = 0
 	global.class = "Beginner"
 	global.name = choose("Ben", "_mo_", "zlazz0", "J3tt.0", "Vilz", "Chocolate", "N00B", "tInA")
 	global.level = 1
+	
 	global.experience = 0
 	global.max_exp = 10
-	
 	global.stat_points = 0
 
 	global.max_hp = 30

@@ -10,7 +10,6 @@ TO DO
 	- loading/saving current skin id
 	- with weapon?
 	- skins sold at a store?
-	- weapon swing sprite fx
 	
 	
 - Keep an eye out for off screen spawining since transitions were added? FIX
