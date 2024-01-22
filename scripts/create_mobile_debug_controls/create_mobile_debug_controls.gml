@@ -59,8 +59,8 @@ function create_mobile_debug_controls()
 			{
 				with (obj_player)
 				{
-					set_screen_resolution()
-					initialise_display()
+					initialise_game_display()
+					initialise_views()
 				}
 			}
 		},
@@ -102,6 +102,22 @@ function create_mobile_debug_controls()
 					global.inventory_array = full ? full_inventory :  [[5, 4]]
 					log_player_message(full ? "FULL INVENTORY" : "1 ITEM")
 				}
+			}
+		},
+		{
+			text: "Zoom in",
+			action: function() 
+			{
+				var w = global.view_w
+				var h = global.view_h
+
+				global.view_w = round(global.view_w * 0.75)
+				global.view_h = round(global.view_h * 0.75)
+
+				initialise_views()
+				surface_resize(application_surface, w, h)
+
+				display_set_gui_size(w, h)
 			}
 		}
 	]

@@ -21,7 +21,7 @@ function get_screen_height()
 }
 
 
-function set_screen_resolution()
+function initialise_game_display()
 {
 	var use_default_resolution = global.system == SystemType.Desktop && !global.desktop_fullscreen
 	if use_default_resolution 
@@ -32,7 +32,7 @@ function set_screen_resolution()
 	}
 	
 	var display_width = get_screen_width()
-	var display_height =  get_screen_height()
+	var display_height = get_screen_height()
 
 	// if either display width or height is very low res (zoomed in with huge mobile buttons)
 	// some Androids claim their resolution is lower than it is - doesn't count retina?
@@ -48,11 +48,10 @@ function set_screen_resolution()
 }
 
 
-function initialise_display()
+function initialise_views()
 {
-	
-	var w = global.screen_w// WIDTH
-	var h = global.screen_h//HEIGHT
+	var w = global.view_w
+	var h = global.view_h
 
 	view_enabled = true
 	__view_set( e__VW.Visible, 0, true )
@@ -86,20 +85,19 @@ function initialise_display()
 	    window_set_size(w, h)
 	}
 
-	display_set_gui_size(w, h)
 	surface_resize(application_surface, w, h)
 }
 
 
 function get_cam_start_position_x()
 {
-	var screen_center_x = WIDTH/2
+	var screen_center_x = global.view_w
 	
 	// if player x is too close to start of room
 	if obj_player.x < screen_center_x { return 0 }
 	
 	// divide by 1.5 to get 3 quarters of screen before locking the view
-	if obj_player.x > room_width - WIDTH/1.5 { return room_width - WIDTH }
+	if obj_player.x > room_width - global.view_w/1.5 { return room_width - global.view_w }
 	
 	return obj_player.x - screen_center_x
 }
@@ -107,13 +105,13 @@ function get_cam_start_position_x()
 
 function get_cam_start_position_y()
 {
-	var screen_center_y = HEIGHT/2
+	var screen_center_y = global.view_h/2
 	
 	// if player x is too close to start of room
 	if obj_player.y < screen_center_y { return 0 }
 	
 	// divide by 1.5 to get 3 quarters of screen before locking the view
-	if obj_player.y > room_height - HEIGHT/1.5 { return room_height - HEIGHT }
+	if obj_player.y > room_height - global.view_h/1.5 { return room_height - global.view_h }
 	
 	return obj_player.y - screen_center_y
 }

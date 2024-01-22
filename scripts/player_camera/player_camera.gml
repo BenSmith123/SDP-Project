@@ -40,8 +40,8 @@ function player_camera()
 	var view_width_x = __view_get( e__VW.XView, 0)
 	var view_width_y = __view_get( e__VW.YView, 0)
 	
-	var max_cam_x = room_width - global.screen_w
-	var max_cam_y = room_height - global.screen_h
+	var max_cam_x = room_width - global.view_w
+	var max_cam_y = room_height - global.view_h
 	
 	var map_center_x = room_width / 2
 	var map_center_y = room_height / 2

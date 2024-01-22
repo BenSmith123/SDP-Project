@@ -3,7 +3,7 @@
 // that the GUI is drawn (otherwise tapping won't work)
 //x = __view_get( e__VW.XView, 0 )+WIDTH-10
 //y = __view_get( e__VW.YView, 0 )+10
-x = WIDTH-10
+x = global.screen_w-10
 y = 10
 
 draw_sprite(sprite_index,0,x,y)
@@ -19,7 +19,7 @@ if !surface_exists(paused_surface)
 		instance_activate_object(obj_controller)
 		create_pause_menu()
 	}
-	paused_surface = surface_create(WIDTH, HEIGHT)
+	paused_surface = surface_create(global.screen_w, global.screen_h)
 	surface_set_target(paused_surface)
 	draw_surface(application_surface, 0, 0)
 	surface_reset_target()
@@ -28,6 +28,6 @@ else
 {
 	draw_surface(paused_surface, 0, 0)
 	draw_set_alpha(0.4)
-	draw_rectangle_colour(0, 0, WIDTH, HEIGHT, c_black, c_black, c_black, c_black, false)
+	draw_rectangle_colour(0, 0, global.screen_w, global.screen_h, c_black, c_black, c_black, c_black, false)
 	draw_set_alpha(1) // DON'T REMOVE (will cause other draw events to be transparent)
 }

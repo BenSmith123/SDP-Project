@@ -24,7 +24,9 @@ function initialise_globals()
 		
 	global.screen_w = 0
 	global.screen_h = 0
-	set_screen_resolution()
+	initialise_game_display()
+	global.view_w = global.screen_w
+	global.view_h = global.screen_h
 	
 	global.dialog_y_pos = (global.screen_h / 4) - 80 // position for all dialogs to be displayed
 

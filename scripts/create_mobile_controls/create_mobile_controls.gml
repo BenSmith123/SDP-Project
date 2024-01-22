@@ -20,7 +20,7 @@ function initialise_virtual_key_globals()
 
 function create_mobile_virtual_keys()
 {
-	initialise_virtual_key_globals()
+	//initialise_virtual_key_globals()
 	
 	var key_y = global.vk_y
 	var key_size = global.vk_size

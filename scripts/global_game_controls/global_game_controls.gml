@@ -8,25 +8,25 @@ function global_game_controls()
 	if keyboard_check_pressed(ord("E"))
 	{
 
-	//		var _fx_tint = fx_create("_filter_tintfilter");
-	//fx_set_parameter(_fx_tint, "g_TintCol", [1, 0, 0, 1]);
+		//		var _fx_tint = fx_create("_filter_tintfilter");
+		//fx_set_parameter(_fx_tint, "g_TintCol", [1, 0, 0, 1]);
 
-	////fx_set_single_layer(_fx_tint, true)
-	//layer_set_fx("Blocks", _fx_tint);
+		////fx_set_single_layer(_fx_tint, true)
+		//layer_set_fx("Blocks", _fx_tint);
 
-	//var layer_fx = layer_get_fx("Blocks");
+		//var layer_fx = layer_get_fx("Blocks");
 
-	//    if (layer_fx != -1)
-	//    {
-	//        if (fx_get_name(layer_fx) == "_filter_tintfilter")
-	//        {   
-	//			fx_set_single_layer(layer_fx, true)
-	//            fx_set_parameter(layer_fx, "g_TintCol", [0, 0, 1, 1]);
-	//        }
-	//    }
+		//    if (layer_fx != -1)
+		//    {
+		//        if (fx_get_name(layer_fx) == "_filter_tintfilter")
+		//        {   
+		//			fx_set_single_layer(layer_fx, true)
+		//            fx_set_parameter(layer_fx, "g_TintCol", [0, 0, 1, 1]);
+		//        }
+		//    }
 
 		
-		test_player_skill()
+		// test_player_skill()
 		//log_player_message("Testing message - 4573")
 		//room_goto(room1)
 		//show_message(global.inventory_array)
@@ -78,7 +78,7 @@ function global_game_controls()
 			global.is_mobile = global.system == SystemType.Mobile
 			global.is_desktop = global.system == SystemType.Desktop
 
-			set_screen_resolution()
+			initialise_game_display()
 			room_restart()
 	    }
 		
@@ -95,8 +95,8 @@ function global_game_controls()
 	if keyboard_check_pressed(vk_f9) 
 	{ 
 		global.desktop_fullscreen = !global.desktop_fullscreen
-		set_screen_resolution()
-		initialise_display()
+		initialise_game_display()
+		initialise_views()
 	}
     
 	if keyboard_check_pressed(vk_f10) { global.came_from_left_map = false; move_to_map(true) }
