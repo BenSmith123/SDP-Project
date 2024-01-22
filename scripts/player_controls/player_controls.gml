@@ -22,8 +22,6 @@ function player_controls()
 		event_perform_object(obj_button_open_inventory, ev_other, ev_user1)
 	}
 
-
-
 	// call the scripts for whatever wariable active
 	// variables have to be used for the mobile virtual keys to work
 	if move_left = true { player_move_horizontally() }

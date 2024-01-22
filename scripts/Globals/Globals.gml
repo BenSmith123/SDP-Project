@@ -25,8 +25,11 @@ function initialise_globals()
 	global.screen_w = 0
 	global.screen_h = 0
 	initialise_game_display()
+	// camera view width/height (same as screen but can differ with zoom)
 	global.view_w = global.screen_w
 	global.view_h = global.screen_h
+	
+	global.zoom_view = global.is_mobile // zoom in by default on mobile
 	
 	global.dialog_y_pos = (global.screen_h / 4) - 80 // position for all dialogs to be displayed
 

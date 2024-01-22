@@ -26,7 +26,7 @@ function global_game_controls()
 		//    }
 
 		
-		// test_player_skill()
+		test_player_skill()
 		//log_player_message("Testing message - 4573")
 		//room_goto(room1)
 		//show_message(global.inventory_array)

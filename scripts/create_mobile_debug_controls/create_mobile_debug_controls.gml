@@ -105,19 +105,11 @@ function create_mobile_debug_controls()
 			}
 		},
 		{
-			text: "Zoom in",
+			text: "Toggle view zoom",
 			action: function() 
 			{
-				var w = global.view_w
-				var h = global.view_h
-
-				global.view_w = round(global.view_w * 0.75)
-				global.view_h = round(global.view_h * 0.75)
-
+				global.zoom_view = !global.zoom_view
 				initialise_views()
-				surface_resize(application_surface, w, h)
-
-				display_set_gui_size(w, h)
 			}
 		}
 	]

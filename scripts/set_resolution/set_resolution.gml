@@ -48,8 +48,12 @@ function initialise_game_display()
 }
 
 
+
 function initialise_views()
-{
+{	
+	global.view_w = global.zoom_view ? round(global.screen_w * 0.75) : global.screen_w
+	global.view_h = global.zoom_view ? round(global.screen_h * 0.75) : global.screen_h
+	
 	var w = global.view_w
 	var h = global.view_h
 
@@ -85,7 +89,7 @@ function initialise_views()
 	    window_set_size(w, h)
 	}
 
-	surface_resize(application_surface, w, h)
+	surface_resize(application_surface, global.screen_w, global.screen_h)
 }
 
 

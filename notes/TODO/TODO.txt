@@ -13,9 +13,6 @@ TO DO
 	
 	
 - test each class when recieving weapons
-	
-	
-- Mobile zoomed in gfx
 - Keep an eye out for off screen spawining since transitions were added? FIX
 
 - add mobs abilities!

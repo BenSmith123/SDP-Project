@@ -1,7 +1,7 @@
 function player_jump()
 {
 
-	var ladder = instance_nearest(x, y, parent_climbable)
+	var ladder = instance_nearest(x, bbox_top, parent_climbable)
 
 	if place_meeting(x, y, ladder)
 	{
