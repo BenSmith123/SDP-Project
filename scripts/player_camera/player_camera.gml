@@ -35,7 +35,7 @@ function player_camera()
 	// prevent camera from going out of room when window isn't open
 	if (!window_has_focus()) exit
 	
-	var temp = obj_player
+	var temp2 = obj_player
 	
 	var view_width_x = __view_get( e__VW.XView, 0)
 	var view_width_y = __view_get( e__VW.YView, 0)
@@ -48,11 +48,11 @@ function player_camera()
 
 
 	// ROOM END X
-	var view_x = round(view_width_x + (((temp.x-(__view_get( e__VW.WView, 0 )/2)) - view_width_x) * 0.03))
+	var view_x = round(view_width_x + (((temp2.x-(__view_get( e__VW.WView, 0 )/2)) - view_width_x) * 0.03))
 		
 	// get the min/max value the camera can be depending on if the player is closest to the left or right
 	// cap the camera to the min/max value to avoid camera going out of room
-	var view_x_capped = temp.x < map_center_x
+	var view_x_capped = temp2.x < map_center_x
 		? max(view_x, 0)
 		: min(view_x, max_cam_x)
 			
@@ -60,9 +60,9 @@ function player_camera()
 	
 
 	// ROOM END Y
-	var view_y = round(view_width_y + (((temp.y-(__view_get( e__VW.HView, 0 )/2)) - view_width_y) * 0.03))
+	var view_y = round(view_width_y + (((temp2.y-(__view_get( e__VW.HView, 0 )/2)) - view_width_y) * 0.03))
 	
-	var view_y_capped = temp.y < map_center_y
+	var view_y_capped = temp2.y < map_center_y
 		? max(view_y, 0)
 		: min(view_y, max_cam_y)
 	

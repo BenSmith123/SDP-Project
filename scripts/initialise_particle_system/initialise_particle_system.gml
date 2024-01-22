@@ -8,28 +8,28 @@ function initialise_particle_system()
 
 
 	global.spark_fx_red = part_type_create()
-	var temp = global.spark_fx_red
-	part_type_shape(temp,pt_shape_spark)
-	part_type_size(temp,0.05,0.2,0,0)
-	part_type_color2(temp,c_white,c_red)
-	part_type_life(temp,7,14)
-	part_type_alpha2(temp,1,0.05)
-	part_type_speed(temp,4,7,0,0.3)
-	part_type_direction(temp,0,360,0,0)
-	part_type_gravity(temp,0.1,270)
-	part_type_blend(temp,true)
+	var tmp = global.spark_fx_red
+	part_type_shape(tmp,pt_shape_spark)
+	part_type_size(tmp,0.05,0.2,0,0)
+	part_type_color2(tmp,c_white,c_red)
+	part_type_life(tmp,7,14)
+	part_type_alpha2(tmp,1,0.05)
+	part_type_speed(tmp,4,7,0,0.3)
+	part_type_direction(tmp,0,360,0,0)
+	part_type_gravity(tmp,0.1,270)
+	part_type_blend(tmp,true)
 	
 	global.spark_fx_blue = part_type_create()
-	var temp = global.spark_fx_blue
-	part_type_shape(temp,pt_shape_spark)
-	part_type_size(temp,0.05,0.2,0,0)
-	part_type_color2(temp,c_white,c_blue)
-	part_type_life(temp,7,14)
-	part_type_alpha2(temp,1,0.05)
-	part_type_speed(temp,4,7,0,0.3)
-	part_type_direction(temp,0,360,0,0)
-	part_type_gravity(temp,0.1,270)
-	part_type_blend(temp,true)
+	var tmp = global.spark_fx_blue
+	part_type_shape(tmp,pt_shape_spark)
+	part_type_size(tmp,0.05,0.2,0,0)
+	part_type_color2(tmp,c_white,c_blue)
+	part_type_life(tmp,7,14)
+	part_type_alpha2(tmp,1,0.05)
+	part_type_speed(tmp,4,7,0,0.3)
+	part_type_direction(tmp,0,360,0,0)
+	part_type_gravity(tmp,0.1,270)
+	part_type_blend(tmp,true)
 
 	// coin pickup
 	var _ptype1 = part_type_create();
@@ -163,16 +163,16 @@ function initialise_particle_system()
 
 	/*
 	global.teleport_fx = part_type_create() // 
-	temp = global.teleport_fx
-	part_type_shape(temp,pt_shape_sphere)
-	part_type_size(temp,2,2,-0.1,0)
-	part_type_color2(temp,c_fuchsia,c_purple)
-	part_type_life(temp,10,25)
-	part_type_alpha2(temp,0.8,0)
-	//part_type_speed(temp,2,6,0,0.2)
-	//part_type_direction(temp,0,0,0,0)
-	//part_type_gravity(temp,0.4,270)
-	part_type_blend(temp,false)
+	tmp = global.teleport_fx
+	part_type_shape(tmp,pt_shape_sphere)
+	part_type_size(tmp,2,2,-0.1,0)
+	part_type_color2(tmp,c_fuchsia,c_purple)
+	part_type_life(tmp,10,25)
+	part_type_alpha2(tmp,0.8,0)
+	//part_type_speed(tmp,2,6,0,0.2)
+	//part_type_direction(tmp,0,0,0,0)
+	//part_type_gravity(tmp,0.4,270)
+	part_type_blend(tmp,false)
 
 	//part_particles_create( mysystem, 50, 50, mypart, 30 );()
 
@@ -183,16 +183,16 @@ function initialise_particle_system()
 
 
 	global.boost_fx = part_type_create() // 
-	temp = global.boost_fx
-	part_type_shape(temp,pt_shape_spark)
-	part_type_size(temp,0.1,0.3,0,0)
-	part_type_color2(temp,c_red,c_orange)
-	part_type_life(temp,30,50)
-	part_type_alpha2(temp,0.7,0)
-	part_type_speed(temp,2,11,0,0.2)
-	part_type_direction(temp,0,360,0,0)
-	part_type_gravity(temp,0.2,270)
-	part_type_blend(temp,false)
+	tmp = global.boost_fx
+	part_type_shape(tmp,pt_shape_spark)
+	part_type_size(tmp,0.1,0.3,0,0)
+	part_type_color2(tmp,c_red,c_orange)
+	part_type_life(tmp,30,50)
+	part_type_alpha2(tmp,0.7,0)
+	part_type_speed(tmp,2,11,0,0.2)
+	part_type_direction(tmp,0,360,0,0)
+	part_type_gravity(tmp,0.2,270)
+	part_type_blend(tmp,false)
 
 
 

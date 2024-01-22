@@ -4,7 +4,7 @@
   "name": "spr_swing_sword_basic",
   "bbox_bottom": 99,
   "bbox_left": 11,
-  "bbox_right": 133,
+  "bbox_right": 137,
   "bbox_top": 12,
   "bboxMode": 0,
   "collisionKind": 1,

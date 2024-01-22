@@ -152,6 +152,7 @@
     {"id":{"name":"obj_mob_training_bot","path":"objects/obj_mob_training_bot/obj_mob_training_bot.yy",},},
     {"id":{"name":"spr_rock_1","path":"sprites/spr_rock_1/spr_rock_1.yy",},},
     {"id":{"name":"spr_button_character","path":"sprites/spr_button_character/spr_button_character.yy",},},
+    {"id":{"name":"spr_temp_weapon_swing_fx","path":"sprites/spr_temp_weapon_swing_fx/spr_temp_weapon_swing_fx.yy",},},
     {"id":{"name":"obj_dialog_shop_weapons","path":"objects/obj_dialog_shop_weapons/obj_dialog_shop_weapons.yy",},},
     {"id":{"name":"spr_projectile_laser","path":"sprites/spr_projectile_laser/spr_projectile_laser.yy",},},
     {"id":{"name":"spr_button_bg_3","path":"sprites/spr_button_bg_3/spr_button_bg_3.yy",},},
