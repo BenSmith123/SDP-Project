@@ -14,6 +14,7 @@ function get_playable_maps_order()
 		room_cave_large,
 		room_dark_forest,
 		room_snow,
+		room_snow_mountains,
 		room_metal
 	]
 }

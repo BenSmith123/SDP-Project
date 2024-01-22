@@ -192,6 +192,7 @@
     {"name":"spr_mob_drone_commander","order":5,"path":"sprites/spr_mob_drone_commander/spr_mob_drone_commander.yy",},
     {"name":"spr_mob_behemoth_dragon","order":18,"path":"sprites/spr_mob_behemoth_dragon/spr_mob_behemoth_dragon.yy",},
     {"name":"spr_mob_training_bot_2_dead","order":17,"path":"sprites/spr_mob_training_bot_2_dead/spr_mob_training_bot_2_dead.yy",},
+    {"name":"room_snow_mountains","order":12,"path":"rooms/room_snow_mountains/room_snow_mountains.yy",},
     {"name":"TODO","order":4,"path":"notes/TODO/TODO.yy",},
     {"name":"spr_swing_sword_basic197","order":23,"path":"sprites/spr_swing_sword_basic197/spr_swing_sword_basic197.yy",},
     {"name":"obj_block_ground","order":36,"path":"objects/obj_block_ground/obj_block_ground.yy",},
