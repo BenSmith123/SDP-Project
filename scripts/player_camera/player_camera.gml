@@ -3,13 +3,14 @@ function player_camera()
 	// PARALLAX background scrolling
 	if layer_exists("Parallax1")
 	{
-		var _cam_x = camera_get_view_x(view_camera[0])
-		var _cam_y = camera_get_view_y(view_camera[0])
+		// minus half the view to try keep the background roughly where it was placed in map
+		var _cam_x = camera_get_view_x(view_camera[0]) - global.view_w/2
 		layer_x("Parallax1", _cam_x * 0.25)
 		layer_x("Parallax2", _cam_x * 0.5)
 		
-		//layer_y("parallax_background_1", _cam_y * 0.25)
-		//layer_y("parallax_background_2", _cam_y * 0.5)
+		// var _cam_y = camera_get_view_y(view_camera[0])
+		// layer_y("Parallax1", _cam_y * 0.25)
+		// layer_y("Parallax2", _cam_y * 0.5)
 	}
 	
 	// clouds as asset layer (instead of objects)

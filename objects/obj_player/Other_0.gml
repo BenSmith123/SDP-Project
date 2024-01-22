@@ -7,6 +7,8 @@ if y > room_height
 	exit 
 }
 
+if y < 0 { exit }
+
 if !instance_exists(obj_map_transition)
 {
 	var going_to_left_map = x < 0

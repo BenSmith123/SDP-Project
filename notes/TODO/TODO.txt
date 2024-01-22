@@ -4,18 +4,25 @@ TO DO
 --------------------
 
 
+
+
 - Map tweaks
+	- another first snow map! current one is a little cluttered with the trees - maybe make one without?
+	- test room - more test stuff?
+	- make a beginners map with simple test bots and floors, more npcs
+
+- More skins!
+- Another sword?
 - Skins
 	- debug button or npc to change them
-	- loading/saving current skin id
 	- with weapon?
 	- skins sold at a store?
 	
 	
-- Keep an eye out for off screen spawining since transitions were added? FIX
+- Keep an eye out for off screen spawning since transitions were added? FIX
 
 - add mobs abilities!
-- animate mob 4
+- animate mob 4 - add more knockback?
 
 - Make an easier map for noobs or fast level up or weaker mob?
 - Mob hit graphics? (can tell when mob is stunned)

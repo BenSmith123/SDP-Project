@@ -38,11 +38,19 @@ function mob_attack_shoot()
 
 function mob_attack_ground_slam()
 {
-	if !instance_exists(obj_player) { exit }
+	var p = obj_player
+	
+	if !instance_exists(p) { exit }
 
-	if obj_player.grounded 
+	if p.grounded 
 	{ 
-		deal_damage_to_player(obj_player) 
-		// TODO - fx of player hit?
+		var player_was_hit = deal_damage_to_player(p) 
+		if player_was_hit
+		{
+			p.vel_x = x < p.x ? 20 : -20
+			
+			// create spark fx on player
+			with (p) { effect_create_spark_blue() }
+		}
 	}
 }
