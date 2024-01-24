@@ -54,7 +54,8 @@ function player_attack_melee()
 	
 	var attack_range = image_xscale * melee_attack_range
 	
-	var y_position_meeting = y > enemy.bbox_top && y <enemy.bbox_bottom
+	// 20px above or below the player still hit the mob
+	var y_position_meeting = y > enemy.bbox_top-20 && y <enemy.bbox_bottom+20
 	if (y_position_meeting == false) { exit }
 	
 	var facing_left = image_xscale == -1

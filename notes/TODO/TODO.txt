@@ -7,15 +7,18 @@ TO DO
 
 
 - Map tweaks
-	- another first snow map! current one is a little cluttered with the trees - maybe make one without?
+	- order of rooms?
 	- test room - more test stuff?
 	- make a beginners map with simple test bots and floors, more npcs
+	- snow mountains - needs layout - new ice block - friction?
+	- plains map - reduce map height needs more..
+	- metal - needs a lot more
 
+- add npcs in - from gfx
 - More skins!
 - Another sword?
 - Skins
 	- debug button or npc to change them
-	- with weapon?
 	- skins sold at a store?
 	
 	

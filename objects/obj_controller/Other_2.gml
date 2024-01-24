@@ -6,9 +6,11 @@ game_set_speed(60, gamespeed_fps);
 
 randomize() // randomize gamemakers seed
 
-initialise_globals();
+initialise_globals()
 
 initialise_stored_globals() // initialise all the saved global variables
+
+initialise_player_skins()
 
 load_game() // if no save game then these variables aren't overridden
 

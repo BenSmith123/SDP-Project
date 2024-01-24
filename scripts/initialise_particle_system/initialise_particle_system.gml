@@ -1,7 +1,7 @@
 function initialise_particle_system() 
 {
 
-	// CREATE FX: part_particles_create(global.fx,x,y,global.fx_smoke,1)
+	// CREATE FX: part_particles_create(global.fx,x,y,global.fx_steam_vent,1)
 
 	global.fx = part_system_create()
 	part_system_depth(global.fx,ObjectDepth.Effect)
@@ -109,6 +109,25 @@ function initialise_particle_system()
 	part_type_life(_ptype1, 10, 10);
 	global.fx_flare_2 = _ptype1
 	
+	
+	// steam vent
+	var _ptype1 = part_type_create();
+	part_type_shape(_ptype1, pt_shape_cloud);
+	part_type_size(_ptype1, 0.4, 0.45, -0.002, 0);
+	part_type_scale(_ptype1, 1, 1);
+	part_type_speed(_ptype1, 0, 0, 0, 0);
+	part_type_direction(_ptype1, 1, 1, 0.1, 0);
+	part_type_gravity(_ptype1, 0.42, 90);
+	part_type_orientation(_ptype1, 0, 360, 0, 0, false);
+	part_type_colour3(_ptype1, $CCCCCC, $999999, $676767);
+	part_type_alpha3(_ptype1, 1, 1, 1);
+	part_type_blend(_ptype1, false);
+	part_type_life(_ptype1, 15, 28);
+	global.fx_steam_vent = _ptype1
+	
+	
+	
+
 
 
 //var _ptype1 = part_type_create();
@@ -124,15 +143,6 @@ function initialise_particle_system()
 //part_type_blend(_ptype1, true);
 //part_type_life(_ptype1, 10, 10);
 //global.fx_flare = _ptype1
-
-
-
-
-
-
-
-
-
 
 
 }
