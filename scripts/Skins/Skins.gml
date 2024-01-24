@@ -11,7 +11,7 @@ enum PlayerSkinId
 ///               set the sprite offsets - will log an error when a sprite is not found
 function initialise_player_skins()
 {
-	//@returns - -1 if sprite doesn't exist OR the sprite id of a given the skin_id and action (e.g. spr_player_0_jump)
+	//@returns - -1 if sprite doesn't exist OR the sprite id of a given the skin_id and action (e.g. spr_skin_0_jump)
 	function get_sprite(sprite_name)
 	{
 		return asset_get_index(sprite_name)
@@ -21,7 +21,7 @@ function initialise_player_skins()
 		"stand",
 		"walk",
 		"jump",
-		"climb_ladder",
+		"climb",
 		"swing", // fighter
 		"throw", // spellcaster
 		"throw_2", // ninja
@@ -37,7 +37,7 @@ function initialise_player_skins()
 		{
 			var action_name = sprite_actions[r]
 			
-			var sprite_name = $"spr_player_{i}_{action_name}"
+			var sprite_name = $"spr_skin_{i}_{action_name}"
 			
 			var sprite = get_sprite(sprite_name)
 			

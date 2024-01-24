@@ -21,8 +21,6 @@ update_player_stats() // set all stats
 
 // IN-GAME
 friction = 0.25
-image_xscale = 1
-image_yscale = 1
 
 _image_speed = 0.2 // default image_speed to revert back to
 image_speed = _image_speed
@@ -77,7 +75,7 @@ instance_create(x,y,obj_hud)
 draw_item_on_back = function()
 {
 	if sprite_carrying == undefined || sprite_index == sprite_attack { exit }
-	draw_sprite_ext(sprite_carrying, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+	draw_sprite_ext(sprite_carrying, 0, x, y+8, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
 }
 
 // check if the player should be healing

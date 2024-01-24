@@ -14,7 +14,7 @@ function save_game()
 		
 		// update the player position for next log in
 		global.current_player_x = player_x
-		global.current_player_y = obj_player.y
+		global.current_player_y = obj_player.y-12
 	}
 	
 	////////// save the game (as temp ini) //////////

@@ -14,12 +14,17 @@ TO DO
 	- plains map - reduce map height needs more..
 	- metal - needs a lot more
 
+
+
+- align the throwing sprites? - test
 - add npcs in - from gfx
 - More skins!
 - Another sword?
-- Skins
-	- debug button or npc to change them
-	- skins sold at a store?
+
+
+
+warrior auto-defend skill - 50%chance of using shield when hit?
+- need to find a sprite that looks like player is defending to avoid having to add more
 	
 	
 - Keep an eye out for off screen spawning since transitions were added? FIX
@@ -29,7 +34,8 @@ TO DO
 
 - Make an easier map for noobs or fast level up or weaker mob?
 - Mob hit graphics? (can tell when mob is stunned)
-
+- start adding how-to commits! and saving link in a readme
+- add screenshots to readme ^
 
 - large distant cloud background (i.e. behind mountain)
 - Unbreaking projectiles - hit multiple mobs at once (by percentage) - skill or equip?
@@ -37,6 +43,7 @@ TO DO
 - More helper NPCs - ones that tell you tips
 - More items in shop
 - Portrait mode?
+- skins sold at a store?
 - Configurable particle fx - epic mode?
 - Weapon attack speeds? - slow/average/fast - based on equip
 - Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
@@ -59,7 +66,7 @@ Shop!
 - Graphics
 	- Tilesets work
 - Skill - spawn mob on your side
-Content: Maps, Mobs, Items, NPCs, Shop items
+CONTENT: Maps, Mobs, Items, NPCs, Shop items, SKINS
 - AI / Mobs:
 	- Skills: Ground slam, spawn other mobs, area of effect, teleport?
 	- Mobs walk back and forth when on one stretched out block - i.e. village map (might be mob_detect_wall script)

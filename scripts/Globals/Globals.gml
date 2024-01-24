@@ -76,7 +76,7 @@ function initialise_stored_globals()
 	global.current_player_y = -1
 
 	// player attributes
-	global.player_skin_id = 0
+	global.player_skin_id = 1
 	global.class = "Beginner"
 	global.name = choose("Ben", "_mo_", "zlazz0", "J3tt.0", "Vilz", "Chocolate", "N00B", "tInA")
 	global.level = 1

@@ -35,6 +35,9 @@
     "name": "spr_player_dead",
     "path": "sprites/spr_player_dead/spr_player_dead.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_skin_0_dead",
+    "path": "sprites/spr_skin_0_dead/spr_skin_0_dead.yy",
+  },
   "visible": true,
 }

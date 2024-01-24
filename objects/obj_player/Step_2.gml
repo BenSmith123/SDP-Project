@@ -2,7 +2,7 @@
 
 if is_on_ladder
 {
-	sprite_index = sprite_climb_rope
+	sprite_index = sprite_climb
 	
 	// stop animation if not moving
 	image_speed = y == yprevious ? 0 : 0.2
