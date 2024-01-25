@@ -2,6 +2,7 @@
 enum PlayerSkinId
 {
 	Default,
+	Ben,
 	Shadow,
 	length // hack to easily loop over enums (must be the last item)
 }
