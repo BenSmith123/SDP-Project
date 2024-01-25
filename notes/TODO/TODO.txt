@@ -113,21 +113,6 @@ IDEAS
 
 
 	
-	
-Resources:
-
-item sprites: https://maplestory.wiki/GMS/246/item?overallCategory=Use&page=4&category=Consumable&subCategory=Potion&cash=0
-https://maplestory.io/api/GMS/246/item/5240001/icon?resize=1
-^ use param to get correct size
-
-https://maplestory.wiki/GMS/246/mob?page=6
-https://maplestory.wiki/GMS/246/mob?page=13
-
-character/NPC design:
-https://maplestory.net/design/designer
-
-damage font (size 24)
-https://fontmeme.com/naruto-font/#textstyle
 
 
 
