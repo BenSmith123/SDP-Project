@@ -1,5 +1,6 @@
 
-scr_text_1()
+scr_text_3()
+
 draw_set_halign(fa_right)
 
 var display_text = repeat_count > 1

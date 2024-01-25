@@ -8,7 +8,7 @@ function player_jump_down()
 	}
 	
 	// check solid block seperately first as its a child of block
-	if instance_place(x, y + 1, obj_block_solid)  { exit }
+	if instance_place(x, y + 1, parent_block_solid)  { exit }
 
 	var block = instance_place(x, y + 1, obj_block)
 	if block == noone { exit }

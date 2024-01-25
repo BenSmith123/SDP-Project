@@ -5,13 +5,13 @@ function mob_detect_wall()
 	var block_dist_x = block_distance * image_xscale
 		
 	// if wall or slope to the left or right
-	if place_meeting(x+block_dist_x,y,obj_block_solid)
+	if place_meeting(x+block_dist_x,y,parent_block_solid)
 	{
 	    stay = false
 		
 		state = "wall"
 		
-		var block_is_too_high = place_meeting(x+block_dist_x ,y+jump_block_height, obj_block_solid)
+		var block_is_too_high = place_meeting(x+block_dist_x ,y+jump_block_height, parent_block_solid)
         
 	    // if the ai can jump
 	    if jump > 0 && !block_is_too_high

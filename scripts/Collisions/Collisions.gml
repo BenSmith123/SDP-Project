@@ -16,7 +16,7 @@ function check_collision(_move_x, _move_y, disable_collision_check = false)
 		return true;
 	}
 	
-	if place_meeting(x + _move_x, y + _move_y, obj_block_solid)
+	if place_meeting(x + _move_x, y + _move_y, parent_block_solid)
 	{
 		// If there was an object collision, return true, and end the function
 		return true;

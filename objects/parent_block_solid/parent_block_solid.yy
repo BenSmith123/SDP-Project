@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_solid_invisible",
+  "name": "parent_block_solid",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -10,8 +10,8 @@
     "path": "folders/Objects/Blocks.yy",
   },
   "parentObjectId": {
-    "name": "parent_block_solid",
-    "path": "objects/parent_block_solid/parent_block_solid.yy",
+    "name": "obj_block",
+    "path": "objects/obj_block/obj_block.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -35,5 +35,5 @@
     "path": "sprites/spr_block_test_2/spr_block_test_2.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

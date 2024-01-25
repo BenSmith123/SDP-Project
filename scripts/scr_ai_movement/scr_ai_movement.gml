@@ -14,7 +14,7 @@ function scr_ai_movement()
 			if !(can_be_stunned && stunned)
 			{
 				// move!
-				if place_empty(x+speed_in_direction, y-1, obj_block_solid)
+				if place_empty(x+speed_in_direction, y-1, parent_block_solid)
 				{
 					state = "moving"
 					hspeed = speed_in_direction

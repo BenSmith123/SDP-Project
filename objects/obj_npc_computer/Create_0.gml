@@ -1,5 +1,5 @@
 
 event_inherited()
 
-name = "Settings"
+name = "Skin Change PC"
 text = "Free random skin!"

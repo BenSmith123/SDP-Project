@@ -14,7 +14,7 @@ scr_ai_movement()
 if hspeed < 0 
 {
 	// and meets a solid wall to the left
-	if !place_empty(x+hspeed, y-1, obj_block_solid)
+	if !place_empty(x+hspeed, y-1, parent_block_solid)
 	{
 		// disable movement or hitback
 		hspeed = 0
@@ -22,7 +22,7 @@ if hspeed < 0
 }
 else  if hspeed > 0
 {
-	if !place_empty(x+hspeed, y-1, obj_block_solid)
+	if !place_empty(x+hspeed, y-1, parent_block_solid)
 	{
 		hspeed = 0
 	}

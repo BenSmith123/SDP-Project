@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_solid",
-  "eventList": [],
+  "name": "obj_block_slope_left_ice_2x1",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -10,8 +12,8 @@
     "path": "folders/Objects/Blocks.yy",
   },
   "parentObjectId": {
-    "name": "obj_block",
-    "path": "objects/obj_block/obj_block.yy",
+    "name": "obj_block_slope_parent",
+    "path": "objects/obj_block_slope_parent/obj_block_slope_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -26,13 +28,11 @@
   "physicsShape": 0,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"image_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_test_2",
-    "path": "sprites/spr_block_test_2/spr_block_test_2.yy",
+    "name": "spr_block_bl_ice_2x1",
+    "path": "sprites/spr_block_bl_ice_2x1/spr_block_bl_ice_2x1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

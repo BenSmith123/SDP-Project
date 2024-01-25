@@ -8,9 +8,9 @@ function get_playable_maps_order()
 		// add maps here to be included in 
 		room_test_mobs,
 		room_test,
+		room_plains,
 		room_village,
 		room_cave_small,
-		room_plains,
 		room_cave_large,
 		room_dark_forest,
 		room_snow_mountains,
@@ -94,7 +94,7 @@ function set_block_defaults(spr)
 		image_speed = 0
 	}
 	
-	with (obj_block_solid) // wall block
+	with (parent_block_solid) // wall block
 	{ 
 		image_index = 1
 	}
