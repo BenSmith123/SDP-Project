@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_skin_2_throw",
-  "bbox_bottom": 66,
+  "bbox_bottom": 67,
   "bbox_left": 0,
   "bbox_right": 73,
   "bbox_top": 0,
@@ -19,7 +19,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 67,
+  "height": 68,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"342e36a0-0910-4ab0-b810-6194c9d71bf2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},

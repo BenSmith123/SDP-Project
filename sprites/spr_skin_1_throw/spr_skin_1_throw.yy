@@ -4,7 +4,7 @@
   "name": "spr_skin_1_throw",
   "bbox_bottom": 67,
   "bbox_left": 0,
-  "bbox_right": 65,
+  "bbox_right": 67,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -74,5 +74,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 66,
+  "width": 68,
 }

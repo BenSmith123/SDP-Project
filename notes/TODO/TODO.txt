@@ -15,8 +15,6 @@ TO DO
 	- metal - needs a lot more
 
 
-
-- align the throwing sprites? - test
 - add npcs in - from gfx
 - More skins!
 - Another sword?
