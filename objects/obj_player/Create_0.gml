@@ -20,7 +20,6 @@ hp = global.hp_last
 update_player_stats() // set all stats
 
 // IN-GAME
-friction = 0.25
 
 _image_speed = 0.2 // default image_speed to revert back to
 image_speed = _image_speed
@@ -49,7 +48,6 @@ move_jump = false
 move_jump_down = false
 move_attack = false
 move_temp = false // debug
-
 
 player_set_skin_sprites()
 player_set_class_attributes()

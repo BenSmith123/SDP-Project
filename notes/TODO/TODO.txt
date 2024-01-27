@@ -13,20 +13,20 @@ TO DO
 	- plains map - reduce map height needs more..
 	- metal - needs a lot more
 
-
+- room snow - add a cave somewhere
 - add npcs in - from gfx
 - More skins!
 - Another sword
 
+- surface_depth_disable()
+- meme button
+- HUD for test room to spawn random mobs?
 - some fx being behind blocks?
 
 
 
 warrior auto-defend skill - 50%chance of using shield when hit?
 - need to find a sprite that looks like player is defending to avoid having to add more
-	
-	
-- Keep an eye out for off screen spawning since transitions were added? FIX
 
 - add mobs abilities!
 - animate mob 4 - add more knockback?
@@ -36,7 +36,6 @@ warrior auto-defend skill - 50%chance of using shield when hit?
 - start adding how-to commits! and saving link in a readme
 - add screenshots to readme ^
 
-- large distant cloud background (i.e. behind mountain)
 - Unbreaking projectiles - hit multiple mobs at once (by percentage) - skill or equip?
   ^ i.e. 10% unbreaking
 - More helper NPCs - ones that tell you tips

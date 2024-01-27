@@ -49,7 +49,7 @@ if has_teleport_skill
 	block_to_teleport_to = collision_line(x,y,x,closest_block_above.y, obj_block,false,true)
 
 	if distance_to_object(block_to_teleport_to) < 150
-	&& distance_to_object(block_to_teleport_to) > 80
+	if block_to_teleport_to.bbox_top < bbox_bottom
 	{
 		can_teleport_to_point = true
 		draw_sprite(spr_marker_pointer, 0, x, block_to_teleport_to.bbox_top-2)

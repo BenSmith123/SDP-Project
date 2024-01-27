@@ -8,7 +8,12 @@ function global_game_controls()
 	if keyboard_check_pressed(ord("E"))
 	{
 		
-		initialise_player_skins()
+		// test snow
+		with (obj_player) 
+		{ 
+			friction_power = 0.05 
+		}
+		//initialise_player_skins()
 		// test_player_skill()
 
 		

@@ -1,5 +1,6 @@
 
 depth = ObjectDepth.Controller
+part_system_depth(global.fx,ObjectDepth.Effect)
 
 // fade in
 var transition = instance_create(x, y, obj_map_transition)
