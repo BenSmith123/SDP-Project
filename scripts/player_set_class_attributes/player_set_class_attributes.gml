@@ -23,7 +23,7 @@ function player_set_class_attributes(assign_weapons = false)
 		{
 			case "Fighter": return ItemId.BasicSword
 			case "Hunter": return ItemId.BasicBow
-			case "Spellcaster": return ItemId.BasicSword // TODO!
+			case "Spellcaster": return ItemId.BasicShuriken // TODO!
 			case "Ninja": return ItemId.BasicShuriken
 		}
 	}

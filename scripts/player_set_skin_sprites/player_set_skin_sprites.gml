@@ -16,7 +16,7 @@ function player_set_skin_sprites()
 	function get_attack_action()
 	{
 		if global.class = "Fighter" || global.class = "Beginner" return "swing"
-		if global.class = "Ninja" || global.class == "Spellcaster" return "throw_2"
+		if global.class = "Ninja" return "throw_2"
 		if global.class = "Spellcaster" return "throw"
 		if global.class = "Hunter" return "shoot"
 		
