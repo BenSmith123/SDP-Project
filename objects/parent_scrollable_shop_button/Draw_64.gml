@@ -19,6 +19,7 @@ draw_set_alpha(image_alpha)
 draw_self()
 
 // text has to be a function call as its not set on create
+if disabled { draw_set_color(c_silver) } 
 draw_text(x, y, string_hash_to_newline(get_text()))
 
 draw_set_alpha(1)

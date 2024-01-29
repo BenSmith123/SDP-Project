@@ -1,8 +1,10 @@
 
 event_inherited()
 
+// player
+draw_sprite_ext(obj_player.sprite_stand, player_image_index, dialog_x_right-76, dialog_y_top+48, -1, 1, 0, c_white, 1)
 
-//scr_text_4()
-//draw_set_halign(fa_left)
-//draw_text(dialog_x_left+80, dialog_y_top+240, get_player_stats_text())
+// npc
+if shop_npc_sprite != -1
+draw_sprite_ext(shop_npc_sprite, image_index, dialog_x_left+76, dialog_y_top+48, -1, 1, 0, c_white, 1)
 

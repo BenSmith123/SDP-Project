@@ -21,5 +21,5 @@ on_press_accepted = function()
 // get function instead of text because this is set after obj creation
 get_text = function()
 {
-	return $"Buy#(${number_format_commas(attached_item_obj.cost)})"
+	return $"Buy#${number_format_commas(attached_item_obj.cost)}"
 }

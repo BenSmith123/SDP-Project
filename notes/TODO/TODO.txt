@@ -18,6 +18,11 @@ TO DO
 - More skins!
 - Another sword
 
+
+- debug for spawning mobs? or mob
+- add plants
+- shop sellable item that isn't an item
+
 - surface_depth_disable()
 - meme button
 - HUD for test room to spawn random mobs?
@@ -55,6 +60,7 @@ Shop!
 	- HUD change
 	- Nametag change gfx?
 	- Custom name?
+	- Expand inventory slot
 - Game save - mob positions?
 - Hidden maps - collision with obj will take them to map (outside of global map array)
 - HUD colour/font hard to read

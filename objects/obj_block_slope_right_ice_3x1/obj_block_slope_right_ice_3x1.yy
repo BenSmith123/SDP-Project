@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block_slope_left_ice_2x1",
+  "name": "obj_block_slope_right_ice_3x1",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_bl_ice_2x1",
-    "path": "sprites/spr_block_bl_ice_2x1/spr_block_bl_ice_2x1.yy",
+    "name": "spr_block_br_ice_3x1",
+    "path": "sprites/spr_block_br_ice_3x1/spr_block_br_ice_3x1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

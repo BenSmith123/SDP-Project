@@ -32,6 +32,9 @@
     "name": "spr_block_ice",
     "path": "sprites/spr_block_ice/spr_block_ice.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_block_ice",
+    "path": "sprites/spr_block_ice/spr_block_ice.yy",
+  },
   "visible": true,
 }

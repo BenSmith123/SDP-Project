@@ -27,7 +27,7 @@ TODO - add disc link
    _Note: Don't set sprite offsets/origins or the collision masks - this is all handled in code!_
 5. Missing climbing sprite? You might have to manually get the 2 climbing sprites.. (Inspect browser > png source..)
 
-Example: _link to how-to commit_
+Example: https://github.com/BenSmith123/SDP-Project/commit/90795585aed71dd3089c8b053675fc6bab3c9b26
 
 ## Resources
 
