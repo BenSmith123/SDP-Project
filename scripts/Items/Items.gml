@@ -256,7 +256,7 @@ function get_item(item_id)
 			sprite: spr_carry_bow,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 1000,
+			sell_value: 500,
 			damage_multiplier: 0,
 			sprite_carrying: spr_carry_bow
 		}), 
@@ -270,7 +270,7 @@ function get_item(item_id)
 			sprite: spr_item_shuriken,
 			rarity: ItemRarity.Common,
 			is_sellable: true,
-			sell_value: 1000,
+			sell_value: 500,
 			damage_multiplier: 0,
 			sprite_projectile: spr_projectile_basic_shuriken
 		}),
@@ -278,7 +278,7 @@ function get_item(item_id)
 		{
 			iid: ItemId.Kunai,
 			name: "Kunai Throwing Knife",
-			description: "+2% damage",
+			description: "+2% attack",
 			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_kunai,
@@ -292,7 +292,7 @@ function get_item(item_id)
 		{
 			iid: ItemId.ThrowingStar1,
 			name: "Bliss Throwing Star",
-			description: "+3% damage",
+			description: "+3% attack",
 			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_1,
@@ -307,7 +307,7 @@ function get_item(item_id)
 		{
 			iid: ItemId.SnowflakeStar,
 			name: "Black Snowflake Star",
-			description: "+5% damage",
+			description: "+5% attack",
 			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_3,
@@ -321,7 +321,7 @@ function get_item(item_id)
 		{
 			iid: ItemId.ThrowingStar2,
 			name: "Snowflake Throwing Star",
-			description: "+5% damage",
+			description: "+5% attack",
 			class: "Ninja",
 			equip_slot: ItemSlot.Primary,
 			sprite: spr_item_throwing_star_2,

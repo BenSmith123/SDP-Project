@@ -13,7 +13,7 @@ shop_items =
 	{
 		item_id: ItemId.BasicShuriken,
 		type: SellableType.Item,
-		cost: 50
+		cost: 1000
 	},
 	{
 		item_id: ItemId.RevivePotion,

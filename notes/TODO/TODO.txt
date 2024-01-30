@@ -21,11 +21,10 @@ TO DO
 - More mobs
 - Another sword
 
-- debug for spawning mobs?
 - add plants
 - shop sellable that isn't an item
 - MiniMap
-
+- golden throwing star with high damage increase!
 - HUD for test room to spawn random mobs?
 - FIX player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 
