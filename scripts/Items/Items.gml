@@ -78,260 +78,268 @@ sprite_carrying
 
 ***/
 
+
+///@description - initialise all items and store globally - called at game_start
+function initialise_items()
+{
+  return [
+    create_item(
+	{
+		iid: ItemId.DronePiece,
+		name: "Drone piece",
+		type: ItemType.Misc,
+		description: "-",
+		sprite: spr_drone_piece,
+		rarity: ItemRarity.Common,
+		stack_size: 50,
+		is_sellable: true,
+		sell_value: 10
+	}),
+	create_item(
+	{
+		iid: ItemId.DroneHeart,
+		name: "Drone heart",
+		type: ItemType.Misc,
+		description: "Used to power the Drone Operator",
+		sprite: spr_drone_heart,
+		rarity: ItemRarity.Common,
+		stack_size: 20,
+		is_sellable: true,
+		sell_value: 100
+	}),
+	create_item(
+	{
+		iid: ItemId.Helmet,
+		name: "Blue Potion",
+		type: ItemType.Misc,
+		description: "-",
+		sprite: spr_item_potion_blue,
+		rarity: ItemRarity.Common,
+		stack_size: 10,
+		is_sellable: true,
+		sell_value: 50
+	}),
+	create_item(
+	{
+		iid: ItemId.Banana,
+		name: "Banana",
+		type: ItemType.Misc,
+		description: "A useless banana..",
+		sprite: spr_item_banana,
+		rarity: ItemRarity.Rare,
+		stack_size: 50,
+		is_sellable: true,
+		sell_value: 1
+	}),
+	create_item(
+	{
+		iid: ItemId.Battery,
+		name: "Battery",
+		type: ItemType.Misc,
+		description: "-",
+		sprite: spr_item_battery,
+		rarity: ItemRarity.Common,
+		stack_size: 50,
+		is_sellable: true,
+		sell_value: 20
+	}),
+	create_item(
+	{
+		iid: ItemId.DragonEgg,
+		name: "Dragon Egg",
+		type: ItemType.Misc,
+		description: "-",
+		sprite: spr_item_dragon_egg,
+		rarity: ItemRarity.Rare,
+		stack_size: 10,
+		is_sellable: true,
+		sell_value: 300
+	}),
+	create_item(
+	{
+		iid: ItemId.GoldPlate,
+		name: "Gold Plate",
+		type: ItemType.Misc,
+		description: "0.1% chance of finding",
+		sprite: spr_item_gold_plate,
+		rarity: ItemRarity.VeryRare,
+		stack_size: 10,
+		is_sellable: true,
+		sell_value: 2000
+	}),
+	create_item(
+	{
+		iid: ItemId.GoldRock,
+		name: "Gold Nugget",
+		type: ItemType.Misc,
+		description: "Extremely valuable gold rock..",
+		sprite: spr_item_gold_rock,
+		rarity: ItemRarity.Legendary,
+		stack_size: 10,
+		is_sellable: true,
+		sell_value: 10000
+	}),
+	create_item(
+	{
+		iid: ItemId.Orb,
+		name: "Orb",
+		type: ItemType.Misc,
+		description: "Orb used to find hidden maps.",
+		sprite: spr_item_orb,
+		rarity: ItemRarity.UltraRare,
+		stack_size: 10,
+		is_sellable: true,
+		sell_value: 1500
+	}),
+	create_item(
+	{
+		iid: ItemId.RevivePotion,
+		name: "Revive Potion",
+		type: ItemType.Misc,
+		description: "Revive and lose no coins or EXP.",
+		sprite: spr_item_revive_potion,
+		rarity: ItemRarity.Common,
+		stack_size: 1,
+		is_sellable: true,
+		sell_value: 200
+	}),
+	create_item(
+	{
+		iid: ItemId.Ruby,
+		name: "Ruby",
+		type: ItemType.Misc,
+		description: "A valuable rare ruby gem.",
+		sprite: spr_item_ruby,
+		rarity: ItemRarity.VeryRare,
+		stack_size: 10,
+		is_sellable: true,
+		sell_value: 1000
+	}),
+	// EQUIPS
+	create_item_equip(
+	{
+		iid: ItemId.BeginnersSword,
+		name: "Beginner's Sword",
+		description: "",
+		class: "Beginner",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_item_beginners_sword,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 500,
+		damage_multiplier: 0,
+		sprite_carrying: spr_carry_sword,
+		sprite_attacking: spr_swing_sword_basic
+	}),
+	create_item_equip(
+	{
+		iid: ItemId.BasicSword,
+		name: "Basic Sword",
+		description: "",
+		class: "Fighter",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_carry_sword,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 500,
+		damage_multiplier: 0,
+		sprite_carrying: spr_carry_sword,
+		sprite_attacking: spr_swing_sword_basic
+	}),
+	create_item_equip(
+	{
+		iid: ItemId.BasicBow,
+		name: "Basic Bow",
+		description: "",
+		class: "Hunter",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_carry_bow,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 500,
+		damage_multiplier: 0,
+		sprite_carrying: spr_carry_bow
+	}), 
+	create_item_equip(
+	{
+		iid: ItemId.BasicShuriken,
+		name: "Basic Shuriken",
+		description: "",
+		class: "Ninja",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_item_shuriken,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 500,
+		damage_multiplier: 0,
+		sprite_projectile: spr_projectile_basic_shuriken
+	}),
+	create_item_equip(
+	{
+		iid: ItemId.Kunai,
+		name: "Kunai Throwing Knife",
+		description: "+2% attack",
+		class: "Ninja",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_item_throwing_kunai,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 10,
+		damage_multiplier: 0.02,
+		sprite_projectile: spr_projectile_kunai
+	}),
+	create_item_equip(
+	{
+		iid: ItemId.ThrowingStar1,
+		name: "Bliss Throwing Star",
+		description: "+3% attack",
+		class: "Ninja",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_item_throwing_star_1,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 10,
+		damage_multiplier: 0.03,
+		sprite_projectile: spr_item_throwing_star_1
+	}),			
+
+	create_item_equip(
+	{
+		iid: ItemId.SnowflakeStar,
+		name: "Black Snowflake Star",
+		description: "+5% attack",
+		class: "Ninja",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_item_throwing_star_3,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 10,
+		damage_multiplier: 0.05,
+		sprite_projectile: spr_item_throwing_star_3
+	}),
+	create_item_equip(
+	{
+		iid: ItemId.ThrowingStar2,
+		name: "Snowflake Throwing Star",
+		description: "+5% attack",
+		class: "Ninja",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_item_throwing_star_2,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 10,
+		damage_multiplier: 0.05,
+		sprite_projectile: spr_item_throwing_star_2
+	})
+  ]
+}
+
+
 function get_item(item_id)
 {
 	// create an array of all items
 	// NOTE - this was easier/faster to deal with than creating maps etc.
-	var all_items_array = [
-		create_item(
-		{
-			iid: ItemId.DronePiece,
-			name: "Drone piece",
-			type: ItemType.Misc,
-			description: "-",
-			sprite: spr_drone_piece,
-			rarity: ItemRarity.Common,
-			stack_size: 50,
-			is_sellable: true,
-			sell_value: 10
-		}),
-		create_item(
-		{
-			iid: ItemId.DroneHeart,
-			name: "Drone heart",
-			type: ItemType.Misc,
-			description: "Used to power the Drone Operator",
-			sprite: spr_drone_heart,
-			rarity: ItemRarity.Common,
-			stack_size: 20,
-			is_sellable: true,
-			sell_value: 100
-		}),
-		create_item(
-		{
-			iid: ItemId.Helmet,
-			name: "Blue Potion",
-			type: ItemType.Misc,
-			description: "-",
-			sprite: spr_item_potion_blue,
-			rarity: ItemRarity.Common,
-			stack_size: 10,
-			is_sellable: true,
-			sell_value: 50
-		}),
-		create_item(
-		{
-			iid: ItemId.Banana,
-			name: "Banana",
-			type: ItemType.Misc,
-			description: "A useless banana..",
-			sprite: spr_item_banana,
-			rarity: ItemRarity.Rare,
-			stack_size: 50,
-			is_sellable: true,
-			sell_value: 1
-		}),
-		create_item(
-		{
-			iid: ItemId.Battery,
-			name: "Battery",
-			type: ItemType.Misc,
-			description: "-",
-			sprite: spr_item_battery,
-			rarity: ItemRarity.Common,
-			stack_size: 50,
-			is_sellable: true,
-			sell_value: 20
-		}),
-		create_item(
-		{
-			iid: ItemId.DragonEgg,
-			name: "Dragon Egg",
-			type: ItemType.Misc,
-			description: "-",
-			sprite: spr_item_dragon_egg,
-			rarity: ItemRarity.Rare,
-			stack_size: 10,
-			is_sellable: true,
-			sell_value: 300
-		}),
-		create_item(
-		{
-			iid: ItemId.GoldPlate,
-			name: "Gold Plate",
-			type: ItemType.Misc,
-			description: "0.1% chance of finding",
-			sprite: spr_item_gold_plate,
-			rarity: ItemRarity.VeryRare,
-			stack_size: 10,
-			is_sellable: true,
-			sell_value: 2000
-		}),
-		create_item(
-		{
-			iid: ItemId.GoldRock,
-			name: "Gold Nugget",
-			type: ItemType.Misc,
-			description: "Extremely valuable gold rock..",
-			sprite: spr_item_gold_rock,
-			rarity: ItemRarity.Legendary,
-			stack_size: 10,
-			is_sellable: true,
-			sell_value: 10000
-		}),
-		create_item(
-		{
-			iid: ItemId.Orb,
-			name: "Orb",
-			type: ItemType.Misc,
-			description: "Orb used to find hidden maps.",
-			sprite: spr_item_orb,
-			rarity: ItemRarity.UltraRare,
-			stack_size: 10,
-			is_sellable: true,
-			sell_value: 1500
-		}),
-		create_item(
-		{
-			iid: ItemId.RevivePotion,
-			name: "Revive Potion",
-			type: ItemType.Misc,
-			description: "Revive and lose no coins or EXP.",
-			sprite: spr_item_revive_potion,
-			rarity: ItemRarity.Common,
-			stack_size: 1,
-			is_sellable: true,
-			sell_value: 200
-		}),
-		create_item(
-		{
-			iid: ItemId.Ruby,
-			name: "Ruby",
-			type: ItemType.Misc,
-			description: "A valuable rare ruby gem.",
-			sprite: spr_item_ruby,
-			rarity: ItemRarity.VeryRare,
-			stack_size: 10,
-			is_sellable: true,
-			sell_value: 1000
-		}),
-		// EQUIPS
-		create_item_equip(
-		{
-			iid: ItemId.BeginnersSword,
-			name: "Beginner's Sword",
-			description: "",
-			class: "Beginner",
-			equip_slot: ItemSlot.Primary,
-			sprite: spr_item_beginners_sword,
-			rarity: ItemRarity.Common,
-			is_sellable: true,
-			sell_value: 500,
-			damage_multiplier: 0,
-			sprite_carrying: spr_carry_sword,
-			sprite_attacking: spr_swing_sword_basic
-		}),
-		create_item_equip(
-		{
-			iid: ItemId.BasicSword,
-			name: "Basic Sword",
-			description: "",
-			class: "Fighter",
-			equip_slot: ItemSlot.Primary,
-			sprite: spr_carry_sword,
-			rarity: ItemRarity.Common,
-			is_sellable: true,
-			sell_value: 500,
-			damage_multiplier: 0,
-			sprite_carrying: spr_carry_sword,
-			sprite_attacking: spr_swing_sword_basic
-		}),
-		create_item_equip(
-		{
-			iid: ItemId.BasicBow,
-			name: "Basic Bow",
-			description: "",
-			class: "Hunter",
-			equip_slot: ItemSlot.Primary,
-			sprite: spr_carry_bow,
-			rarity: ItemRarity.Common,
-			is_sellable: true,
-			sell_value: 500,
-			damage_multiplier: 0,
-			sprite_carrying: spr_carry_bow
-		}), 
-		create_item_equip(
-		{
-			iid: ItemId.BasicShuriken,
-			name: "Basic Shuriken",
-			description: "",
-			class: "Ninja",
-			equip_slot: ItemSlot.Primary,
-			sprite: spr_item_shuriken,
-			rarity: ItemRarity.Common,
-			is_sellable: true,
-			sell_value: 500,
-			damage_multiplier: 0,
-			sprite_projectile: spr_projectile_basic_shuriken
-		}),
-		create_item_equip(
-		{
-			iid: ItemId.Kunai,
-			name: "Kunai Throwing Knife",
-			description: "+2% attack",
-			class: "Ninja",
-			equip_slot: ItemSlot.Primary,
-			sprite: spr_item_throwing_kunai,
-			rarity: ItemRarity.Common,
-			is_sellable: true,
-			sell_value: 10,
-			damage_multiplier: 0.02,
-			sprite_projectile: spr_projectile_kunai
-		}),
-		create_item_equip(
-		{
-			iid: ItemId.ThrowingStar1,
-			name: "Bliss Throwing Star",
-			description: "+3% attack",
-			class: "Ninja",
-			equip_slot: ItemSlot.Primary,
-			sprite: spr_item_throwing_star_1,
-			rarity: ItemRarity.Common,
-			is_sellable: true,
-			sell_value: 10,
-			damage_multiplier: 0.03,
-			sprite_projectile: spr_item_throwing_star_1
-		}),			
-
-		create_item_equip(
-		{
-			iid: ItemId.SnowflakeStar,
-			name: "Black Snowflake Star",
-			description: "+5% attack",
-			class: "Ninja",
-			equip_slot: ItemSlot.Primary,
-			sprite: spr_item_throwing_star_3,
-			rarity: ItemRarity.Common,
-			is_sellable: true,
-			sell_value: 10,
-			damage_multiplier: 0.05,
-			sprite_projectile: spr_item_throwing_star_3
-		}),
-		create_item_equip(
-		{
-			iid: ItemId.ThrowingStar2,
-			name: "Snowflake Throwing Star",
-			description: "+5% attack",
-			class: "Ninja",
-			equip_slot: ItemSlot.Primary,
-			sprite: spr_item_throwing_star_2,
-			rarity: ItemRarity.Common,
-			is_sellable: true,
-			sell_value: 10,
-			damage_multiplier: 0.05,
-			sprite_projectile: spr_item_throwing_star_2
-		})
-	]
+	all_items_array = global.all_items_array
 
 	var arr_length = array_length(all_items_array)
 	
@@ -344,6 +352,9 @@ function get_item(item_id)
 		}
 	}
 }
+
+
+global.all_items_array = 
 
 
 // function for ensuring all times have the same attributes & can de defaulted easily

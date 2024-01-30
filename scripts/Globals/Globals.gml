@@ -35,6 +35,7 @@ function initialise_globals()
 
 		
 	// IN-GAME
+	global.all_items_array = initialise_items()
 
 	// set where the player first spawns in the room
 	global.player_start_x = 0 
@@ -60,7 +61,6 @@ function initialise_globals()
 /// @description initialise stored global global variables
 function initialise_stored_globals()
 {
-	
 	// inventory
 	global.inventory_size = 21
 	global.inventory_array = []
