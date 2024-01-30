@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite200",
-    "path": "sprites/Sprite200/Sprite200.yy",
+    "name": "spr_vent_crack",
+    "path": "sprites/spr_vent_crack/spr_vent_crack.yy",
   },
   "spriteMaskId": null,
   "visible": true,

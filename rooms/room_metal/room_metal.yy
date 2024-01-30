@@ -10,7 +10,6 @@
     {"name":"inst_6A3E4F80_1_1_2","path":"rooms/room_metal/room_metal.yy",},
     {"name":"inst_2A307BDE","path":"rooms/room_metal/room_metal.yy",},
     {"name":"inst_17451B38","path":"rooms/room_metal/room_metal.yy",},
-    {"name":"inst_399E7B57","path":"rooms/room_metal/room_metal.yy",},
     {"name":"inst_693994C3","path":"rooms/room_metal/room_metal.yy",},
     {"name":"inst_803AACC","path":"rooms/room_metal/room_metal.yy",},
     {"name":"inst_33EB7520","path":"rooms/room_metal/room_metal.yy",},
@@ -368,6 +367,7 @@
     {"name":"inst_3EE0A8FE","path":"rooms/room_metal/room_metal.yy",},
     {"name":"inst_1A89BF54","path":"rooms/room_metal/room_metal.yy",},
     {"name":"inst_E86452D","path":"rooms/room_metal/room_metal.yy",},
+    {"name":"inst_299F748B","path":"rooms/room_metal/room_metal.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -380,7 +380,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17451B38","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_marker_player_spawn_left","path":"objects/obj_marker_player_spawn_left/obj_marker_player_spawn_left.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":928.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Mobs","depth":-4000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_399E7B57","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mob_dragon","path":"objects/obj_mob_dragon/obj_mob_dragon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3846.0,"y":1465.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1035F0BA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mob_spawner_drone","path":"objects/obj_mob_spawner_drone/obj_mob_spawner_drone.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"parent_mob_spawner","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"propertyId":{"name":"spawn_time_max_sec","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"value":"1",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"parent_mob_spawner","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"propertyId":{"name":"spawn_time_min_sec","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"value":"1",},
@@ -393,6 +392,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"parent_mob_spawner","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"propertyId":{"name":"mob_minimum","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"value":"20",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"parent_mob_spawner","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"propertyId":{"name":"mob_limit","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"value":"50",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":604.0,"y":1392.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_299F748B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mob_behemoth_dragon","path":"objects/obj_mob_behemoth_dragon/obj_mob_behemoth_dragon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3904.0,"y":1280.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Blocks","depth":-3900,"effectEnabled":true,"effectType":null,"gridX":24,"gridY":24,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_803AACC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":1008.0,},

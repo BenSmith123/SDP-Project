@@ -4,10 +4,10 @@ event_inherited()
 name = "Drone Operator"
 level = 20
 hp = 100
-attack = 50
+attack = 40
 defence = 20
 accuracy = 5
-experience = 150
+experience = 100
 
 walkspeed = 2
 jump = 0

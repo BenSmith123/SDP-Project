@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block_test_2",
-    "path": "sprites/spr_block_test_2/spr_block_test_2.yy",
+    "name": "spr_ladder",
+    "path": "sprites/spr_ladder/spr_ladder.yy",
   },
   "spriteMaskId": null,
   "visible": true,

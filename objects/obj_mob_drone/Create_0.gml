@@ -5,7 +5,7 @@ name = "Drone"
 level = 1
 hp = 25
 attack = 5
-defence = 0
+defence = 2
 accuracy = 5
 experience = 10
 

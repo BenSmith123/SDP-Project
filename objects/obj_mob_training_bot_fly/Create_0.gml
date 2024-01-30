@@ -7,7 +7,7 @@ hp = 8
 attack = 5
 defence = 0
 accuracy = 0
-experience = 10
+experience = 5
 
 walkspeed = 1
 jump = 0

@@ -1,58 +1,46 @@
 
-
 TO DO
 --------------------
 
 
 
 
+
+ 
+------------ NEXT RELEASE ------------
 - Map tweaks
 	- test room - more test stuff?
 	- make a beginners map with simple test bots and floors, more npcs
-	- snow mountains - needs layout - new ice block - friction?
-	- plains map - reduce map height needs more..
 	- metal - needs a lot more
+	
+	
+	- Make an easier map for noobs or fast level up or weaker mob?
+	- Mob hit graphics? (can tell when mob is stunned)
 
-- room snow - add a cave somewhere
-- add npcs in - from gfx
+
+--------------------------------------
+
 - More skins!
+- More mobs
 - Another sword
 
-
-- debug for spawning mobs? or mob
+- debug for spawning mobs?
 - add plants
-- shop sellable item that isn't an item
+- shop sellable that isn't an item
+- MiniMap
 
-- surface_depth_disable()
-- meme button
 - HUD for test room to spawn random mobs?
-- some fx being behind blocks?
-
-
-
-warrior auto-defend skill - 50%chance of using shield when hit?
-- need to find a sprite that looks like player is defending to avoid having to add more
+- FIX player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 
 - add mobs abilities!
 - animate mob 4 - add more knockback?
 
-- Make an easier map for noobs or fast level up or weaker mob?
-- Mob hit graphics? (can tell when mob is stunned)
-- start adding how-to commits! and saving link in a readme
-- add screenshots to readme ^
-
-- Unbreaking projectiles - hit multiple mobs at once (by percentage) - skill or equip?
-  ^ i.e. 10% unbreaking
 - More helper NPCs - ones that tell you tips
-- More items in shop
 - Portrait mode?
 - skins sold at a store?
-- Configurable particle fx - epic mode?
-- Weapon attack speeds? - slow/average/fast - based on equip
-- Player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
-- shop: buy/sell items (seeker, revive potion lv.10, teleportation stone, key to unlock more maps?, full gamemaster controls)
+
 Shop!
-	- Revive potion
+	- Revive potion lv.10
 	- Seeker
 	- projectiles
 	- shield
@@ -61,14 +49,14 @@ Shop!
 	- Nametag change gfx?
 	- Custom name?
 	- Expand inventory slot
-- Game save - mob positions?
-- Hidden maps - collision with obj will take them to map (outside of global map array)
+	- key to unlock more maps?
+	- full gamemaster controls
+	
 - HUD colour/font hard to read
 - ^ Better fonts?
+
+- Handle crashes: https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Debugging/exception_unhandled_handler.htm
 - Stats!
-- Grapple gun / teleport
-- Graphics
-	- Tilesets work
 - Skill - spawn mob on your side
 CONTENT: Maps, Mobs, Items, NPCs, Shop items, SKINS
 - AI / Mobs:
@@ -77,20 +65,24 @@ CONTENT: Maps, Mobs, Items, NPCs, Shop items, SKINS
 	- MOB movement - fix mobs sliding through walls? end of platform script works - might be conflicting
 	- jumping mobs can walk through walls?
 	- walking up slope changes to jump sprite - looks glitchy
-
+	
 - controls for when debug is disabled - escape is pause game, escape again to quit
 - windows executable installer graphics!
+- Check out surface_depth_disable() for performance improvement
 - Discord logging
 - ios app icon & splash screen
 
 
-Tester1 & 2 feedback
-	- replace stickman as player
-	- max resolution (1920x1080?) - game looked tiny on his 4K screen
-	- Equips, backpack
-
-
 IDEAS
+- Unbreaking projectiles - hit multiple mobs at once (by percentage) - skill or equip?
+  ^ i.e. 10% unbreaking
+- Configurable particle fx - epic mode?
+- Weapon attack speeds? - slow/average/fast - based on equip
+- Hidden maps - collision with obj will take them to map (outside of global map array)
+- warrior auto-defend skill - 50%chance of using shield when hit?
+- ^^ need to find a sprite that looks like player is defending to avoid having to add more
+- Grapple gun / teleport
+- Meme button (move away from position when tapped)
 - Map builder?
 - Starter pack
 - Consistent game content - i.e. if boss killed don't re-spawn on new map
@@ -113,14 +105,6 @@ IDEAS
 
 
 
-
-
-
-	
-
-
-
-
 start level 1 = beginner
 
 level 10 = pick - fighter, spellcaster, ninja, hunter
@@ -130,15 +114,3 @@ fighter - shield
 spellcaster - teleport
 ninja - double jump
 hunter - wall climb/jump?
-
-
-fighter - swordsman, spearman, 
-
-spellcaster - clearic, 
-
-ninja - 
-
-hunter / gunman / shooter / soldier
-
-cyborg
-

@@ -309,7 +309,6 @@
     {"name":"inst_5B383B7E","path":"rooms/room_plains/room_plains.yy",},
     {"name":"inst_651C6402","path":"rooms/room_plains/room_plains.yy",},
     {"name":"inst_773B2C4E","path":"rooms/room_plains/room_plains.yy",},
-    {"name":"inst_8CCCF73","path":"rooms/room_plains/room_plains.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -334,9 +333,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5B383B7E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mob_spawner_drone","path":"objects/obj_mob_spawner_drone/obj_mob_spawner_drone.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1682.0,"y":1709.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_651C6402","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mob_spawner_drone","path":"objects/obj_mob_spawner_drone/obj_mob_spawner_drone.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":743.0,"y":1421.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_773B2C4E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mob_spawner_drone","path":"objects/obj_mob_spawner_drone/obj_mob_spawner_drone.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1547.0,"y":1421.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8CCCF73","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mob_spawner_player","path":"objects/obj_mob_spawner_player/obj_mob_spawner_player.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"parent_mob_spawner","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"propertyId":{"name":"mob_limit","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"value":"1",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1303.0,"y":1705.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Clouds","depth":-2000,"effectEnabled":true,"effectType":"_filter_contrast","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E06195D_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_clouds","path":"objects/obj_clouds/obj_clouds.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":477.0,"y":1389.0,},

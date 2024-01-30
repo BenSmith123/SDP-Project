@@ -86,8 +86,8 @@
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"BackgroundImage","animationFPS":1.0,"animationSpeedType":1,"colour":4294967295,"depth":2147483500,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"background1","path":"sprites/background1/background1.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "menu",
+    "path": "folders/Rooms/menu.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
