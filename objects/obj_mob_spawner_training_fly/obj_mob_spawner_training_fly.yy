@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_mob_spawner_drone",
+  "name": "obj_mob_spawner_training_fly",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_drone",
-    "path": "sprites/spr_drone/spr_drone.yy",
+    "name": "spr_mob_training_bot_2_fly",
+    "path": "sprites/spr_mob_training_bot_2_fly/spr_mob_training_bot_2_fly.yy",
   },
   "spriteMaskId": null,
   "visible": true,

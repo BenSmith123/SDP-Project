@@ -7,7 +7,7 @@ function update_player_stats()
 	{
 		max_hp = global.max_hp
 
-		attack = global.attack
+		attack = global.attack * (1 + global.equip_damage_multiplier)
 		defence = global.defence
 
 		accuracy = global.accuracy

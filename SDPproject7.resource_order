@@ -149,6 +149,7 @@
     {"name":"spr_ai_level","order":6,"path":"sprites/spr_ai_level/spr_ai_level.yy",},
     {"name":"ts_block_metal","order":4,"path":"tilesets/ts_block_metal/ts_block_metal.yy",},
     {"name":"spr_mobile_key_chat","order":23,"path":"sprites/spr_mobile_key_chat/spr_mobile_key_chat.yy",},
+    {"name":"obj_mob_spawner_training_fly","order":3,"path":"objects/obj_mob_spawner_training_fly/obj_mob_spawner_training_fly.yy",},
     {"name":"spr_hud_health_bar","order":7,"path":"sprites/spr_hud_health_bar/spr_hud_health_bar.yy",},
     {"name":"spr_hud_experience","order":8,"path":"sprites/spr_hud_experience/spr_hud_experience.yy",},
     {"name":"spr_item_beginners_sword","order":4,"path":"sprites/spr_item_beginners_sword/spr_item_beginners_sword.yy",},

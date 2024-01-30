@@ -4,7 +4,7 @@ event_inherited()
 name = "Training bot"
 level = 1
 hp = 8
-attack = 5
+attack = 3
 defence = 0
 accuracy = 0
 experience = 5

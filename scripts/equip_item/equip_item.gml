@@ -33,6 +33,7 @@ function equip_item()
 	if instance_exists(obj_player)
 	{
 		obj_player.sprite_projectile = selected_item_details.sprite
+		obj_player.attack = global.attack * (1 + global.equip_damage_multiplier)
 	}
 				
 	// remove item being equipped
