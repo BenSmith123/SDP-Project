@@ -52,13 +52,15 @@ function initialise_globals()
 	global.joystick_enabled = true
 	
 	// FILES
-	var save_file_id = "_400" // change this to force reset a users game save on install
+	var save_file_id = "_500" // change this to force reset a users game save on install
 	global.file_save_encoded_name = "temp" + save_file_id
 	global.file_save_decoded_name = "temp_2" + save_file_id
 }
 
 
 /// @description initialise stored global global variables
+/// NOTE - this function is basically for GMS intellisense and default values,
+/// anything added here will need to be added to the 'stored_global_variables_list' below to load/save
 function initialise_stored_globals()
 {
 	// inventory
@@ -106,3 +108,51 @@ function initialise_stored_globals()
 	global.mob_kills_current = 0
 	global.mob_kills = 0
 }
+
+
+// ADDING TO THIS WILL AUTOMATICALLY LOAD/SAVE THE GLOBAL
+global.stored_global_variables_list =
+[
+	// type is optional - defaults to 'Real'
+	
+	{ name: "inventory_size" },
+	{ name: "inventory_array", type: IniType.Json},
+	
+	{ name: "equip_item_id_primary" },
+	{ name: "equip_item_id_secondary"},
+
+	{ name: "current_map_name", type: IniType.String },
+	{ name: "current_player_x" },
+	{ name: "current_player_y" },
+
+	{ name: "player_skin_id" },
+	{ name: "class", type: IniType.String },
+	{ name: "name", type: IniType.String },
+	{ name: "level" },
+	{ name: "experience" },
+	{ name: "max_exp" },
+	{ name: "stat_points" },
+
+	{ name: "max_hp" },
+	{ name: "hp_last" },
+	{ name: "equip_damage_multiplier" },
+	{ name: "attack" },
+	{ name: "defence" },
+	{ name: "accuracy" },
+	{ name: "jump" },
+	{ name: "walk_speed" },
+
+	{ name: "heal_time" },
+	{ name: "heal_amount" },
+
+	{ name: "coins" },
+	{ name: "coins_stored" },
+
+	{ name: "mob_kills_current" },
+	{ name: "mob_kills" },
+]
+
+
+
+
+

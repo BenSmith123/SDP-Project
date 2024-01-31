@@ -16,6 +16,12 @@ TODO - add disc link
 - Here's some tips for adding content to the existing systems:
 - The `notes/TODO.txt` file might have some useful info
 
+
+### Loading/saving global variables
+
+1. Add new variable to `initialise_stored_globals()` function
+2. Add the new variable to `stored_global_variables_list` function
+
 ### Adding skins
 
 1. Create/download from [maples.im](maples.im) (download full sprite sheet to include climbing/blink (death) sprite)

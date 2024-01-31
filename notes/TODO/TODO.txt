@@ -14,6 +14,8 @@ TO DO
 	- Make an easier map for noobs or fast level up or weaker mob?
 	- Mob hit graphics? (can tell when mob is stunned)
 
+- Add seeker to a shop
+- create another seperate shop
 
 --------------------------------------
 

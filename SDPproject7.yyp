@@ -173,6 +173,7 @@
     {"id":{"name":"spr_hud","path":"sprites/spr_hud/spr_hud.yy",},},
     {"id":{"name":"spr_pause_button","path":"sprites/spr_pause_button/spr_pause_button.yy",},},
     {"id":{"name":"obj_ladder_test","path":"objects/obj_ladder_test/obj_ladder_test.yy",},},
+    {"id":{"name":"Memory","path":"scripts/Memory/Memory.yy",},},
     {"id":{"name":"spr_button_back","path":"sprites/spr_button_back/spr_button_back.yy",},},
     {"id":{"name":"spr_coin_hud","path":"sprites/spr_coin_hud/spr_coin_hud.yy",},},
     {"id":{"name":"spr_black","path":"sprites/spr_black/spr_black.yy",},},
