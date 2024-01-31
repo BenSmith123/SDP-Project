@@ -44,16 +44,6 @@ shop_items =
 		item_id: ItemId.Orb,
 		type: SellableType.Item,
 		cost: 5000
-	},
-	{
-		item_id: ItemId.Banana,
-		type: SellableType.Action,
-		cost: 100000,
-		// extra attributes for shop purchasable since its not an item
-		title: "Testing",
-		description: "Become a god.",
-		sprite: spr_item_banana,
-		on_purchase: function() { show_message("nice") }
 	}
 ]
 

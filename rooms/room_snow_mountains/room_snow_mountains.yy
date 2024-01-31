@@ -427,6 +427,7 @@
     {"name":"inst_1F23801C","path":"rooms/room_snow_mountains/room_snow_mountains.yy",},
     {"name":"inst_30DD1A08","path":"rooms/room_snow_mountains/room_snow_mountains.yy",},
     {"name":"inst_1C7784F6","path":"rooms/room_snow_mountains/room_snow_mountains.yy",},
+    {"name":"inst_53245C8B","path":"rooms/room_snow_mountains/room_snow_mountains.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -512,6 +513,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2864FCE7_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_marker_player_spawn_right","path":"objects/obj_marker_player_spawn_right/obj_marker_player_spawn_right.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4384.0,"y":896.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_36B52E19","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vent","path":"objects/obj_vent/obj_vent.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":506.0,"y":1596.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55BED1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vent","path":"objects/obj_vent/obj_vent.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3101.0,"y":1620.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53245C8B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_shop_game","path":"objects/obj_npc_shop_game/obj_npc_shop_game.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4185.0,"y":1269.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Mobs","depth":-4000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Scenery","depth":-2000,"effectEnabled":true,"effectType":"_filter_contrast","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

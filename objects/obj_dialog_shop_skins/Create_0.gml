@@ -39,4 +39,4 @@ shop_items =
 	}
 ]
 
-create_shop_items(100)
+create_shop_items(90, -9)

@@ -2,7 +2,7 @@
 // center the controller
 x = xstart - region_width/2
 
-scroll_disabled = scrollable_height < region_height
+scroll_disabled = scrollable_height < region_height+40
 
 if scroll_disabled { exit } // prevent bounce when not many items?
 

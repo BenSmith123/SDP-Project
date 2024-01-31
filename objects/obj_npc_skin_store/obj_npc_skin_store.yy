@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_computer",
-    "path": "sprites/spr_computer/spr_computer.yy",
+    "name": "spr_npc_computer_guy",
+    "path": "sprites/spr_npc_computer_guy/spr_npc_computer_guy.yy",
   },
   "spriteMaskId": null,
   "visible": true,

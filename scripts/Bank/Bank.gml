@@ -1,3 +1,4 @@
+
 function bank_deposit()
 {
 	if (global.coins == 0) { exit }

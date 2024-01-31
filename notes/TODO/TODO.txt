@@ -10,12 +10,9 @@ TO DO
 	- make a beginners map with simple test bots and floors, more npcs
 	- metal - needs a lot more
 	
-	
+	- Adjust mob HP/damage - dragon too strong
 	- Make an easier map for noobs or fast level up or weaker mob?
 	- Mob hit graphics? (can tell when mob is stunned)
-
-- Add seeker to a shop
-- create another seperate shop
 
 --------------------------------------
 
@@ -23,10 +20,9 @@ TO DO
 - Screenshots/vids of gameplay - share
 - More skins!
 - More mobs
-- Another sword
+- Another sword & better starter sword
 
 - add plants
-- shop sellable that isn't an item
 - MiniMap
 - golden throwing star with high damage increase!
 - HUD for test room to spawn random mobs?

@@ -1,7 +1,7 @@
 
 
 /// @description - called by parent_dialog_shop-child once the items have been set
-function create_shop_items(button_height = 80)
+function create_shop_items(button_height = 80, listing_offset = 0)
 {
 	var num_of_items = array_length(shop_items)
 	if num_of_items == 0 { exit }
@@ -28,6 +28,7 @@ function create_shop_items(button_height = 80)
 		item_listing.bottom_y = scroll_region_forsale_obj.y + scroll_region_forsale_obj.region_height - 50 // fade out bottom
 		item_listing.scrollable_controller = scroll_region_forsale_obj
 		item_listing.height = button_height
+		item_listing.draw_offset = listing_offset // offset for sprite and name
 		
 		// NOTE - a item for sale can be either an 'inventory item' or a 'action'
 		

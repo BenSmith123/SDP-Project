@@ -1,5 +1,5 @@
 
 event_inherited()
 
-name = "Skin stylist"
-text = "Character skins for sale!"
+name = "Skin salesman"
+text = "More skins are on their way"
