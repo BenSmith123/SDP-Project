@@ -1,3 +1,3 @@
 
-disabled = attached_item_obj.cost > global.coins
+disabled = attached_listing_obj.cost > global.coins
 image_index = disabled

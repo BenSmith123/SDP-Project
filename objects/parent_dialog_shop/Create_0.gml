@@ -85,17 +85,44 @@ create_shop_items = function()
 		var sell_details = shop_items[i]
 		var item_id = sell_details.item_id
 		var cost = sell_details.cost
+		var sellable_type = sell_details.type
 		
-		var item_obj = instance_create_depth(dialog_x_center_left, item_y, ObjectDepth.HUDItem, obj_shop_forsale_item)
-		item_obj.cost = cost
-		item_obj.top_y = item_start_y-20 // top to start fading out
-		item_obj.bottom_y = scroll_region_forsale_obj.y + scroll_region_forsale_obj.region_height - 50 // fade out bottom
-		item_obj.scrollable_controller = scroll_region_forsale_obj
-		item_obj.height = button_height
+		var item_listing = instance_create_depth(dialog_x_center_left, item_y, ObjectDepth.HUDItem, obj_shop_forsale_item)
+		item_listing.cost = cost
+		item_listing.sellable_type = sellable_type
+		item_listing.top_y = item_start_y-20 // top to start fading out
+		item_listing.bottom_y = scroll_region_forsale_obj.y + scroll_region_forsale_obj.region_height - 50 // fade out bottom
+		item_listing.scrollable_controller = scroll_region_forsale_obj
+		item_listing.height = button_height
 		
-		// TODO - if not sell type is item
-		item_obj.item_details = get_item(item_id)
+		// NOTE - a item for sale can be either an 'inventory item' or a 'action'
 		
+		// inventory item for sale
+		if sellable_type == SellableType.Item 
+		{ 
+			var item_for_sale = get_item(item_id)
+			item_listing.inventory_item_id = item_for_sale.iid
+			item_listing.listing_details = 
+			{
+				title: item_for_sale.name,
+				sprite: item_for_sale.sprite,
+				description: item_for_sale.description
+			}
+		}
+
+		// non-inventory item for sale (action)
+		if sellable_type == SellableType.Action 
+		{ 
+			item_listing.on_purchase = sell_details.on_purchase
+			item_listing.listing_details = 
+			{
+				title: sell_details.title,
+				sprite: sell_details.sprite,
+				description: sell_details.description,
+				on_purchase: sell_details.on_purchase
+			}
+		}
+
 		item_y += button_height + button_gap
 	}
 	

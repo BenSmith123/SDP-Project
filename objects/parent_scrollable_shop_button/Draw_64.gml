@@ -1,12 +1,12 @@
 
-if !instance_exists(attached_item_obj)
+if !instance_exists(attached_listing_obj)
 { 
 	instance_destroy()
 	exit
 }
 
-image_alpha = attached_item_obj.image_alpha
-y = attached_item_obj.y
+image_alpha = attached_listing_obj.image_alpha
+y = attached_listing_obj.y
 
 image_xscale = round(width / sprite_get_width(sprite_index))
 image_yscale = round(height /  sprite_get_height(sprite_index))

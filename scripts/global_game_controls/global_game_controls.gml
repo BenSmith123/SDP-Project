@@ -9,20 +9,14 @@ function global_game_controls()
 	{
 		
 		// test snow
-		with (obj_player) 
-		{ 
-			friction_power = 0.05 
-		}
-		//initialise_player_skins()
+		// with (obj_player) { friction_power = 0.05 }
+		
 		// test_player_skill()
 
-		
 		//log_player_message("Testing message - 4573")
 		//room_goto(room1)
 		//show_message(global.inventory_array)
 		//inventory_add(ItemId.DronePiece)
-		
-		
 		
 		//		var _fx_tint = fx_create("_filter_tintfilter");
 		//fx_set_parameter(_fx_tint, "g_TintCol", [1, 0, 0, 1]);

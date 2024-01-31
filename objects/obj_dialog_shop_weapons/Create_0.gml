@@ -6,6 +6,11 @@ title = "Weapons shop"
 shop_items = 
 [
 	{
+		item_id: ItemId.RevivePotion,
+		type: SellableType.Item,
+		cost: 500
+	},
+	{
 		item_id: ItemId.BasicSword,
 		type: SellableType.Item,
 		cost: 1000
@@ -14,11 +19,6 @@ shop_items =
 		item_id: ItemId.BasicShuriken,
 		type: SellableType.Item,
 		cost: 1000
-	},
-	{
-		item_id: ItemId.RevivePotion,
-		type: SellableType.Item,
-		cost: 500
 	},
 	{
 		item_id: ItemId.ThrowingStar1,
@@ -47,8 +47,13 @@ shop_items =
 	},
 	{
 		item_id: ItemId.Banana,
-		type: SellableType.Item,
-		cost: 100000
+		type: SellableType.Action,
+		cost: 100000,
+		// extra attributes for shop purchasable since its not an item
+		title: "Testing",
+		description: "Become a god.",
+		sprite: spr_item_banana,
+		on_purchase: function() { show_message("nice") }
 	}
 ]
 

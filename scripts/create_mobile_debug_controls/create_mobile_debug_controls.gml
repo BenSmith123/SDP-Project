@@ -16,6 +16,7 @@ function create_mobile_debug_controls()
 		if global.name != "BEN705" { debug_show_no_access(); exit }
 		with (obj_player)
 		{
+			global.coins += 1_000_000
 			var full_inventory = [[ItemId.BasicSword, 1], [ItemId.BasicBow, 1],[ItemId.BasicShuriken, 1], [0, 4], [1, 2], [2, 20],  [3, 8],  [4, 1],  [5, 8], [6, 1], [7, 1], [8, 1], [9, 1]]
 			var full = choose(true, false)
 			global.inventory_array = full ? full_inventory :  [[5, 4]]

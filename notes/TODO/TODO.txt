@@ -17,6 +17,8 @@ TO DO
 
 --------------------------------------
 
+
+- Screenshots/vids of gameplay - share
 - More skins!
 - More mobs
 - Another sword
@@ -50,7 +52,6 @@ Shop!
 	
 - HUD colour/font hard to read
 - ^ Better fonts?
-
 - Handle crashes: https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Debugging/exception_unhandled_handler.htm
 - Stats!
 - Skill - spawn mob on your side
