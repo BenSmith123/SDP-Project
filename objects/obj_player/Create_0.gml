@@ -49,7 +49,9 @@ move_jump_down = false
 move_attack = false
 move_temp = false // debug
 
-player_set_skin_sprites()
+// set function to be accessed by other objects etc.
+set_skin_sprites = player_set_skin_sprites
+set_skin_sprites()
 player_set_class_attributes()
 
 animated_attack = sprite_get_number(sprite_attack) > 1

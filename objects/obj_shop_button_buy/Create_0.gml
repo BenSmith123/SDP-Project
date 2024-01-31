@@ -15,8 +15,8 @@ on_press_accepted = function()
 	
 	if attached_listing_obj.sellable_type == SellableType.Action
 	{
-		show_message("WOOOHOOO")
 		global.coins -= cost
+		with (attached_listing_obj) { on_purchase() }
 		exit
 	}
 	

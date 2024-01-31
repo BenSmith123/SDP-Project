@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_npc_claudia",
+  "name": "obj_npc_skin_store",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_npc_claudia",
-    "path": "sprites/spr_npc_claudia/spr_npc_claudia.yy",
+    "name": "spr_computer",
+    "path": "sprites/spr_computer/spr_computer.yy",
   },
   "spriteMaskId": null,
   "visible": true,
