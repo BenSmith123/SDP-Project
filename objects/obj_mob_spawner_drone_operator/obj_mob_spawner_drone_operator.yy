@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_mob_spawner_drone_operator",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"parent_mob_spawner","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"propertyId":{"name":"spawn_time_min_sec","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"value":"10",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"parent_mob_spawner","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"propertyId":{"name":"spawn_time_max_sec","path":"objects/parent_mob_spawner/parent_mob_spawner.yy",},"value":"30",},
+  ],
+  "parent": {
+    "name": "MobSpawners",
+    "path": "folders/Objects/MobSpawners.yy",
+  },
+  "parentObjectId": {
+    "name": "parent_mob_spawner",
+    "path": "objects/parent_mob_spawner/parent_mob_spawner.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_mob_drone_commander",
+    "path": "sprites/spr_mob_drone_commander/spr_mob_drone_commander.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

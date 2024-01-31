@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "is_on_screen",
+  "name": "Particles",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "General",
-    "path": "folders/Scripts/General.yy",
+    "name": "Main",
+    "path": "folders/Scripts/Main.yy",
   },
 }

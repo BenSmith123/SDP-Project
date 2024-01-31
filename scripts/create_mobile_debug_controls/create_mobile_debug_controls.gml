@@ -132,7 +132,7 @@ function create_mobile_debug_controls()
 			text: "Spawn random boss",
 			action: function() 
 			{
-				var mob = choose(obj_mob_dragon, obj_ai_2, obj_mob_4)
+				var mob = choose(obj_mob_dragon, obj_ai_2, obj_mob_unknown)
 				instance_create_depth(obj_player.x+200, obj_player.y-60, ObjectDepth.Mob, mob)
 				debug_close_menu()
 			}

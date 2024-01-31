@@ -3,10 +3,10 @@ event_inherited()
 
 name = "Armored Dragon"
 level = 1
-hp = 5000
-attack = 100
-defence = 100
-accuracy = 50
+hp = 1000
+attack = 50
+defence = 50
+accuracy = 30
 experience = 1000
 
 walkspeed = 1

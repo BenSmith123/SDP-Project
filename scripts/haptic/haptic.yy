@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "General",
-    "path": "folders/Scripts/General.yy",
+    "name": "Helpers",
+    "path": "folders/Scripts/General/Helpers.yy",
   },
 }
