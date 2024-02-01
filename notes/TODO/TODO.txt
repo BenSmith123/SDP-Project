@@ -15,8 +15,6 @@ TO DO
 	
 	- Mobile zoom - default it yes/no? zoom out automatically when in towns?
 
-
-map gaps (screenshots)?
 --------------------------------------
 
 - Another sword & better starter sword
