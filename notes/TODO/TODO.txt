@@ -13,21 +13,25 @@ TO DO
 	- Adjust mob HP/damage - dragon too strong
 	- Make an easier map for noobs or fast level up or weaker mob?
 	- Mob hit graphics? (can tell when mob is stunned)
+	
+	- Mobile zoom - default it yes/no? zoom out automatically when in towns?
 
 --------------------------------------
 
+- FIX player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 
-- Screenshots/vids of gameplay - share
+- Another sword & better starter sword
 - More skins!
 - More mobs
-- Another sword & better starter sword
+- Screenshots/vids of gameplay - share
+
 
 - add plants
 - MiniMap
 - golden throwing star with high damage increase!
 - HUD for test room to spawn random mobs?
-- FIX player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
 
+- make debugging look a lil prettier (display more useful vars, add more debug etc.)
 - add mobs abilities!
 - animate mob 4 - add more knockback?
 

@@ -34,7 +34,9 @@
     {"name":"Compatibility","order":1,"path":"folders/Scripts/Compatibility.yy",},
     {"name":"File","order":8,"path":"folders/Scripts/File.yy",},
     {"name":"General","order":2,"path":"folders/Scripts/General.yy",},
+    {"name":"Helpers","order":7,"path":"folders/Scripts/General/Helpers.yy",},
     {"name":"Global controls","order":14,"path":"folders/Scripts/Global controls.yy",},
+    {"name":"Main","order":19,"path":"folders/Scripts/Main.yy",},
     {"name":"Player","order":3,"path":"folders/Scripts/Player.yy",},
     {"name":"Sequences","order":8,"path":"folders/Sequences.yy",},
     {"name":"Sounds","order":10,"path":"folders/Sounds.yy",},
@@ -59,8 +61,6 @@
     {"name":"WIP","order":10,"path":"folders/Sprites/WIP.yy",},
     {"name":"Tile Sets","order":12,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
-    {"name":"Helpers","order":7,"path":"folders/Scripts/General/Helpers.yy",},
-    {"name":"Main","order":19,"path":"folders/Scripts/Main.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_skin_3_jump","order":29,"path":"sprites/spr_skin_3_jump/spr_skin_3_jump.yy",},

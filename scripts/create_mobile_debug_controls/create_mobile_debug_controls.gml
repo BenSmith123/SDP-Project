@@ -41,11 +41,11 @@ function create_mobile_debug_controls()
 	var debug_controls = 
 	[
 		{
-			text: "Reboot game (keep progress)",
+			text: "Reboot game#(keep progress)",
 			action: function() { game_restart() }
 		},
 		{
-			text: "Reset game (lose progress)",
+			text: "Reset game#(lose progress)",
 			action: function() { reset_game() }
 		},
 		{
@@ -92,15 +92,23 @@ function create_mobile_debug_controls()
 			action: debug_change_class
 		},
 		{
-			text: "Test haptics",
+			text: "Toggle view zoom",
 			action: function() 
 			{
-				var duration = choose(5, 300)
-				var strength = choose(10, 255)
-				Vibrate(duration, strength) // TODO - replace with script
-				global.name = ($"{duration} | {strength}")
+				global.zoom_view = !global.zoom_view
+				initialise_views()
 			}
 		},
+		//{
+		//	text: "Test haptics",
+		//	action: function() 
+		//	{
+		//		var duration = choose(5, 300)
+		//		var strength = choose(10, 255)
+		//		Vibrate(duration, strength) // TODO - replace with script
+		//		global.name = ($"{duration} | {strength}")
+		//	}
+		//},
 		{
 			text: "Level up",
 			action: function() { 
@@ -112,16 +120,9 @@ function create_mobile_debug_controls()
 			text: "Next Map >",
 			action: function() { move_to_map() }
 		},
+
 		{
-			text: "Toggle view zoom",
-			action: function() 
-			{
-				global.zoom_view = !global.zoom_view
-				initialise_views()
-			}
-		},
-		{
-			text: "Spawn random mob",
+			text: "Spawn mob",
 			action: function() 
 			{
 				var mob = choose(obj_mob_training_bot_fly, obj_mob_drone)
@@ -129,7 +130,7 @@ function create_mobile_debug_controls()
 			}
 		},
 		{
-			text: "Spawn random boss",
+			text: "Spawn boss",
 			action: function() 
 			{
 				var mob = choose(obj_mob_dragon, obj_ai_2, obj_mob_unknown)
@@ -139,10 +140,10 @@ function create_mobile_debug_controls()
 		}
 	]
 	
-	var start_column = WIDTH / 4
+	var start_column = WIDTH / 5
 
 	var start_y = 160
-	var y_gap = 60
+	var y_gap = 64
 	var x_pos = start_column
 	var y_pos = start_y
 	
