@@ -96,7 +96,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "roomSettings": {
-    "Height": 1140,
+    "Height": 1120,
     "inheritRoomSettings": false,
     "persistent": false,
     "Width": 1920,
