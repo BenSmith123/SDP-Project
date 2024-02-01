@@ -36,7 +36,9 @@ function player_camera()
 	// prevent camera from going out of room when window isn't open
 	if (!window_has_focus()) exit
 	
-	var temp2 = obj_player
+	// object to track
+	var target_x = obj_player.x
+	var target_y = obj_player.y
 	
 	var view_width_x = __view_get( e__VW.XView, 0)
 	var view_width_y = __view_get( e__VW.YView, 0)
@@ -44,26 +46,30 @@ function player_camera()
 	var max_cam_x = room_width - global.view_w
 	var max_cam_y = room_height - global.view_h
 	
+	// move the mobile zoomed in view up to avoid half the screen being the floor
+	var max_cam_y_mobile = max_cam_y - 80
+	if global.zoom_view == true { max_cam_y = max_cam_y_mobile }
+	
 	var map_center_x = room_width / 2
 	var map_center_y = room_height / 2
 
 
-	// ROOM END X
-	var view_x = round(view_width_x + (((temp2.x-(__view_get( e__VW.WView, 0 )/2)) - view_width_x) * 0.03))
+	// ROOM X
+	var view_x = round(view_width_x + (((target_x-(__view_get( e__VW.WView, 0 )/2)) - view_width_x) * 0.03))
 		
 	// get the min/max value the camera can be depending on if the player is closest to the left or right
 	// cap the camera to the min/max value to avoid camera going out of room
-	var view_x_capped = temp2.x < map_center_x
+	var view_x_capped = target_x < map_center_x
 		? max(view_x, 0)
 		: min(view_x, max_cam_x)
 			
 	__view_set(e__VW.XView, 0, view_x_capped)
 	
 
-	// ROOM END Y
-	var view_y = round(view_width_y + (((temp2.y-(__view_get( e__VW.HView, 0 )/2)) - view_width_y) * 0.03))
+	// ROOM Y
+	var view_y = round(view_width_y + (((target_y-(__view_get( e__VW.HView, 0 )/2)) - view_width_y) * 0.03))
 	
-	var view_y_capped = temp2.y < map_center_y
+	var view_y_capped = target_y < map_center_y
 		? max(view_y, 0)
 		: min(view_y, max_cam_y)
 	
