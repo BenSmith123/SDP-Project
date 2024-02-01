@@ -1,1 +1,1 @@
-instance_destroy(parent_dialog)
+instance_destroy(obj_to_destroy_on_close)

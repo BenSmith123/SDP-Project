@@ -1,7 +1,22 @@
 function create_mobile_debug_controls()
 {
 	
-	if instance_exists(obj_button_mobile_debug) { instance_destroy(obj_button_mobile_debug); exit }
+	
+	// create close button
+	var three_quarter_screen_x = global.screen_w/2+global.screen_w/4
+	var three_quarter_screen_y = global.screen_h/2+global.screen_h/4
+
+	var close_button = instance_create(three_quarter_screen_x, three_quarter_screen_y, obj_dialog_close_button)
+	close_button.obj_to_destroy_on_close = obj_button_mobile_debug
+	close_button.persistent = true
+	
+	// if debug menu already open, close it
+	if instance_exists(obj_button_mobile_debug) 
+	{ 
+		instance_destroy(obj_button_mobile_debug)
+		instance_destroy(obj_dialog_close_button)
+		exit
+	}
 
 	// NOTE - anonymous functions declared as values of a struct act from the scope of that struct, not the current instance
 	// this will cause crashes when creating instances because the struct has no depth, use 'with' keyword when creating instances

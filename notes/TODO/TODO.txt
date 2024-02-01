@@ -18,8 +18,6 @@ TO DO
 
 --------------------------------------
 
-- FIX player can constantly walk/attack - maybe disable melee attack or disable movement if attacking
-
 - Another sword & better starter sword
 - More skins!
 - More mobs
