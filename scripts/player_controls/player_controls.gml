@@ -24,14 +24,17 @@ function player_controls()
 
 	// call the scripts for whatever wariable active
 	// variables have to be used for the mobile virtual keys to work
-	if move_left = true { player_move_horizontally() }
-	if move_right = true { player_move_horizontally() }
-	if move_jump = true { player_jump() }
-	if move_jump_down = true { player_jump_down() }
+	if move_left { player_move_horizontally() }
+	if move_right { player_move_horizontally() }
+	if move_jump { player_jump() }
+	if move_jump_down { player_jump_down() }
 
-	if move_attack = true { player_attack() }
+	if move_attack
+	{ 
+		if !move_left && !move_right { player_attack() }
+	}
 
-	if move_temp = true { scr_teleport() } // teleport skill
+	//if move_temp { teleport() } // teleport skill
 
 	// player will stop moving when key is released
 

@@ -308,7 +308,6 @@
     {"name":"spr_temp2222","order":18,"path":"sprites/spr_temp2222/spr_temp2222.yy",},
     {"name":"spr_skin_3_shoot","order":31,"path":"sprites/spr_skin_3_shoot/spr_skin_3_shoot.yy",},
     {"name":"spr_scroll_bar","order":28,"path":"sprites/spr_scroll_bar/spr_scroll_bar.yy",},
-    {"name":"scr_teleport","order":3,"path":"scripts/scr_teleport/scr_teleport.yy",},
     {"name":"room_village","order":2,"path":"rooms/room_village/room_village.yy",},
     {"name":"ai_draw_debug_info","order":1,"path":"scripts/ai_draw_debug_info/ai_draw_debug_info.yy",},
     {"name":"obj_hud_log_text","order":3,"path":"objects/obj_hud_log_text/obj_hud_log_text.yy",},

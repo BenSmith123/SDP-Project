@@ -354,7 +354,6 @@
     {"id":{"name":"spr_temp2222","path":"sprites/spr_temp2222/spr_temp2222.yy",},},
     {"id":{"name":"spr_skin_3_shoot","path":"sprites/spr_skin_3_shoot/spr_skin_3_shoot.yy",},},
     {"id":{"name":"spr_scroll_bar","path":"sprites/spr_scroll_bar/spr_scroll_bar.yy",},},
-    {"id":{"name":"scr_teleport","path":"scripts/scr_teleport/scr_teleport.yy",},},
     {"id":{"name":"AI_GUIDE","path":"scripts/AI_GUIDE/AI_GUIDE.yy",},},
     {"id":{"name":"room_village","path":"rooms/room_village/room_village.yy",},},
     {"id":{"name":"ai_draw_debug_info","path":"scripts/ai_draw_debug_info/ai_draw_debug_info.yy",},},
