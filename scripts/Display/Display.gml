@@ -86,8 +86,9 @@ function initialise_views()
 	if global.system == SystemType.Desktop
 	{
 	    window_set_fullscreen(global.desktop_fullscreen)
-	    window_set_size(w, h)
 	}
+	
+	window_set_size(w, h)
 
 	surface_resize(application_surface, global.screen_w, global.screen_h)
 }

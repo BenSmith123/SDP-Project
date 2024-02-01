@@ -9,19 +9,27 @@ TO DO
 	- test room - more test stuff?
 	- make a beginners map with simple test bots and floors, more npcs
 	- metal - needs a lot more
-	
-	- Adjust mob HP/damage - dragon too strong
+
 	- Make an easier map for noobs or fast level up or weaker mob?
 	- Mob hit graphics? (can tell when mob is stunned)
 	
 	- Mobile zoom - default it yes/no? zoom out automatically when in towns?
 
+
+map gaps (screenshots)?
 --------------------------------------
 
 - Another sword & better starter sword
 - More skins!
 - More mobs
 - Screenshots/vids of gameplay - share
+
+- move stats to an NPC that displays instead of player stats
+- stats:
+	- deaths
+	- total coins
+	- total coins spent
+	coins lost (death)
 
 
 - add plants
