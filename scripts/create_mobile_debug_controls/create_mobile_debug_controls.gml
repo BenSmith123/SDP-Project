@@ -1,7 +1,6 @@
 function create_mobile_debug_controls()
 {
 	
-	
 	// create close button
 	var three_quarter_screen_x = global.screen_w/2+global.screen_w/4
 	var three_quarter_screen_y = global.screen_h/2+global.screen_h/4
@@ -157,7 +156,7 @@ function create_mobile_debug_controls()
 	
 	var start_column = WIDTH / 5
 
-	var start_y = 160
+	var start_y = 150
 	var y_gap = 64
 	var x_pos = start_column
 	var y_pos = start_y

@@ -1,7 +1,14 @@
 
+// statistics
+global.player_deaths += 1
+global.coins_lost += global.coins
+global.experience_lost += global.experience
+
+// lose exp and coins
 global.experience = 0
 global.coins = 0
 global.mob_kills_current = 0
+
 
 // reset map & player position
 // prevent bug - if player is killed and game closed, player will 

@@ -18,6 +18,7 @@ function level_up_display_message()
 	{
 	    display_banner_message("Congratulations on reaching level 5#[+100 coins]")
 	    global.coins += 100
+		global.coins_collected += 100
 	}
        
 	if global.level == 6

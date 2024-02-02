@@ -5,6 +5,7 @@ function level_up()
 	{
 		// set exp to remaining exp after levelup
 		global.experience = global.experience - global.max_exp
+		global.total_experience += global.experience
 		
 		// if you still have more exp, level again!
 		if global.experience >= global.max_exp { level_up() }

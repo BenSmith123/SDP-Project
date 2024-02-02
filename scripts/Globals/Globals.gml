@@ -16,6 +16,14 @@ function initialise_globals()
 	global.is_mobile = global.system == SystemType.Mobile
 	global.is_desktop = global.system == SystemType.Desktop
 	
+	global.game_version = "0.7.0"
+	global.game_build_id = get_game_build_id() // last 4 digits in timestamp
+	
+	// only show error message when test running from GM IDE
+	global.game_crash_show_error = GM_build_type == "run"
+	// log error to discord if executable build version
+	global.game_crash_log_to_discord = !global.game_crash_show_error
+	
 	// default window resolution without fullscreen
 	global.desktop_default_width = 1280
 	global.desktop_default_height = 720
@@ -55,6 +63,8 @@ function initialise_globals()
 	var save_file_id = "_500" // change this to force reset a users game save on install
 	global.file_save_encoded_name = "temp" + save_file_id
 	global.file_save_decoded_name = "temp_2" + save_file_id
+	
+	
 }
 
 
@@ -107,6 +117,13 @@ function initialise_stored_globals()
 	// statistics
 	global.mob_kills_current = 0
 	global.mob_kills = 0
+	global.player_deaths = 0
+	global.coins_collected = 0
+	global.coins_lost = 0
+	global.total_experience = 0
+	global.experience_lost = 0
+	global.total_items_picked_up = 0
+	global.legendary_items_found = 0
 }
 
 
@@ -144,12 +161,21 @@ global.stored_global_variables_list =
 
 	{ name: "heal_time" },
 	{ name: "heal_amount" },
-
+	
 	{ name: "coins" },
 	{ name: "coins_stored" },
-
+	
+	// STATS
 	{ name: "mob_kills_current" },
 	{ name: "mob_kills" },
+	{ name: "player_deaths" },
+	{ name: "coins_collected" },
+	{ name: "coins_lost" },
+	{ name: "total_experience" },
+	{ name: "experience_lost" },
+	{ name: "total_items_picked_up" },
+	{ name: "legendary_items_found" }
+
 ]
 
 

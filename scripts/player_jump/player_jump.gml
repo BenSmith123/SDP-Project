@@ -30,7 +30,7 @@ function player_jump()
 	else if keyboard_check_pressed(ord("W")) 
 	{
 		// spellcaster teleport
-		if has_teleport_skill { scr_teleport(); exit }
+		if has_teleport_skill { teleport(); exit }
 		
 		if second_jump == false // if hasnt already second jumped
 		{

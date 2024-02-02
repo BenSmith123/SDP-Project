@@ -71,6 +71,9 @@ function game_load_globals_from_ini()
 		var global_var_default_value = variable_global_get(global_var_name) // fall back to initial value if not found in file
 		var global_var_value = undefined
 		
+		// DEBUG for finding undeclared globals (crash on load game):
+		// if global_var_default_value == undefined { show_message(global_var_name) }
+		
 		// load data based on type
 		if global_var_type == IniType.String
 		{

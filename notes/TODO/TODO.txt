@@ -17,17 +17,12 @@ TO DO
 
 --------------------------------------
 
+
+- NPC for name change
 - Another sword & better starter sword
 - More skins!
 - More mobs
 - Screenshots/vids of gameplay - share
-
-- move stats to an NPC that displays instead of player stats
-- stats:
-	- deaths
-	- total coins
-	- total coins spent
-	coins lost (death)
 
 
 - add plants

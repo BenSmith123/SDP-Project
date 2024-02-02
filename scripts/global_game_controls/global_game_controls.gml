@@ -7,6 +7,7 @@ function global_game_controls()
 	// TEMP DEBUG
 	if keyboard_check_pressed(ord("E"))
 	{
+
 		// test snow
 		// with (obj_player) { friction_power = 0.05 }
 		

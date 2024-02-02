@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mobile",
-    "path": "folders/Objects/HUD/Mobile.yy",
+    "name": "Debug",
+    "path": "folders/Objects/Debug.yy",
   },
   "parentObjectId": {
     "name": "parent_gui_pressable",
