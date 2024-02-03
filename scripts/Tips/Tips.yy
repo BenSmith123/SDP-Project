@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Fonts",
+  "name": "Tips",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Main",
-    "path": "folders/Scripts/Main.yy",
+    "name": "General",
+    "path": "folders/Scripts/General.yy",
   },
 }

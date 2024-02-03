@@ -4,6 +4,8 @@
 // spawn_time_min_sec = 4
 // spawn_time_max_sec = 15
 
+image_speed = 0
+
 mob_obj = obj_mob_drone
 
 mob_count = 0

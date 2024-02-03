@@ -9,7 +9,6 @@
   "instanceCreationOrder": [
     {"name":"inst_6A3E4F80_1_1_3_2","path":"rooms/room_plains/room_plains.yy",},
     {"name":"inst_3558B7B2_1_2","path":"rooms/room_plains/room_plains.yy",},
-    {"name":"inst_76BEA85D_1","path":"rooms/room_plains/room_plains.yy",},
     {"name":"inst_2864FCE7_2","path":"rooms/room_plains/room_plains.yy",},
     {"name":"inst_E06195D_1","path":"rooms/room_plains/room_plains.yy",},
     {"name":"inst_5BE704E0_1","path":"rooms/room_plains/room_plains.yy",},
@@ -309,14 +308,15 @@
     {"name":"inst_5B383B7E","path":"rooms/room_plains/room_plains.yy",},
     {"name":"inst_651C6402","path":"rooms/room_plains/room_plains.yy",},
     {"name":"inst_773B2C4E","path":"rooms/room_plains/room_plains.yy",},
+    {"name":"inst_51A096BA","path":"rooms/room_plains/room_plains.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":-5000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A3E4F80_1_1_3_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":183.5,"y":1822.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3558B7B2_1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_marker_player_spawn_left","path":"objects/obj_marker_player_spawn_left/obj_marker_player_spawn_left.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":139.0,"y":1815.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76BEA85D_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_seeker","path":"objects/obj_seeker/obj_seeker.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":1664.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2864FCE7_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_marker_player_spawn_right","path":"objects/obj_marker_player_spawn_right/obj_marker_player_spawn_right.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2112.0,"y":1888.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_51A096BA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_claudia","path":"objects/obj_npc_claudia/obj_npc_claudia.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":756.0,"y":1922.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Mobs","depth":-4000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22F638EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_ai_2","path":"objects/obj_ai_2/obj_ai_2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1201.0,"y":1414.0,},

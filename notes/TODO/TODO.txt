@@ -19,8 +19,11 @@ TO DO
 
 
 
+- mac release
 
-- NPC for name change
+
+- NPC that says random tips each time player is near
+- NPC for feedback - logs to discord?
 - Another sword & better starter sword
 - More skins!
 - More mobs
@@ -29,7 +32,10 @@ TO DO
 
 - Log player achievements to discord!
 
-
+- Dialogs 
+    - simple text/close dialog
+	- yes/no dialogs
+	
 - add plants
 - MiniMap
 - golden throwing star with high damage increase!

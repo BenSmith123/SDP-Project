@@ -1,4 +1,13 @@
 
+text_bubble.visible = false
+// delay before showing next message
+alarm[0] = 15
+
+if message_num != array_length(chat_messages)-1
+{
+	message_num += 1
+}
+
 // log_player_message("Testing closer room view")
 
 

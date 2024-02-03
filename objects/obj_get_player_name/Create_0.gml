@@ -1,1 +1,1 @@
-msg = get_string_async("Name","");
+msg = get_string_async("Name:", global.name)

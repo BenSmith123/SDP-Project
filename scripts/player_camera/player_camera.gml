@@ -47,9 +47,8 @@ function player_camera()
 	var max_cam_y = room_height - global.view_h
 	
 	// move the mobile zoomed in view up to avoid half the screen being the floor
-	// TEST ON MOBILE (without):
-	//var max_cam_y_mobile = max_cam_y - 80
-	//if global.zoom_view == true { max_cam_y = max_cam_y_mobile }
+	var max_cam_y_mobile = max_cam_y - 40
+	if global.zoom_view == true { max_cam_y = max_cam_y_mobile }
 	
 	var map_center_x = room_width / 2
 	var map_center_y = room_height / 2
