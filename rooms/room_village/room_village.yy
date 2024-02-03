@@ -8,7 +8,6 @@
   "inheritLayers": false,
   "instanceCreationOrder": [
     {"name":"inst_6A3E4F80_1_1_1","path":"rooms/room_village/room_village.yy",},
-    {"name":"inst_A1A9857_1_1_1","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_BA46DD3_1_1_1","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_6F25F49B","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_2F47693C","path":"rooms/room_village/room_village.yy",},
@@ -18,14 +17,15 @@
     {"name":"inst_5C4E532","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_424F06A2","path":"rooms/room_village/room_village.yy",},
     {"name":"inst_6170229B","path":"rooms/room_village/room_village.yy",},
+    {"name":"inst_6C37930","path":"rooms/room_village/room_village.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"NPC","depth":-5400,"effectEnabled":true,"effectType":null,"gridX":24,"gridY":24,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A1A9857_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_claudia","path":"objects/obj_npc_claudia/obj_npc_claudia.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":404.0,"y":943.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BA46DD3_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_shop_weapons","path":"objects/obj_npc_shop_weapons/obj_npc_shop_weapons.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1614.0,"y":910.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A677527","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_bank","path":"objects/obj_npc_bank/obj_npc_bank.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1152.0,"y":912.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6170229B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_skin_store","path":"objects/obj_npc_skin_store/obj_npc_skin_store.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":777.0,"y":936.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6C37930","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_set_name","path":"objects/obj_npc_set_name/obj_npc_set_name.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":377.0,"y":939.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":-5000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A3E4F80_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":928.0,},

@@ -85,33 +85,15 @@ function create_mobile_debug_controls()
 			text: "Debugging mode",
 			action: function() { global.show_debug = !global.show_debug }
 		},
+		//// SECOND ROW
 		{
 			text: "< Previous Map",
 			action: function() { move_to_map(true) }
 		},
 		{
-			text: "Random inventory",
-			action: debug_random_inventory
-		},
-		{
-			text: "Change name",
-			action: function() 
-			{ 
-				with (obj_player) { instance_create(x, y, obj_get_player_name) }
-				debug_close_menu()
-			}
-		},
-		{
-			text: "Change class",
-			action: debug_change_class
-		},
-		{
-			text: "Toggle view zoom",
-			action: function() 
-			{
-				global.zoom_view = !global.zoom_view
-				initialise_views()
-			}
+			text: "CRASH GAME",
+			action: function() { crash_game_for_testing() },
+			disabled: global.name != "BEN705"
 		},
 		//{
 		//	text: "Test haptics",
@@ -123,18 +105,6 @@ function create_mobile_debug_controls()
 		//		global.name = ($"{duration} | {strength}")
 		//	}
 		//},
-		{
-			text: "Level up",
-			action: function() { 
-				if global.name != "BEN705" { debug_show_no_access(); exit }
-				with (obj_player) { level_up() } 
-			}
-		},
-		{
-			text: "Next Map >",
-			action: function() { move_to_map() }
-		},
-
 		{
 			text: "Spawn mob",
 			action: function() 
@@ -153,9 +123,32 @@ function create_mobile_debug_controls()
 			}
 		},
 		{
-			text: "CRASH GAME",
-			action: function() { crash_game_for_testing() }
-		}
+			text: "Toggle view zoom",
+			action: function() 
+			{
+				global.zoom_view = !global.zoom_view
+				initialise_views()
+			}
+		},
+		{
+			text: "Change class",
+			action: debug_change_class
+		},
+		// THIRD ROW
+		{
+			text: "Next Map >",
+			action: function() { move_to_map() }
+		},
+		{
+			text: "Random inventory",
+			action: debug_random_inventory,
+			disabled: global.name != "BEN705"
+		},
+		{
+			text: "Level up",
+			action: function() { with (obj_player) { level_up() } },
+			disabled: global.name != "BEN705"
+		},
 	]
 	
 	var start_column = WIDTH / 5
@@ -177,18 +170,17 @@ function create_mobile_debug_controls()
 			x_pos += start_column 
 		}
 		
+		var debug_details = debug_controls[i]
+		
 		var button = instance_create_depth(x_pos, y_pos, 0, obj_button_mobile_debug)
-		button.text = debug_controls[i].text
-		button.action = debug_controls[i].action
+		button.text = debug_details.text
+		button.action = debug_details.action
+		
+		if struct_exists(debug_details, "disabled") { button.disabled = debug_details.disabled }
 		
 		y_pos += y_gap
 	}
 }
 
-
-function debug_show_no_access()
-{
-	with (obj_player) { log_player_message("NO ACCESS") }
-}
 
 function debug_close_menu() { instance_destroy(obj_button_mobile_debug) }

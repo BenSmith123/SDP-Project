@@ -1,5 +1,5 @@
 
 event_inherited()
 
-name = "Elana"
+name = "Claudia"
 text = "What's your name?"

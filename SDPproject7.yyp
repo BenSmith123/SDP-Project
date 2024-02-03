@@ -578,7 +578,7 @@
     {"id":{"name":"obj_reset_game","path":"objects/obj_reset_game/obj_reset_game.yy",},},
     {"id":{"name":"font_arial_12_bold","path":"fonts/font_arial_12_bold/font_arial_12_bold.yy",},},
     {"id":{"name":"spr_marker_pointer","path":"sprites/spr_marker_pointer/spr_marker_pointer.yy",},},
-    {"id":{"name":"obj_npc_claudia","path":"objects/obj_npc_claudia/obj_npc_claudia.yy",},},
+    {"id":{"name":"obj_npc_tips_beginner","path":"objects/obj_npc_tips_beginner/obj_npc_tips_beginner.yy",},},
     {"id":{"name":"room_cave_small","path":"rooms/room_cave_small/room_cave_small.yy",},},
     {"id":{"name":"spr_block_bl_ice","path":"sprites/spr_block_bl_ice/spr_block_bl_ice.yy",},},
     {"id":{"name":"spr_item_orb","path":"sprites/spr_item_orb/spr_item_orb.yy",},},

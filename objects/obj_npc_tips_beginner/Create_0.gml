@@ -1,7 +1,7 @@
 
 event_inherited()
 
-name = "Claudia"
+name = "Knight"
 
 text = global.is_mobile 
 	? "You can chat to NPC's when your close enough"

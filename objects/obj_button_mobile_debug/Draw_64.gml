@@ -3,6 +3,8 @@
 image_xscale = round(width / sprite_get_width(sprite_index))
 image_yscale = round(height /  sprite_get_height(sprite_index))
 
+image_index = disabled
+
 draw_self()
 
 scr_text_4()

@@ -35,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_npc_elf_lady",
-    "path": "sprites/spr_npc_elf_lady/spr_npc_elf_lady.yy",
+    "name": "spr_npc_claudia",
+    "path": "sprites/spr_npc_claudia/spr_npc_claudia.yy",
   },
   "spriteMaskId": null,
   "visible": true,
