@@ -44,7 +44,7 @@ function load_game()
 		ini_close()
         
 		file_delete(global.file_save_decoded_name)
-    
+
 	}
 
 }

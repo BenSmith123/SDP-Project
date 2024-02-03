@@ -151,6 +151,10 @@ function create_mobile_debug_controls()
 				instance_create_depth(obj_player.x+200, obj_player.y-60, ObjectDepth.Mob, mob)
 				debug_close_menu()
 			}
+		},
+		{
+			text: "CRASH GAME",
+			action: function() { crash_game_for_testing() }
 		}
 	]
 	

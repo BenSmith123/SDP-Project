@@ -20,9 +20,11 @@ function initialise_globals()
 	global.game_build_id = get_game_build_id() // last 4 digits in timestamp
 	
 	// only show error message when test running from GM IDE
-	global.game_crash_show_error = GM_build_type == "run"
+	global.game_crash_show_error = GM_build_type == "run" || global.is_desktop
 	// log error to discord if executable build version
 	global.game_crash_log_to_discord = !global.game_crash_show_error
+	// file name with build ID so errors aren't reported from older versions
+	global.game_crash_error_file = $"crash_report_v${global.game_build_id}.txt"
 	
 	// default window resolution without fullscreen
 	global.desktop_default_width = 1280
@@ -41,7 +43,6 @@ function initialise_globals()
 	
 	global.dialog_y_pos = (global.screen_h / 4) - 80 // position for all dialogs to be displayed
 
-		
 	// IN-GAME
 	global.all_items_array = initialise_items()
 
@@ -72,7 +73,7 @@ function initialise_globals()
 /// NOTE - this function is basically for GMS intellisense and default values,
 /// anything added here will need to be added to the 'stored_global_variables_list' below to load/save
 function initialise_stored_globals()
-{
+{	
 	// inventory
 	global.inventory_size = 21
 	global.inventory_array = []

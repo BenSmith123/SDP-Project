@@ -3,7 +3,11 @@
 function post_to_discord(discord_message)
 {
 	if discord_message == "" { exit }
-	if global.show_debug { log_player_message($"Discord message sent: {discord_message}") }
+	
+	// log all http requests - incase some are fired unintentionally
+	console_log(discord_message)
+	
+	if global.show_debug { log_player_message($"Discord message sent") }
 	
 	var discord_webhook_url = "https://discord.com/api/webhooks/1202975924212203580/JKKXdrTcJm7wwSxhOKHKG2pwngGZ1BSzVyQ8ESTeArI4l7wMEkAqhr-B8--lBxcm_yA8"
 	
@@ -20,7 +24,7 @@ function post_to_discord(discord_message)
 	ds_map_add(header_map, "Content-Type", "application/json")
 	
 	// MAKE REQUEST!
-	http_request(discord_webhook_url, "POST", header_map, json_stringify(request_body))
+	post_request = http_request(discord_webhook_url, "POST", header_map, json_stringify(request_body))
 		
 	//ds_map_destroy(header_map) - don't destroy the map - it will block the http request..
 }

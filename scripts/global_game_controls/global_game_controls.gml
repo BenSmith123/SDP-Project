@@ -8,6 +8,8 @@ function global_game_controls()
 	if keyboard_check_pressed(ord("E"))
 	{
 
+		post_to_discord("Testing")
+
 		// test snow
 		// with (obj_player) { friction_power = 0.05 }
 		
@@ -91,7 +93,7 @@ function global_game_controls()
 	if keyboard_check_pressed(ord("0")) { reset_game() }
         
     
-	if keyboard_check_pressed(vk_f1) {show_message(get_game_controls_text() + get_game_debug_controls_text())}
+	if keyboard_check_pressed(vk_f1) {show_message_async(get_game_controls_text() + get_game_debug_controls_text())}
 
 	if keyboard_check_pressed(vk_f2) { global.overall_view = !global.overall_view; room_restart() }
 	
