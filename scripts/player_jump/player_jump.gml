@@ -34,7 +34,8 @@ function player_jump()
 		
 		if second_jump == false // if hasnt already second jumped
 		{
-		    instance_create(x,y,obj_fx_double_jump)
+		    create_second_jump_fx = true
+			second_jump_fx_count = 20
 		    vel_y = -jump;
 		    second_jump = true
 		}

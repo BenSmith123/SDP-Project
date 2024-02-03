@@ -10,6 +10,16 @@ if hp <= 0
     instance_destroy()
 }
 
+if create_second_jump_fx
+{
+	second_jump_fx_count -= 1
+	var fx = instance_create(x,y, obj_fx_double_jump)
+	fx.sprite_index = sprite_index
+	fx.image_index = image_index
+	fx.image_xscale = image_xscale
+	if second_jump_fx_count == 0 { create_second_jump_fx = false }
+}
+
 if is_on_ladder 
 {
 	if !place_meeting(x, y, parent_climbable) { is_on_ladder = false }

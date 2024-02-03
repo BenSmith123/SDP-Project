@@ -26,7 +26,7 @@ function level_up()
 	if instance_exists(obj_player)
 	{
 		// level up effect!
-	    instance_create(obj_player.x,obj_player.y-40,obj_levelup_fx)
+	    instance_create(obj_player.x,obj_player.y-40,obj_level_up_fx)
 	    obj_player.hp = global.max_hp // give the player full health
 		
 		update_player_stats()

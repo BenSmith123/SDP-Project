@@ -1,4 +1,4 @@
-/// @description - Heal
+/// @description heal
 
 var heal_text = instance_create(x,y,obj_heal_text)
 heal_text.target = id

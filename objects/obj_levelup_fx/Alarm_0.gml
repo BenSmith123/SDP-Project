@@ -1,4 +1,0 @@
-
-fade_out = true
-
-
