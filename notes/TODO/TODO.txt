@@ -18,11 +18,16 @@ TO DO
 --------------------------------------
 
 
+
+
 - NPC for name change
 - Another sword & better starter sword
 - More skins!
 - More mobs
 - Screenshots/vids of gameplay - share
+
+
+- Log player achievements to discord!
 
 
 - add plants

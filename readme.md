@@ -2,14 +2,20 @@
 
 Mobile & Desktop 2D platform game made with GameMaker Studio - originally created for the second year Software Development Practice paper.
 
-## Releases
+## Download
 
 - See the `productBuild` folder for windows installer and Android.apk
 - Mac/iOS has to be copied to the device via Xcode
 
-## Discord
+## Logging & error reporting
+- Game crash errors will log to the console on all devices
+- Crash reports will be saved as a text file
+- When the game is next opened file error contents will be sent to discord `#error-logs` channel
+  (Discord error enabled by default for only **mobile or desktop executable versions**)
 
-TODO - add disc link
+## Discord
+- General discussion, release notes, bugs, etc.
+https://discord.gg/CBjyZCwNmy
 
 ## Guide
 

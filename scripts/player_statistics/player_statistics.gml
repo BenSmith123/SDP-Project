@@ -4,9 +4,6 @@
 // this way the labels/values can be left/right aligned opposite each other
 function get_player_statistics_data()
 {
-	
-	var to_do = "TODO"
-	
 	return 
 	[
 		{ label: "Mobs killed", value: global.mob_kills },
@@ -35,6 +32,7 @@ function draw_player_statistics_data(x_left, x_right, yy)
 		var value = player_statistics_data[i].value
 		
 		scr_text_6()
+		draw_set_font(font_arial_12_bold)
 		draw_text(x_left, row_y, label)
 		
 		draw_set_halign(fa_right)

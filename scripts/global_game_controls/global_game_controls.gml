@@ -8,8 +8,6 @@ function global_game_controls()
 	if keyboard_check_pressed(ord("E"))
 	{
 
-		post_to_discord("Testing")
-
 		// test snow
 		// with (obj_player) { friction_power = 0.05 }
 		
