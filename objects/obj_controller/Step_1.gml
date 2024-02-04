@@ -1,3 +1,6 @@
+///@description device tap inputs
+
+
 // handle global tapping for all HUD/dialog buttons
 
 var _max_devices = 3 // max 5?
