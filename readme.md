@@ -28,6 +28,15 @@ https://discord.gg/CBjyZCwNmy
 1. Add new variable to `initialise_stored_globals()` function
 2. Add the new variable to `stored_global_variables_list` function
 
+### App icons
+_Icons assets backed up in the `/externalFiles` folder_
+1. Convert image to a vector (so it's not stretching and pixelating an image)
+   I used this site: https://vectorizer.ai/ (screenshot the result and remove the background manually)
+2. Online tool to generate the correct icon sizes: https://www.appicon.co/
+3. Add them to GM game options. 
+**NOTE: iOS icon images are rejected because they contain transparency even when they don't.. bug reported here: https://github.com/YoYoGames/GameMaker-Bugs/issues/4617**
+- A workaround would be to manually copy the `AppIcon.appiconset` folder into Xcode `Images > AppIcon` each build..
+
 ### Adding skins
 
 1. Create/download from [maples.im](maples.im) (download full sprite sheet to include climbing/blink (death) sprite)
