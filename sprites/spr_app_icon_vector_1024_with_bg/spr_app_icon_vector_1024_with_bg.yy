@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_app_icon_final",
-  "bbox_bottom": 89,
+  "name": "spr_app_icon_vector_1024_with_bg",
+  "bbox_bottom": 1023,
   "bbox_left": 0,
-  "bbox_right": 89,
+  "bbox_right": 1023,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"30a8ad94-3bc6-49e8-a03e-486ca4638019",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"834e046b-3f54-43c8-98ba-c8616053ab98",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 90,
+  "height": 1024,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"30cc8e21-2cc3-4a31-8177-bdca61a73071","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"db33d674-bc56-41c4-bac0-cf642eee7cb5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_app_icon_final",
+    "name": "spr_app_icon_vector_1024_with_bg",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"30a8ad94-3bc6-49e8-a03e-486ca4638019","path":"sprites/spr_app_icon_final/spr_app_icon_final.yy",},},},"Disabled":false,"id":"883bb693-8126-4e17-b066-f4ea440ac04d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"834e046b-3f54-43c8-98ba-c8616053ab98","path":"sprites/spr_app_icon_vector_1024_with_bg/spr_app_icon_vector_1024_with_bg.yy",},},},"Disabled":false,"id":"80ae562e-25e7-4490-b30a-8d4b2034b935","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 90,
+  "width": 1024,
 }
