@@ -18,6 +18,8 @@ event_inherited()
 
 title = "Shop"
 
+player_stand_sprite = 0
+
 instance_create(dialog_x_center_right, dialog_y_top+44, obj_coin_display)
 
 scrollable_y = dialog_y_top+92

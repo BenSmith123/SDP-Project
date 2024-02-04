@@ -53,7 +53,7 @@ function initialise_player_skins()
 			var y_offset = sprite_get_height(sprite) - 34 // y offset taken from the bottom (as character height can vary)
 			
 			// dead sprite needs to differ
-			if action_name == "dead" { y_offset = sprite_get_height(sprite) / 2 }
+			if action_name == "dead" { y_offset = sprite_get_height(sprite) / 2 + 12 }
 			
 			sprite_set_offset(sprite, x_offset, y_offset)
 		}

@@ -1,4 +1,6 @@
 
+if !instance_exists(obj_player) { exit }
+
 var c1 = #d9d9d9
 var c2 = #d9d9d9
 var c3 = c_white

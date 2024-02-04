@@ -30,6 +30,8 @@ function create_shop_items(button_height = 80, listing_offset = 0)
 		item_listing.height = button_height
 		item_listing.draw_offset = listing_offset // offset for sprite and name
 		
+		if struct_exists(sell_details, "disabled") { item_listing.disabled = sell_details.disabled }
+		
 		// NOTE - a item for sale can be either an 'inventory item' or a 'action'
 		
 		// inventory item for sale

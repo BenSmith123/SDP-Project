@@ -30,8 +30,21 @@ function player_controls()
 	if move_jump_down { player_jump_down() }
 
 	if move_attack
-	{ 
-		if !move_left && !move_right { player_attack() }
+	{
+		// prevent attack animation if trying to interact with NPC
+		var mobile_near_npc = global.is_mobile && instance_exists(obj_npc_speech_bubble)
+		if mobile_near_npc
+		{
+			// disable attacking for a split second since finger may still be on the attack button
+			can_attack = false
+			alarm[0] = 15 // can attack again
+		}
+		
+		var is_moving = move_left || move_right
+		if !is_moving && !mobile_near_npc
+		{
+			player_attack()
+		}
 	}
 
 	//if move_temp { teleport() } // teleport skill

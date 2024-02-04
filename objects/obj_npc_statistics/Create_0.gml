@@ -1,5 +1,5 @@
 
 event_inherited()
 
-name = "Your stats"
+name = "Statistics professor"
 text = get_player_statistics_string()

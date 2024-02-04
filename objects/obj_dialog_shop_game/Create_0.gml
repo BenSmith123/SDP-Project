@@ -7,11 +7,20 @@ shop_items =
 [
 	{
 		type: SellableType.Action,
+		cost: 1_000,
+		title: "Increase inventory slot",
+		description: "",
+		sprite: spr_inventory_item_background,
+		on_purchase: function() { global.inventory_size += 1 },
+		disabled: global.inventory_size >= global.inventory_size_max
+	},
+	{
+		type: SellableType.Action,
 		cost: 10_000,
 		title: "Seeker",
 		description: "A companion that will follow you and pick up coins",
 		sprite: spr_seeker,
-		on_purchase: function() { global.is_game_master = true } // TODO - implement
+		on_purchase: function() {  } // TODO - implement
 	},
 	{
 		type: SellableType.Action,
