@@ -47,6 +47,7 @@ enum ItemId
 	ThrowingStar2,
 	SnowflakeStar,
 	BanisherSword,
+	AdvancedBow,
 	length // KEEP THIS ON THE END
 	// spellcasters book/orb?
 }
@@ -255,12 +256,28 @@ function initialise_items()
 		description: "",
 		class: "Hunter",
 		equip_slot: ItemSlot.Primary,
-		sprite: spr_carry_bow,
+		sprite: spr_carry_basic_bow,
 		rarity: ItemRarity.Common,
 		is_sellable: true,
 		sell_value: 500,
 		damage_multiplier: 0,
-		sprite_carrying: spr_carry_bow
+		sprite_carrying: spr_carry_basic_bow,
+		sprite_attacking: spr_shoot_bow_basic
+	}),
+	create_item_equip(
+	{
+		iid: ItemId.AdvancedBow,
+		name: "Advanced Bow",
+		description: "+3% attack",
+		class: "Hunter",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_item_bow_advanced,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 500,
+		damage_multiplier: 0.03,
+		sprite_carrying: spr_carry_advanced_bow,
+		sprite_attacking: spr_shoot_bow_advanced
 	}), 
 	create_item_equip(
 	{

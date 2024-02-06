@@ -21,9 +21,10 @@ TO DO
 
 - NPC that says random tips each time player is near
 - NPC for feedback - logs to discord?
+- Util npc shop - change class?
 - More skins!
 - More mobs
-- Screenshots/vids of gameplay - share
+- Screenshots/vids of gameplay - share[
 
 
 - Log player achievements to discord! (level 100)
