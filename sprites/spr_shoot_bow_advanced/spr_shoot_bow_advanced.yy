@@ -25,7 +25,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"59a51ee0-c8ff-4679-af0b-6f30c7899116","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "equip",
     "path": "folders/Sprites/Player/equip.yy",
@@ -64,7 +64,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 28,
-    "yorigin": 34,
+    "yorigin": 31,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

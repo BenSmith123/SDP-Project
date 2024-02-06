@@ -29,12 +29,7 @@ function equip_item()
 	// TODO - handle multiple damage multipliers from all equips rather than just overwrite it each time
 	global.equip_damage_multiplier = selected_item_details.damage_multiplier
 	
-	// TEMP - this will need to be extended/removed with other class projectiles
-	if instance_exists(obj_player)
-	{
-		obj_player.sprite_projectile = selected_item_details.sprite
-		obj_player.attack = global.attack * (1 + global.equip_damage_multiplier)
-	}
+	if instance_exists(obj_player) { obj_player.set_weapon_sprites() }
 				
 	// remove item being equipped
 	inventory_remove_by_index(selected_item_inv_index, 1)

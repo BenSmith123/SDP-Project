@@ -286,7 +286,7 @@ function initialise_items()
 		description: "",
 		class: "Ninja",
 		equip_slot: ItemSlot.Primary,
-		sprite: spr_item_shuriken,
+		sprite: spr_item_basic_shuriken,
 		rarity: ItemRarity.Common,
 		is_sellable: true,
 		sell_value: 500,

@@ -22,6 +22,7 @@ if is_on_ladder { draw_item_on_back() }
 if sprite_weapon_attack != undefined && sprite_index == sprite_attack
 {
 	draw_sprite_ext(sprite_weapon_attack, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+	// draw_sprite(spr_weapon_fx_shoot, 0, x, y)
 }
 
 

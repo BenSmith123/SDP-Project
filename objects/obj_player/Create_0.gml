@@ -56,6 +56,19 @@ set_skin_sprites = player_set_skin_sprites
 set_skin_sprites()
 player_set_class_attributes()
 
+set_weapon_sprites = function()
+{
+	var equip = get_item(global.equip_item_id_primary)
+	
+	// TODO - remove this once throwing stars have an attacking sprite
+	if equip.class == "Ninja" { sprite_projectile = equip.sprite }
+		
+	if struct_exists(equip, "sprite_carrying") { sprite_carrying = equip.sprite_carrying }
+		
+	sprite_weapon_attack = equip.sprite_attacking
+	attack = global.attack * (1 + global.equip_damage_multiplier)
+}
+
 animated_attack = sprite_get_number(sprite_attack) > 1
 
 collision_tilemap = layer_tilemap_get_id("CollisionTiles")
