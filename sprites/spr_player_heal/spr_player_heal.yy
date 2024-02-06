@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "characters",
-    "path": "folders/Sprites/characters.yy",
+    "name": "legacy (stickman)",
+    "path": "folders/Sprites/Player/legacy (stickman).yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -27,7 +27,7 @@
   "origin": 0,
   "parent": {
     "name": "skins",
-    "path": "folders/Sprites/characters/skins.yy",
+    "path": "folders/Sprites/Player/skins.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

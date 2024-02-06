@@ -55,8 +55,22 @@ function initialise_player_skins()
 			// dead sprite needs to differ
 			if action_name == "dead" { y_offset = sprite_get_height(sprite) / 2 + 12 }
 			
+			// adjust swing sprite to re-align sword swings
+			if action_name == "swing" { x_offset += get_swing_sprite_x_offset(i) }
+			
 			sprite_set_offset(sprite, x_offset, y_offset)
 		}
 	}
 
+}
+
+///@description - get the additional x pos the sprite should be re-aligned
+// sprites are all different widths (especially when swinging a weapon) because the cape/helmet
+// this breaks the swing of a sword for some skins - hardcoded an offset to fix this
+function get_swing_sprite_x_offset(skin_id)
+{
+	if skin_id == PlayerSkinId.Knight { return 8 }
+	if skin_id == PlayerSkinId.Shadow { return 10 }
+
+	return 0
 }

@@ -223,12 +223,12 @@ function initialise_items()
 		description: "",
 		class: "Beginner",
 		equip_slot: ItemSlot.Primary,
-		sprite: spr_item_beginners_sword,
+		sprite: spr_item_basic_sword,
 		rarity: ItemRarity.Common,
 		is_sellable: true,
 		sell_value: 500,
 		damage_multiplier: 0,
-		sprite_carrying: spr_carry_sword,
+		sprite_carrying: spr_carry_basic_sword,
 		sprite_attacking: spr_swing_sword_basic
 	}),
 	create_item_equip(
@@ -238,13 +238,13 @@ function initialise_items()
 		description: "",
 		class: "Fighter",
 		equip_slot: ItemSlot.Primary,
-		sprite: spr_carry_sword,
+		sprite: spr_item_basic_sword,
 		rarity: ItemRarity.Common,
 		is_sellable: true,
 		sell_value: 500,
 		damage_multiplier: 0,
-		sprite_carrying: spr_carry_sword,
-		sprite_attacking: spr_swing_sword_basic
+		sprite_carrying: spr_carry_basic_sword,
+		sprite_attacking: spr_swing_sword_basic_original
 	}),
 	create_item_equip(
 	{
@@ -284,7 +284,7 @@ function initialise_items()
 		sprite: spr_item_throwing_kunai,
 		rarity: ItemRarity.Common,
 		is_sellable: true,
-		sell_value: 10,
+		sell_value: 700,
 		damage_multiplier: 0.02,
 		sprite_projectile: spr_projectile_kunai
 	}),
@@ -298,11 +298,10 @@ function initialise_items()
 		sprite: spr_item_throwing_star_1,
 		rarity: ItemRarity.Common,
 		is_sellable: true,
-		sell_value: 10,
+		sell_value: 500,
 		damage_multiplier: 0.03,
 		sprite_projectile: spr_item_throwing_star_1
 	}),			
-
 	create_item_equip(
 	{
 		iid: ItemId.SnowflakeStar,
@@ -313,7 +312,7 @@ function initialise_items()
 		sprite: spr_item_throwing_star_3,
 		rarity: ItemRarity.Common,
 		is_sellable: true,
-		sell_value: 10,
+		sell_value: 2500,
 		damage_multiplier: 0.05,
 		sprite_projectile: spr_item_throwing_star_3
 	}),
@@ -327,7 +326,7 @@ function initialise_items()
 		sprite: spr_item_throwing_star_2,
 		rarity: ItemRarity.Common,
 		is_sellable: true,
-		sell_value: 10,
+		sell_value: 2500,
 		damage_multiplier: 0.05,
 		sprite_projectile: spr_item_throwing_star_2
 	})

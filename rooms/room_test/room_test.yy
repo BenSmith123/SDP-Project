@@ -308,6 +308,7 @@
     {"name":"inst_76CE15B0","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_4A5F5DA0","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_6FE47E0B","path":"rooms/room_test/room_test.yy",},
+    {"name":"inst_10396935","path":"rooms/room_test/room_test.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -331,6 +332,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5608D4BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3948.0,"y":864.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52177EAC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_vent","path":"objects/obj_vent/obj_vent.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1778.5,"y":900.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6FE47E0B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_point_towards","path":"objects/obj_point_towards/obj_point_towards.yy",},"properties":[],"rotation":0.0,"scaleX":1.8846151,"scaleY":1.8846151,"x":1560.0,"y":432.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_10396935","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_debug_align_sprites","path":"objects/obj_debug_align_sprites/obj_debug_align_sprites.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1776.0,"y":432.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Pickups","depth":-4200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6D6F886F_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_life_pickup","path":"objects/obj_life_pickup/obj_life_pickup.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":768.0,},
