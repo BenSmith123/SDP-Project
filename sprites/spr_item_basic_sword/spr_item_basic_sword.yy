@@ -13,11 +13,11 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ba9d780e-0771-401d-b458-ac9edd909fef",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d55d6e44-6ef7-473e-85b9-c9b0a065dadd",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 52,
+  "height": 29,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"afd8b769-46fa-4194-b52c-ac28f0f3348b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ba9d780e-0771-401d-b458-ac9edd909fef","path":"sprites/spr_item_basic_sword/spr_item_basic_sword.yy",},},},"Disabled":false,"id":"ad3051ff-3b61-42e3-b8be-9abe53bf8a55","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d55d6e44-6ef7-473e-85b9-c9b0a065dadd","path":"sprites/spr_item_basic_sword/spr_item_basic_sword.yy",},},},"Disabled":false,"id":"e03db01d-9c21-4e0c-b238-46b6e271e67e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 24,
-    "yorigin": 26,
+    "xorigin": 15,
+    "yorigin": 14,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 49,
+  "width": 31,
 }

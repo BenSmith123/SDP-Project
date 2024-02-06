@@ -45,7 +45,9 @@ enum ItemId
 	Kunai,
 	ThrowingStar1,
 	ThrowingStar2,
-	SnowflakeStar
+	SnowflakeStar,
+	BanisherSword,
+	length // KEEP THIS ON THE END
 	// spellcasters book/orb?
 }
 
@@ -329,6 +331,21 @@ function initialise_items()
 		sell_value: 2500,
 		damage_multiplier: 0.05,
 		sprite_projectile: spr_item_throwing_star_2
+	}),
+	create_item_equip(
+	{
+		iid: ItemId.BanisherSword,
+		name: "Banisher",
+		description: "+12% damage",
+		class: "Fighter",
+		equip_slot: ItemSlot.Primary,
+		sprite: spr_item_sword_banisher,
+		rarity: ItemRarity.Common,
+		is_sellable: true,
+		sell_value: 500,
+		damage_multiplier: 0.12,
+		sprite_carrying: spr_carry_banisher,
+		sprite_attacking: spr_swing_sword_banisher
 	})
   ]
 }

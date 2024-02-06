@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_item_weapon",
-  "bbox_bottom": 29,
+  "name": "spr_item_sword_banisher",
+  "bbox_bottom": 32,
   "bbox_left": 0,
-  "bbox_right": 31,
+  "bbox_right": 32,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,17 +13,17 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"52c0e6af-4c30-4f9a-ae46-664382829e29",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"31b8fa9c-5b34-4eb5-93ad-53fd97378f49",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 31,
+  "height": 33,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"55210ebd-5612-4c1b-975e-2116b44817fa","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c47ceb1d-3b52-43b8-aa03-bfbcd371f810","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 4,
   "parent": {
     "name": "Equips",
     "path": "folders/Sprites/Items/Equips.yy",
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_item_weapon",
+    "name": "spr_item_sword_banisher",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"52c0e6af-4c30-4f9a-ae46-664382829e29","path":"sprites/spr_item_weapon/spr_item_weapon.yy",},},},"Disabled":false,"id":"c52d5d40-e36d-4da7-95ad-0fed7a1b0798","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"31b8fa9c-5b34-4eb5-93ad-53fd97378f49","path":"sprites/spr_item_sword_banisher/spr_item_sword_banisher.yy",},},},"Disabled":false,"id":"9000be53-d6bd-4a11-b44d-f67bb9154013","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 16,
+    "yorigin": 16,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 32,
+  "width": 33,
 }

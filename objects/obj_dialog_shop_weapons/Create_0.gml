@@ -21,6 +21,11 @@ shop_items =
 		cost: 1000
 	},
 	{
+		item_id: ItemId.BanisherSword,
+		type: SellableType.Item,
+		cost: 5000
+	},
+	{
 		item_id: ItemId.ThrowingStar1,
 		type: SellableType.Item,
 		cost: 1000

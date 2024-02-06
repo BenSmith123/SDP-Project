@@ -10,27 +10,23 @@ TO DO
 	- make a beginners map with simple test bots and floors, more npcs
 	- metal - needs a lot more
 
-	- Make an easier map for noobs or fast level up or weaker mob?
-	- Mob hit graphics? (can tell when mob is stunned)
+- Make an easier map for noobs or fast level up or weaker mob?
+- Mob hit graphics? (can tell when mob is stunned)
 	
-	- Mobile zoom - default it yes/no? zoom out automatically when in towns?
-
+	
 --------------------------------------
-
-
 
 - mac release
 
 
 - NPC that says random tips each time player is near
 - NPC for feedback - logs to discord?
-- Another sword & better starter sword
 - More skins!
 - More mobs
 - Screenshots/vids of gameplay - share
 
 
-- Log player achievements to discord!
+- Log player achievements to discord! (level 100)
 
 - Dialogs 
     - simple text/close dialog
@@ -44,8 +40,7 @@ TO DO
 - make debugging look a lil prettier (display more useful vars, add more debug etc.)
 - add mobs abilities!
 - animate mob 4 - add more knockback?
-
-- More helper NPCs - ones that tell you tips
+- Mobile zoom - default it yes/no? zoom out automatically when in towns?
 - Portrait mode?
 - skins sold at a store?
 
