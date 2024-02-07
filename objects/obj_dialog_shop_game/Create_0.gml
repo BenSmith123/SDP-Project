@@ -10,7 +10,7 @@ shop_items =
 		cost: 1_000,
 		title: "Increase inventory slot",
 		description: "",
-		sprite: spr_inventory_item_background,
+		sprite: spr_shop_item_add_inventory_slot,
 		on_purchase: function() { global.inventory_size += 1 },
 		disabled: global.inventory_size >= global.inventory_size_max
 	},

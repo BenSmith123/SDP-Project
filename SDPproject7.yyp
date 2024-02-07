@@ -400,6 +400,7 @@
     {"id":{"name":"scr_ai_spread","path":"scripts/scr_ai_spread/scr_ai_spread.yy",},},
     {"id":{"name":"spr_shoot_bow_basic","path":"sprites/spr_shoot_bow_basic/spr_shoot_bow_basic.yy",},},
     {"id":{"name":"deal_damage_to_player","path":"scripts/deal_damage_to_player/deal_damage_to_player.yy",},},
+    {"id":{"name":"spr_shop_item_add_inventory_slot","path":"sprites/spr_shop_item_add_inventory_slot/spr_shop_item_add_inventory_slot.yy",},},
     {"id":{"name":"spr_tile_stone","path":"sprites/spr_tile_stone/spr_tile_stone.yy",},},
     {"id":{"name":"spr_scen_tree_5","path":"sprites/spr_scen_tree_5/spr_scen_tree_5.yy",},},
     {"id":{"name":"spr_weapon_fx_shoot","path":"sprites/spr_weapon_fx_shoot/spr_weapon_fx_shoot.yy",},},

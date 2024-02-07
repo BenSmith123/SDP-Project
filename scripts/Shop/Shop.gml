@@ -60,7 +60,8 @@ function create_shop_items(button_height = 80, listing_offset = 0)
 				title: sell_details.title,
 				sprite: sell_details.sprite,
 				description: sell_details.description,
-				on_purchase: sell_details.on_purchase
+				on_purchase: sell_details.on_purchase,
+				class: undefined
 			}
 		}
 
