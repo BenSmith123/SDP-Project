@@ -24,7 +24,7 @@ TO DO
 - Util npc shop - change class?
 - More skins!
 - More mobs
-- Screenshots/vids of gameplay - share[
+- Screenshots/vids of gameplay - share
 
 
 - Log player achievements to discord! (level 100)
@@ -60,7 +60,6 @@ Shop!
 	
 - HUD colour/font hard to read
 - ^ Better fonts?
-- Handle crashes: https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Debugging/exception_unhandled_handler.htm
 - Stats!
 - Skill - spawn mob on your side
 CONTENT: Maps, Mobs, Items, NPCs, Shop items, SKINS
